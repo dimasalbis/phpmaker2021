@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-code name="Basic Add page (grid)" version="17.0.0" type="Custom Template" for="template" author="e.World">
+<description>
+<![CDATA[
+Basic Add page Custom Template by Bootstrap Grid System
+https://getbootstrap.com/docs/4.5/layout/grid/
+]]>
+</description>
+<script>
+<![CDATA[
+<#
+    let TABLE = DB.Tables.find(tbl => tbl.TblName == "{TblName}"),
+        currentFields = TABLE.Fields.filter(f => f.FldGenerate && f.FldAdd && f.FldAutoUpdateValue === "");
+#>
+]]>
+</script>
+<code>
+<![CDATA[
+<div class="container">
+    <# for (let f of currentFields) { #>
+    <div id="r_<#= f.FldParm #>" class="row">
+        <div class="col-sm-2 font-weight-bold p-2">{{{caption <#= f.FldParm #>}}}</div>
+        <div class="col-sm-10 p-2">{{{value <#= f.FldParm #>}}}</div>
+    </div>
+    <# } #>
+</div>
+]]>
+</code>
+</ew-code>

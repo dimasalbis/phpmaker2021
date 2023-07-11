@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-extension name="dompdf" version="17.0.11" type="PDF Export" author="e.World">
+<description>
+<![CDATA[Use dompdf to export HTML to PDF
+https://github.com/dompdf/dompdf
+dompdf is available under the terms of the LGPL License.
+
+Note: This extension is NOT part of PHPMaker, NO technical support will be provided.
+
+** WARNING: There are some known issues of dompdf, please read the developer website for more information. Known issues includes (but now limited to):
+- not particularly tolerant to poorly-formed HTML input
+- large files or large tables can take a while to render
+- requires a lot of memory
+
+The following PDF backend is available:
+1. CPDF (Default) - A quick and free PDF engine, but supports English text only. Font supported: Courier, Helvetica, Times.
+2. TCPDF - A free PDF engine and support unicode text. Change Charset to utf-8 for unicode text support.
+a. For CJK, use KozMinProRegular (Japanese Serif), KozGoProMedium (Japanese Sans-Serif), HYSMyeongJoStdMedium (Korean), or MSungStdLight (Trad. Chinese).
+b. For other non-English text, try to use the Free* or DejaVu* fonts.
+]]>
+</description>
+<file>dompdf.zip</file>
+<Project>
+    <Attribute name="PdfBackend" option="CPDF,TCPDF" default="CPDF" />
+    <Attribute name="PdfFont" option="Courier,Helvetica,Times,DejaVuSans,DejaVuSansCondensed,DejaVuSansMono,DejaVuSerif,DejaVuSerifCondensed,FreeSans,FreeSerif,FreeMono,KozMinProRegular,KozGoProMedium,HYSMyeongJoStdMedium,MSungStdLight" default="Helvetica" />
+    <Attribute name="MemoryLimit" default="128M" />
+    <Attribute name="TimeLimit" type="Integer" default="120" />
+<Database>
+<Table>
+    <!-- PDF settings -->
+    <Attribute name="ExportList" type="Boolean" default="0" />
+    <Attribute name="ExportView" type="Boolean" default="1" />
+    <Attribute name="PageBreakRecordCount" type="Integer" default="0" />
+    <Attribute name="PageOrientation" option="landscape,portrait" default="portrait" />
+    <Attribute name="PageSize" option="a4,letter,legal" default="a4" />
+</Table>
+</Database>
+</Project>
+<!-- PDF CSS -->
+<control id="exportpdfcss" type="simple" action="add" ofolderid="_css" ifiles="ewpdf.scss" />
+<control id="exportpdf" type="simple" action="add" ofolderid="_src" ifiles="ExportPdf.php" />
+<control id="exportreportpdf" type="simple" action="add" ofolderid="_src" ifiles="ExportReportPdf.php" />
+</ew-extension>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-code name="Insert a record" version="17.0.0" type="Data Modification" for="server" author="e.World">
+<description>
+<![CDATA[
+Insert a record into other table
+]]>
+</description>
+<code>
+<![CDATA[
+// Insert record
+// NOTE: Modify your SQL here, replace the table name, field name and field values
+$myResult = ExecuteUpdate("INSERT INTO MyTable (Field1, Field2, Field3) VALUES (Value1, Value2, Value3)");
+]]>
+</code>
+</ew-code>

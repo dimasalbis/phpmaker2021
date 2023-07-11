@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-code name="Auto JS Template Script Tag" version="17.0.0" type="Auto JS Template" for="client" author="e.World">
+<description>
+<![CDATA[
+Auto JS Template Script Tag
+
+Attributes:
+class - Must include "ew-js-template" or the script will not be rendered automatically.
+type - Set as "text/html" so the script tag will not be executed by browsers as JavaScript.
+data-name - (Optional) Name of of template. If specified and there are more than one templates with the same name, only the first will be rendered.
+data-data - (Optional) Data to be passed to the template. String or JavaScript object in JSON syntax. If string, it will be considered as property name of the global ew object or window object
+data-method - (Optional) jQuery method to handle the rendered HTML (e.g. prependTo, appendTo, insertBefore, insertAfter, etc.). If not specified, $(target).html(HTML) will be used.
+data-target - (Optional) CSS selector. Target for the jQuery method. If not specified, the rendered HTML will be appended to the parent element of the script tag.
+]]>
+</description>
+<code>
+<![CDATA[
+<script class="ew-js-template" type="text/html" data-name="xxx" data-data="xxx" data-method="" data-target="xxx">
+// Enter your HTML here
+</script>
+]]>
+</code>
+</ew-code>

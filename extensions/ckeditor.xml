@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-extension name="CKEditor" version="17.0.0" type="HTML Editor" author="e.World">
+<description>
+<![CDATA[Use CKEditor as HTML Editor.
+Developer Website: http://ckeditor.com/
+CKEditor is distributed under the MPL Open Source license.
+
+Note: CKEditor is not part of PHPMaker. Please read "Third-Party Tools" in the help file.
+]]>
+</description>
+<file>ckeditor.zip</file>
+<!-- copy all ckeditor files -->
+<control id="ckeditor" type="copy" action="add" ofolder="ckeditor" ifolder="ckeditor" />
+<!-- eweditor.js -->
+<control id="eweditor.js" type="simple" action="add" ofolderid="_js" ofile="eweditor" oext="js" ifiles="eweditor.js" />
+</ew-extension>

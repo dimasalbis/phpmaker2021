@@ -1,0 +1,1731 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<phpmaker.codebase date="2020/09/07" version="17.0.0" desc="default codebase" author="e.World Technology Ltd.">
+    <!-- Note: You can localize the "desc" and "for" attributes in the following XML only, DO NOT LOCALIZE OTHER ATTRIBUTES! -->
+    <!-- Server Events / Client Scripts List -->
+    <customscripts type="Server" desc="Server Events">
+        <scriptcode type="Global" desc="Global">
+            <scripts for="All Pages">
+                <script name="Page_Head" />
+                <script name="Page_Foot" />
+                <script name="Database_Connecting" />
+                <script name="Database_Connected" />
+                <script name="Language_Load" /><!-- v12 -->
+                <script name="Route_Action" /><!-- v2021 -->
+                <script name="Api_Action" /><!-- v2021 -->
+                <script name="Container_Build" /><!-- v2021 -->
+                <script name="Page_Loading" />
+                <script name="Page_Rendering" />
+                <script name="Page_Unloaded" />
+                <script name="Global Code" />
+                <!-- User_CustomValidate event -->
+                <script name="User_CustomValidate" />
+                <!-- Ldap_Validated event -->
+                <script name="Ldap_Validated" /><!-- v2018 -->
+                <!-- User_Validated event -->
+                <script name="User_Validated" />
+                <!-- UserLevel_Loaded event -->
+                <script name="UserLevel_Loaded" />
+                <!-- UserID_Loading event -->
+                <script name="UserID_Loading" />
+                <!-- UserID_Loaded event -->
+                <script name="UserID_Loaded" />
+                <!-- TablePermission_Loading event -->
+                <script name="TablePermission_Loading" />
+                <!-- TablePermission_Loaded event -->
+                <script name="TablePermission_Loaded" />
+                <!-- MenuItem_Adding event -->
+                <script name="MenuItem_Adding" />
+                <!-- Menu_Rendering event -->
+                <script name="Menu_Rendering" />
+                <!-- Menu_Rendered event -->
+                <script name="Menu_Rendered" />
+                <!-- User_PasswordExpired event -->
+                <script name="User_PasswordExpired" />
+                <!-- AuditTrail_Inserting event -->
+                <script name="AuditTrail_Inserting" /><!-- v12 -->
+                <!-- PersonalData_Downloading event -->
+                <script name="PersonalData_Downloading" /><!-- v2019 -->
+                <!-- PersonalData_Deleted event -->
+                <script name="PersonalData_Deleted" /><!-- v2019 -->
+                <!-- Chart_Rendered event -->
+                <script name="Chart_Rendered" /><!-- v2020 -->
+            </scripts>
+        </scriptcode>
+        <scriptcode type="Table" desc="Table-Specific">
+            <scripts for="Common">
+                <script name="Recordset_Selecting" />
+                <script name="Recordset_Selected" />
+                <script name="Recordset_Searching" />
+                <script name="Recordset_SearchValidated" />
+                <script name="Row_Deleting" />
+                <script name="Row_Deleted" />
+                <script name="Row_Inserting" />
+                <script name="Row_Inserted" />
+                <script name="Row_Rendering" />
+                <script name="Row_Rendered" />
+                <script name="Row_Selecting" />
+                <script name="Row_Selected" />
+                <script name="Row_Updating" />
+                <script name="Row_Updated" />
+                <script name="Row_UpdateConflict" />
+                <script name="Grid_Inserting" /><!-- v11 -->
+                <script name="Grid_Inserted" /><!-- v11 -->
+                <script name="Grid_Updating" /><!-- v11 -->
+                <script name="Grid_Updated" /><!-- v11 -->
+                <!-- Email sending event -->
+                <script name="Email_Sending" />
+                <!-- User ID filtering event -->
+                <script name="UserID_Filtering" />
+                <!-- Lookup selecting event -->
+                <script name="Lookup_Selecting" />
+            </scripts>
+            <scripts for="Add/Copy Page" id="add">
+                <script name="Page_Load" />
+                <script name="Page_Render" />
+                <script name="Page_Unload" />
+                <script name="Page_Redirecting" />
+                <script name="Message_Showing" />
+                <script name="Page_DataRendering" />
+                <script name="Page_DataRendered" />
+                <!-- Form custom validate event -->
+                <script name="Form_CustomValidate" />
+            </scripts>
+            <scripts for="Delete Page" id="delete">
+                <script name="Page_Load" />
+                <script name="Page_Render" />
+                <script name="Page_Unload" />
+                <script name="Page_Redirecting" />
+                <script name="Message_Showing" />
+                <script name="Page_DataRendering" />
+                <script name="Page_DataRendered" />
+            </scripts>
+            <scripts for="Edit Page" id="edit">
+                <script name="Page_Load" />
+                <script name="Page_Render" />
+                <script name="Page_Unload" />
+                <script name="Page_Redirecting" />
+                <script name="Message_Showing" />
+                <script name="Page_DataRendering" />
+                <script name="Page_DataRendered" />
+                <!-- Form custom validate event -->
+                <script name="Form_CustomValidate" />
+            </scripts>
+            <scripts for="List Page" id="list">
+                <script name="Page_Load" />
+                <script name="Page_Render" />
+                <script name="Page_Unload" />
+                <script name="Page_Redirecting" />
+                <script name="Message_Showing" />
+                <script name="Page_DataRendering" />
+                <script name="Page_DataRendered" />
+                <!-- Form custom validate event -->
+                <script name="Form_CustomValidate" />
+                <script name="ListOptions_Load" />
+                <script name="ListOptions_Rendering" /><!-- v2018 -->
+                <script name="ListOptions_Rendered" />
+                <script name="Row_CustomAction" />
+                <script name="Page_Exporting" /><!-- v11 -->
+                <script name="Row_Export" /><!-- v11 -->
+                <script name="Page_Exported" /><!-- v11 -->
+                <script name="Page_Importing" /><!-- v2019 -->
+                <script name="Row_Import" /><!-- v2019 -->
+                <script name="Page_Imported" /><!-- v2019 -->
+            </scripts>
+            <scripts for="Multi-Update Page" id="update">
+                <script name="Page_Load" />
+                <script name="Page_Render" />
+                <script name="Page_Unload" />
+                <script name="Page_Redirecting" />
+                <script name="Message_Showing" />
+                <script name="Page_DataRendering" />
+                <script name="Page_DataRendered" />
+                <!-- Form custom validate event -->
+                <script name="Form_CustomValidate" />
+            </scripts>
+            <scripts for="Search Page" id="search">
+                <script name="Page_Load" />
+                <script name="Page_Render" />
+                <script name="Page_Unload" />
+                <script name="Page_Redirecting" />
+                <script name="Message_Showing" />
+                <script name="Page_DataRendering" />
+                <script name="Page_DataRendered" />
+                <!-- Form custom validate event -->
+                <script name="Form_CustomValidate" />
+            </scripts>
+            <scripts for="View Page" id="view">
+                <script name="Page_Load" />
+                <script name="Page_Render" />
+                <script name="Page_Unload" />
+                <script name="Page_Redirecting" />
+                <script name="Message_Showing" />
+                <script name="Page_DataRendering" />
+                <script name="Page_DataRendered" />
+                <script name="Page_Exporting" /><!-- v11 -->
+                <script name="Row_Export" /><!-- v11 -->
+                <script name="Page_Exported" /><!-- v11 -->
+            </scripts>
+            <scripts for="Preview Page" id="preview">
+                <script name="Page_Load" />
+                <script name="Page_Render" />
+                <script name="Page_Unload" />
+                <script name="Page_Redirecting" />
+                <script name="Message_Showing" />
+                <script name="Page_DataRendering" />
+                <script name="Page_DataRendered" />
+                <script name="ListOptions_Load" /><!-- v11 -->
+                <script name="ListOptions_Rendering" /><!-- v2018 -->
+                <script name="ListOptions_Rendered" /><!-- v11 -->
+            </scripts>
+            <scripts for="Add Option Page" id="addopt"><!-- 2019 -->
+                <script name="Page_Load" />
+                <script name="Page_Render" />
+                <script name="Page_Unload" />
+                <script name="Message_Showing" />
+                <script name="Page_DataRendering" />
+                <script name="Page_DataRendered" />
+            </scripts>
+            <scripts for="Detail Grid Page" id="grid"><!-- 2019 -->
+                <script name="ListOptions_Load" />
+                <script name="ListOptions_Rendering" />
+                <script name="ListOptions_Rendered" />
+            </scripts>
+            <scripts for="Summary Report" id="summary"><!-- 2020 -->
+                <script name="Page_Load" />
+                <script name="Page_Render" />
+                <script name="Page_Unload" />
+                <script name="Page_FilterLoad" />
+                <script name="Page_Selecting" />
+                <script name="Page_FilterValidated" />
+                <script name="Page_Filtering" />
+                <script name="Page_DataRendering" />
+                <script name="Page_DataRendered" />
+                <script name="Page_Breaking" />
+                <script name="Row_Rendering" />
+                <script name="Cell_Rendered" />
+                <script name="Row_Rendered" />
+                <script name="Email_Sending" />
+                <script name="Message_Showing" />
+                <script name="Form_CustomValidate" />
+                <script name="UserID_Filtering" />
+                <script name="Lookup_Selecting" />
+            </scripts>
+            <scripts for="Crosstab Report" id="crosstab"><!-- 2020 -->
+                <script name="Page_Load" />
+                <script name="Page_Render" />
+                <script name="Page_Unload" />
+                <script name="Page_FilterLoad" />
+                <script name="Page_Selecting" />
+                <script name="Page_FilterValidated" />
+                <script name="Page_Filtering" />
+                <script name="Page_DataRendering" />
+                <script name="Page_DataRendered" />
+                <script name="Page_Breaking" />
+                <script name="Row_Rendering" />
+                <script name="Cell_Rendered" />
+                <script name="Row_Rendered" />
+                <script name="Email_Sending" />
+                <script name="Message_Showing" />
+                <script name="Form_CustomValidate" />
+                <script name="UserID_Filtering" />
+                <script name="Lookup_Selecting" />
+            </scripts>
+            <scripts for="Dashboard" id="dashboard"><!-- 2020 -->
+                <script name="Page_Load" />
+                <script name="Page_Render" />
+                <script name="Page_DataRendering" />
+                <script name="Page_DataRendered" />
+                <script name="Page_Unload" />
+                <script name="Message_Showing" />
+            </scripts>
+            <scripts for="Custom" id="custom"><!-- 2021 -->
+                <script name="Page_Load" />
+                <script name="Page_Render" />
+                <script name="Page_Unload" />
+            </scripts>
+        </scriptcode>
+        <scriptcode type="Other" desc="Other">
+            <scripts for="Login Page" id="login">
+                <script name="Page_Load" />
+                <script name="Page_Render" />
+                <script name="Page_Unload" />
+                <script name="Page_Redirecting" />
+                <script name="Message_Showing" />
+                <script name="Page_DataRendering" />
+                <script name="Page_DataRendered" />
+                <script name="User_LoggingIn" />
+                <script name="User_LoggedIn" />
+                <!-- Form custom validate event -->
+                <script name="Form_CustomValidate" />
+                <!-- Login error event -->
+                <script name="User_LoginError" />
+            </scripts>
+            <scripts for="Logout Page" id="logout">
+                <script name="Page_Load" />
+                <script name="Page_Unload" />
+                <script name="Page_Redirecting" />
+                <script name="Message_Showing" />
+                <script name="User_LoggingOut" />
+                <script name="User_LoggedOut" />
+            </scripts>
+            <scripts for="Registration Page" id="register">
+                <script name="Page_Load" />
+                <script name="Page_Render" />
+                <script name="Page_Unload" />
+                <script name="Page_Redirecting" />
+                <script name="Message_Showing" />
+                <script name="Page_DataRendering" />
+                <script name="Page_DataRendered" />
+                <!-- Email sending event -->
+                <script name="Email_Sending" />
+                <!-- Form custom validate event -->
+                <script name="Form_CustomValidate" />
+                <!-- User_Registered event -->
+                <script name="User_Registered" />
+                <!-- User_Activated event -->
+                <script name="User_Activated" />
+            </scripts>
+            <scripts for="Change Password Page" id="change_password">
+                <script name="Page_Load" />
+                <script name="Page_Render" />
+                <script name="Page_Unload" />
+                <script name="Page_Redirecting" />
+                <script name="Message_Showing" />
+                <script name="Page_DataRendering" />
+                <script name="Page_DataRendered" />
+                <!-- Email sending event -->
+                <script name="Email_Sending" />
+                <!-- Form custom validate event -->
+                <script name="Form_CustomValidate" />
+                <!-- User_ChangePassword event -->
+                <script name="User_ChangePassword" />
+            </scripts>
+            <scripts for="Password Recovery Page" id="reset_password">
+                <script name="Page_Load" />
+                <script name="Page_Render" />
+                <script name="Page_Unload" />
+                <script name="Page_Redirecting" />
+                <script name="Message_Showing" />
+                <script name="Page_DataRendering" />
+                <script name="Page_DataRendered" />
+                <!-- Email sending event -->
+                <script name="Email_Sending" />
+                <!-- Form custom validate event -->
+                <script name="Form_CustomValidate" />
+                <!-- User_RecoverPassword event -->
+                <script name="User_RecoverPassword" />
+            </scripts>
+        </scriptcode>
+    </customscripts>
+    <customscripts type="Client" desc="Client Scripts">
+        <scriptcode type="Global" desc="Global">
+            <scripts for="Pages with header/footer">
+                <script name="Client Script" />
+                <script name="Startup Script" />
+                <script name="Global Code" />
+            </scripts>
+        </scriptcode>
+        <scriptcode type="Table" desc="Table-Specific">
+            <scripts for="Add/Copy Page" id="add">
+                <script name="Client Script" />
+                <script name="Startup Script" />
+                <!-- Form custom validate event -->
+                <script name="Form_CustomValidate" />
+            </scripts>
+            <scripts for="Delete Page" id="delete">
+                <script name="Client Script" />
+                <script name="Startup Script" />
+            </scripts>
+            <scripts for="Edit Page" id="edit">
+                <script name="Client Script" />
+                <script name="Startup Script" />
+                <!-- Form custom validate event -->
+                <script name="Form_CustomValidate" />
+            </scripts>
+            <scripts for="List Page" id="list">
+                <script name="Client Script" />
+                <script name="Startup Script" />
+                <!-- Form custom validate event -->
+                <script name="Form_CustomValidate" />
+            </scripts>
+            <scripts for="Multi-Update Page" id="update">
+                <script name="Client Script" />
+                <script name="Startup Script" />
+                <!-- Form custom validate event -->
+                <script name="Form_CustomValidate" />
+            </scripts>
+            <scripts for="Search Page" id="search">
+                <script name="Client Script" />
+                <script name="Startup Script" />
+                <!-- Form custom validate event -->
+                <script name="Form_CustomValidate" />
+            </scripts>
+            <scripts for="View Page" id="view">
+                <script name="Client Script" />
+                <script name="Startup Script" />
+            </scripts>
+            <scripts for="Add Option Page" id="addopt"><!-- 2019 -->
+                <script name="Client Script" />
+                <script name="Startup Script" />
+                <!-- Form custom validate event -->
+                <script name="Form_CustomValidate" />
+            </scripts>
+            <scripts for="Summary Report" id="summary">
+                <script name="Client Script" />
+                <script name="Startup Script" />
+                <script name="Form_CustomValidate" />
+            </scripts>
+            <scripts for="Crosstab Report" id="crosstab">
+                <script name="Client Script" />
+                <script name="Startup Script" />
+                <script name="Form_CustomValidate" />
+            </scripts>
+            <scripts for="Dashboard" id="dashboard">
+                <script name="Client Script" />
+                <script name="Startup Script" />
+            </scripts>
+        </scriptcode>
+        <scriptcode type="Other" desc="Other">
+            <scripts for="Login Page" id="login">
+                <script name="Client Script" />
+                <script name="Startup Script" />
+                <!-- Form custom validate event -->
+                <script name="Form_CustomValidate" />
+            </scripts>
+            <scripts for="Registration Page" id="register">
+                <script name="Client Script" />
+                <script name="Startup Script" />
+                <!-- Form custom validate event -->
+                <script name="Form_CustomValidate" />
+            </scripts>
+            <scripts for="Change Password Page" id="change_password">
+                <script name="Client Script" />
+                <script name="Startup Script" />
+                <!-- Form custom validate event -->
+                <script name="Form_CustomValidate" />
+            </scripts>
+            <scripts for="Password Recovery Page" id="reset_password">
+                <script name="Client Script" />
+                <script name="Startup Script" />
+                <!-- Form custom validate event -->
+                <script name="Form_CustomValidate" />
+            </scripts>
+        </scriptcode>
+    </customscripts>
+    <!-- Custom Templates -->
+    <customscripts type="Template" desc="Custom Templates">
+        <scriptcode type="Table" desc="Table-Specific">
+            <scripts for="Add/Copy Page" id="add">
+                <script name="CustomTemplate" />
+            </scripts>
+            <scripts for="Delete Page" id="delete">
+                <script name="CustomTemplateHeader" />
+                <script name="CustomTemplateBody" />
+                <script name="CustomTemplateFooter" />
+            </scripts>
+            <scripts for="Edit Page" id="edit">
+                <script name="CustomTemplate" />
+            </scripts>
+            <scripts for="List Page" id="list">
+                <script name="CustomTemplateSearch" />
+                <script name="CustomTemplateHeader" />
+                <script name="CustomTemplateBody" />
+                <script name="CustomTemplateFooter" />
+            </scripts>
+            <scripts for="Search Page" id="search">
+                <script name="CustomTemplate" />
+            </scripts>
+            <scripts for="View Page" id="view">
+                <script name="CustomTemplate" />
+            </scripts>
+            <scripts for="Master Record Page" id="master">
+                <script name="CustomTemplate" />
+            </scripts>
+            <scripts for="Custom File" id="custom">
+                <script name="Content" />
+            </scripts>
+            <scripts for="Dashboard" id="dashboard">
+                <script name="CustomTemplate" />
+            </scripts>
+            <scripts for="Summary Report" id="summary">
+                <script name="CustomTemplateHeader" />
+                <script name="CustomTemplateGroupHeader" />
+                <script name="CustomTemplateGroupHeader2" />
+                <script name="CustomTemplateGroupHeader3" />
+                <script name="CustomTemplateGroupHeader4" />
+                <script name="CustomTemplateGroupHeader5" />
+                <script name="CustomTemplateGroupHeader6" />
+                <script name="CustomTemplateBody" />
+                <script name="CustomTemplateGroupFooter6" />
+                <script name="CustomTemplateGroupFooter5" />
+                <script name="CustomTemplateGroupFooter4" />
+                <script name="CustomTemplateGroupFooter3" />
+                <script name="CustomTemplateGroupFooter2" />
+                <script name="CustomTemplateGroupFooter" />
+                <script name="CustomTemplateFooter" />
+            </scripts>
+        </scriptcode>
+        <scriptcode type="Other" desc="Other">
+            <scripts for="Registration Page" id="register">
+                <script name="CustomTemplate" />
+            </scripts>
+        </scriptcode>
+    </customscripts>
+    <!-- Server Events / Client Scripts Code Templates -->
+    <!--
+    Database Connecting
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="Database_Connecting" Language="PHP">
+        <![CDATA[
+// Database Connecting event
+function Database_Connecting(&$info)
+{
+    // Example:
+    //var_dump($info);
+    //if ($info["id"] == "DB" && IsLocal()) { // Testing on local PC
+    //    $info["host"] = "locahost";
+    //    $info["user"] = "root";
+    //    $info["pass"] = "";
+    //}
+}
+]]>
+    </Code>
+    <!--
+    Database Connected
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="Database_Connected" Language="PHP">
+        <![CDATA[
+// Database Connected event
+function Database_Connected(&$conn)
+{
+    // Example:
+    //if ($conn->info["id"] == "DB") {
+    //    $conn->executeQuery("Your SQL");
+    //}
+}
+]]>
+    </Code>
+    <!--
+    Language Load - v12
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="Language_Load" Language="PHP">
+        <![CDATA[
+// Language Load event
+function Language_Load()
+{
+    // Example:
+    //$this->setPhrase("MyID", "MyValue"); // Refer to language file for the actual phrase id
+    //$this->setPhraseClass("MyID", "fas fa-xxx ew-icon"); // Refer to https://fontawesome.com/icons?d=gallery&m=free [^] for icon name
+}
+]]>
+    </Code>
+    <!--
+    Route Action
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="Route_Action" Language="PHP">
+        <![CDATA[
+// Route Action event
+function Route_Action($app)
+{
+    // Example:
+    // $app->get('/myaction', function ($request, $response, $args) {
+    //    return $response->withJson(["name" => "myaction"]); // Note: Always return Psr\Http\Message\ResponseInterface object
+    // });
+    // $app->get('/myaction2', function ($request, $response, $args) {
+    //    return $response->withJson(["name" => "myaction2"]); // Note: Always return Psr\Http\Message\ResponseInterface object
+    // });
+}
+]]>
+    </Code>
+    <!--
+    API Action
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="Api_Action" Language="PHP">
+        <![CDATA[
+// API Action event
+function Api_Action($app)
+{
+    // Example:
+    // $app->get('/myaction', function ($request, $response, $args) {
+    //    return $response->withJson(["name" => "myaction"]); // Note: Always return Psr\Http\Message\ResponseInterface object
+    // });
+    // $app->get('/myaction2', function ($request, $response, $args) {
+    //    return $response->withJson(["name" => "myaction2"]); // Note: Always return Psr\Http\Message\ResponseInterface object
+    // });
+}
+]]>
+    </Code>
+    <!--
+    Container Build
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="Container_Build" Language="PHP">
+        <![CDATA[
+// Container Build event
+function Container_Build($builder)
+{
+    // Example:
+    // $builder->addDefinitions([
+    //    "myservice" => function (ContainerInterface $c) {
+    //        // your code to provide the service, e.g.
+    //        return new MyService();
+    //    },
+    //    "myservice2" => function (ContainerInterface $c) {
+    //        // your code to provide the service, e.g.
+    //        return new MyService2();
+    //    }
+    // ]);
+}
+]]>
+    </Code>
+    <!--
+    Page Loading
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="Page_Loading" Language="PHP">
+        <![CDATA[
+// Page Loading event
+function Page_Loading()
+{
+    //Log("Page Loading");
+}
+]]>
+    </Code>
+    <!--
+    Page Rendering
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="Page_Rendering" Language="PHP">
+        <![CDATA[
+// Page Rendering event
+function Page_Rendering()
+{
+    //Log("Page Rendering");
+}
+]]>
+    </Code>
+    <!--
+    Page Unloaded
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="Page_Unloaded" Language="PHP">
+        <![CDATA[
+// Page Unloaded event
+function Page_Unloaded()
+{
+    //Log("Page Unloaded");
+}
+]]>
+    </Code>
+    <!--
+    User Level Loaded
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="UserLevel_Loaded" Language="PHP">
+        <![CDATA[
+// User Level Loaded event
+function UserLevel_Loaded()
+{
+    //$this->AddUserPermission(<UserLevelName>, <TableName>, <UserPermission>);
+    //$this->DeleteUserPermission(<UserLevelName>, <TableName>, <UserPermission>);
+}
+]]>
+    </Code>
+    <!--
+    Table Permission Loading
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="TablePermission_Loading" Language="PHP">
+        <![CDATA[
+// Table Permission Loading event
+function TablePermission_Loading()
+{
+    //Log("Table Permission Loading: " . $this->CurrentUserLevelID);
+}
+]]>
+    </Code>
+    <!--
+    Table Permission Loaded
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="TablePermission_Loaded" Language="PHP">
+        <![CDATA[
+// Table Permission Loaded event
+function TablePermission_Loaded()
+{
+    //Log("Table Permission Loaded: " . $this->CurrentUserLevel);
+}
+]]>
+    </Code>
+    <!--
+    UserID Loading
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="UserID_Loading" Language="PHP">
+        <![CDATA[
+// UserID Loading event
+function UserID_Loading()
+{
+    //Log("UserID Loading: " . $this->currentUserID());
+}
+]]>
+    </Code>
+    <!--
+    User ID Loaded
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="UserID_Loaded" Language="PHP">
+        <![CDATA[
+// UserID Loaded event
+function UserID_Loaded()
+{
+    //Log("UserID Loaded: " . $this->userIDList());
+}
+]]>
+    </Code>
+    <!--
+    User Custom Validate
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="User_CustomValidate" Language="PHP">
+        <![CDATA[
+// User Custom Validate event
+function User_CustomValidate(&$usr, &$pwd)
+{
+    // Enter your custom code to validate user, return true if valid.
+    return false;
+}
+]]>
+    </Code>
+    <!--
+    LDAP Validated (Global)
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="Ldap_Validated" Language="PHP">
+        <![CDATA[
+// LDAP Validated event
+function Ldap_Validated(&$usr, &$pwd)
+{
+    // Do something (if any) after binding an user successfully
+    return true; // Return true/false to validate the user
+}
+]]>
+    </Code>
+    <!--
+    User Validated
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="User_Validated" Language="PHP">
+        <![CDATA[
+// User Validated event
+function User_Validated(&$rs)
+{
+    // Example:
+    //$_SESSION['UserEmail'] = $rs['Email'];
+}
+]]>
+    </Code>
+    <!--
+    MenuItem Adding
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="MenuItem_Adding" Language="PHP">
+        <![CDATA[
+function MenuItem_Adding($item)
+{
+    //var_dump($item);
+    // Return false if menu item not allowed
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    Menu Rendering
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="Menu_Rendering" Language="PHP">
+        <![CDATA[
+function Menu_Rendering($menu)
+{
+    // Change menu items here
+}
+]]>
+    </Code>
+    <!--
+    Menu Rendered
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="Menu_Rendered" Language="PHP">
+        <![CDATA[
+function Menu_Rendered($menu)
+{
+    // Clean up here
+}
+]]>
+    </Code>
+    <!--
+    User PasswordExpired (Global)
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="User_PasswordExpired" Language="PHP">
+        <![CDATA[
+// User PasswordExpired event
+function User_PasswordExpired(&$rs)
+{
+    //Log("User_PasswordExpired");
+}
+]]>
+    </Code>
+    <!--
+    AuditTrail Inserting (Global) - v12
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="AuditTrail_Inserting" Language="PHP">
+        <![CDATA[
+// AuditTrail Inserting event
+function AuditTrail_Inserting(&$rsnew)
+{
+    //var_dump($rsnew);
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    Personal Data Downloading (Global) - v2019
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="PersonalData_Downloading" Language="PHP">
+        <![CDATA[
+// Personal Data Downloading event
+function PersonalData_Downloading(&$row)
+{
+    //Log("PersonalData Downloading");
+}
+        ]]>
+    </Code>
+    <!--
+    Personal Data Deleted (Global) - v2019
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="PersonalData_Deleted" Language="PHP">
+        <![CDATA[
+// Personal Data Deleted event
+function PersonalData_Deleted($row)
+{
+    //Log("PersonalData Deleted");
+}
+        ]]>
+    </Code>
+    <!--
+    Chart Rendered (Global)
+-->
+    <Code ScriptType="Server" CodeType="Global" Name="Chart_Rendered" Language="PHP">
+        <![CDATA[
+// Chart Rendered event
+function Chart_Rendered($chart)
+{
+    // Example:
+    // $chartData = &$chart->Data;
+    // $chartOptions = &$chart->Options;
+    // var_dump($this->ID, $chartData, $chartOptions); // View chart ID, data and options
+    // if ($this->ID == "<Report>_<Chart>") { // Check chart ID
+    // Your code to customize $chartData and/or $chartOptions;
+    // }
+}
+]]>
+    </Code>
+    <!--
+    Page Load (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Page_Load" Language="PHP">
+        <![CDATA[
+// Page Load event
+function Page_Load()
+{
+    //Log("Page Load");
+}
+]]>
+    </Code>
+    <!--
+    Page Render (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Page_Render" Language="PHP">
+        <![CDATA[
+// Page Render event
+function Page_Render()
+{
+    //Log("Page Render");
+}
+]]>
+    </Code>
+    <!--
+    Page Unload (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Page_Unload" Language="PHP">
+        <![CDATA[
+// Page Unload event
+function Page_Unload()
+{
+    //Log("Page Unload");
+}
+]]>
+    </Code>
+    <!--
+    Page Redirecting (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Page_Redirecting" Language="PHP">
+        <![CDATA[
+// Page Redirecting event
+function Page_Redirecting(&$url)
+{
+    // Example:
+    //$url = "your URL";
+}
+]]>
+    </Code>
+    <!--
+    Message Showing (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Message_Showing" Language="PHP">
+        <![CDATA[
+// Message Showing event
+// $type = ''|'success'|'failure'|'warning'
+function Message_Showing(&$msg, $type)
+{
+    if ($type == 'success') {
+        //$msg = "your success message";
+    } elseif ($type == 'failure') {
+        //$msg = "your failure message";
+    } elseif ($type == 'warning') {
+        //$msg = "your warning message";
+    } else {
+        //$msg = "your message";
+    }
+}
+]]>
+    </Code>
+    <!--
+    Page Data Rendering (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Page_DataRendering" Language="PHP">
+        <![CDATA[
+// Page Data Rendering event
+function Page_DataRendering(&$header)
+{
+    // Example:
+    //$header = "your header";
+}
+]]>
+    </Code>
+    <!--
+    Page Data Rendered (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Page_DataRendered" Language="PHP">
+        <![CDATA[
+// Page Data Rendered event
+function Page_DataRendered(&$footer)
+{
+    // Example:
+    //$footer = "your footer";
+}
+]]>
+    </Code>
+    <!--
+    Email Sending (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Email_Sending" Language="PHP">
+        <![CDATA[
+// Email Sending event
+function Email_Sending($email, &$args)
+{
+    //var_dump($email); var_dump($args); exit();
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    Form Custom Validate (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Form_CustomValidate" Language="PHP">
+        <![CDATA[
+// Form Custom Validate event
+function Form_CustomValidate(&$customError)
+{
+    // Return error message in CustomError
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    User ID Filtering (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="UserID_Filtering" Language="PHP">
+        <![CDATA[
+// User ID Filtering event
+function UserID_Filtering(&$filter)
+{
+    // Enter your code here
+}
+]]>
+    </Code>
+    <!--
+    Lookup Selecting (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Lookup_Selecting" Language="PHP">
+        <![CDATA[
+// Lookup Selecting event
+function Lookup_Selecting($fld, &$filter)
+{
+    //var_dump($fld->Name, $fld->Lookup, $filter); // Uncomment to view the filter
+    // Enter your code here
+}
+]]>
+    </Code>
+    <!--
+    Page Exporting (Table) - v11
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Page_Exporting" Language="PHP">
+        <![CDATA[
+// Page Exporting event
+// $this->ExportDoc = export document object
+function Page_Exporting()
+{
+    //$this->ExportDoc->Text = "my header"; // Export header
+    //return false; // Return false to skip default export and use Row_Export event
+    return true; // Return true to use default export and skip Row_Export event
+}
+]]>
+    </Code>
+    <!--
+    Row Export (Table) - v11
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Row_Export" Language="PHP">
+        <![CDATA[
+// Row Export event
+// $this->ExportDoc = export document object
+function Row_Export($rs)
+{
+    //$this->ExportDoc->Text .= "my content"; // Build HTML with field value: $rs["MyField"] or $this->MyField->ViewValue
+}
+]]>
+    </Code>
+    <!--
+    Page Exported (Table) - v11
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Page_Exported" Language="PHP">
+        <![CDATA[
+// Page Exported event
+// $this->ExportDoc = export document object
+function Page_Exported()
+{
+    //$this->ExportDoc->Text .= "my footer"; // Export footer
+    //Log($this->ExportDoc->Text);
+}
+]]>
+    </Code>
+    <!--
+    Page Importing (Table) - v2019
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Page_Importing" Language="PHP">
+        <![CDATA[
+// Page Importing event
+function Page_Importing($reader, &$options)
+{
+    //var_dump($reader); // Import data reader
+    //var_dump($options); // Show all options for importing
+    //return false; // Return false to skip import
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    Row Import (Table) - v2019
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Row_Import" Language="PHP">
+        <![CDATA[
+// Row Import event
+function Row_Import(&$row, $cnt)
+{
+    //Log($cnt); // Import record count
+    //var_dump($row); // Import row
+    //return false; // Return false to skip import
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    Page Imported (Table) - v2019
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Page_Imported" Language="PHP">
+        <![CDATA[
+// Page Imported event
+function Page_Imported($reader, $results)
+{
+    //var_dump($reader); // Import data reader
+    //var_dump($results); // Import results
+}
+]]>
+    </Code>
+    <!--
+    Page Load (Other)
+-->
+    <Code ScriptType="Server" CodeType="Other" Name="Page_Load" Language="PHP">
+        <![CDATA[
+// Page Load event
+function Page_Load()
+{
+    //Log("Page Load");
+}
+]]>
+    </Code>
+    <!--
+    Page Rendering (Other)
+-->
+    <Code ScriptType="Server" CodeType="Other" Name="Page_Render" Language="PHP">
+        <![CDATA[
+// Page Render event
+function Page_Render()
+{
+    //Log("Page Render");
+}
+]]>
+    </Code>
+    <!--
+    Page Unload (Other)
+-->
+    <Code ScriptType="Server" CodeType="Other" Name="Page_Unload" Language="PHP">
+        <![CDATA[
+// Page Unload event
+function Page_Unload()
+{
+    //Log("Page Unload");
+}
+]]>
+    </Code>
+
+    <!--
+    Page Redirecting (Other)
+-->
+    <Code ScriptType="Server" CodeType="Other" Name="Page_Redirecting" Language="PHP">
+        <![CDATA[
+// Page Redirecting event
+function Page_Redirecting(&$url)
+{
+    // Example:
+    //$url = "your URL";
+}
+]]>
+    </Code>
+    <!--
+    Message Showing (Other)
+-->
+    <Code ScriptType="Server" CodeType="Other" Name="Message_Showing" Language="PHP">
+        <![CDATA[
+// Message Showing event
+// $type = ''|'success'|'failure'
+function Message_Showing(&$msg, $type)
+{
+    // Example:
+    //if ($type == 'success') $msg = "your success message";
+}
+]]>
+    </Code>
+    <!--
+    Page Data Rendering (Other)
+-->
+    <Code ScriptType="Server" CodeType="Other" Name="Page_DataRendering" Language="PHP">
+        <![CDATA[
+// Page Data Rendering event
+function Page_DataRendering(&$header)
+{
+    // Example:
+    //$header = "your header";
+}
+]]>
+    </Code>
+    <!--
+    Page Data Rendered (Table)
+-->
+    <Code ScriptType="Server" CodeType="Other" Name="Page_DataRendered" Language="PHP">
+        <![CDATA[
+// Page Data Rendered event
+function Page_DataRendered(&$footer)
+{
+    // Example:
+    //$footer = "your footer";
+}
+]]>
+    </Code>
+    <!--
+    Email Sending (Other)
+-->
+    <Code ScriptType="Server" CodeType="Other" Name="Email_Sending" Language="PHP">
+        <![CDATA[
+// Email Sending event
+function Email_Sending($email, &$args)
+{
+    //var_dump($email); var_dump($args); exit();
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    Form Custom Validate (Other)
+-->
+    <Code ScriptType="Server" CodeType="Other" Name="Form_CustomValidate" Language="PHP">
+        <![CDATA[
+// Form Custom Validate event
+function Form_CustomValidate(&$customError)
+{
+    // Return error message in CustomError
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    Recordset Selecting (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Recordset_Selecting" Language="PHP">
+        <![CDATA[
+// Recordset Selecting event
+function Recordset_Selecting(&$filter)
+{
+    // Enter your code here
+}
+]]>
+    </Code>
+    <!--
+    Recordset Selected (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Recordset_Selected" Language="PHP">
+        <![CDATA[
+// Recordset Selected event
+function Recordset_Selected(&$rs)
+{
+    //Log("Recordset Selected");
+}
+]]>
+    </Code>
+    <!--
+    Recordset Searching (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Recordset_Searching" Language="PHP">
+        <![CDATA[
+// Recordset Searching event
+function Recordset_Searching(&$filter)
+{
+    // Enter your code here
+}
+]]>
+    </Code>
+    <!--
+    Recordset SearchValidated (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Recordset_SearchValidated" Language="PHP">
+        <![CDATA[
+// Recordset Search Validated event
+function Recordset_SearchValidated()
+{
+    // Example:
+    //$this->MyField1->AdvancedSearch->SearchValue = "your search criteria"; // Search value
+}
+]]>
+    </Code>
+    <!--
+    Row Selecting (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Row_Selecting" Language="PHP">
+        <![CDATA[
+// Row_Selecting event
+function Row_Selecting(&$filter)
+{
+    // Enter your code here
+}
+]]>
+    </Code>
+    <!--
+    Row Selected (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Row_Selected" Language="PHP">
+        <![CDATA[
+// Row Selected event
+function Row_Selected(&$rs)
+{
+    //Log("Row Selected");
+}
+]]>
+    </Code>
+    <!--
+    Row Rendering (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Row_Rendering" Language="PHP">
+        <![CDATA[
+// Row Rendering event
+function Row_Rendering()
+{
+    // Enter your code here
+}
+]]>
+    </Code>
+    <!--
+    Row Rendered (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Row_Rendered" Language="PHP">
+        <![CDATA[
+// Row Rendered event
+function Row_Rendered()
+{
+    // To view properties of field class, use:
+    //var_dump($this-><FieldName>);
+}
+]]>
+    </Code>
+    <!--
+    Row Inserting (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Row_Inserting" Language="PHP">
+        <![CDATA[
+// Row Inserting event
+function Row_Inserting($rsold, &$rsnew)
+{
+    // Enter your code here
+    // To cancel, set return value to false
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    Row Inserted (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Row_Inserted" Language="PHP">
+        <![CDATA[
+// Row Inserted event
+function Row_Inserted($rsold, &$rsnew)
+{
+    //Log("Row Inserted");
+}
+]]>
+    </Code>
+    <!--
+    Row Updating (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Row_Updating" Language="PHP">
+        <![CDATA[
+// Row Updating event
+function Row_Updating($rsold, &$rsnew)
+{
+    // Enter your code here
+    // To cancel, set return value to false
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    Row Updated (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Row_Updated" Language="PHP">
+        <![CDATA[
+// Row Updated event
+function Row_Updated($rsold, &$rsnew)
+{
+    //Log("Row Updated");
+}
+]]>
+    </Code>
+    <Code ScriptType="Server" CodeType="Table" Name="Row_UpdateConflict" Language="PHP">
+        <![CDATA[
+// Row Update Conflict event
+function Row_UpdateConflict($rsold, &$rsnew)
+{
+    // Enter your code here
+    // To ignore conflict, set return value to false
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    Grid Inserting (Table) - v11
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Grid_Inserting" Language="PHP">
+        <![CDATA[
+// Grid Inserting event
+function Grid_Inserting()
+{
+    // Enter your code here
+    // To reject grid insert, set return value to false
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    Grid Inserted (Table) - v11
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Grid_Inserted" Language="PHP">
+        <![CDATA[
+// Grid Inserted event
+function Grid_Inserted($rsnew)
+{
+    //Log("Grid Inserted");
+}
+]]>
+    </Code>
+    <!--
+    Grid Updating (Table) - v11
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Grid_Updating" Language="PHP">
+        <![CDATA[
+// Grid Updating event
+function Grid_Updating($rsold)
+{
+    // Enter your code here
+    // To reject grid update, set return value to false
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    Grid Updated (Table) - v11
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Grid_Updated" Language="PHP">
+        <![CDATA[
+// Grid Updated event
+function Grid_Updated($rsold, $rsnew)
+{
+    //Log("Grid Updated");
+}
+]]>
+    </Code>
+    <!--
+    Recordset Deleting (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Row_Deleting" Language="PHP">
+        <![CDATA[
+// Row Deleting event
+function Row_Deleting(&$rs)
+{
+    // Enter your code here
+    // To cancel, set return value to False
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    Recordset Deleted (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Row_Deleted" Language="PHP">
+        <![CDATA[
+// Row Deleted event
+function Row_Deleted(&$rs)
+{
+    //Log("Row Deleted");
+}
+]]>
+    </Code>
+    <!--
+    User Logging In (Other)
+-->
+    <Code ScriptType="Server" CodeType="Other" Name="User_LoggingIn" Language="PHP">
+        <![CDATA[
+// User Logging In event
+function User_LoggingIn($usr, &$pwd)
+{
+    // Enter your code here
+    // To cancel, set return value to false
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    User Logged In (Other)
+-->
+    <Code ScriptType="Server" CodeType="Other" Name="User_LoggedIn" Language="PHP">
+        <![CDATA[
+// User Logged In event
+function User_LoggedIn($usr)
+{
+    //Log("User Logged In");
+}
+]]>
+    </Code>
+    <!--
+    User Login Error (Other)
+-->
+    <Code ScriptType="Server" CodeType="Other" Name="User_LoginError" Language="PHP">
+        <![CDATA[
+// User Login Error event
+function User_LoginError($usr, $pwd)
+{
+    //Log("User Login Error");
+}
+]]>
+    </Code>
+    <!--
+    User Logging Out (Other)
+-->
+    <Code ScriptType="Server" CodeType="Other" Name="User_LoggingOut" Language="PHP">
+        <![CDATA[
+// User Logging Out event
+function User_LoggingOut($usr)
+{
+    // Enter your code here
+    // To cancel, set return value to false;
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    User Logged Out (Other)
+-->
+    <Code ScriptType="Server" CodeType="Other" Name="User_LoggedOut" Language="PHP">
+        <![CDATA[
+// User Logged Out event
+function User_LoggedOut($usr)
+{
+    //Log("User Logged Out");
+}
+]]>
+    </Code>
+    <!--
+    User Registered (Other)
+-->
+    <Code ScriptType="Server" CodeType="Other" Name="User_Registered" Language="PHP">
+        <![CDATA[
+// User Registered event
+function User_Registered(&$rs)
+{
+    //Log("User_Registered");
+}
+]]>
+    </Code>
+    <!--
+    User Activated (Other)
+-->
+    <Code ScriptType="Server" CodeType="Other" Name="User_Activated" Language="PHP">
+        <![CDATA[
+// User Activated event
+function User_Activated(&$rs)
+{
+    //Log("User_Activated");
+}
+]]>
+    </Code>
+    <!--
+    User RecoverPassword (Other)
+-->
+    <Code ScriptType="Server" CodeType="Other" Name="User_RecoverPassword" Language="PHP">
+        <![CDATA[
+// User RecoverPassword event
+function User_RecoverPassword(&$rs)
+{
+    // Return false to abort
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    User ChangePassword (Other)
+-->
+    <Code ScriptType="Server" CodeType="Other" Name="User_ChangePassword" Language="PHP">
+        <![CDATA[
+// User ChangePassword event
+function User_ChangePassword(&$rs, $usr, $oldpwd, &$newpwd)
+{
+    // Return false to abort
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    List Options Load (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="ListOptions_Load" Language="PHP">
+        <![CDATA[
+// ListOptions Load event
+function ListOptions_Load()
+{
+    // Example:
+    //$opt = &$this->ListOptions->Add("new");
+    //$opt->Header = "xxx";
+    //$opt->OnLeft = true; // Link on left
+    //$opt->MoveTo(0); // Move to first column
+}
+]]>
+    </Code>
+    <!--
+    List Options Rendering (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="ListOptions_Rendering" Language="PHP">
+        <![CDATA[
+// ListOptions Rendering event
+function ListOptions_Rendering()
+{
+    //Container("DetailTableGrid")->DetailAdd = (...condition...); // Set to true or false conditionally
+    //Container("DetailTableGrid")->DetailEdit = (...condition...); // Set to true or false conditionally
+    //Container("DetailTableGrid")->DetailView = (...condition...); // Set to true or false conditionally
+}
+]]>
+    </Code>
+    <!--
+    List Options Rendered (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="ListOptions_Rendered" Language="PHP">
+        <![CDATA[
+// ListOptions Rendered event
+function ListOptions_Rendered()
+{
+    // Example:
+    //$this->ListOptions["new"]->Body = "xxx";
+}
+]]>
+    </Code>
+    <!--
+    Row Custom Action (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Row_CustomAction" Language="PHP">
+        <![CDATA[
+// Row Custom Action event
+function Row_CustomAction($action, $row)
+{
+    // Return false to abort
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    Client Script (Other)
+-->
+    <Code ScriptType="Client" CodeType="Other" Name="Client Script" Language="JavaScript">
+        <![CDATA[
+// Write your client script here, no need to add script tags.
+]]>
+    </Code>
+    <!--
+    Client Script (Table)
+-->
+    <Code ScriptType="Client" CodeType="Table" Name="Client Script" Language="JavaScript">
+        <![CDATA[
+// Write your table-specific client script here, no need to add script tags.
+]]>
+    </Code>
+    <!--
+    Client Script (Global)
+-->
+    <Code ScriptType="Client" CodeType="Global" Name="Client Script" Language="JavaScript">
+        <![CDATA[
+// Write your global client script here, no need to add script tags.
+]]>
+    </Code>
+    <!--
+    Startup Script (Other)
+-->
+    <Code ScriptType="Client" CodeType="Other" Name="Startup Script" Language="JavaScript">
+        <![CDATA[
+// Write your startup script here, no need to add script tags.
+]]>
+    </Code>
+    <!--
+    Startup Script (Table)
+-->
+    <Code ScriptType="Client" CodeType="Table" Name="Startup Script" Language="JavaScript">
+        <![CDATA[
+// Write your table-specific startup script here, no need to add script tags.
+]]>
+    </Code>
+    <!--
+    Startup Script (Global)
+-->
+    <Code ScriptType="Client" CodeType="Global" Name="Startup Script" Language="JavaScript">
+        <![CDATA[
+// Write your global startup script here, no need to add script tags.
+]]>
+    </Code>
+    <!--
+    Form Custom Validate Script (Other)
+-->
+    <Code ScriptType="Client" CodeType="Other" Name="Form_CustomValidate" Language="JavaScript">
+        <![CDATA[
+function(fobj) { // DO NOT CHANGE THIS LINE!
+    // Your custom validation code here, return false if invalid.
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    Form Custom Validate Script (Table)
+-->
+    <Code ScriptType="Client" CodeType="Table" Name="Form_CustomValidate" Language="JavaScript">
+        <![CDATA[
+function(fobj) { // DO NOT CHANGE THIS LINE!
+    // Your custom validation code here, return false if invalid.
+    return true;
+}
+]]>
+    </Code>
+    <!--
+    Page Breaking (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Page_Breaking" Language="PHP">
+        <![CDATA[
+// Page Breaking event
+function Page_Breaking(&$break, &$content)
+{
+    // Example:
+    //$break = false; // Skip page break, or
+    //$content = "<div style=\"page-break-after:always;\">&nbsp;</div>"; // Modify page break content
+}
+]]>
+    </Code>
+    <!--
+    Cell Rendered (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Cell_Rendered" Language="PHP">
+        <![CDATA[
+// Cell Rendered event
+function Cell_Rendered(&$Field, $CurrentValue, &$ViewValue, &$ViewAttrs, &$CellAttrs, &$HrefValue, &$LinkAttrs)
+{
+    //$ViewValue = "xxx";
+    //$ViewAttrs["class"] = "xxx";
+}
+]]>
+    </Code>
+    <!--
+    Load Filters (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Page_FilterLoad" Language="PHP">
+        <![CDATA[
+// Load Filters event
+function Page_FilterLoad()
+{
+    // Enter your code here
+    // Example: Register/Unregister Custom Extended Filter
+    //RegisterFilter($this-><Field>, 'StartsWithA', 'Starts With A', 'GetStartsWithAFilter'); // With function, or
+    //RegisterFilter($this-><Field>, 'StartsWithA', 'Starts With A'); // No function, use Page_Filtering event
+    //UnregisterFilter($this-><Field>, 'StartsWithA');
+}
+]]>
+    </Code>
+    <!--
+    Page Selecting (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Page_Selecting" Language="PHP">
+        <![CDATA[
+// Page Selecting event
+function Page_Selecting(&$filter)
+{
+    // Enter your code here
+}
+]]>
+    </Code>
+    <!--
+    Page Filter Validated (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Page_FilterValidated" Language="PHP">
+        <![CDATA[
+// Page Filter Validated event
+function Page_FilterValidated()
+{
+    // Example:
+    //$this->MyField1->AdvancedSearch->SearchValue = "your search criteria"; // Search value
+}
+]]>
+    </Code>
+    <!--
+    Page Filtering (Table)
+-->
+    <Code ScriptType="Server" CodeType="Table" Name="Page_Filtering" Language="PHP">
+        <![CDATA[
+// Page Filtering event
+function Page_Filtering(&$fld, &$filter, $typ, $opr = "", $val = "", $cond = "", $opr2 = "", $val2 = "")
+{
+    // Note: ALWAYS CHECK THE FILTER TYPE ($typ)! Example:
+    //if ($typ == "dropdown" && $fld->Name == "MyField") // Dropdown filter
+    //    $filter = "..."; // Modify the filter
+    //if ($typ == "extended" && $fld->Name == "MyField") // Extended filter
+    //    $filter = "..."; // Modify the filter
+    //if ($typ == "custom" && $opr == "..." && $fld->Name == "MyField") // Custom filter, $opr is the custom filter ID
+    //    $filter = "..."; // Modify the filter
+}
+]]>
+    </Code>
+</phpmaker.codebase>

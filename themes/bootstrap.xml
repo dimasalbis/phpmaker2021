@@ -1,0 +1,665 @@
+<?xml version="1.0"?>
+<theme name="Bootstrap" version="17.0.3" author="e.World"><!-- NOTE: DO NOT CHANGE THE THEME NAME AND ID! -->
+    <style id="ThemeWhite" value="#ffffff" />
+    <style id="ThemeGray100" value="#f8f9fa" />
+    <style id="ThemeGray200" value="#e9ecef" />
+    <style id="ThemeGray300" value="#dee2e6" />
+    <style id="ThemeGray400" value="#ced4da" />
+    <style id="ThemeGray500" value="#adb5bd" />
+    <style id="ThemeGray600" value="#6c757d" />
+    <style id="ThemeGray700" value="#495057" />
+    <style id="ThemeGray800" value="#343a40" />
+    <style id="ThemeGray900" value="#212529" />
+    <style id="ThemeBlack" value="#000000" />
+    <style id="ThemeBlue" value="#007bff" />
+    <style id="ThemeIndigo" value="#6610f2" />
+    <style id="ThemePurple" value="#6f42c1" />
+    <style id="ThemePink" value="#e83e8c" />
+    <style id="ThemeRed" value="#dc3545" />
+    <style id="ThemeOrange" value="#fd7e14" />
+    <style id="ThemeYellow" value="#ffc107" />
+    <style id="ThemeGreen" value="#28a745" />
+    <style id="ThemeTeal" value="#20c997" />
+    <style id="ThemeCyan" value="#17a2b8" />
+    <style id="ThemePrimary" value="$blue" />
+    <style id="ThemeSecondary" value="$gray-600" />
+    <style id="ThemeSuccess" value="$green" />
+    <style id="ThemeInfo" value="$cyan" />
+    <style id="ThemeWarning" value="$yellow" />
+    <style id="ThemeDanger" value="$red" />
+    <style id="ThemeLight" value="$gray-100" />
+    <style id="ThemeDark" value="$gray-800" />
+    <style id="ThemeThemeColorInterval" value="8%" />
+    <style id="ThemeYiqContrastedThreshold" value="150" />
+    <style id="ThemeYiqTextDark" value="$gray-900" />
+    <style id="ThemeYiqTextLight" value="$white" />
+    <style id="ThemeEscapedCharacters" value="((&#34;&lt;&#34;, &#34;%3c&#34;), (&#34;&gt;&#34;, &#34;%3e&#34;), (&#34;#&#34;, &#34;%23&#34;), (&#34;(&#34;, &#34;%28&#34;), (&#34;)&#34;, &#34;%29&#34;),)" />
+    <style id="ThemeEnableCaret" value="1" />
+    <style id="ThemeEnableRounded" value="1" />
+    <style id="ThemeEnableShadows" value="0" />
+    <style id="ThemeEnableGradients" value="0" />
+    <style id="ThemeEnableTransitions" value="1" />
+    <style id="ThemeEnablePrefersReducedMotionMediaQuery" value="1" />
+    <style id="ThemeEnableHoverMediaQuery" value="0" />
+    <style id="ThemeEnableGridClasses" value="1" />
+    <style id="ThemeEnablePointerCursorForButtons" value="1" />
+    <style id="ThemeEnablePrintStyles" value="1" />
+    <style id="ThemeEnableResponsiveFontSizes" value="0" />
+    <style id="ThemeEnableValidationIcons" value="1" />
+    <style id="ThemeEnableDeprecationMessages" value="1" />
+    <style id="ThemeSpacer" value="1rem" />
+    <style id="ThemeBodyBg" value="$white" />
+    <style id="ThemeBodyColor" value="$gray-900" />
+    <style id="ThemeLinkColor" value="theme-color(&#34;primary&#34;)" />
+    <style id="ThemeLinkDecoration" value="none" />
+    <style id="ThemeLinkHoverColor" value="darken($link-color, 15%)" />
+    <style id="ThemeLinkHoverDecoration" value="underline" />
+    <style id="ThemeEmphasizedLinkHoverDarkenPercentage" value="15%" />
+    <style id="ThemeParagraphMarginBottom" value="1rem" />
+    <style id="ThemeGridBreakpoints" value="(xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)" />
+    <style id="ThemeContainerMaxWidths" value="(sm: 540px, md: 720px, lg: 960px, xl: 1140px)" />
+    <style id="ThemeGridColumns" value="12" />
+    <style id="ThemeGridGutterWidth" value="15px" />
+    <style id="ThemeGridRowColumns" value="6" />
+    <style id="ThemeLineHeightLg" value="1.5" />
+    <style id="ThemeLineHeightSm" value="1.5" />
+    <style id="ThemeBorderWidth" value="1px" />
+    <style id="ThemeBorderColor" value="$gray-300" />
+    <style id="ThemeBorderRadius" value=".25rem" />
+    <style id="ThemeBorderRadiusLg" value=".3rem" />
+    <style id="ThemeBorderRadiusSm" value=".2rem" />
+    <style id="ThemeRoundedPill" value="50rem" />
+    <style id="ThemeBoxShadowSm" value="0 .125rem .25rem rgba($black, .075)" />
+    <style id="ThemeBoxShadow" value="0 .5rem 1rem rgba($black, .15)" />
+    <style id="ThemeBoxShadowLg" value="0 1rem 3rem rgba($black, .175)" />
+    <style id="ThemeComponentActiveColor" value="$white" />
+    <style id="ThemeComponentActiveBg" value="theme-color(&#34;primary&#34;)" />
+    <style id="ThemeCaretWidth" value=".3em" />
+    <style id="ThemeCaretVerticalAlign" value="($caret-width * .85)" />
+    <style id="ThemeCaretSpacing" value="($caret-width * .85)" />
+    <style id="ThemeTransitionBase" value="all .2s ease-in-out" />
+    <style id="ThemeTransitionFade" value="opacity .15s linear" />
+    <style id="ThemeTransitionCollapse" value="height .35s ease" />
+    <style id="ThemeFontFamilySansSerif" value="-apple-system, BlinkMacSystemFont, &#34;Segoe UI&#34;, Roboto, &#34;Helvetica Neue&#34;, Arial, &#34;Noto Sans&#34;, &#34;Liberation Sans&#34;, sans-serif, &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;, &#34;Noto Color Emoji&#34;" />
+    <style id="ThemeFontFamilyMonospace" value="SFMono-Regular, Menlo, Monaco, Consolas, &#34;Liberation Mono&#34;, &#34;Courier New&#34;, monospace" />
+    <style id="ThemeFontFamilyBase" value="$font-family-sans-serif" />
+    <style id="ThemeFontSizeBase" value="1rem" />
+    <style id="ThemeFontSizeLg" value="($font-size-base * 1.25)" />
+    <style id="ThemeFontSizeSm" value="($font-size-base * .875)" />
+    <style id="ThemeFontWeightLighter" value="lighter" />
+    <style id="ThemeFontWeightLight" value="300" />
+    <style id="ThemeFontWeightNormal" value="400" />
+    <style id="ThemeFontWeightBold" value="700" />
+    <style id="ThemeFontWeightBolder" value="bolder" />
+    <style id="ThemeFontWeightBase" value="$font-weight-normal" />
+    <style id="ThemeLineHeightBase" value="1.5" />
+    <style id="ThemeH1FontSize" value="($font-size-base * 2.5)" />
+    <style id="ThemeH2FontSize" value="($font-size-base * 2)" />
+    <style id="ThemeH3FontSize" value="($font-size-base * 1.75)" />
+    <style id="ThemeH4FontSize" value="($font-size-base * 1.5)" />
+    <style id="ThemeH5FontSize" value="($font-size-base * 1.25)" />
+    <style id="ThemeH6FontSize" value="$font-size-base" />
+    <style id="ThemeHeadingsMarginBottom" value="($spacer / 2)" />
+    <style id="ThemeHeadingsFontFamily" value="null" />
+    <style id="ThemeHeadingsFontWeight" value="500" />
+    <style id="ThemeHeadingsLineHeight" value="1.2" />
+    <style id="ThemeHeadingsColor" value="null" />
+    <style id="ThemeDisplay1Size" value="6rem" />
+    <style id="ThemeDisplay2Size" value="5.5rem" />
+    <style id="ThemeDisplay3Size" value="4.5rem" />
+    <style id="ThemeDisplay4Size" value="3.5rem" />
+    <style id="ThemeDisplay1Weight" value="300" />
+    <style id="ThemeDisplay2Weight" value="300" />
+    <style id="ThemeDisplay3Weight" value="300" />
+    <style id="ThemeDisplay4Weight" value="300" />
+    <style id="ThemeDisplayLineHeight" value="$headings-line-height" />
+    <style id="ThemeLeadFontSize" value="($font-size-base * 1.25)" />
+    <style id="ThemeLeadFontWeight" value="300" />
+    <style id="ThemeSmallFontSize" value="80%" />
+    <style id="ThemeTextMuted" value="$gray-600" />
+    <style id="ThemeBlockquoteSmallColor" value="$gray-600" />
+    <style id="ThemeBlockquoteSmallFontSize" value="$small-font-size" />
+    <style id="ThemeBlockquoteFontSize" value="($font-size-base * 1.25)" />
+    <style id="ThemeHrBorderColor" value="rgba($black, .1)" />
+    <style id="ThemeHrBorderWidth" value="$border-width" />
+    <style id="ThemeMarkPadding" value=".2em" />
+    <style id="ThemeDtFontWeight" value="$font-weight-bold" />
+    <style id="ThemeKbdBoxShadow" value="inset 0 -.1rem 0 rgba($black, .25)" />
+    <style id="ThemeNestedKbdFontWeight" value="$font-weight-bold" />
+    <style id="ThemeListInlinePadding" value=".5rem" />
+    <style id="ThemeMarkBg" value="#fcf8e3" />
+    <style id="ThemeHrMarginY" value="$spacer" />
+    <style id="ThemeTableCellPadding" value=".75rem" />
+    <style id="ThemeTableCellPaddingSm" value=".3rem" />
+    <style id="ThemeTableColor" value="$body-color" />
+    <style id="ThemeTableBg" value="null" />
+    <style id="ThemeTableAccentBg" value="rgba($black, .05)" />
+    <style id="ThemeTableHoverColor" value="$table-color" />
+    <style id="ThemeTableHoverBg" value="rgba($black, .075)" />
+    <style id="ThemeTableActiveBg" value="$table-hover-bg" />
+    <style id="ThemeTableBorderWidth" value="$border-width" />
+    <style id="ThemeTableBorderColor" value="$border-color" />
+    <style id="ThemeTableHeadBg" value="$gray-200" />
+    <style id="ThemeTableHeadColor" value="$gray-700" />
+    <style id="ThemeTableThFontWeight" value="null" />
+    <style id="ThemeTableDarkColor" value="$white" />
+    <style id="ThemeTableDarkBg" value="$gray-800" />
+    <style id="ThemeTableDarkAccentBg" value="rgba($white, .05)" />
+    <style id="ThemeTableDarkHoverColor" value="$table-dark-color" />
+    <style id="ThemeTableDarkHoverBg" value="rgba($white, .075)" />
+    <style id="ThemeTableDarkBorderColor" value="lighten($table-dark-bg, 7.5%)" />
+    <style id="ThemeTableStripedOrder" value="odd" />
+    <style id="ThemeTableCaptionColor" value="$text-muted" />
+    <style id="ThemeTableBgLevel" value="-9" />
+    <style id="ThemeTableBorderLevel" value="-6" />
+    <style id="ThemeInputBtnPaddingY" value=".375rem" />
+    <style id="ThemeInputBtnPaddingX" value=".75rem" />
+    <style id="ThemeInputBtnFontFamily" value="null" />
+    <style id="ThemeInputBtnFontSize" value="$font-size-base" />
+    <style id="ThemeInputBtnLineHeight" value="$line-height-base" />
+    <style id="ThemeInputBtnFocusWidth" value=".2rem" />
+    <style id="ThemeInputBtnFocusColor" value="rgba($component-active-bg, .25)" />
+    <style id="ThemeInputBtnFocusBoxShadow" value="0 0 0 $input-btn-focus-width $input-btn-focus-color" />
+    <style id="ThemeInputBtnPaddingYSm" value=".25rem" />
+    <style id="ThemeInputBtnPaddingXSm" value=".5rem" />
+    <style id="ThemeInputBtnFontSizeSm" value="$font-size-sm" />
+    <style id="ThemeInputBtnLineHeightSm" value="$line-height-sm" />
+    <style id="ThemeInputBtnPaddingYLg" value=".5rem" />
+    <style id="ThemeInputBtnPaddingXLg" value="1rem" />
+    <style id="ThemeInputBtnFontSizeLg" value="$font-size-lg" />
+    <style id="ThemeInputBtnLineHeightLg" value="$line-height-lg" />
+    <style id="ThemeInputBtnBorderWidth" value="$border-width" />
+    <style id="ThemeBtnPaddingY" value="$input-btn-padding-y" />
+    <style id="ThemeBtnPaddingX" value="$input-btn-padding-x" />
+    <style id="ThemeBtnFontFamily" value="$input-btn-font-family" />
+    <style id="ThemeBtnFontSize" value="$input-btn-font-size" />
+    <style id="ThemeBtnLineHeight" value="$input-btn-line-height" />
+    <style id="ThemeBtnWhiteSpace" value="null" />
+    <style id="ThemeBtnPaddingYSm" value="$input-btn-padding-y-sm" />
+    <style id="ThemeBtnPaddingXSm" value="$input-btn-padding-x-sm" />
+    <style id="ThemeBtnFontSizeSm" value="$input-btn-font-size-sm" />
+    <style id="ThemeBtnLineHeightSm" value="$input-btn-line-height-sm" />
+    <style id="ThemeBtnPaddingYLg" value="$input-btn-padding-y-lg" />
+    <style id="ThemeBtnPaddingXLg" value="$input-btn-padding-x-lg" />
+    <style id="ThemeBtnFontSizeLg" value="$input-btn-font-size-lg" />
+    <style id="ThemeBtnLineHeightLg" value="$input-btn-line-height-lg" />
+    <style id="ThemeBtnBorderWidth" value="$input-btn-border-width" />
+    <style id="ThemeBtnFontWeight" value="$font-weight-normal" />
+    <style id="ThemeBtnBoxShadow" value="inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075)" />
+    <style id="ThemeBtnFocusWidth" value="$input-btn-focus-width" />
+    <style id="ThemeBtnFocusBoxShadow" value="$input-btn-focus-box-shadow" />
+    <style id="ThemeBtnDisabledOpacity" value=".65" />
+    <style id="ThemeBtnActiveBoxShadow" value="inset 0 3px 5px rgba($black, .125)" />
+    <style id="ThemeBtnLinkDisabledColor" value="$gray-600" />
+    <style id="ThemeBtnBlockSpacingY" value=".5rem" />
+    <style id="ThemeBtnBorderRadius" value="$border-radius" />
+    <style id="ThemeBtnBorderRadiusLg" value="$border-radius-lg" />
+    <style id="ThemeBtnBorderRadiusSm" value="$border-radius-sm" />
+    <style id="ThemeBtnTransition" value="color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out" />
+    <style id="ThemeLabelMarginBottom" value=".5rem" />
+    <style id="ThemeInputPaddingY" value="$input-btn-padding-y" />
+    <style id="ThemeInputPaddingX" value="$input-btn-padding-x" />
+    <style id="ThemeInputFontFamily" value="$input-btn-font-family" />
+    <style id="ThemeInputFontSize" value="$input-btn-font-size" />
+    <style id="ThemeInputFontWeight" value="$font-weight-base" />
+    <style id="ThemeInputLineHeight" value="$input-btn-line-height" />
+    <style id="ThemeInputPaddingYSm" value="$input-btn-padding-y-sm" />
+    <style id="ThemeInputPaddingXSm" value="$input-btn-padding-x-sm" />
+    <style id="ThemeInputFontSizeSm" value="$input-btn-font-size-sm" />
+    <style id="ThemeInputLineHeightSm" value="$input-btn-line-height-sm" />
+    <style id="ThemeInputPaddingYLg" value="$input-btn-padding-y-lg" />
+    <style id="ThemeInputPaddingXLg" value="$input-btn-padding-x-lg" />
+    <style id="ThemeInputFontSizeLg" value="$input-btn-font-size-lg" />
+    <style id="ThemeInputLineHeightLg" value="$input-btn-line-height-lg" />
+    <style id="ThemeInputBg" value="$white" />
+    <style id="ThemeInputDisabledBg" value="$gray-200" />
+    <style id="ThemeInputColor" value="$gray-700" />
+    <style id="ThemeInputBorderColor" value="$gray-400" />
+    <style id="ThemeInputBorderWidth" value="$input-btn-border-width" />
+    <style id="ThemeInputBoxShadow" value="inset 0 1px 1px rgba($black, .075)" />
+    <style id="ThemeInputBorderRadius" value="$border-radius" />
+    <style id="ThemeInputBorderRadiusLg" value="$border-radius-lg" />
+    <style id="ThemeInputBorderRadiusSm" value="$border-radius-sm" />
+    <style id="ThemeInputFocusBg" value="$input-bg" />
+    <style id="ThemeInputFocusBorderColor" value="lighten($component-active-bg, 25%)" />
+    <style id="ThemeInputFocusColor" value="$input-color" />
+    <style id="ThemeInputFocusWidth" value="$input-btn-focus-width" />
+    <style id="ThemeInputFocusBoxShadow" value="$input-btn-focus-box-shadow" />
+    <style id="ThemeInputPlaceholderColor" value="$gray-600" />
+    <style id="ThemeInputPlaintextColor" value="$body-color" />
+    <style id="ThemeInputHeightBorder" value="($input-border-width * 2)" />
+    <style id="ThemeInputHeightInner" value="add($input-line-height * 1em, $input-padding-y * 2)" />
+    <style id="ThemeInputHeightInnerHalf" value="add($input-line-height * .5em, $input-padding-y)" />
+    <style id="ThemeInputHeightInnerQuarter" value="add($input-line-height * .25em, $input-padding-y / 2)" />
+    <style id="ThemeInputHeight" value="add($input-line-height * 1em, add($input-padding-y * 2, $input-height-border, false))" />
+    <style id="ThemeInputHeightSm" value="add($input-line-height-sm * 1em, add($input-padding-y-sm * 2, $input-height-border, false))" />
+    <style id="ThemeInputHeightLg" value="add($input-line-height-lg * 1em, add($input-padding-y-lg * 2, $input-height-border, false))" />
+    <style id="ThemeInputTransition" value="border-color .15s ease-in-out, box-shadow .15s ease-in-out" />
+    <style id="ThemeFormTextMarginTop" value=".25rem" />
+    <style id="ThemeFormCheckInputGutter" value="1.25rem" />
+    <style id="ThemeFormCheckInputMarginY" value=".3rem" />
+    <style id="ThemeFormCheckInputMarginX" value=".25rem" />
+    <style id="ThemeFormCheckInlineMarginX" value=".75rem" />
+    <style id="ThemeFormCheckInlineInputMarginX" value=".3125rem" />
+    <style id="ThemeFormGridGutterWidth" value="10px" />
+    <style id="ThemeFormGroupMarginBottom" value="1rem" />
+    <style id="ThemeInputGroupAddonColor" value="$input-color" />
+    <style id="ThemeInputGroupAddonBg" value="$gray-200" />
+    <style id="ThemeInputGroupAddonBorderColor" value="$input-border-color" />
+    <style id="ThemeCustomFormsTransition" value="background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out" />
+    <style id="ThemeCustomControlGutter" value=".5rem" />
+    <style id="ThemeCustomControlSpacerX" value="1rem" />
+    <style id="ThemeCustomControlCursor" value="null" />
+    <style id="ThemeCustomControlIndicatorSize" value="1rem" />
+    <style id="ThemeCustomControlIndicatorBg" value="$input-bg" />
+    <style id="ThemeCustomControlIndicatorBgSize" value="50% 50%" />
+    <style id="ThemeCustomControlIndicatorBoxShadow" value="$input-box-shadow" />
+    <style id="ThemeCustomControlIndicatorBorderColor" value="$gray-500" />
+    <style id="ThemeCustomControlIndicatorBorderWidth" value="$input-border-width" />
+    <style id="ThemeCustomControlLabelColor" value="null" />
+    <style id="ThemeCustomControlIndicatorDisabledBg" value="$input-disabled-bg" />
+    <style id="ThemeCustomControlLabelDisabledColor" value="$gray-600" />
+    <style id="ThemeCustomControlIndicatorCheckedColor" value="$component-active-color" />
+    <style id="ThemeCustomControlIndicatorCheckedBg" value="$component-active-bg" />
+    <style id="ThemeCustomControlIndicatorCheckedDisabledBg" value="rgba(theme-color(&#34;primary&#34;), .5)" />
+    <style id="ThemeCustomControlIndicatorCheckedBoxShadow" value="null" />
+    <style id="ThemeCustomControlIndicatorCheckedBorderColor" value="$custom-control-indicator-checked-bg" />
+    <style id="ThemeCustomControlIndicatorFocusBoxShadow" value="$input-focus-box-shadow" />
+    <style id="ThemeCustomControlIndicatorFocusBorderColor" value="$input-focus-border-color" />
+    <style id="ThemeCustomControlIndicatorActiveColor" value="$component-active-color" />
+    <style id="ThemeCustomControlIndicatorActiveBg" value="lighten($component-active-bg, 35%)" />
+    <style id="ThemeCustomControlIndicatorActiveBoxShadow" value="null" />
+    <style id="ThemeCustomControlIndicatorActiveBorderColor" value="$custom-control-indicator-active-bg" />
+    <style id="ThemeCustomCheckboxIndicatorBorderRadius" value="$border-radius" />
+    <style id="ThemeCustomCheckboxIndicatorIconChecked" value="url(&#34;data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;8&#39; height=&#39;8&#39; viewBox=&#39;0 0 8 8&#39;&gt;&lt;path fill=&#39;#{$custom-control-indicator-checked-color}&#39; d=&#39;M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z&#39;/&gt;&lt;/svg&gt;&#34;)" />
+    <style id="ThemeCustomCheckboxIndicatorIndeterminateBg" value="$component-active-bg" />
+    <style id="ThemeCustomCheckboxIndicatorIndeterminateColor" value="$custom-control-indicator-checked-color" />
+    <style id="ThemeCustomCheckboxIndicatorIconIndeterminate" value="url(&#34;data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;4&#39; height=&#39;4&#39; viewBox=&#39;0 0 4 4&#39;&gt;&lt;path stroke=&#39;#{$custom-checkbox-indicator-indeterminate-color}&#39; d=&#39;M0 2h4&#39;/&gt;&lt;/svg&gt;&#34;)" />
+    <style id="ThemeCustomCheckboxIndicatorIndeterminateBoxShadow" value="null" />
+    <style id="ThemeCustomCheckboxIndicatorIndeterminateBorderColor" value="$custom-checkbox-indicator-indeterminate-bg" />
+    <style id="ThemeCustomRadioIndicatorBorderRadius" value="50%" />
+    <style id="ThemeCustomRadioIndicatorIconChecked" value="url(&#34;data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;12&#39; height=&#39;12&#39; viewBox=&#39;-4 -4 8 8&#39;&gt;&lt;circle r=&#39;3&#39; fill=&#39;#{$custom-control-indicator-checked-color}&#39;/&gt;&lt;/svg&gt;&#34;)" />
+    <style id="ThemeCustomSwitchWidth" value="($custom-control-indicator-size * 1.75)" />
+    <style id="ThemeCustomSwitchIndicatorBorderRadius" value="($custom-control-indicator-size / 2)" />
+    <style id="ThemeCustomSwitchIndicatorSize" value="subtract($custom-control-indicator-size, $custom-control-indicator-border-width * 4)" />
+    <style id="ThemeCustomSelectPaddingY" value="$input-padding-y" />
+    <style id="ThemeCustomSelectPaddingX" value="$input-padding-x" />
+    <style id="ThemeCustomSelectFontFamily" value="$input-font-family" />
+    <style id="ThemeCustomSelectFontSize" value="$input-font-size" />
+    <style id="ThemeCustomSelectHeight" value="$input-height" />
+    <style id="ThemeCustomSelectIndicatorPadding" value="1rem" />
+    <style id="ThemeCustomSelectFontWeight" value="$input-font-weight" />
+    <style id="ThemeCustomSelectLineHeight" value="$input-line-height" />
+    <style id="ThemeCustomSelectColor" value="$input-color" />
+    <style id="ThemeCustomSelectDisabledColor" value="$gray-600" />
+    <style id="ThemeCustomSelectBg" value="$input-bg" />
+    <style id="ThemeCustomSelectDisabledBg" value="$gray-200" />
+    <style id="ThemeCustomSelectBgSize" value="8px 10px" />
+    <style id="ThemeCustomSelectIndicatorColor" value="$gray-800" />
+    <style id="ThemeCustomSelectIndicator" value="url(&#34;data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;4&#39; height=&#39;5&#39; viewBox=&#39;0 0 4 5&#39;&gt;&lt;path fill=&#39;#{$custom-select-indicator-color}&#39; d=&#39;M2 0L0 2h4zm0 5L0 3h4z&#39;/&gt;&lt;/svg&gt;&#34;)" />
+    <style id="ThemeCustomSelectBackground" value="escape-svg($custom-select-indicator) right $custom-select-padding-x center / $custom-select-bg-size no-repeat" />
+    <style id="ThemeCustomSelectFeedbackIconPaddingRight" value="add(1em * .75, (2 * $custom-select-padding-y * .75) + $custom-select-padding-x + $custom-select-indicator-padding)" />
+    <style id="ThemeCustomSelectFeedbackIconPosition" value="center right ($custom-select-padding-x + $custom-select-indicator-padding)" />
+    <style id="ThemeCustomSelectFeedbackIconSize" value="$input-height-inner-half $input-height-inner-half" />
+    <style id="ThemeCustomSelectBorderWidth" value="$input-border-width" />
+    <style id="ThemeCustomSelectBorderColor" value="$input-border-color" />
+    <style id="ThemeCustomSelectBorderRadius" value="$border-radius" />
+    <style id="ThemeCustomSelectBoxShadow" value="inset 0 1px 2px rgba($black, .075)" />
+    <style id="ThemeCustomSelectFocusBorderColor" value="$input-focus-border-color" />
+    <style id="ThemeCustomSelectFocusWidth" value="$input-focus-width" />
+    <style id="ThemeCustomSelectFocusBoxShadow" value="0 0 0 $custom-select-focus-width $input-btn-focus-color" />
+    <style id="ThemeCustomSelectPaddingYSm" value="$input-padding-y-sm" />
+    <style id="ThemeCustomSelectPaddingXSm" value="$input-padding-x-sm" />
+    <style id="ThemeCustomSelectFontSizeSm" value="$input-font-size-sm" />
+    <style id="ThemeCustomSelectHeightSm" value="$input-height-sm" />
+    <style id="ThemeCustomSelectPaddingYLg" value="$input-padding-y-lg" />
+    <style id="ThemeCustomSelectPaddingXLg" value="$input-padding-x-lg" />
+    <style id="ThemeCustomSelectFontSizeLg" value="$input-font-size-lg" />
+    <style id="ThemeCustomSelectHeightLg" value="$input-height-lg" />
+    <style id="ThemeCustomRangeTrackWidth" value="100%" />
+    <style id="ThemeCustomRangeTrackHeight" value=".5rem" />
+    <style id="ThemeCustomRangeTrackCursor" value="pointer" />
+    <style id="ThemeCustomRangeTrackBg" value="$gray-300" />
+    <style id="ThemeCustomRangeTrackBorderRadius" value="1rem" />
+    <style id="ThemeCustomRangeTrackBoxShadow" value="inset 0 .25rem .25rem rgba($black, .1)" />
+    <style id="ThemeCustomRangeThumbWidth" value="1rem" />
+    <style id="ThemeCustomRangeThumbHeight" value="$custom-range-thumb-width" />
+    <style id="ThemeCustomRangeThumbBg" value="$component-active-bg" />
+    <style id="ThemeCustomRangeThumbBorder" value="0" />
+    <style id="ThemeCustomRangeThumbBorderRadius" value="1rem" />
+    <style id="ThemeCustomRangeThumbBoxShadow" value="0 .1rem .25rem rgba($black, .1)" />
+    <style id="ThemeCustomRangeThumbFocusBoxShadow" value="0 0 0 1px $body-bg, $input-focus-box-shadow" />
+    <style id="ThemeCustomRangeThumbFocusBoxShadowWidth" value="$input-focus-width" />
+    <style id="ThemeCustomRangeThumbActiveBg" value="lighten($component-active-bg, 35%)" />
+    <style id="ThemeCustomRangeThumbDisabledBg" value="$gray-500" />
+    <style id="ThemeCustomFileHeight" value="$input-height" />
+    <style id="ThemeCustomFileHeightInner" value="$input-height-inner" />
+    <style id="ThemeCustomFileFocusBorderColor" value="$input-focus-border-color" />
+    <style id="ThemeCustomFileFocusBoxShadow" value="$input-focus-box-shadow" />
+    <style id="ThemeCustomFileDisabledBg" value="$input-disabled-bg" />
+    <style id="ThemeCustomFilePaddingY" value="$input-padding-y" />
+    <style id="ThemeCustomFilePaddingX" value="$input-padding-x" />
+    <style id="ThemeCustomFileLineHeight" value="$input-line-height" />
+    <style id="ThemeCustomFileFontFamily" value="$input-font-family" />
+    <style id="ThemeCustomFileFontWeight" value="$input-font-weight" />
+    <style id="ThemeCustomFileColor" value="$input-color" />
+    <style id="ThemeCustomFileBg" value="$input-bg" />
+    <style id="ThemeCustomFileBorderWidth" value="$input-border-width" />
+    <style id="ThemeCustomFileBorderColor" value="$input-border-color" />
+    <style id="ThemeCustomFileBorderRadius" value="$input-border-radius" />
+    <style id="ThemeCustomFileBoxShadow" value="$input-box-shadow" />
+    <style id="ThemeCustomFileButtonColor" value="$custom-file-color" />
+    <style id="ThemeCustomFileButtonBg" value="$input-group-addon-bg" />
+    <style id="ThemeCustomFileText" value="(en: &#34;Browse&#34;)" />
+    <style id="ThemeFormFeedbackMarginTop" value="$form-text-margin-top" />
+    <style id="ThemeFormFeedbackFontSize" value="$small-font-size" />
+    <style id="ThemeFormFeedbackValidColor" value="theme-color(&#34;success&#34;)" />
+    <style id="ThemeFormFeedbackInvalidColor" value="theme-color(&#34;danger&#34;)" />
+    <style id="ThemeFormFeedbackIconValidColor" value="$form-feedback-valid-color" />
+    <style id="ThemeFormFeedbackIconValid" value="url(&#34;data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;8&#39; height=&#39;8&#39; viewBox=&#39;0 0 8 8&#39;&gt;&lt;path fill=&#39;#{$form-feedback-icon-valid-color}&#39; d=&#39;M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z&#39;/&gt;&lt;/svg&gt;&#34;)" />
+    <style id="ThemeFormFeedbackIconInvalidColor" value="$form-feedback-invalid-color" />
+    <style id="ThemeFormFeedbackIconInvalid" value="url(&#34;data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;12&#39; height=&#39;12&#39; fill=&#39;none&#39; stroke=&#39;#{$form-feedback-icon-invalid-color}&#39; viewBox=&#39;0 0 12 12&#39;&gt;&lt;circle cx=&#39;6&#39; cy=&#39;6&#39; r=&#39;4.5&#39;/&gt;&lt;path stroke-linejoin=&#39;round&#39; d=&#39;M5.8 3.6h.4L6 6.5z&#39;/&gt;&lt;circle cx=&#39;6&#39; cy=&#39;8.2&#39; r=&#39;.6&#39; fill=&#39;#{$form-feedback-icon-invalid-color}&#39; stroke=&#39;none&#39;/&gt;&lt;/svg&gt;&#34;)" />
+    <style id="ThemeZindexDropdown" value="1000" />
+    <style id="ThemeZindexSticky" value="1020" />
+    <style id="ThemeZindexFixed" value="1030" />
+    <style id="ThemeZindexModalBackdrop" value="1040" />
+    <style id="ThemeZindexModal" value="1050" />
+    <style id="ThemeZindexPopover" value="1060" />
+    <style id="ThemeZindexTooltip" value="1070" />
+    <style id="ThemeNavLinkPaddingY" value=".5rem" />
+    <style id="ThemeNavLinkPaddingX" value="1rem" />
+    <style id="ThemeNavLinkDisabledColor" value="$gray-600" />
+    <style id="ThemeNavTabsBorderColor" value="$gray-300" />
+    <style id="ThemeNavTabsBorderWidth" value="$border-width" />
+    <style id="ThemeNavTabsBorderRadius" value="$border-radius" />
+    <style id="ThemeNavTabsLinkHoverBorderColor" value="$gray-200 $gray-200 $nav-tabs-border-color" />
+    <style id="ThemeNavTabsLinkActiveColor" value="$gray-700" />
+    <style id="ThemeNavTabsLinkActiveBg" value="$body-bg" />
+    <style id="ThemeNavTabsLinkActiveBorderColor" value="$gray-300 $gray-300 $nav-tabs-link-active-bg" />
+    <style id="ThemeNavPillsBorderRadius" value="$border-radius" />
+    <style id="ThemeNavPillsLinkActiveColor" value="$component-active-color" />
+    <style id="ThemeNavPillsLinkActiveBg" value="$component-active-bg" />
+    <style id="ThemeNavDividerColor" value="$gray-200" />
+    <style id="ThemeNavDividerMarginY" value="($spacer / 2)" />
+    <style id="ThemeNavbarPaddingY" value="($spacer / 2)" />
+    <style id="ThemeNavbarPaddingX" value="$spacer" />
+    <style id="ThemeNavbarNavLinkPaddingX" value=".5rem" />
+    <style id="ThemeNavbarBrandFontSize" value="$font-size-lg" />
+    <style id="ThemeNavLinkHeight" value="($font-size-base * $line-height-base + $nav-link-padding-y * 2)" />
+    <style id="ThemeNavbarBrandHeight" value="($navbar-brand-font-size * $line-height-base)" />
+    <style id="ThemeNavbarBrandPaddingY" value="($nav-link-height - $navbar-brand-height) / 2" />
+    <style id="ThemeNavbarTogglerPaddingY" value=".25rem" />
+    <style id="ThemeNavbarTogglerPaddingX" value=".75rem" />
+    <style id="ThemeNavbarTogglerFontSize" value="$font-size-lg" />
+    <style id="ThemeNavbarTogglerBorderRadius" value="$btn-border-radius" />
+    <style id="ThemeNavbarNavScrollMaxHeight" value="75vh" />
+    <style id="ThemeNavbarDarkColor" value="rgba($white, .5)" />
+    <style id="ThemeNavbarDarkHoverColor" value="rgba($white, .75)" />
+    <style id="ThemeNavbarDarkActiveColor" value="$white" />
+    <style id="ThemeNavbarDarkDisabledColor" value="rgba($white, .25)" />
+    <style id="ThemeNavbarDarkTogglerIconBg" value="url(&#34;data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;30&#39; height=&#39;30&#39; viewBox=&#39;0 0 30 30&#39;&gt;&lt;path stroke=&#39;#{$navbar-dark-color}&#39; stroke-linecap=&#39;round&#39; stroke-miterlimit=&#39;10&#39; stroke-width=&#39;2&#39; d=&#39;M4 7h22M4 15h22M4 23h22&#39;/&gt;&lt;/svg&gt;&#34;)" />
+    <style id="ThemeNavbarDarkTogglerBorderColor" value="rgba($white, .1)" />
+    <style id="ThemeNavbarLightColor" value="rgba($black, .5)" />
+    <style id="ThemeNavbarLightHoverColor" value="rgba($black, .7)" />
+    <style id="ThemeNavbarLightActiveColor" value="rgba($black, .9)" />
+    <style id="ThemeNavbarLightDisabledColor" value="rgba($black, .3)" />
+    <style id="ThemeNavbarLightTogglerIconBg" value="url(&#34;data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;30&#39; height=&#39;30&#39; viewBox=&#39;0 0 30 30&#39;&gt;&lt;path stroke=&#39;#{$navbar-light-color}&#39; stroke-linecap=&#39;round&#39; stroke-miterlimit=&#39;10&#39; stroke-width=&#39;2&#39; d=&#39;M4 7h22M4 15h22M4 23h22&#39;/&gt;&lt;/svg&gt;&#34;)" />
+    <style id="ThemeNavbarLightTogglerBorderColor" value="rgba($black, .1)" />
+    <style id="ThemeNavbarLightBrandColor" value="$navbar-light-active-color" />
+    <style id="ThemeNavbarLightBrandHoverColor" value="$navbar-light-active-color" />
+    <style id="ThemeNavbarDarkBrandColor" value="$navbar-dark-active-color" />
+    <style id="ThemeNavbarDarkBrandHoverColor" value="$navbar-dark-active-color" />
+    <style id="ThemeDropdownMinWidth" value="10rem" />
+    <style id="ThemeDropdownPaddingX" value="0" />
+    <style id="ThemeDropdownPaddingY" value=".5rem" />
+    <style id="ThemeDropdownSpacer" value=".125rem" />
+    <style id="ThemeDropdownFontSize" value="$font-size-base" />
+    <style id="ThemeDropdownColor" value="$body-color" />
+    <style id="ThemeDropdownBg" value="$white" />
+    <style id="ThemeDropdownBorderColor" value="rgba($black, .15)" />
+    <style id="ThemeDropdownBorderRadius" value="$border-radius" />
+    <style id="ThemeDropdownBorderWidth" value="$border-width" />
+    <style id="ThemeDropdownInnerBorderRadius" value="subtract($dropdown-border-radius, $dropdown-border-width)" />
+    <style id="ThemeDropdownDividerBg" value="$gray-200" />
+    <style id="ThemeDropdownDividerMarginY" value="$nav-divider-margin-y" />
+    <style id="ThemeDropdownBoxShadow" value="0 .5rem 1rem rgba($black, .175)" />
+    <style id="ThemeDropdownLinkColor" value="$gray-900" />
+    <style id="ThemeDropdownLinkHoverColor" value="darken($gray-900, 5%)" />
+    <style id="ThemeDropdownLinkHoverBg" value="$gray-200" />
+    <style id="ThemeDropdownLinkActiveColor" value="$component-active-color" />
+    <style id="ThemeDropdownLinkActiveBg" value="$component-active-bg" />
+    <style id="ThemeDropdownLinkDisabledColor" value="$gray-500" />
+    <style id="ThemeDropdownItemPaddingY" value=".25rem" />
+    <style id="ThemeDropdownItemPaddingX" value="1.5rem" />
+    <style id="ThemeDropdownHeaderColor" value="$gray-600" />
+    <style id="ThemeDropdownHeaderPadding" value="$dropdown-padding-y $dropdown-item-padding-x" />
+    <style id="ThemePaginationPaddingY" value=".5rem" />
+    <style id="ThemePaginationPaddingX" value=".75rem" />
+    <style id="ThemePaginationPaddingYSm" value=".25rem" />
+    <style id="ThemePaginationPaddingXSm" value=".5rem" />
+    <style id="ThemePaginationPaddingYLg" value=".75rem" />
+    <style id="ThemePaginationPaddingXLg" value="1.5rem" />
+    <style id="ThemePaginationLineHeight" value="1.25" />
+    <style id="ThemePaginationColor" value="$link-color" />
+    <style id="ThemePaginationBg" value="$white" />
+    <style id="ThemePaginationBorderWidth" value="$border-width" />
+    <style id="ThemePaginationBorderColor" value="$gray-300" />
+    <style id="ThemePaginationFocusBoxShadow" value="$input-btn-focus-box-shadow" />
+    <style id="ThemePaginationFocusOutline" value="0" />
+    <style id="ThemePaginationHoverColor" value="$link-hover-color" />
+    <style id="ThemePaginationHoverBg" value="$gray-200" />
+    <style id="ThemePaginationHoverBorderColor" value="$gray-300" />
+    <style id="ThemePaginationActiveColor" value="$component-active-color" />
+    <style id="ThemePaginationActiveBg" value="$component-active-bg" />
+    <style id="ThemePaginationActiveBorderColor" value="$pagination-active-bg" />
+    <style id="ThemePaginationDisabledColor" value="$gray-600" />
+    <style id="ThemePaginationDisabledBg" value="$white" />
+    <style id="ThemePaginationDisabledBorderColor" value="$gray-300" />
+    <style id="ThemePaginationBorderRadiusSm" value="$border-radius-sm" />
+    <style id="ThemePaginationBorderRadiusLg" value="$border-radius-lg" />
+    <style id="ThemeJumbotronPadding" value="2rem" />
+    <style id="ThemeJumbotronColor" value="null" />
+    <style id="ThemeJumbotronBg" value="$gray-200" />
+    <style id="ThemeCardSpacerY" value=".75rem" />
+    <style id="ThemeCardSpacerX" value="1.25rem" />
+    <style id="ThemeCardBorderWidth" value="$border-width" />
+    <style id="ThemeCardBorderRadius" value="$border-radius" />
+    <style id="ThemeCardBorderColor" value="rgba($black, .125)" />
+    <style id="ThemeCardInnerBorderRadius" value="subtract($card-border-radius, $card-border-width)" />
+    <style id="ThemeCardCapBg" value="rgba($black, .03)" />
+    <style id="ThemeCardCapColor" value="null" />
+    <style id="ThemeCardHeight" value="null" />
+    <style id="ThemeCardColor" value="null" />
+    <style id="ThemeCardBg" value="$white" />
+    <style id="ThemeCardImgOverlayPadding" value="1.25rem" />
+    <style id="ThemeCardGroupMargin" value="($grid-gutter-width / 2)" />
+    <style id="ThemeCardDeckMargin" value="$card-group-margin" />
+    <style id="ThemeCardColumnsCount" value="3" />
+    <style id="ThemeCardColumnsGap" value="1.25rem" />
+    <style id="ThemeCardColumnsMargin" value="$card-spacer-y" />
+    <style id="ThemeTooltipFontSize" value="$font-size-sm" />
+    <style id="ThemeTooltipMaxWidth" value="200px" />
+    <style id="ThemeTooltipColor" value="$white" />
+    <style id="ThemeTooltipBg" value="$black" />
+    <style id="ThemeTooltipBorderRadius" value="$border-radius" />
+    <style id="ThemeTooltipOpacity" value=".9" />
+    <style id="ThemeTooltipPaddingY" value=".25rem" />
+    <style id="ThemeTooltipPaddingX" value=".5rem" />
+    <style id="ThemeTooltipMargin" value="0" />
+    <style id="ThemeTooltipArrowWidth" value=".8rem" />
+    <style id="ThemeTooltipArrowHeight" value=".4rem" />
+    <style id="ThemeTooltipArrowColor" value="$tooltip-bg" />
+    <style id="ThemeFormFeedbackTooltipPaddingY" value="$tooltip-padding-y" />
+    <style id="ThemeFormFeedbackTooltipPaddingX" value="$tooltip-padding-x" />
+    <style id="ThemeFormFeedbackTooltipFontSize" value="$tooltip-font-size" />
+    <style id="ThemeFormFeedbackTooltipLineHeight" value="$line-height-base" />
+    <style id="ThemeFormFeedbackTooltipOpacity" value="$tooltip-opacity" />
+    <style id="ThemeFormFeedbackTooltipBorderRadius" value="$tooltip-border-radius" />
+    <style id="ThemePopoverFontSize" value="$font-size-sm" />
+    <style id="ThemePopoverBg" value="$white" />
+    <style id="ThemePopoverMaxWidth" value="276px" />
+    <style id="ThemePopoverBorderWidth" value="$border-width" />
+    <style id="ThemePopoverBorderColor" value="rgba($black, .2)" />
+    <style id="ThemePopoverBorderRadius" value="$border-radius-lg" />
+    <style id="ThemePopoverInnerBorderRadius" value="subtract($popover-border-radius, $popover-border-width)" />
+    <style id="ThemePopoverBoxShadow" value="0 .25rem .5rem rgba($black, .2)" />
+    <style id="ThemePopoverHeaderBg" value="darken($popover-bg, 3%)" />
+    <style id="ThemePopoverHeaderColor" value="$headings-color" />
+    <style id="ThemePopoverHeaderPaddingY" value=".5rem" />
+    <style id="ThemePopoverHeaderPaddingX" value=".75rem" />
+    <style id="ThemePopoverBodyColor" value="$body-color" />
+    <style id="ThemePopoverBodyPaddingY" value="$popover-header-padding-y" />
+    <style id="ThemePopoverBodyPaddingX" value="$popover-header-padding-x" />
+    <style id="ThemePopoverArrowWidth" value="1rem" />
+    <style id="ThemePopoverArrowHeight" value=".5rem" />
+    <style id="ThemePopoverArrowColor" value="$popover-bg" />
+    <style id="ThemePopoverArrowOuterColor" value="fade-in($popover-border-color, .05)" />
+    <style id="ThemeToastMaxWidth" value="350px" />
+    <style id="ThemeToastPaddingX" value=".75rem" />
+    <style id="ThemeToastPaddingY" value=".25rem" />
+    <style id="ThemeToastFontSize" value=".875rem" />
+    <style id="ThemeToastColor" value="null" />
+    <style id="ThemeToastBackgroundColor" value="rgba($white, .85)" />
+    <style id="ThemeToastBorderWidth" value="1px" />
+    <style id="ThemeToastBorderColor" value="rgba(0, 0, 0, .1)" />
+    <style id="ThemeToastBorderRadius" value=".25rem" />
+    <style id="ThemeToastBoxShadow" value="0 .25rem .75rem rgba($black, .1)" />
+    <style id="ThemeToastHeaderColor" value="$gray-600" />
+    <style id="ThemeToastHeaderBackgroundColor" value="rgba($white, .85)" />
+    <style id="ThemeToastHeaderBorderColor" value="rgba(0, 0, 0, .05)" />
+    <style id="ThemeBadgeFontSize" value="75%" />
+    <style id="ThemeBadgeFontWeight" value="$font-weight-bold" />
+    <style id="ThemeBadgePaddingY" value=".25em" />
+    <style id="ThemeBadgePaddingX" value=".4em" />
+    <style id="ThemeBadgeBorderRadius" value="$border-radius" />
+    <style id="ThemeBadgeTransition" value="$btn-transition" />
+    <style id="ThemeBadgeFocusWidth" value="$input-btn-focus-width" />
+    <style id="ThemeBadgePillPaddingX" value=".6em" />
+    <style id="ThemeBadgePillBorderRadius" value="10rem" />
+    <style id="ThemeModalInnerPadding" value="1rem" />
+    <style id="ThemeModalFooterMarginBetween" value=".5rem" />
+    <style id="ThemeModalDialogMargin" value=".5rem" />
+    <style id="ThemeModalDialogMarginYSmUp" value="1.75rem" />
+    <style id="ThemeModalTitleLineHeight" value="$line-height-base" />
+    <style id="ThemeModalContentColor" value="null" />
+    <style id="ThemeModalContentBg" value="$white" />
+    <style id="ThemeModalContentBorderColor" value="rgba($black, .2)" />
+    <style id="ThemeModalContentBorderWidth" value="$border-width" />
+    <style id="ThemeModalContentBorderRadius" value="$border-radius-lg" />
+    <style id="ThemeModalContentInnerBorderRadius" value="subtract($modal-content-border-radius, $modal-content-border-width)" />
+    <style id="ThemeModalContentBoxShadowXs" value="0 .25rem .5rem rgba($black, .5)" />
+    <style id="ThemeModalContentBoxShadowSmUp" value="0 .5rem 1rem rgba($black, .5)" />
+    <style id="ThemeModalBackdropBg" value="$black" />
+    <style id="ThemeModalBackdropOpacity" value=".5" />
+    <style id="ThemeModalHeaderBorderColor" value="$border-color" />
+    <style id="ThemeModalFooterBorderColor" value="$modal-header-border-color" />
+    <style id="ThemeModalHeaderBorderWidth" value="$modal-content-border-width" />
+    <style id="ThemeModalFooterBorderWidth" value="$modal-header-border-width" />
+    <style id="ThemeModalHeaderPaddingY" value="1rem" />
+    <style id="ThemeModalHeaderPaddingX" value="1rem" />
+    <style id="ThemeModalHeaderPadding" value="$modal-header-padding-y $modal-header-padding-x" />
+    <style id="ThemeModalXl" value="1140px" />
+    <style id="ThemeModalLg" value="800px" />
+    <style id="ThemeModalMd" value="500px" />
+    <style id="ThemeModalSm" value="300px" />
+    <style id="ThemeModalFadeTransform" value="translate(0, -50px)" />
+    <style id="ThemeModalShowTransform" value="none" />
+    <style id="ThemeModalTransition" value="transform .3s ease-out" />
+    <style id="ThemeModalScaleTransform" value="scale(1.02)" />
+    <style id="ThemeAlertPaddingY" value=".75rem" />
+    <style id="ThemeAlertPaddingX" value="1.25rem" />
+    <style id="ThemeAlertMarginBottom" value="1rem" />
+    <style id="ThemeAlertBorderRadius" value="$border-radius" />
+    <style id="ThemeAlertLinkFontWeight" value="$font-weight-bold" />
+    <style id="ThemeAlertBorderWidth" value="$border-width" />
+    <style id="ThemeAlertBgLevel" value="-10" />
+    <style id="ThemeAlertBorderLevel" value="-9" />
+    <style id="ThemeAlertColorLevel" value="6" />
+    <style id="ThemeProgressHeight" value="1rem" />
+    <style id="ThemeProgressFontSize" value="($font-size-base * .75)" />
+    <style id="ThemeProgressBg" value="$gray-200" />
+    <style id="ThemeProgressBorderRadius" value="$border-radius" />
+    <style id="ThemeProgressBoxShadow" value="inset 0 .1rem .1rem rgba($black, .1)" />
+    <style id="ThemeProgressBarColor" value="$white" />
+    <style id="ThemeProgressBarBg" value="theme-color(&#34;primary&#34;)" />
+    <style id="ThemeProgressBarAnimationTiming" value="1s linear infinite" />
+    <style id="ThemeProgressBarTransition" value="width .6s ease" />
+    <style id="ThemeListGroupColor" value="null" />
+    <style id="ThemeListGroupBg" value="$white" />
+    <style id="ThemeListGroupBorderColor" value="rgba($black, .125)" />
+    <style id="ThemeListGroupBorderWidth" value="$border-width" />
+    <style id="ThemeListGroupBorderRadius" value="$border-radius" />
+    <style id="ThemeListGroupItemPaddingY" value=".75rem" />
+    <style id="ThemeListGroupItemPaddingX" value="1.25rem" />
+    <style id="ThemeListGroupHoverBg" value="$gray-100" />
+    <style id="ThemeListGroupActiveColor" value="$component-active-color" />
+    <style id="ThemeListGroupActiveBg" value="$component-active-bg" />
+    <style id="ThemeListGroupActiveBorderColor" value="$list-group-active-bg" />
+    <style id="ThemeListGroupDisabledColor" value="$gray-600" />
+    <style id="ThemeListGroupDisabledBg" value="$list-group-bg" />
+    <style id="ThemeListGroupActionColor" value="$gray-700" />
+    <style id="ThemeListGroupActionHoverColor" value="$list-group-action-color" />
+    <style id="ThemeListGroupActionActiveColor" value="$body-color" />
+    <style id="ThemeListGroupActionActiveBg" value="$gray-200" />
+    <style id="ThemeThumbnailPadding" value=".25rem" />
+    <style id="ThemeThumbnailBg" value="$body-bg" />
+    <style id="ThemeThumbnailBorderWidth" value="$border-width" />
+    <style id="ThemeThumbnailBorderColor" value="$gray-300" />
+    <style id="ThemeThumbnailBorderRadius" value="$border-radius" />
+    <style id="ThemeThumbnailBoxShadow" value="0 1px 2px rgba($black, .075)" />
+    <style id="ThemeFigureCaptionFontSize" value="90%" />
+    <style id="ThemeFigureCaptionColor" value="$gray-600" />
+    <style id="ThemeBreadcrumbFontSize" value="null" />
+    <style id="ThemeBreadcrumbPaddingY" value=".75rem" />
+    <style id="ThemeBreadcrumbPaddingX" value="1rem" />
+    <style id="ThemeBreadcrumbItemPadding" value=".5rem" />
+    <style id="ThemeBreadcrumbMarginBottom" value="1rem" />
+    <style id="ThemeBreadcrumbBg" value="$gray-200" />
+    <style id="ThemeBreadcrumbDividerColor" value="$gray-600" />
+    <style id="ThemeBreadcrumbActiveColor" value="$gray-600" />
+    <style id="ThemeBreadcrumbDivider" value="quote(&#34;/&#34;)" />
+    <style id="ThemeBreadcrumbBorderRadius" value="$border-radius" />
+    <style id="ThemeCarouselControlColor" value="$white" />
+    <style id="ThemeCarouselControlWidth" value="15%" />
+    <style id="ThemeCarouselControlOpacity" value=".5" />
+    <style id="ThemeCarouselControlHoverOpacity" value=".9" />
+    <style id="ThemeCarouselControlTransition" value="opacity .15s ease" />
+    <style id="ThemeCarouselIndicatorWidth" value="30px" />
+    <style id="ThemeCarouselIndicatorHeight" value="3px" />
+    <style id="ThemeCarouselIndicatorHitAreaHeight" value="10px" />
+    <style id="ThemeCarouselIndicatorSpacer" value="3px" />
+    <style id="ThemeCarouselIndicatorActiveBg" value="$white" />
+    <style id="ThemeCarouselIndicatorTransition" value="opacity .6s ease" />
+    <style id="ThemeCarouselCaptionWidth" value="70%" />
+    <style id="ThemeCarouselCaptionColor" value="$white" />
+    <style id="ThemeCarouselControlIconWidth" value="20px" />
+    <style id="ThemeCarouselControlPrevIconBg" value="url(&#34;data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; fill=&#39;#{$carousel-control-color}&#39; width=&#39;8&#39; height=&#39;8&#39; viewBox=&#39;0 0 8 8&#39;&gt;&lt;path d=&#39;M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z&#39;/&gt;&lt;/svg&gt;&#34;)" />
+    <style id="ThemeCarouselControlNextIconBg" value="url(&#34;data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; fill=&#39;#{$carousel-control-color}&#39; width=&#39;8&#39; height=&#39;8&#39; viewBox=&#39;0 0 8 8&#39;&gt;&lt;path d=&#39;M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z&#39;/&gt;&lt;/svg&gt;&#34;)" />
+    <style id="ThemeCarouselTransitionDuration" value=".6s" />
+    <style id="ThemeCarouselTransition" value="transform $carousel-transition-duration ease-in-out" />
+    <style id="ThemeSpinnerWidth" value="2rem" />
+    <style id="ThemeSpinnerHeight" value="$spinner-width" />
+    <style id="ThemeSpinnerBorderWidth" value=".25em" />
+    <style id="ThemeSpinnerWidthSm" value="1rem" />
+    <style id="ThemeSpinnerHeightSm" value="$spinner-width-sm" />
+    <style id="ThemeSpinnerBorderWidthSm" value=".2em" />
+    <style id="ThemeCloseFontSize" value="($font-size-base * 1.5)" />
+    <style id="ThemeCloseFontWeight" value="$font-weight-bold" />
+    <style id="ThemeCloseColor" value="$black" />
+    <style id="ThemeCloseTextShadow" value="0 1px 0 $white" />
+    <style id="ThemeCodeFontSize" value="87.5%" />
+    <style id="ThemeCodeColor" value="$pink" />
+    <style id="ThemeKbdPaddingY" value=".2rem" />
+    <style id="ThemeKbdPaddingX" value=".4rem" />
+    <style id="ThemeKbdFontSize" value="$code-font-size" />
+    <style id="ThemeKbdColor" value="$white" />
+    <style id="ThemeKbdBg" value="$gray-900" />
+    <style id="ThemePreColor" value="$gray-900" />
+    <style id="ThemePreScrollableMaxHeight" value="340px" />
+    <style id="ThemeDisplays" value="none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex" />
+    <style id="ThemeOverflows" value="auto, hidden" />
+    <style id="ThemePositions" value="static, relative, absolute, fixed, sticky" />
+    <style id="ThemeUserSelects" value="all, auto, none" />
+    <style id="ThemePrintPageSize" value="a3" />
+    <style id="ThemePrintBodyMinWidth" value="map-get($grid-breakpoints, &#34;lg&#34;)" />
+</theme>

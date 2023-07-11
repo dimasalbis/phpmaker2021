@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ew-setting name="Field Settings" version="17.0.0" author="e.World">
+<!--
+    Notes:
+    1. id name must be same as field property name in project file,
+    2. Supported types: Integer, Boolean, and String(default)
+    3. If integer, supports min/max attributes,
+    4. If combobox, supports options attribute with comma separated option values
+-->
+    <section name="Multi-Page">
+        <setting name="Page number" id="FldPageIndex" type="Integer" min="0" />
+    </section>
+    <section name="View Tag">
+        <setting name="Italic" id="FldItalic" type="Boolean" /><!-- v2018 -->
+        <setting name="Bold" id="FldBold" type="Boolean" /><!-- v2018 -->
+        <setting name="Tooltip width (px)" id="FldTooltipWidth" type="Integer" min="0" />
+        <setting name="Align" id="FldAlign" options=",left,center,right,justify" />
+        <setting name="Format" id="FldFmtType" options="None,Currency,Date/Time,Number,Percent,String" /><!-- v2018 -->
+        <setting name="String function" id="FldStrFunc" options="strtoupper,strtolower,htmlentities,htmlspecialchars,urlencode,rawurlencode,trim,ltrim,rtrim" /><!-- v2018 -->
+        <setting name="Date/Time named format" id="FldDtFormat" options="Default,DateTime,Date,Time(AM/PM),Time,Ymd,mdY,dmY,YmdHis,mdYHis,dmYHis,ymd,mdy,dmy,ymdHis,mdyHis,dmyHis" /><!-- v2018 -->
+        <setting name="No. of digits after decimal" id="FldNumDigits" type="Integer" min="0" />
+    </section>
+    <section name="Edit Tag">
+        <setting name="Repeat columns" id="FldRepeatColumns" type="Integer" min="1" />
+        <setting name="Upload path (Relative to application root)" id="FldUploadPath" />
+        <setting name="Dropdown for SELECT(Multiple)/RADIO/CHECKBOX" id="FldDropdown" type="Boolean" />
+        <setting name="Dropdown min-width (px)" id="FldDropdownWidth" type="Integer" min="0" />
+        <setting name="Dropdown max-height (px)" id="FldDropdownHeight" type="Integer" min="0" />
+        <setting name="Use modal dialog for lookup" id="FldModalLookup" type="Boolean" /><!-- v2017 -->
+        <setting name="Modal lookup page size" id="FldModalLookupPageSize" type="Integer" /><!-- v2017 -->
+        <setting name="Validate" id="FldValidate" options=",INTEGER,FLOAT,RANGE,DATE,TIME,CREDITCARD,GUID,USPHONE,USZIP,EMAIL,USSSN,REGEX" /><!-- v2018 -->
+        <setting name="Use date/time picker" id="FldPopCalendar" type="Boolean" /><!-- v2018 -->
+    </section>
+    <section name="File Upload">
+        <setting name="Multiple" id="FldUploadMultiple" type="Boolean" />
+        <setting name="Upload folder" id="FldUploadPath" />
+        <setting name="Resize image" id="FldUploadResize" type="Boolean" />
+        <setting name="Resize width (px)" id="FldResizeWidth" type="Integer" min="0" />
+        <setting name="Resize height (px)" id="FldResizeHeight" type="Integer" min="0" />
+        <setting name="Allowed file types" id="UploadAllowedFileExt" />
+        <setting name="Max file size" id="UploadMaxFileSize" type="Integer" min="0" />
+        <setting name="Max number of files" id="UploadMaxFileCount" type="Integer" min="0" />
+    </section>
+</ew-setting>

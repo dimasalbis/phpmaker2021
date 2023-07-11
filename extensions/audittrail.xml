@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-extension name="Audit Trail" version="17.0.0" type="Audit Trail" author="e.World">
+<description>
+<![CDATA[Audit Trail Options
+
+Options:
+Add - audit trail on add (log data)
+Edit - audit trail on edit (log primary key and modified data only)
+Delete - audit trail on delete (log data)
+View - audit trail on view (log primary key of records only)
+ViewData - log data also (see note 3 below)
+Search - audit trail on search (log search criteria only)
+
+Notes:
+1. This extension does NOT require any additional files or zip file.
+2. The settings will be used only if the [Audit Trail] option is enabled in the Table Setup page. To enable Audit Trail for a table, please set up in Table Setup page. See Table Setup in the help file.
+3. Enabling 'ViewData' will create a lot of records and may affect performance. Make sure you use them discreetly.
+]]>
+</description>
+<Project>
+<Database>
+<Table>
+    <Attribute name="Add" type="Boolean" default="1" />
+    <Attribute name="Edit" type="Boolean" default="1" />
+    <Attribute name="Delete" type="Boolean" default="1" />
+    <Attribute name="View" type="Boolean" default="0" />
+    <Attribute name="ViewData" type="Boolean" default="0" />
+    <Attribute name="Search" type="Boolean" default="0" />
+</Table>
+</Database>
+</Project>
+</ew-extension>

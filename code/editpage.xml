@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-code name="Basic Edit page" version="17.0.0" type="Custom Template" for="template" author="e.World">
+<description>
+<![CDATA[
+Basic Edit page Custom Template
+]]>
+</description>
+<script>
+<![CDATA[
+<#
+    let TABLE = DB.Tables.find(tbl => tbl.TblName == "{TblName}"),
+        currentFields = TABLE.Fields.filter(f => f.FldGenerate && f.FldEdit && f.FldAutoUpdateValue === "");
+#>
+]]>
+</script>
+<code>
+<![CDATA[
+    <# for (let f of currentFields) { #>
+    <div id="r_<#= f.FldParm #>" class="form-group row">
+        <label for="<#= f.FldVar #>" class="col-sm-2 col-form-label">{{{caption <#= f.FldParm #>}}}</label>
+        <div class="col-sm-10">{{{value <#= f.FldParm #>}}}</div>
+    </div>
+    <# } #>
+]]>
+</code>
+</ew-code>

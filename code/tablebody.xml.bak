@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-code name="Basic table body (List page)" version="17.0.0" type="Custom Template" for="template" author="e.World">
+<description>
+<![CDATA[
+Basic table body for List page Custom Template
+]]>
+</description>
+<script>
+<![CDATA[
+<#
+    let TABLE = DB.Tables.find(tbl => tbl.TblName == "{TblName}"),
+        linkOnLeft = TABLE.TblUseGlobal && LinkOnLeft || !TABLE.TblUseGlobal && TABLE.TblLinkOnLeft,
+        currentFields = TABLE.Fields.filter(f => f.FldGenerate && f.FldList);
+#>
+]]>
+</script>
+<code>
+<![CDATA[
+        <tr{{{row_attrs}}}>
+            <# if (linkOnLeft) { #>
+            {{{list_options}}}
+            <# } #>
+            <# for (let f of currentFields) { #>
+            <td>{{{<#= f.FldParm #>}}}</td>
+            <# } #>
+            <# if (!linkOnLeft) { #>
+            {{{list_options}}}
+            <# } #>
+        </tr>
+]]>
+</code>
+</ew-code>

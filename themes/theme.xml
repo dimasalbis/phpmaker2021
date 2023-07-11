@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ew-theme name="Theme Styles" version="17.0.12" author="e.World">
+    <!-- DO NOT CHANGE ID AND NAME! -->
+    <!-- Note: id name must be unique and must start with "Theme". -->
+    <!-- AdminLTE Variables Begin -->
+    <category name="Colors (AdminLTE)">
+        <!-- <style name="$blue" id="ThemeBlue" type="Color" /> -->
+        <style name="$lightblue" id="ThemeLightblue" type="Color" />
+        <style name="$navy" id="ThemeNavy" type="Color" />
+        <!-- <style name="$teal" id="ThemeTeal" type="Color" /> -->
+        <style name="$olive" id="ThemeOlive" type="Color" />
+        <style name="$lime" id="ThemeLime" type="Color" />
+        <!-- <style name="$orange" id="ThemeOrange" type="Color" /> -->
+        <style name="$fuchsia" id="ThemeFuchsia" type="Color" />
+        <!-- <style name="$purple" id="ThemePurple" type="Color" /> -->
+        <style name="$maroon" id="ThemeMaroon" type="Color" />
+        <!-- <style name="$black" id="ThemeBlack" type="Color" /> -->
+        <style name="$gray-x-light" id="ThemeGrayXLight" type="Color" />
+    </category>
+    <category name="Layout (AdminLTE)">
+        <style name="Sidebar class" id="ThemeSidebarClass" options="sidebar-dark-primary,sidebar-dark-warning,sidebar-dark-info,sidebar-dark-danger,sidebar-dark-success,sidebar-dark-indigo,sidebar-dark-navy,sidebar-dark-purple,sidebar-dark-fuchsia,sidebar-dark-pink,sidebar-dark-maroon,sidebar-dark-orange,sidebar-dark-lime,sidebar-dark-teal,sidebar-dark-olive,sidebar-light-primary,sidebar-light-warning,sidebar-light-info,sidebar-light-danger,sidebar-light-success,sidebar-light-indigo,sidebar-light-navy,sidebar-light-purple,sidebar-light-fuchsia,sidebar-light-pink,sidebar-light-maroon,sidebar-light-orange,sidebar-light-lime,sidebar-light-teal,sidebar-light-olive" default="sidebar-dark-primary" />
+        <style name="Navbar class" id="ThemeNavbarClass" options="navbar-primary,navbar-secondary,navbar-info,navbar-success,navbar-danger,navbar-indigo,navbar-purple,navbar-pink,navbar-teal,navbar-cyan,navbar-dark,navbar-gray-dark,navbar-gray,navbar-light,navbar-warning,navbar-white,navbar-orange" default="navbar-light" />
+        <style name="Navbar border" id="ThemeNavbarBorder" type="Boolean" />
+        <style name="Brand logo class" id="ThemeBrandLogoClass" options=",navbar-primary,navbar-secondary,navbar-info,navbar-success,navbar-danger,navbar-indigo,navbar-purple,navbar-pink,navbar-teal,navbar-cyan,navbar-dark,navbar-gray-dark,navbar-gray,navbar-light,navbar-warning,navbar-white,navbar-orange" default="" />
+        <style name="Accent color" id="ThemeAccentColor" options=",accent-primary,accent-warning,accent-info,accent-danger,accent-success,accent-indigo,accent-navy,accent-purple,accent-fuchsia,accent-pink,accent-maroon,accent-orange,accent-lime,accent-teal,accent-olive" default="" />
+        <style name="Compact sidebar" id="ThemeSidebarCompact" type="Boolean" />
+        <style name="$font-size-root" id="ThemeFontSizeRoot" />
+        <style name="$sidebar-width" id="ThemeSidebarWidth" />
+        <style name="$sidebar-padding-x" id="ThemeSidebarPaddingX" />
+        <style name="$sidebar-padding-y" id="ThemeSidebarPaddingY" type="Integer" />
+        <style name="$sidebar-custom-height" id="ThemeSidebarCustomHeight" />
+        <style name="$sidebar-custom-height-lg" id="ThemeSidebarCustomHeightLg" />
+        <style name="$sidebar-custom-height-xl" id="ThemeSidebarCustomHeightXl" />
+        <style name="$sidebar-custom-padding-x" id="ThemeSidebarCustomPaddingX" />
+        <style name="$sidebar-custom-padding-y" id="ThemeSidebarCustomPaddingY" />
+        <style name="$boxed-layout-max-width" id="ThemeBoxedLayoutMaxWidth" />
+        <style name="$main-bg" id="ThemeMainBg" type="Color" />
+        <style name="$content-padding-y" id="ThemeContentPaddingY" type="Integer" />
+        <style name="$content-padding-x" id="ThemeContentPaddingX" />
+    </category>
+    <category name="Image sizes (AdminLTE)">
+        <style name="$img-size-sm" id="ThemeImgSizeSm" />
+        <style name="$img-size-md" id="ThemeImgSizeMd" />
+        <style name="$img-size-lg" id="ThemeImgSizeLg" />
+        <style name="$img-size-push" id="ThemeImgSizePush" />
+    </category>
+    <category name="Main header (AdminLTE)">
+        <style name="$main-header-bottom-border-width" id="ThemeMainHeaderBottomBorderWidth" />
+        <style name="$main-header-bottom-border-color" id="ThemeMainHeaderBottomBorderColor" />
+        <style name="$main-header-bottom-border" id="ThemeMainHeaderBottomBorder" />
+        <style name="$main-header-link-padding-y" id="ThemeMainHeaderLinkPaddingY" />
+        <style name="$main-header-height-inner" id="ThemeMainHeaderHeightInner" />
+        <style name="$main-header-height" id="ThemeMainHeaderHeight" />
+        <style name="$nav-link-sm-padding-y" id="ThemeNavLinkSmPaddingY" />
+        <style name="$nav-link-sm-height" id="ThemeNavLinkSmHeight" />
+        <style name="$main-header-height-sm-inner" id="ThemeMainHeaderHeightSmInner" />
+        <style name="$main-header-height-sm" id="ThemeMainHeaderHeightSm" />
+        <style name="$main-header-dark-form-control-bg" id="ThemeMainHeaderDarkFormControlBg" />
+        <style name="$main-header-dark-form-control-focused-bg" id="ThemeMainHeaderDarkFormControlFocusedBg" />
+        <style name="$main-header-dark-form-control-focused-color" id="ThemeMainHeaderDarkFormControlFocusedColor" />
+        <style name="$main-header-dark-form-control-border-color" id="ThemeMainHeaderDarkFormControlBorderColor" />
+        <style name="$main-header-dark-form-control-focused-border-color" id="ThemeMainHeaderDarkFormControlFocusedBorderColor" />
+        <style name="$main-header-dark-placeholder-color" id="ThemeMainHeaderDarkPlaceholderColor" />
+        <style name="$main-header-light-form-control-bg" id="ThemeMainHeaderLightFormControlBg" />
+        <style name="$main-header-light-form-control-focused-bg" id="ThemeMainHeaderLightFormControlFocusedBg" />
+        <style name="$main-header-light-form-control-focused-color" id="ThemeMainHeaderLightFormControlFocusedColor" />
+        <style name="$main-header-light-form-control-border-color" id="ThemeMainHeaderLightFormControlBorderColor" />
+        <style name="$main-header-light-form-control-focused-border-color" id="ThemeMainHeaderLightFormControlFocusedBorderColor" />
+        <style name="$main-header-light-placeholder-color" id="ThemeMainHeaderLightPlaceholderColor" />
+    </category>
+    <category name="Main footer (AdminLTE)">
+        <style name="$main-footer-padding" id="ThemeMainFooterPadding" />
+        <style name="$main-footer-padding-sm" id="ThemeMainFooterPaddingSm" />
+        <style name="$main-footer-border-top-width" id="ThemeMainFooterBorderTopWidth" />
+        <style name="$main-footer-border-top-color" id="ThemeMainFooterBorderTopColor" />
+        <style name="$main-footer-border-top" id="ThemeMainFooterBorderTop" />
+        <style name="$main-footer-height-inner" id="ThemeMainFooterHeightInner" />
+        <style name="$main-footer-height" id="ThemeMainFooterHeight" />
+        <style name="$main-footer-height-sm-inner" id="ThemeMainFooterHeightSmInner" />
+        <style name="$main-footer-height-sm" id="ThemeMainFooterHeightSm" />
+        <style name="$main-footer-bg" id="ThemeMainFooterBg" />
+    </category>
+    <category name="Sidebar skins (AdminLTE)">
+        <style name="$sidebar-dark-bg" id="ThemeSidebarDarkBg" />
+        <style name="$sidebar-dark-hover-bg" id="ThemeSidebarDarkHoverBg" />
+        <style name="$sidebar-dark-color" id="ThemeSidebarDarkColor" type="Color" />
+        <style name="$sidebar-dark-hover-color" id="ThemeSidebarDarkHoverColor" />
+        <style name="$sidebar-dark-active-color" id="ThemeSidebarDarkActiveColor" />
+        <style name="$sidebar-dark-submenu-bg" id="ThemeSidebarDarkSubmenuBg" />
+        <style name="$sidebar-dark-submenu-color" id="ThemeSidebarDarkSubmenuColor" type="Color" />
+        <style name="$sidebar-dark-submenu-hover-color" id="ThemeSidebarDarkSubmenuHoverColor" />
+        <style name="$sidebar-dark-submenu-hover-bg" id="ThemeSidebarDarkSubmenuHoverBg" />
+        <style name="$sidebar-dark-submenu-active-color" id="ThemeSidebarDarkSubmenuActiveColor" />
+        <style name="$sidebar-dark-submenu-active-bg" id="ThemeSidebarDarkSubmenuActiveBg" />
+        <style name="$sidebar-light-bg" id="ThemeSidebarLightBg" />
+        <style name="$sidebar-light-hover-bg" id="ThemeSidebarLightHoverBg" />
+        <style name="$sidebar-light-color" id="ThemeSidebarLightColor" />
+        <style name="$sidebar-light-hover-color" id="ThemeSidebarLightHoverColor" />
+        <style name="$sidebar-light-active-color" id="ThemeSidebarLightActiveColor" />
+        <style name="$sidebar-light-submenu-bg" id="ThemeSidebarLightSubmenuBg" />
+        <style name="$sidebar-light-submenu-color" id="ThemeSidebarLightSubmenuColor" type="Color" />
+        <style name="$sidebar-light-submenu-hover-color" id="ThemeSidebarLightSubmenuHoverColor" />
+        <style name="$sidebar-light-submenu-hover-bg" id="ThemeSidebarLightSubmenuHoverBg" />
+        <style name="$sidebar-light-submenu-active-color" id="ThemeSidebarLightSubmenuActiveColor" />
+        <style name="$sidebar-light-submenu-active-bg" id="ThemeSidebarLightSubmenuActiveBg" />
+    </category>
+    <category name="Sidebar mini (AdminLTE)">
+        <style name="$sidebar-mini-width" id="ThemeSidebarMiniWidth" />
+        <style name="$sidebar-nav-icon-width" id="ThemeSidebarNavIconWidth" />
+        <style name="$sidebar-user-image-width" id="ThemeSidebarUserImageWidth" />
+    </category>
+    <category name="Control sidebar (AdminLTE)">
+        <style name="$control-sidebar-width" id="ThemeControlSidebarWidth" />
+        <style name="$card-border-color" id="ThemeCardBorderColor" />
+    </category>
+    <category name="Cards (AdminLTE)">
+        <!-- <style name="$card-border-color" id="ThemeCardBorderColor" /> -->
+        <style name="$card-dark-border-color" id="ThemeCardDarkBorderColor" />
+        <style name="$card-shadow" id="ThemeCardShadow" />
+        <style name="$card-title-font-size" id="ThemeCardTitleFontSize" />
+        <style name="$card-title-font-size-sm" id="ThemeCardTitleFontSizeSm" />
+        <style name="$card-title-font-weight" id="ThemeCardTitleFontWeight" />
+        <style name="$card-nav-link-padding-sm-y" id="ThemeCardNavLinkPaddingSmY" />
+        <style name="$card-nav-link-padding-sm-x" id="ThemeCardNavLinkPaddingSmX" />
+        <style name="$card-img-size" id="ThemeCardImgSize" />
+    </category>
+    <category name="Progress bars (AdminLTE)">
+        <style name="$progress-bar-border-radius" id="ThemeProgressBarBorderRadius" />
+    </category>
+    <category name="Direct chat (AdminLTE)">
+        <style name="$direct-chat-default-msg-bg" id="ThemeDirectChatDefaultMsgBg" />
+        <style name="$direct-chat-default-font-color" id="ThemeDirectChatDefaultFontColor" type="Color" />
+        <style name="$direct-chat-default-msg-border-color" id="ThemeDirectChatDefaultMsgBorderColor" />
+    </category>
+    <category name="Z index (AdminLTE)">
+        <style name="$zindex-main-header" id="ThemeZindexMainHeader" />
+        <style name="$zindex-main-sidebar" id="ThemeZindexMainSidebar" />
+        <style name="$zindex-main-footer" id="ThemeZindexMainFooter" />
+        <style name="$zindex-control-sidebar" id="ThemeZindexControlSidebar" />
+        <style name="$zindex-toasts" id="ThemeZindexToasts" />
+        <style name="$zindex-preloader" id="ThemeZindexPreloader" type="Integer" />
+    </category>
+    <category name="Transitions settings (AdminLTE)">
+        <style name="$transition-speed" id="ThemeTransitionSpeed" />
+        <style name="$transition-fn" id="ThemeTransitionFn" />
+    </category>
+    <category name="Text (AdminLTE)">
+        <style name="$font-size-xs" id="ThemeFontSizeXs" />
+        <style name="$font-size-xl" id="ThemeFontSizeXl" />
+    </category>
+    <category name="Button (AdminLTE)">
+        <style name="$button-default-background-color" id="ThemeButtonDefaultBackgroundColor" />
+        <style name="$button-default-color" id="ThemeButtonDefaultColor" type="Color" />
+        <style name="$button-default-border-color" id="ThemeButtonDefaultBorderColor" type="Color" />
+        <style name="$button-padding-y-xs" id="ThemeButtonPaddingYXs" />
+        <style name="$button-padding-x-xs" id="ThemeButtonPaddingXXs" />
+        <style name="$button-line-height-xs" id="ThemeButtonLineHeightXs" />
+        <style name="$button-font-size-xs" id="ThemeButtonFontSizeXs" />
+        <style name="$button-border-radius-xs" id="ThemeButtonBorderRadiusXs" />
+    </category>
+    <category name="Ribbon (AdminLTE)">
+        <style name="$ribbon-border-size" id="ThemeRibbonBorderSize" />
+        <style name="$ribbon-line-height" id="ThemeRibbonLineHeight" />
+        <style name="$ribbon-padding" id="ThemeRibbonPadding" />
+        <style name="$ribbon-font-size" id="ThemeRibbonFontSize" />
+        <style name="$ribbon-width" id="ThemeRibbonWidth" />
+        <style name="$ribbon-wrapper-size" id="ThemeRibbonWrapperSize" />
+        <style name="$ribbon-top" id="ThemeRibbonTop" />
+        <style name="$ribbon-right" id="ThemeRibbonRight" />
+        <style name="$ribbon-lg-wrapper-size" id="ThemeRibbonLgWrapperSize" />
+        <style name="$ribbon-lg-width" id="ThemeRibbonLgWidth" />
+        <style name="$ribbon-lg-top" id="ThemeRibbonLgTop" />
+        <style name="$ribbon-lg-right" id="ThemeRibbonLgRight" type="Integer" />
+        <style name="$ribbon-xl-wrapper-size" id="ThemeRibbonXlWrapperSize" />
+        <style name="$ribbon-xl-width" id="ThemeRibbonXlWidth" />
+        <style name="$ribbon-xl-top" id="ThemeRibbonXlTop" />
+        <style name="$ribbon-xl-right" id="ThemeRibbonXlRight" />
+    </category>
+    <category name="Colors (AdminLTE)">
+        <style name="$white-alt" id="ThemeWhiteAlt" />
+        <style name="$gray-100-alt" id="ThemeGray100Alt" />
+        <style name="$gray-200-alt" id="ThemeGray200Alt" />
+        <style name="$gray-300-alt" id="ThemeGray300Alt" />
+        <style name="$gray-400-alt" id="ThemeGray400Alt" />
+        <style name="$gray-500-alt" id="ThemeGray500Alt" />
+        <style name="$gray-600-alt" id="ThemeGray600Alt" />
+        <style name="$gray-700-alt" id="ThemeGray700Alt" />
+        <style name="$gray-800-alt" id="ThemeGray800Alt" />
+        <style name="$gray-900-alt" id="ThemeGray900Alt" />
+        <style name="$black-alt" id="ThemeBlackAlt" />
+        <style name="$blue-alt" id="ThemeBlueAlt" type="Color" />
+        <style name="$indigo-alt" id="ThemeIndigoAlt" type="Color" />
+        <style name="$purple-alt" id="ThemePurpleAlt" type="Color" />
+        <style name="$pink-alt" id="ThemePinkAlt" type="Color" />
+        <style name="$red-alt" id="ThemeRedAlt" type="Color" />
+        <style name="$orange-alt" id="ThemeOrangeAlt" type="Color" />
+        <style name="$yellow-alt" id="ThemeYellowAlt" type="Color" />
+        <style name="$green-alt" id="ThemeGreenAlt" type="Color" />
+        <style name="$teal-alt" id="ThemeTealAlt" type="Color" />
+        <style name="$cyan-alt" id="ThemeCyanAlt" type="Color" />
+        <style name="$lightblue-alt" id="ThemeLightblueAlt" />
+        <style name="$navy-alt" id="ThemeNavyAlt" />
+        <style name="$olive-alt" id="ThemeOliveAlt" />
+        <style name="$lime-alt" id="ThemeLimeAlt" />
+        <style name="$fuchsia-alt" id="ThemeFuchsiaAlt" />
+        <style name="$maroon-alt" id="ThemeMaroonAlt" />
+        <style name="$gray-x-light-alt" id="ThemeGrayXLightAlt" />
+        <style name="$primary-alt" id="ThemePrimaryAlt" />
+        <style name="$secondary-alt" id="ThemeSecondaryAlt" />
+        <style name="$success-alt" id="ThemeSuccessAlt" />
+        <style name="$info-alt" id="ThemeInfoAlt" />
+        <style name="$warning-alt" id="ThemeWarningAlt" />
+        <style name="$danger-alt" id="ThemeDangerAlt" />
+        <style name="$light-alt" id="ThemeLightAlt" />
+        <style name="$dark-alt" id="ThemeDarkAlt" />
+    </category>
+    <!-- AdminLTE Variables End -->
+    <category name="Table header (List page)">
+        <style name="Background color" id="ThemeTableHeaderBackColor" type="Color" />
+        <style name="Border color" id="ThemeTableHeaderBorderColor" type="Color" />
+        <style name="Text color" id="ThemeTableHeaderTextColor" type="Color" />
+    </category>
+    <category name="Table body (List page)">
+        <style name="Row color" id="ThemeTableBodyRowColor" type="Color" />
+        <style name="Text color" id="ThemeTableBodyRowTextColor" type="Color" />
+        <style name="Alternating row color" id="ThemeTableBodyAlternatingRowColor" type="Color" />
+        <style name="Alternating row text color" id="ThemeTableBodyAlternatingRowTextColor" type="Color" />
+        <style name="Edit row color" id="ThemeTableBodyEditRowColor" type="Color" />
+        <style name="Edit row text color" id="ThemeTableBodyEditRowTextColor" type="Color" />
+        <style name="Highlighted row color" id="ThemeTableBodyHighlightRowColor" type="Color" />
+        <style name="Highlighted row text color" id="ThemeTableBodyHighlightRowTextColor" type="Color" />
+        <style name="Selected row color" id="ThemeTableBodySelectRowColor" type="Color" />
+        <style name="Selected row text color" id="ThemeTableBodySelectRowTextColor" type="Color" />
+    </category>
+    <category name="Table footer (List page)">
+        <style name="Background color" id="ThemeTableFooterBackColor" type="Color" />
+        <style name="Text color" id="ThemeTableFooterTextColor" type="Color" />
+    </category>
+    <category name="Grid (List page)">
+        <style name="Padding" id="ThemeGridPadding" />
+        <style name="Border width" id="ThemeGridBorderWidth" />
+        <style name="Border color" id="ThemeGridBorderColor" type="Color" />
+    </category>
+    <category name="Grid lines (List page)">
+        <style name="Width" id="ThemeGridLineWidth" />
+        <style name="Color" id="ThemeGridLineColor" type="Color" />
+    </category>
+    <category name="Grid pager panels (List page)">
+        <style name="Background color" id="ThemeGridPagerPanelBackColor" type="Color" />
+        <style name="Text color" id="ThemeGridPagerPanelTextColor" type="Color" />
+    </category>
+    <category name="Table (non-List pages)">
+        <style name="Striped rows" id="ThemeTableStriped" type="Boolean" />
+        <style name="Bordered table" id="ThemeTableBordered" type="Boolean" />
+        <style name="Borderless table" id="ThemeTableBorderless" type="Boolean" />
+        <style name="Hoverable rows" id="ThemeTableHover" type="Boolean" />
+        <style name="Small table" id="ThemeTableCondensed" type="Boolean" />
+    </category>
+    <category name="Report Colors">
+        <style name="Group color 1" id="ThemeRptGrpColor1" type="Color" />
+        <style name="Group text color 1" id="ThemeRptGrpTextColor1" type="Color" />
+        <style name="Group color 2" id="ThemeRptGrpColor2" type="Color" />
+        <style name="Group text color 2" id="ThemeRptGrpTextColor2" type="Color" />
+        <style name="Group color 3" id="ThemeRptGrpColor3" type="Color" />
+        <style name="Group text color 3" id="ThemeRptGrpTextColor3" type="Color" />
+        <style name="Group color 4" id="ThemeRptGrpColor4" type="Color" />
+        <style name="Group text color 4" id="ThemeRptGrpTextColor4" type="Color" />
+        <style name="Group color 5" id="ThemeRptGrpColor5" type="Color" />
+        <style name="Group text color 5" id="ThemeRptGrpTextColor5" type="Color" />
+        <style name="Group color 6" id="ThemeRptGrpColor6" type="Color" />
+        <style name="Group text color 6" id="ThemeRptGrpTextColor6" type="Color" />
+        <style name="Group summary color 1" id="ThemeRptGrpSummaryColor1" type="Color" />
+        <style name="Group summary text color 1" id="ThemeRptGrpSummaryTextColor1" type="Color" />
+        <style name="Group summary color 2" id="ThemeRptGrpSummaryColor2" type="Color" />
+        <style name="Group summary text color 2" id="ThemeRptGrpSummaryTextColor2" type="Color" />
+        <style name="Group summary color 3" id="ThemeRptGrpSummaryColor3" type="Color" />
+        <style name="Group summary text color 3" id="ThemeRptGrpSummaryTextColor3" type="Color" />
+        <style name="Group summary color 4" id="ThemeRptGrpSummaryColor4" type="Color" />
+        <style name="Group summary text color 4" id="ThemeRptGrpSummaryTextColor4" type="Color" />
+        <style name="Group summary color 5" id="ThemeRptGrpSummaryColor5" type="Color" />
+        <style name="Group summary text color 5" id="ThemeRptGrpSummaryTextColor5" type="Color" />
+        <style name="Group summary color 6" id="ThemeRptGrpSummaryColor6" type="Color" />
+        <style name="Group summary text color 6" id="ThemeRptGrpSummaryTextColor6" type="Color" />
+        <style name="Page summary color" id="ThemeRptPageSummaryColor" type="Color" />
+        <style name="Page summary text color" id="ThemeRptPageSummaryTextColor" type="Color" />
+        <style name="Grand summary color" id="ThemeRptGrandSummaryColor" type="Color" />
+        <style name="Grand summary text color" id="ThemeRptGrandSummaryTextColor" type="Color" />
+    </category>
+    <!-- Bootstrap Variables Begin -->
+    <category name="Color system (Bootstrap)">
+        <style name="$white" id="ThemeWhite" type="Color" />
+        <style name="$gray-100" id="ThemeGray100" type="Color" />
+        <style name="$gray-200" id="ThemeGray200" type="Color" />
+        <style name="$gray-300" id="ThemeGray300" type="Color" />
+        <style name="$gray-400" id="ThemeGray400" type="Color" />
+        <style name="$gray-500" id="ThemeGray500" type="Color" />
+        <style name="$gray-600" id="ThemeGray600" type="Color" />
+        <style name="$gray-700" id="ThemeGray700" type="Color" />
+        <style name="$gray-800" id="ThemeGray800" type="Color" />
+        <style name="$gray-900" id="ThemeGray900" type="Color" />
+        <style name="$black" id="ThemeBlack" type="Color" />
+        <style name="$blue" id="ThemeBlue" type="Color" />
+        <style name="$indigo" id="ThemeIndigo" type="Color" />
+        <style name="$purple" id="ThemePurple" type="Color" />
+        <style name="$pink" id="ThemePink" type="Color" />
+        <style name="$red" id="ThemeRed" type="Color" />
+        <style name="$orange" id="ThemeOrange" type="Color" />
+        <style name="$yellow" id="ThemeYellow" type="Color" />
+        <style name="$green" id="ThemeGreen" type="Color" />
+        <style name="$teal" id="ThemeTeal" type="Color" />
+        <style name="$cyan" id="ThemeCyan" type="Color" />
+        <style name="$primary" id="ThemePrimary" />
+        <style name="$secondary" id="ThemeSecondary" />
+        <style name="$success" id="ThemeSuccess" />
+        <style name="$info" id="ThemeInfo" />
+        <style name="$warning" id="ThemeWarning" />
+        <style name="$danger" id="ThemeDanger" />
+        <style name="$light" id="ThemeLight" />
+        <style name="$dark" id="ThemeDark" />
+        <style name="$theme-color-interval" id="ThemeThemeColorInterval" />
+        <style name="$yiq-contrasted-threshold" id="ThemeYiqContrastedThreshold" type="Integer" />
+        <style name="$yiq-text-dark" id="ThemeYiqTextDark" />
+        <style name="$yiq-text-light" id="ThemeYiqTextLight" />
+        <style name="$escaped-characters" id="ThemeEscapedCharacters" />
+    </category>
+    <category name="Options (Bootstrap)">
+        <style name="$enable-caret" id="ThemeEnableCaret" type="Boolean" />
+        <style name="$enable-rounded" id="ThemeEnableRounded" type="Boolean" />
+        <style name="$enable-shadows" id="ThemeEnableShadows" type="Boolean" />
+        <style name="$enable-gradients" id="ThemeEnableGradients" type="Boolean" />
+        <style name="$enable-transitions" id="ThemeEnableTransitions" type="Boolean" />
+        <style name="$enable-prefers-reduced-motion-media-query" id="ThemeEnablePrefersReducedMotionMediaQuery" type="Boolean" />
+        <style name="$enable-hover-media-query" id="ThemeEnableHoverMediaQuery" type="Boolean" />
+        <style name="$enable-grid-classes" id="ThemeEnableGridClasses" type="Boolean" />
+        <style name="$enable-pointer-cursor-for-buttons" id="ThemeEnablePointerCursorForButtons" type="Boolean" />
+        <style name="$enable-print-styles" id="ThemeEnablePrintStyles" type="Boolean" />
+        <style name="$enable-responsive-font-sizes" id="ThemeEnableResponsiveFontSizes" type="Boolean" />
+        <style name="$enable-validation-icons" id="ThemeEnableValidationIcons" type="Boolean" />
+        <style name="$enable-deprecation-messages" id="ThemeEnableDeprecationMessages" type="Boolean" />
+    </category>
+    <category name="Spacing (Bootstrap)">
+        <style name="$spacer" id="ThemeSpacer" />
+    </category>
+    <category name="Body (Bootstrap)">
+        <style name="$body-bg" id="ThemeBodyBg" />
+        <style name="$body-color" id="ThemeBodyColor" />
+    </category>
+    <category name="Links (Bootstrap)">
+        <style name="$link-color" id="ThemeLinkColor" />
+        <style name="$link-decoration" id="ThemeLinkDecoration" />
+        <style name="$link-hover-color" id="ThemeLinkHoverColor" />
+        <style name="$link-hover-decoration" id="ThemeLinkHoverDecoration" />
+        <style name="$emphasized-link-hover-darken-percentage" id="ThemeEmphasizedLinkHoverDarkenPercentage" />
+    </category>
+    <category name="Paragraphs (Bootstrap)">
+        <style name="$paragraph-margin-bottom" id="ThemeParagraphMarginBottom" />
+    </category>
+    <category name="Grid breakpoints (Bootstrap)">
+        <style name="$grid-breakpoints" id="ThemeGridBreakpoints" />
+    </category>
+    <category name="Grid containers (Bootstrap)">
+        <style name="$container-max-widths" id="ThemeContainerMaxWidths" />
+    </category>
+    <category name="Grid columns (Bootstrap)">
+        <style name="$grid-columns" id="ThemeGridColumns" type="Integer" />
+        <style name="$grid-gutter-width" id="ThemeGridGutterWidth" />
+        <style name="$grid-row-columns" id="ThemeGridRowColumns" type="Integer" />
+    </category>
+    <category name="Components (Bootstrap)">
+        <style name="$line-height-lg" id="ThemeLineHeightLg" />
+        <style name="$line-height-sm" id="ThemeLineHeightSm" />
+        <style name="$border-width" id="ThemeBorderWidth" />
+        <style name="$border-color" id="ThemeBorderColor" />
+        <style name="$border-radius" id="ThemeBorderRadius" />
+        <style name="$border-radius-lg" id="ThemeBorderRadiusLg" />
+        <style name="$border-radius-sm" id="ThemeBorderRadiusSm" />
+        <style name="$rounded-pill" id="ThemeRoundedPill" />
+        <style name="$box-shadow-sm" id="ThemeBoxShadowSm" />
+        <style name="$box-shadow" id="ThemeBoxShadow" />
+        <style name="$box-shadow-lg" id="ThemeBoxShadowLg" />
+        <style name="$component-active-color" id="ThemeComponentActiveColor" />
+        <style name="$component-active-bg" id="ThemeComponentActiveBg" />
+        <style name="$caret-width" id="ThemeCaretWidth" />
+        <style name="$caret-vertical-align" id="ThemeCaretVerticalAlign" />
+        <style name="$caret-spacing" id="ThemeCaretSpacing" />
+        <style name="$transition-base" id="ThemeTransitionBase" />
+        <style name="$transition-fade" id="ThemeTransitionFade" />
+        <style name="$transition-collapse" id="ThemeTransitionCollapse" />
+    </category>
+    <category name="Typography (Bootstrap)">
+        <style name="$font-family-sans-serif" id="ThemeFontFamilySansSerif" />
+        <style name="$font-family-monospace" id="ThemeFontFamilyMonospace" />
+        <style name="$font-family-base" id="ThemeFontFamilyBase" />
+        <style name="$font-size-base" id="ThemeFontSizeBase" />
+        <style name="$font-size-lg" id="ThemeFontSizeLg" />
+        <style name="$font-size-sm" id="ThemeFontSizeSm" />
+        <style name="$font-weight-lighter" id="ThemeFontWeightLighter" />
+        <style name="$font-weight-light" id="ThemeFontWeightLight" type="Integer" />
+        <style name="$font-weight-normal" id="ThemeFontWeightNormal" type="Integer" />
+        <style name="$font-weight-bold" id="ThemeFontWeightBold" type="Integer" />
+        <style name="$font-weight-bolder" id="ThemeFontWeightBolder" />
+        <style name="$font-weight-base" id="ThemeFontWeightBase" />
+        <style name="$line-height-base" id="ThemeLineHeightBase" />
+        <style name="$h1-font-size" id="ThemeH1FontSize" />
+        <style name="$h2-font-size" id="ThemeH2FontSize" />
+        <style name="$h3-font-size" id="ThemeH3FontSize" />
+        <style name="$h4-font-size" id="ThemeH4FontSize" />
+        <style name="$h5-font-size" id="ThemeH5FontSize" />
+        <style name="$h6-font-size" id="ThemeH6FontSize" />
+        <style name="$headings-margin-bottom" id="ThemeHeadingsMarginBottom" />
+        <style name="$headings-font-family" id="ThemeHeadingsFontFamily" />
+        <style name="$headings-font-weight" id="ThemeHeadingsFontWeight" type="Integer" />
+        <style name="$headings-line-height" id="ThemeHeadingsLineHeight" />
+        <style name="$headings-color" id="ThemeHeadingsColor" />
+        <style name="$display1-size" id="ThemeDisplay1Size" />
+        <style name="$display2-size" id="ThemeDisplay2Size" />
+        <style name="$display3-size" id="ThemeDisplay3Size" />
+        <style name="$display4-size" id="ThemeDisplay4Size" />
+        <style name="$display1-weight" id="ThemeDisplay1Weight" type="Integer" />
+        <style name="$display2-weight" id="ThemeDisplay2Weight" type="Integer" />
+        <style name="$display3-weight" id="ThemeDisplay3Weight" type="Integer" />
+        <style name="$display4-weight" id="ThemeDisplay4Weight" type="Integer" />
+        <style name="$display-line-height" id="ThemeDisplayLineHeight" />
+        <style name="$lead-font-size" id="ThemeLeadFontSize" />
+        <style name="$lead-font-weight" id="ThemeLeadFontWeight" type="Integer" />
+        <style name="$small-font-size" id="ThemeSmallFontSize" />
+        <style name="$text-muted" id="ThemeTextMuted" />
+        <style name="$blockquote-small-color" id="ThemeBlockquoteSmallColor" />
+        <style name="$blockquote-small-font-size" id="ThemeBlockquoteSmallFontSize" />
+        <style name="$blockquote-font-size" id="ThemeBlockquoteFontSize" />
+        <style name="$hr-border-color" id="ThemeHrBorderColor" />
+        <style name="$hr-border-width" id="ThemeHrBorderWidth" />
+        <style name="$mark-padding" id="ThemeMarkPadding" />
+        <style name="$dt-font-weight" id="ThemeDtFontWeight" />
+        <style name="$kbd-box-shadow" id="ThemeKbdBoxShadow" />
+        <style name="$nested-kbd-font-weight" id="ThemeNestedKbdFontWeight" />
+        <style name="$list-inline-padding" id="ThemeListInlinePadding" />
+        <style name="$mark-bg" id="ThemeMarkBg" type="Color" />
+        <style name="$hr-margin-y" id="ThemeHrMarginY" />
+    </category>
+    <category name="Tables (Bootstrap)">
+        <style name="$table-cell-padding" id="ThemeTableCellPadding" />
+        <style name="$table-cell-padding-sm" id="ThemeTableCellPaddingSm" />
+        <style name="$table-color" id="ThemeTableColor" />
+        <style name="$table-bg" id="ThemeTableBg" />
+        <style name="$table-accent-bg" id="ThemeTableAccentBg" />
+        <style name="$table-hover-color" id="ThemeTableHoverColor" />
+        <style name="$table-hover-bg" id="ThemeTableHoverBg" />
+        <style name="$table-active-bg" id="ThemeTableActiveBg" />
+        <style name="$table-border-width" id="ThemeTableBorderWidth" />
+        <style name="$table-border-color" id="ThemeTableBorderColor" />
+        <style name="$table-head-bg" id="ThemeTableHeadBg" />
+        <style name="$table-head-color" id="ThemeTableHeadColor" />
+        <style name="$table-th-font-weight" id="ThemeTableThFontWeight" />
+        <style name="$table-dark-color" id="ThemeTableDarkColor" />
+        <style name="$table-dark-bg" id="ThemeTableDarkBg" />
+        <style name="$table-dark-accent-bg" id="ThemeTableDarkAccentBg" />
+        <style name="$table-dark-hover-color" id="ThemeTableDarkHoverColor" />
+        <style name="$table-dark-hover-bg" id="ThemeTableDarkHoverBg" />
+        <style name="$table-dark-border-color" id="ThemeTableDarkBorderColor" />
+        <style name="$table-striped-order" id="ThemeTableStripedOrder" />
+        <style name="$table-caption-color" id="ThemeTableCaptionColor" />
+        <style name="$table-bg-level" id="ThemeTableBgLevel" />
+        <style name="$table-border-level" id="ThemeTableBorderLevel" />
+    </category>
+    <category name="Buttons + Forms (Bootstrap)">
+        <style name="$input-btn-padding-y" id="ThemeInputBtnPaddingY" />
+        <style name="$input-btn-padding-x" id="ThemeInputBtnPaddingX" />
+        <style name="$input-btn-font-family" id="ThemeInputBtnFontFamily" />
+        <style name="$input-btn-font-size" id="ThemeInputBtnFontSize" />
+        <style name="$input-btn-line-height" id="ThemeInputBtnLineHeight" />
+        <style name="$input-btn-focus-width" id="ThemeInputBtnFocusWidth" />
+        <style name="$input-btn-focus-color" id="ThemeInputBtnFocusColor" />
+        <style name="$input-btn-focus-box-shadow" id="ThemeInputBtnFocusBoxShadow" />
+        <style name="$input-btn-padding-y-sm" id="ThemeInputBtnPaddingYSm" />
+        <style name="$input-btn-padding-x-sm" id="ThemeInputBtnPaddingXSm" />
+        <style name="$input-btn-font-size-sm" id="ThemeInputBtnFontSizeSm" />
+        <style name="$input-btn-line-height-sm" id="ThemeInputBtnLineHeightSm" />
+        <style name="$input-btn-padding-y-lg" id="ThemeInputBtnPaddingYLg" />
+        <style name="$input-btn-padding-x-lg" id="ThemeInputBtnPaddingXLg" />
+        <style name="$input-btn-font-size-lg" id="ThemeInputBtnFontSizeLg" />
+        <style name="$input-btn-line-height-lg" id="ThemeInputBtnLineHeightLg" />
+        <style name="$input-btn-border-width" id="ThemeInputBtnBorderWidth" />
+    </category>
+    <category name="Buttons (Bootstrap)">
+        <style name="$btn-padding-y" id="ThemeBtnPaddingY" />
+        <style name="$btn-padding-x" id="ThemeBtnPaddingX" />
+        <style name="$btn-font-family" id="ThemeBtnFontFamily" />
+        <style name="$btn-font-size" id="ThemeBtnFontSize" />
+        <style name="$btn-line-height" id="ThemeBtnLineHeight" />
+        <style name="$btn-white-space" id="ThemeBtnWhiteSpace" />
+        <style name="$btn-padding-y-sm" id="ThemeBtnPaddingYSm" />
+        <style name="$btn-padding-x-sm" id="ThemeBtnPaddingXSm" />
+        <style name="$btn-font-size-sm" id="ThemeBtnFontSizeSm" />
+        <style name="$btn-line-height-sm" id="ThemeBtnLineHeightSm" />
+        <style name="$btn-padding-y-lg" id="ThemeBtnPaddingYLg" />
+        <style name="$btn-padding-x-lg" id="ThemeBtnPaddingXLg" />
+        <style name="$btn-font-size-lg" id="ThemeBtnFontSizeLg" />
+        <style name="$btn-line-height-lg" id="ThemeBtnLineHeightLg" />
+        <style name="$btn-border-width" id="ThemeBtnBorderWidth" />
+        <style name="$btn-font-weight" id="ThemeBtnFontWeight" />
+        <style name="$btn-box-shadow" id="ThemeBtnBoxShadow" />
+        <style name="$btn-focus-width" id="ThemeBtnFocusWidth" />
+        <style name="$btn-focus-box-shadow" id="ThemeBtnFocusBoxShadow" />
+        <style name="$btn-disabled-opacity" id="ThemeBtnDisabledOpacity" />
+        <style name="$btn-active-box-shadow" id="ThemeBtnActiveBoxShadow" />
+        <style name="$btn-link-disabled-color" id="ThemeBtnLinkDisabledColor" />
+        <style name="$btn-block-spacing-y" id="ThemeBtnBlockSpacingY" />
+        <style name="$btn-border-radius" id="ThemeBtnBorderRadius" />
+        <style name="$btn-border-radius-lg" id="ThemeBtnBorderRadiusLg" />
+        <style name="$btn-border-radius-sm" id="ThemeBtnBorderRadiusSm" />
+        <style name="$btn-transition" id="ThemeBtnTransition" />
+    </category>
+    <category name="Forms (Bootstrap)">
+        <style name="$label-margin-bottom" id="ThemeLabelMarginBottom" />
+        <style name="$input-padding-y" id="ThemeInputPaddingY" />
+        <style name="$input-padding-x" id="ThemeInputPaddingX" />
+        <style name="$input-font-family" id="ThemeInputFontFamily" />
+        <style name="$input-font-size" id="ThemeInputFontSize" />
+        <style name="$input-font-weight" id="ThemeInputFontWeight" />
+        <style name="$input-line-height" id="ThemeInputLineHeight" />
+        <style name="$input-padding-y-sm" id="ThemeInputPaddingYSm" />
+        <style name="$input-padding-x-sm" id="ThemeInputPaddingXSm" />
+        <style name="$input-font-size-sm" id="ThemeInputFontSizeSm" />
+        <style name="$input-line-height-sm" id="ThemeInputLineHeightSm" />
+        <style name="$input-padding-y-lg" id="ThemeInputPaddingYLg" />
+        <style name="$input-padding-x-lg" id="ThemeInputPaddingXLg" />
+        <style name="$input-font-size-lg" id="ThemeInputFontSizeLg" />
+        <style name="$input-line-height-lg" id="ThemeInputLineHeightLg" />
+        <style name="$input-bg" id="ThemeInputBg" />
+        <style name="$input-disabled-bg" id="ThemeInputDisabledBg" />
+        <style name="$input-color" id="ThemeInputColor" />
+        <style name="$input-border-color" id="ThemeInputBorderColor" />
+        <style name="$input-border-width" id="ThemeInputBorderWidth" />
+        <style name="$input-box-shadow" id="ThemeInputBoxShadow" />
+        <style name="$input-border-radius" id="ThemeInputBorderRadius" />
+        <style name="$input-border-radius-lg" id="ThemeInputBorderRadiusLg" />
+        <style name="$input-border-radius-sm" id="ThemeInputBorderRadiusSm" />
+        <style name="$input-focus-bg" id="ThemeInputFocusBg" />
+        <style name="$input-focus-border-color" id="ThemeInputFocusBorderColor" />
+        <style name="$input-focus-color" id="ThemeInputFocusColor" />
+        <style name="$input-focus-width" id="ThemeInputFocusWidth" />
+        <style name="$input-focus-box-shadow" id="ThemeInputFocusBoxShadow" />
+        <style name="$input-placeholder-color" id="ThemeInputPlaceholderColor" />
+        <style name="$input-plaintext-color" id="ThemeInputPlaintextColor" />
+        <style name="$input-height-border" id="ThemeInputHeightBorder" />
+        <style name="$input-height-inner" id="ThemeInputHeightInner" />
+        <style name="$input-height-inner-half" id="ThemeInputHeightInnerHalf" />
+        <style name="$input-height-inner-quarter" id="ThemeInputHeightInnerQuarter" />
+        <style name="$input-height" id="ThemeInputHeight" />
+        <style name="$input-height-sm" id="ThemeInputHeightSm" />
+        <style name="$input-height-lg" id="ThemeInputHeightLg" />
+        <style name="$input-transition" id="ThemeInputTransition" />
+        <style name="$form-text-margin-top" id="ThemeFormTextMarginTop" />
+        <style name="$form-check-input-gutter" id="ThemeFormCheckInputGutter" />
+        <style name="$form-check-input-margin-y" id="ThemeFormCheckInputMarginY" />
+        <style name="$form-check-input-margin-x" id="ThemeFormCheckInputMarginX" />
+        <style name="$form-check-inline-margin-x" id="ThemeFormCheckInlineMarginX" />
+        <style name="$form-check-inline-input-margin-x" id="ThemeFormCheckInlineInputMarginX" />
+        <style name="$form-grid-gutter-width" id="ThemeFormGridGutterWidth" />
+        <style name="$form-group-margin-bottom" id="ThemeFormGroupMarginBottom" />
+        <style name="$input-group-addon-color" id="ThemeInputGroupAddonColor" />
+        <style name="$input-group-addon-bg" id="ThemeInputGroupAddonBg" />
+        <style name="$input-group-addon-border-color" id="ThemeInputGroupAddonBorderColor" />
+        <style name="$custom-forms-transition" id="ThemeCustomFormsTransition" />
+        <style name="$custom-control-gutter" id="ThemeCustomControlGutter" />
+        <style name="$custom-control-spacer-x" id="ThemeCustomControlSpacerX" />
+        <style name="$custom-control-cursor" id="ThemeCustomControlCursor" />
+        <style name="$custom-control-indicator-size" id="ThemeCustomControlIndicatorSize" />
+        <style name="$custom-control-indicator-bg" id="ThemeCustomControlIndicatorBg" />
+        <style name="$custom-control-indicator-bg-size" id="ThemeCustomControlIndicatorBgSize" />
+        <style name="$custom-control-indicator-box-shadow" id="ThemeCustomControlIndicatorBoxShadow" />
+        <style name="$custom-control-indicator-border-color" id="ThemeCustomControlIndicatorBorderColor" />
+        <style name="$custom-control-indicator-border-width" id="ThemeCustomControlIndicatorBorderWidth" />
+        <style name="$custom-control-label-color" id="ThemeCustomControlLabelColor" />
+        <style name="$custom-control-indicator-disabled-bg" id="ThemeCustomControlIndicatorDisabledBg" />
+        <style name="$custom-control-label-disabled-color" id="ThemeCustomControlLabelDisabledColor" />
+        <style name="$custom-control-indicator-checked-color" id="ThemeCustomControlIndicatorCheckedColor" />
+        <style name="$custom-control-indicator-checked-bg" id="ThemeCustomControlIndicatorCheckedBg" />
+        <style name="$custom-control-indicator-checked-disabled-bg" id="ThemeCustomControlIndicatorCheckedDisabledBg" />
+        <style name="$custom-control-indicator-checked-box-shadow" id="ThemeCustomControlIndicatorCheckedBoxShadow" />
+        <style name="$custom-control-indicator-checked-border-color" id="ThemeCustomControlIndicatorCheckedBorderColor" />
+        <style name="$custom-control-indicator-focus-box-shadow" id="ThemeCustomControlIndicatorFocusBoxShadow" />
+        <style name="$custom-control-indicator-focus-border-color" id="ThemeCustomControlIndicatorFocusBorderColor" />
+        <style name="$custom-control-indicator-active-color" id="ThemeCustomControlIndicatorActiveColor" />
+        <style name="$custom-control-indicator-active-bg" id="ThemeCustomControlIndicatorActiveBg" />
+        <style name="$custom-control-indicator-active-box-shadow" id="ThemeCustomControlIndicatorActiveBoxShadow" />
+        <style name="$custom-control-indicator-active-border-color" id="ThemeCustomControlIndicatorActiveBorderColor" />
+        <style name="$custom-checkbox-indicator-border-radius" id="ThemeCustomCheckboxIndicatorBorderRadius" />
+        <style name="$custom-checkbox-indicator-icon-checked" id="ThemeCustomCheckboxIndicatorIconChecked" />
+        <style name="$custom-checkbox-indicator-indeterminate-bg" id="ThemeCustomCheckboxIndicatorIndeterminateBg" />
+        <style name="$custom-checkbox-indicator-indeterminate-color" id="ThemeCustomCheckboxIndicatorIndeterminateColor" />
+        <style name="$custom-checkbox-indicator-icon-indeterminate" id="ThemeCustomCheckboxIndicatorIconIndeterminate" />
+        <style name="$custom-checkbox-indicator-indeterminate-box-shadow" id="ThemeCustomCheckboxIndicatorIndeterminateBoxShadow" />
+        <style name="$custom-checkbox-indicator-indeterminate-border-color" id="ThemeCustomCheckboxIndicatorIndeterminateBorderColor" />
+        <style name="$custom-radio-indicator-border-radius" id="ThemeCustomRadioIndicatorBorderRadius" />
+        <style name="$custom-radio-indicator-icon-checked" id="ThemeCustomRadioIndicatorIconChecked" />
+        <style name="$custom-switch-width" id="ThemeCustomSwitchWidth" />
+        <style name="$custom-switch-indicator-border-radius" id="ThemeCustomSwitchIndicatorBorderRadius" />
+        <style name="$custom-switch-indicator-size" id="ThemeCustomSwitchIndicatorSize" />
+        <style name="$custom-select-padding-y" id="ThemeCustomSelectPaddingY" />
+        <style name="$custom-select-padding-x" id="ThemeCustomSelectPaddingX" />
+        <style name="$custom-select-font-family" id="ThemeCustomSelectFontFamily" />
+        <style name="$custom-select-font-size" id="ThemeCustomSelectFontSize" />
+        <style name="$custom-select-height" id="ThemeCustomSelectHeight" />
+        <style name="$custom-select-indicator-padding" id="ThemeCustomSelectIndicatorPadding" />
+        <style name="$custom-select-font-weight" id="ThemeCustomSelectFontWeight" />
+        <style name="$custom-select-line-height" id="ThemeCustomSelectLineHeight" />
+        <style name="$custom-select-color" id="ThemeCustomSelectColor" />
+        <style name="$custom-select-disabled-color" id="ThemeCustomSelectDisabledColor" />
+        <style name="$custom-select-bg" id="ThemeCustomSelectBg" />
+        <style name="$custom-select-disabled-bg" id="ThemeCustomSelectDisabledBg" />
+        <style name="$custom-select-bg-size" id="ThemeCustomSelectBgSize" />
+        <style name="$custom-select-indicator-color" id="ThemeCustomSelectIndicatorColor" />
+        <style name="$custom-select-indicator" id="ThemeCustomSelectIndicator" />
+        <style name="$custom-select-background" id="ThemeCustomSelectBackground" />
+        <style name="$custom-select-feedback-icon-padding-right" id="ThemeCustomSelectFeedbackIconPaddingRight" />
+        <style name="$custom-select-feedback-icon-position" id="ThemeCustomSelectFeedbackIconPosition" />
+        <style name="$custom-select-feedback-icon-size" id="ThemeCustomSelectFeedbackIconSize" />
+        <style name="$custom-select-border-width" id="ThemeCustomSelectBorderWidth" />
+        <style name="$custom-select-border-color" id="ThemeCustomSelectBorderColor" />
+        <style name="$custom-select-border-radius" id="ThemeCustomSelectBorderRadius" />
+        <style name="$custom-select-box-shadow" id="ThemeCustomSelectBoxShadow" />
+        <style name="$custom-select-focus-border-color" id="ThemeCustomSelectFocusBorderColor" />
+        <style name="$custom-select-focus-width" id="ThemeCustomSelectFocusWidth" />
+        <style name="$custom-select-focus-box-shadow" id="ThemeCustomSelectFocusBoxShadow" />
+        <style name="$custom-select-padding-y-sm" id="ThemeCustomSelectPaddingYSm" />
+        <style name="$custom-select-padding-x-sm" id="ThemeCustomSelectPaddingXSm" />
+        <style name="$custom-select-font-size-sm" id="ThemeCustomSelectFontSizeSm" />
+        <style name="$custom-select-height-sm" id="ThemeCustomSelectHeightSm" />
+        <style name="$custom-select-padding-y-lg" id="ThemeCustomSelectPaddingYLg" />
+        <style name="$custom-select-padding-x-lg" id="ThemeCustomSelectPaddingXLg" />
+        <style name="$custom-select-font-size-lg" id="ThemeCustomSelectFontSizeLg" />
+        <style name="$custom-select-height-lg" id="ThemeCustomSelectHeightLg" />
+        <style name="$custom-range-track-width" id="ThemeCustomRangeTrackWidth" />
+        <style name="$custom-range-track-height" id="ThemeCustomRangeTrackHeight" />
+        <style name="$custom-range-track-cursor" id="ThemeCustomRangeTrackCursor" />
+        <style name="$custom-range-track-bg" id="ThemeCustomRangeTrackBg" />
+        <style name="$custom-range-track-border-radius" id="ThemeCustomRangeTrackBorderRadius" />
+        <style name="$custom-range-track-box-shadow" id="ThemeCustomRangeTrackBoxShadow" />
+        <style name="$custom-range-thumb-width" id="ThemeCustomRangeThumbWidth" />
+        <style name="$custom-range-thumb-height" id="ThemeCustomRangeThumbHeight" />
+        <style name="$custom-range-thumb-bg" id="ThemeCustomRangeThumbBg" />
+        <style name="$custom-range-thumb-border" id="ThemeCustomRangeThumbBorder" type="Integer" />
+        <style name="$custom-range-thumb-border-radius" id="ThemeCustomRangeThumbBorderRadius" />
+        <style name="$custom-range-thumb-box-shadow" id="ThemeCustomRangeThumbBoxShadow" />
+        <style name="$custom-range-thumb-focus-box-shadow" id="ThemeCustomRangeThumbFocusBoxShadow" />
+        <style name="$custom-range-thumb-focus-box-shadow-width" id="ThemeCustomRangeThumbFocusBoxShadowWidth" />
+        <style name="$custom-range-thumb-active-bg" id="ThemeCustomRangeThumbActiveBg" />
+        <style name="$custom-range-thumb-disabled-bg" id="ThemeCustomRangeThumbDisabledBg" />
+        <style name="$custom-file-height" id="ThemeCustomFileHeight" />
+        <style name="$custom-file-height-inner" id="ThemeCustomFileHeightInner" />
+        <style name="$custom-file-focus-border-color" id="ThemeCustomFileFocusBorderColor" />
+        <style name="$custom-file-focus-box-shadow" id="ThemeCustomFileFocusBoxShadow" />
+        <style name="$custom-file-disabled-bg" id="ThemeCustomFileDisabledBg" />
+        <style name="$custom-file-padding-y" id="ThemeCustomFilePaddingY" />
+        <style name="$custom-file-padding-x" id="ThemeCustomFilePaddingX" />
+        <style name="$custom-file-line-height" id="ThemeCustomFileLineHeight" />
+        <style name="$custom-file-font-family" id="ThemeCustomFileFontFamily" />
+        <style name="$custom-file-font-weight" id="ThemeCustomFileFontWeight" />
+        <style name="$custom-file-color" id="ThemeCustomFileColor" />
+        <style name="$custom-file-bg" id="ThemeCustomFileBg" />
+        <style name="$custom-file-border-width" id="ThemeCustomFileBorderWidth" />
+        <style name="$custom-file-border-color" id="ThemeCustomFileBorderColor" />
+        <style name="$custom-file-border-radius" id="ThemeCustomFileBorderRadius" />
+        <style name="$custom-file-box-shadow" id="ThemeCustomFileBoxShadow" />
+        <style name="$custom-file-button-color" id="ThemeCustomFileButtonColor" />
+        <style name="$custom-file-button-bg" id="ThemeCustomFileButtonBg" />
+        <style name="$custom-file-text" id="ThemeCustomFileText" />
+    </category>
+    <category name="Form validation (Bootstrap)">
+        <style name="$form-feedback-margin-top" id="ThemeFormFeedbackMarginTop" />
+        <style name="$form-feedback-font-size" id="ThemeFormFeedbackFontSize" />
+        <style name="$form-feedback-valid-color" id="ThemeFormFeedbackValidColor" />
+        <style name="$form-feedback-invalid-color" id="ThemeFormFeedbackInvalidColor" />
+        <style name="$form-feedback-icon-valid-color" id="ThemeFormFeedbackIconValidColor" />
+        <style name="$form-feedback-icon-valid" id="ThemeFormFeedbackIconValid" />
+        <style name="$form-feedback-icon-invalid-color" id="ThemeFormFeedbackIconInvalidColor" />
+        <style name="$form-feedback-icon-invalid" id="ThemeFormFeedbackIconInvalid" />
+    </category>
+    <category name="Z-index master list (Bootstrap)">
+        <style name="$zindex-dropdown" id="ThemeZindexDropdown" type="Integer" />
+        <style name="$zindex-sticky" id="ThemeZindexSticky" type="Integer" />
+        <style name="$zindex-fixed" id="ThemeZindexFixed" type="Integer" />
+        <style name="$zindex-modal-backdrop" id="ThemeZindexModalBackdrop" type="Integer" />
+        <style name="$zindex-modal" id="ThemeZindexModal" type="Integer" />
+        <style name="$zindex-popover" id="ThemeZindexPopover" type="Integer" />
+        <style name="$zindex-tooltip" id="ThemeZindexTooltip" type="Integer" />
+    </category>
+    <category name="Navs (Bootstrap)">
+        <style name="$nav-link-padding-y" id="ThemeNavLinkPaddingY" />
+        <style name="$nav-link-padding-x" id="ThemeNavLinkPaddingX" />
+        <style name="$nav-link-disabled-color" id="ThemeNavLinkDisabledColor" />
+        <style name="$nav-tabs-border-color" id="ThemeNavTabsBorderColor" />
+        <style name="$nav-tabs-border-width" id="ThemeNavTabsBorderWidth" />
+        <style name="$nav-tabs-border-radius" id="ThemeNavTabsBorderRadius" />
+        <style name="$nav-tabs-link-hover-border-color" id="ThemeNavTabsLinkHoverBorderColor" />
+        <style name="$nav-tabs-link-active-color" id="ThemeNavTabsLinkActiveColor" />
+        <style name="$nav-tabs-link-active-bg" id="ThemeNavTabsLinkActiveBg" />
+        <style name="$nav-tabs-link-active-border-color" id="ThemeNavTabsLinkActiveBorderColor" />
+        <style name="$nav-pills-border-radius" id="ThemeNavPillsBorderRadius" />
+        <style name="$nav-pills-link-active-color" id="ThemeNavPillsLinkActiveColor" />
+        <style name="$nav-pills-link-active-bg" id="ThemeNavPillsLinkActiveBg" />
+        <style name="$nav-divider-color" id="ThemeNavDividerColor" />
+        <style name="$nav-divider-margin-y" id="ThemeNavDividerMarginY" />
+    </category>
+    <category name="Navbar (Bootstrap)">
+        <style name="$navbar-padding-y" id="ThemeNavbarPaddingY" />
+        <style name="$navbar-padding-x" id="ThemeNavbarPaddingX" />
+        <style name="$navbar-nav-link-padding-x" id="ThemeNavbarNavLinkPaddingX" />
+        <style name="$navbar-brand-font-size" id="ThemeNavbarBrandFontSize" />
+        <style name="$nav-link-height" id="ThemeNavLinkHeight" />
+        <style name="$navbar-brand-height" id="ThemeNavbarBrandHeight" />
+        <style name="$navbar-brand-padding-y" id="ThemeNavbarBrandPaddingY" />
+        <style name="$navbar-toggler-padding-y" id="ThemeNavbarTogglerPaddingY" />
+        <style name="$navbar-toggler-padding-x" id="ThemeNavbarTogglerPaddingX" />
+        <style name="$navbar-toggler-font-size" id="ThemeNavbarTogglerFontSize" />
+        <style name="$navbar-toggler-border-radius" id="ThemeNavbarTogglerBorderRadius" />
+        <style name="$navbar-nav-scroll-max-height" id="ThemeNavbarNavScrollMaxHeight" />
+        <style name="$navbar-dark-color" id="ThemeNavbarDarkColor" />
+        <style name="$navbar-dark-hover-color" id="ThemeNavbarDarkHoverColor" />
+        <style name="$navbar-dark-active-color" id="ThemeNavbarDarkActiveColor" />
+        <style name="$navbar-dark-disabled-color" id="ThemeNavbarDarkDisabledColor" />
+        <style name="$navbar-dark-toggler-icon-bg" id="ThemeNavbarDarkTogglerIconBg" />
+        <style name="$navbar-dark-toggler-border-color" id="ThemeNavbarDarkTogglerBorderColor" />
+        <style name="$navbar-light-color" id="ThemeNavbarLightColor" />
+        <style name="$navbar-light-hover-color" id="ThemeNavbarLightHoverColor" />
+        <style name="$navbar-light-active-color" id="ThemeNavbarLightActiveColor" />
+        <style name="$navbar-light-disabled-color" id="ThemeNavbarLightDisabledColor" />
+        <style name="$navbar-light-toggler-icon-bg" id="ThemeNavbarLightTogglerIconBg" />
+        <style name="$navbar-light-toggler-border-color" id="ThemeNavbarLightTogglerBorderColor" />
+        <style name="$navbar-light-brand-color" id="ThemeNavbarLightBrandColor" />
+        <style name="$navbar-light-brand-hover-color" id="ThemeNavbarLightBrandHoverColor" />
+        <style name="$navbar-dark-brand-color" id="ThemeNavbarDarkBrandColor" />
+        <style name="$navbar-dark-brand-hover-color" id="ThemeNavbarDarkBrandHoverColor" />
+    </category>
+    <category name="Dropdowns (Bootstrap)">
+        <style name="$dropdown-min-width" id="ThemeDropdownMinWidth" />
+        <style name="$dropdown-padding-x" id="ThemeDropdownPaddingX" type="Integer" />
+        <style name="$dropdown-padding-y" id="ThemeDropdownPaddingY" />
+        <style name="$dropdown-spacer" id="ThemeDropdownSpacer" />
+        <style name="$dropdown-font-size" id="ThemeDropdownFontSize" />
+        <style name="$dropdown-color" id="ThemeDropdownColor" />
+        <style name="$dropdown-bg" id="ThemeDropdownBg" />
+        <style name="$dropdown-border-color" id="ThemeDropdownBorderColor" />
+        <style name="$dropdown-border-radius" id="ThemeDropdownBorderRadius" />
+        <style name="$dropdown-border-width" id="ThemeDropdownBorderWidth" />
+        <style name="$dropdown-inner-border-radius" id="ThemeDropdownInnerBorderRadius" />
+        <style name="$dropdown-divider-bg" id="ThemeDropdownDividerBg" />
+        <style name="$dropdown-divider-margin-y" id="ThemeDropdownDividerMarginY" />
+        <style name="$dropdown-box-shadow" id="ThemeDropdownBoxShadow" />
+        <style name="$dropdown-link-color" id="ThemeDropdownLinkColor" />
+        <style name="$dropdown-link-hover-color" id="ThemeDropdownLinkHoverColor" />
+        <style name="$dropdown-link-hover-bg" id="ThemeDropdownLinkHoverBg" />
+        <style name="$dropdown-link-active-color" id="ThemeDropdownLinkActiveColor" />
+        <style name="$dropdown-link-active-bg" id="ThemeDropdownLinkActiveBg" />
+        <style name="$dropdown-link-disabled-color" id="ThemeDropdownLinkDisabledColor" />
+        <style name="$dropdown-item-padding-y" id="ThemeDropdownItemPaddingY" />
+        <style name="$dropdown-item-padding-x" id="ThemeDropdownItemPaddingX" />
+        <style name="$dropdown-header-color" id="ThemeDropdownHeaderColor" />
+        <style name="$dropdown-header-padding" id="ThemeDropdownHeaderPadding" />
+    </category>
+    <category name="Pagination (Bootstrap)">
+        <style name="$pagination-padding-y" id="ThemePaginationPaddingY" />
+        <style name="$pagination-padding-x" id="ThemePaginationPaddingX" />
+        <style name="$pagination-padding-y-sm" id="ThemePaginationPaddingYSm" />
+        <style name="$pagination-padding-x-sm" id="ThemePaginationPaddingXSm" />
+        <style name="$pagination-padding-y-lg" id="ThemePaginationPaddingYLg" />
+        <style name="$pagination-padding-x-lg" id="ThemePaginationPaddingXLg" />
+        <style name="$pagination-line-height" id="ThemePaginationLineHeight" />
+        <style name="$pagination-color" id="ThemePaginationColor" />
+        <style name="$pagination-bg" id="ThemePaginationBg" />
+        <style name="$pagination-border-width" id="ThemePaginationBorderWidth" />
+        <style name="$pagination-border-color" id="ThemePaginationBorderColor" />
+        <style name="$pagination-focus-box-shadow" id="ThemePaginationFocusBoxShadow" />
+        <style name="$pagination-focus-outline" id="ThemePaginationFocusOutline" type="Integer" />
+        <style name="$pagination-hover-color" id="ThemePaginationHoverColor" />
+        <style name="$pagination-hover-bg" id="ThemePaginationHoverBg" />
+        <style name="$pagination-hover-border-color" id="ThemePaginationHoverBorderColor" />
+        <style name="$pagination-active-color" id="ThemePaginationActiveColor" />
+        <style name="$pagination-active-bg" id="ThemePaginationActiveBg" />
+        <style name="$pagination-active-border-color" id="ThemePaginationActiveBorderColor" />
+        <style name="$pagination-disabled-color" id="ThemePaginationDisabledColor" />
+        <style name="$pagination-disabled-bg" id="ThemePaginationDisabledBg" />
+        <style name="$pagination-disabled-border-color" id="ThemePaginationDisabledBorderColor" />
+        <style name="$pagination-border-radius-sm" id="ThemePaginationBorderRadiusSm" />
+        <style name="$pagination-border-radius-lg" id="ThemePaginationBorderRadiusLg" />
+    </category>
+    <category name="Jumbotron (Bootstrap)">
+        <style name="$jumbotron-padding" id="ThemeJumbotronPadding" />
+        <style name="$jumbotron-color" id="ThemeJumbotronColor" />
+        <style name="$jumbotron-bg" id="ThemeJumbotronBg" />
+    </category>
+    <category name="Cards (Bootstrap)">
+        <style name="$card-spacer-y" id="ThemeCardSpacerY" />
+        <style name="$card-spacer-x" id="ThemeCardSpacerX" />
+        <style name="$card-border-width" id="ThemeCardBorderWidth" />
+        <style name="$card-border-radius" id="ThemeCardBorderRadius" />
+        <style name="$card-border-color" id="ThemeCardBorderColor" />
+        <style name="$card-inner-border-radius" id="ThemeCardInnerBorderRadius" />
+        <style name="$card-cap-bg" id="ThemeCardCapBg" />
+        <style name="$card-cap-color" id="ThemeCardCapColor" />
+        <style name="$card-height" id="ThemeCardHeight" />
+        <style name="$card-color" id="ThemeCardColor" />
+        <style name="$card-bg" id="ThemeCardBg" />
+        <style name="$card-img-overlay-padding" id="ThemeCardImgOverlayPadding" />
+        <style name="$card-group-margin" id="ThemeCardGroupMargin" />
+        <style name="$card-deck-margin" id="ThemeCardDeckMargin" />
+        <style name="$card-columns-count" id="ThemeCardColumnsCount" type="Integer" />
+        <style name="$card-columns-gap" id="ThemeCardColumnsGap" />
+        <style name="$card-columns-margin" id="ThemeCardColumnsMargin" />
+    </category>
+    <category name="Tooltips (Bootstrap)">
+        <style name="$tooltip-font-size" id="ThemeTooltipFontSize" />
+        <style name="$tooltip-max-width" id="ThemeTooltipMaxWidth" />
+        <style name="$tooltip-color" id="ThemeTooltipColor" />
+        <style name="$tooltip-bg" id="ThemeTooltipBg" />
+        <style name="$tooltip-border-radius" id="ThemeTooltipBorderRadius" />
+        <style name="$tooltip-opacity" id="ThemeTooltipOpacity" />
+        <style name="$tooltip-padding-y" id="ThemeTooltipPaddingY" />
+        <style name="$tooltip-padding-x" id="ThemeTooltipPaddingX" />
+        <style name="$tooltip-margin" id="ThemeTooltipMargin" type="Integer" />
+        <style name="$tooltip-arrow-width" id="ThemeTooltipArrowWidth" />
+        <style name="$tooltip-arrow-height" id="ThemeTooltipArrowHeight" />
+        <style name="$tooltip-arrow-color" id="ThemeTooltipArrowColor" />
+        <style name="$form-feedback-tooltip-padding-y" id="ThemeFormFeedbackTooltipPaddingY" />
+        <style name="$form-feedback-tooltip-padding-x" id="ThemeFormFeedbackTooltipPaddingX" />
+        <style name="$form-feedback-tooltip-font-size" id="ThemeFormFeedbackTooltipFontSize" />
+        <style name="$form-feedback-tooltip-line-height" id="ThemeFormFeedbackTooltipLineHeight" />
+        <style name="$form-feedback-tooltip-opacity" id="ThemeFormFeedbackTooltipOpacity" />
+        <style name="$form-feedback-tooltip-border-radius" id="ThemeFormFeedbackTooltipBorderRadius" />
+    </category>
+    <category name="Popovers (Bootstrap)">
+        <style name="$popover-font-size" id="ThemePopoverFontSize" />
+        <style name="$popover-bg" id="ThemePopoverBg" />
+        <style name="$popover-max-width" id="ThemePopoverMaxWidth" />
+        <style name="$popover-border-width" id="ThemePopoverBorderWidth" />
+        <style name="$popover-border-color" id="ThemePopoverBorderColor" />
+        <style name="$popover-border-radius" id="ThemePopoverBorderRadius" />
+        <style name="$popover-inner-border-radius" id="ThemePopoverInnerBorderRadius" />
+        <style name="$popover-box-shadow" id="ThemePopoverBoxShadow" />
+        <style name="$popover-header-bg" id="ThemePopoverHeaderBg" />
+        <style name="$popover-header-color" id="ThemePopoverHeaderColor" />
+        <style name="$popover-header-padding-y" id="ThemePopoverHeaderPaddingY" />
+        <style name="$popover-header-padding-x" id="ThemePopoverHeaderPaddingX" />
+        <style name="$popover-body-color" id="ThemePopoverBodyColor" />
+        <style name="$popover-body-padding-y" id="ThemePopoverBodyPaddingY" />
+        <style name="$popover-body-padding-x" id="ThemePopoverBodyPaddingX" />
+        <style name="$popover-arrow-width" id="ThemePopoverArrowWidth" />
+        <style name="$popover-arrow-height" id="ThemePopoverArrowHeight" />
+        <style name="$popover-arrow-color" id="ThemePopoverArrowColor" />
+        <style name="$popover-arrow-outer-color" id="ThemePopoverArrowOuterColor" />
+    </category>
+    <category name="Toasts (Bootstrap)">
+        <style name="$toast-max-width" id="ThemeToastMaxWidth" />
+        <style name="$toast-padding-x" id="ThemeToastPaddingX" />
+        <style name="$toast-padding-y" id="ThemeToastPaddingY" />
+        <style name="$toast-font-size" id="ThemeToastFontSize" />
+        <style name="$toast-color" id="ThemeToastColor" />
+        <style name="$toast-background-color" id="ThemeToastBackgroundColor" />
+        <style name="$toast-border-width" id="ThemeToastBorderWidth" />
+        <style name="$toast-border-color" id="ThemeToastBorderColor" />
+        <style name="$toast-border-radius" id="ThemeToastBorderRadius" />
+        <style name="$toast-box-shadow" id="ThemeToastBoxShadow" />
+        <style name="$toast-header-color" id="ThemeToastHeaderColor" />
+        <style name="$toast-header-background-color" id="ThemeToastHeaderBackgroundColor" />
+        <style name="$toast-header-border-color" id="ThemeToastHeaderBorderColor" />
+    </category>
+    <category name="Badges (Bootstrap)">
+        <style name="$badge-font-size" id="ThemeBadgeFontSize" />
+        <style name="$badge-font-weight" id="ThemeBadgeFontWeight" />
+        <style name="$badge-padding-y" id="ThemeBadgePaddingY" />
+        <style name="$badge-padding-x" id="ThemeBadgePaddingX" />
+        <style name="$badge-border-radius" id="ThemeBadgeBorderRadius" />
+        <style name="$badge-transition" id="ThemeBadgeTransition" />
+        <style name="$badge-focus-width" id="ThemeBadgeFocusWidth" />
+        <style name="$badge-pill-padding-x" id="ThemeBadgePillPaddingX" />
+        <style name="$badge-pill-border-radius" id="ThemeBadgePillBorderRadius" />
+    </category>
+    <category name="Modals (Bootstrap)">
+        <style name="$modal-inner-padding" id="ThemeModalInnerPadding" />
+        <style name="$modal-footer-margin-between" id="ThemeModalFooterMarginBetween" />
+        <style name="$modal-dialog-margin" id="ThemeModalDialogMargin" />
+        <style name="$modal-dialog-margin-y-sm-up" id="ThemeModalDialogMarginYSmUp" />
+        <style name="$modal-title-line-height" id="ThemeModalTitleLineHeight" />
+        <style name="$modal-content-color" id="ThemeModalContentColor" />
+        <style name="$modal-content-bg" id="ThemeModalContentBg" />
+        <style name="$modal-content-border-color" id="ThemeModalContentBorderColor" />
+        <style name="$modal-content-border-width" id="ThemeModalContentBorderWidth" />
+        <style name="$modal-content-border-radius" id="ThemeModalContentBorderRadius" />
+        <style name="$modal-content-inner-border-radius" id="ThemeModalContentInnerBorderRadius" />
+        <style name="$modal-content-box-shadow-xs" id="ThemeModalContentBoxShadowXs" />
+        <style name="$modal-content-box-shadow-sm-up" id="ThemeModalContentBoxShadowSmUp" />
+        <style name="$modal-backdrop-bg" id="ThemeModalBackdropBg" />
+        <style name="$modal-backdrop-opacity" id="ThemeModalBackdropOpacity" />
+        <style name="$modal-header-border-color" id="ThemeModalHeaderBorderColor" />
+        <style name="$modal-footer-border-color" id="ThemeModalFooterBorderColor" />
+        <style name="$modal-header-border-width" id="ThemeModalHeaderBorderWidth" />
+        <style name="$modal-footer-border-width" id="ThemeModalFooterBorderWidth" />
+        <style name="$modal-header-padding-y" id="ThemeModalHeaderPaddingY" />
+        <style name="$modal-header-padding-x" id="ThemeModalHeaderPaddingX" />
+        <style name="$modal-header-padding" id="ThemeModalHeaderPadding" />
+        <style name="$modal-xl" id="ThemeModalXl" />
+        <style name="$modal-lg" id="ThemeModalLg" />
+        <style name="$modal-md" id="ThemeModalMd" />
+        <style name="$modal-sm" id="ThemeModalSm" />
+        <style name="$modal-fade-transform" id="ThemeModalFadeTransform" />
+        <style name="$modal-show-transform" id="ThemeModalShowTransform" />
+        <style name="$modal-transition" id="ThemeModalTransition" />
+        <style name="$modal-scale-transform" id="ThemeModalScaleTransform" />
+    </category>
+    <category name="Alerts (Bootstrap)">
+        <style name="$alert-padding-y" id="ThemeAlertPaddingY" />
+        <style name="$alert-padding-x" id="ThemeAlertPaddingX" />
+        <style name="$alert-margin-bottom" id="ThemeAlertMarginBottom" />
+        <style name="$alert-border-radius" id="ThemeAlertBorderRadius" />
+        <style name="$alert-link-font-weight" id="ThemeAlertLinkFontWeight" />
+        <style name="$alert-border-width" id="ThemeAlertBorderWidth" />
+        <style name="$alert-bg-level" id="ThemeAlertBgLevel" />
+        <style name="$alert-border-level" id="ThemeAlertBorderLevel" />
+        <style name="$alert-color-level" id="ThemeAlertColorLevel" type="Integer" />
+    </category>
+    <category name="Progress bars (Bootstrap)">
+        <style name="$progress-height" id="ThemeProgressHeight" />
+        <style name="$progress-font-size" id="ThemeProgressFontSize" />
+        <style name="$progress-bg" id="ThemeProgressBg" />
+        <style name="$progress-border-radius" id="ThemeProgressBorderRadius" />
+        <style name="$progress-box-shadow" id="ThemeProgressBoxShadow" />
+        <style name="$progress-bar-color" id="ThemeProgressBarColor" />
+        <style name="$progress-bar-bg" id="ThemeProgressBarBg" />
+        <style name="$progress-bar-animation-timing" id="ThemeProgressBarAnimationTiming" />
+        <style name="$progress-bar-transition" id="ThemeProgressBarTransition" />
+    </category>
+    <category name="List group (Bootstrap)">
+        <style name="$list-group-color" id="ThemeListGroupColor" />
+        <style name="$list-group-bg" id="ThemeListGroupBg" />
+        <style name="$list-group-border-color" id="ThemeListGroupBorderColor" />
+        <style name="$list-group-border-width" id="ThemeListGroupBorderWidth" />
+        <style name="$list-group-border-radius" id="ThemeListGroupBorderRadius" />
+        <style name="$list-group-item-padding-y" id="ThemeListGroupItemPaddingY" />
+        <style name="$list-group-item-padding-x" id="ThemeListGroupItemPaddingX" />
+        <style name="$list-group-hover-bg" id="ThemeListGroupHoverBg" />
+        <style name="$list-group-active-color" id="ThemeListGroupActiveColor" />
+        <style name="$list-group-active-bg" id="ThemeListGroupActiveBg" />
+        <style name="$list-group-active-border-color" id="ThemeListGroupActiveBorderColor" />
+        <style name="$list-group-disabled-color" id="ThemeListGroupDisabledColor" />
+        <style name="$list-group-disabled-bg" id="ThemeListGroupDisabledBg" />
+        <style name="$list-group-action-color" id="ThemeListGroupActionColor" />
+        <style name="$list-group-action-hover-color" id="ThemeListGroupActionHoverColor" />
+        <style name="$list-group-action-active-color" id="ThemeListGroupActionActiveColor" />
+        <style name="$list-group-action-active-bg" id="ThemeListGroupActionActiveBg" />
+    </category>
+    <category name="Image thumbnails (Bootstrap)">
+        <style name="$thumbnail-padding" id="ThemeThumbnailPadding" />
+        <style name="$thumbnail-bg" id="ThemeThumbnailBg" />
+        <style name="$thumbnail-border-width" id="ThemeThumbnailBorderWidth" />
+        <style name="$thumbnail-border-color" id="ThemeThumbnailBorderColor" />
+        <style name="$thumbnail-border-radius" id="ThemeThumbnailBorderRadius" />
+        <style name="$thumbnail-box-shadow" id="ThemeThumbnailBoxShadow" />
+    </category>
+    <category name="Figures (Bootstrap)">
+        <style name="$figure-caption-font-size" id="ThemeFigureCaptionFontSize" />
+        <style name="$figure-caption-color" id="ThemeFigureCaptionColor" />
+    </category>
+    <category name="Breadcrumbs (Bootstrap)">
+        <style name="$breadcrumb-font-size" id="ThemeBreadcrumbFontSize" />
+        <style name="$breadcrumb-padding-y" id="ThemeBreadcrumbPaddingY" />
+        <style name="$breadcrumb-padding-x" id="ThemeBreadcrumbPaddingX" />
+        <style name="$breadcrumb-item-padding" id="ThemeBreadcrumbItemPadding" />
+        <style name="$breadcrumb-margin-bottom" id="ThemeBreadcrumbMarginBottom" />
+        <style name="$breadcrumb-bg" id="ThemeBreadcrumbBg" />
+        <style name="$breadcrumb-divider-color" id="ThemeBreadcrumbDividerColor" />
+        <style name="$breadcrumb-active-color" id="ThemeBreadcrumbActiveColor" />
+        <style name="$breadcrumb-divider" id="ThemeBreadcrumbDivider" />
+        <style name="$breadcrumb-border-radius" id="ThemeBreadcrumbBorderRadius" />
+    </category>
+    <category name="Carousel (Bootstrap)">
+        <style name="$carousel-control-color" id="ThemeCarouselControlColor" />
+        <style name="$carousel-control-width" id="ThemeCarouselControlWidth" />
+        <style name="$carousel-control-opacity" id="ThemeCarouselControlOpacity" />
+        <style name="$carousel-control-hover-opacity" id="ThemeCarouselControlHoverOpacity" />
+        <style name="$carousel-control-transition" id="ThemeCarouselControlTransition" />
+        <style name="$carousel-indicator-width" id="ThemeCarouselIndicatorWidth" />
+        <style name="$carousel-indicator-height" id="ThemeCarouselIndicatorHeight" />
+        <style name="$carousel-indicator-hit-area-height" id="ThemeCarouselIndicatorHitAreaHeight" />
+        <style name="$carousel-indicator-spacer" id="ThemeCarouselIndicatorSpacer" />
+        <style name="$carousel-indicator-active-bg" id="ThemeCarouselIndicatorActiveBg" />
+        <style name="$carousel-indicator-transition" id="ThemeCarouselIndicatorTransition" />
+        <style name="$carousel-caption-width" id="ThemeCarouselCaptionWidth" />
+        <style name="$carousel-caption-color" id="ThemeCarouselCaptionColor" />
+        <style name="$carousel-control-icon-width" id="ThemeCarouselControlIconWidth" />
+        <style name="$carousel-control-prev-icon-bg" id="ThemeCarouselControlPrevIconBg" />
+        <style name="$carousel-control-next-icon-bg" id="ThemeCarouselControlNextIconBg" />
+        <style name="$carousel-transition-duration" id="ThemeCarouselTransitionDuration" />
+        <style name="$carousel-transition" id="ThemeCarouselTransition" />
+    </category>
+    <category name="Spinners (Bootstrap)">
+        <style name="$spinner-width" id="ThemeSpinnerWidth" />
+        <style name="$spinner-height" id="ThemeSpinnerHeight" />
+        <style name="$spinner-border-width" id="ThemeSpinnerBorderWidth" />
+        <style name="$spinner-width-sm" id="ThemeSpinnerWidthSm" />
+        <style name="$spinner-height-sm" id="ThemeSpinnerHeightSm" />
+        <style name="$spinner-border-width-sm" id="ThemeSpinnerBorderWidthSm" />
+    </category>
+    <category name="Close (Bootstrap)">
+        <style name="$close-font-size" id="ThemeCloseFontSize" />
+        <style name="$close-font-weight" id="ThemeCloseFontWeight" />
+        <style name="$close-color" id="ThemeCloseColor" />
+        <style name="$close-text-shadow" id="ThemeCloseTextShadow" />
+    </category>
+    <category name="Code (Bootstrap)">
+        <style name="$code-font-size" id="ThemeCodeFontSize" />
+        <style name="$code-color" id="ThemeCodeColor" />
+        <style name="$kbd-padding-y" id="ThemeKbdPaddingY" />
+        <style name="$kbd-padding-x" id="ThemeKbdPaddingX" />
+        <style name="$kbd-font-size" id="ThemeKbdFontSize" />
+        <style name="$kbd-color" id="ThemeKbdColor" />
+        <style name="$kbd-bg" id="ThemeKbdBg" />
+        <style name="$pre-color" id="ThemePreColor" />
+        <style name="$pre-scrollable-max-height" id="ThemePreScrollableMaxHeight" />
+    </category>
+    <category name="Utilities (Bootstrap)">
+        <style name="$displays" id="ThemeDisplays" />
+        <style name="$overflows" id="ThemeOverflows" />
+        <style name="$positions" id="ThemePositions" />
+        <style name="$user-selects" id="ThemeUserSelects" />
+    </category>
+    <category name="Printing (Bootstrap)">
+        <style name="$print-page-size" id="ThemePrintPageSize" />
+        <style name="$print-body-min-width" id="ThemePrintBodyMinWidth" />
+    </category>
+    <!-- Bootstrap Variables End -->
+</ew-theme>

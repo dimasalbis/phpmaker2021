@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-extension id="GoogleMaps" name="Google Maps" version="17.0.0" type="Custom View Tag" author="e.World">
+<description>
+<![CDATA[Google Maps
+Developer Website: https://developers.google.com/maps/
+Please refer to Google Maps API Licensing web site for the licensing terms:
+https://developers.google.com/maps/licensing
+
+*IMPORTANT: You must get an API key from Google first, read: https://developers.google.com/maps/documentation/javascript/get-api-key.
+
+Parameter description:
+- width: width of the map (px) (e.g. 400) default is 200
+- height: height of the map (px) (e.g. 400) default is 200
+- latitude: map latitude coordinate value (e.g. -34.397, see note 2 below)
+- longitude: map longitude coordinate value (e.g. 150.644, see note 2 below)
+- address: map address (e.g. "Sydney, NSW")
+- type: map type ("ROADMAP"/"SATELLITE"/"HYBRID"/"TERRAIN") default is "ROADMAP"
+- zoom: map zoom level (1-20) default is 8
+- title: title displayed on mouse over map position
+- icon: icon displayed in map position
+- description: description displayed on click (google.maps.InfoWindow)
+- apikey: API Key
+- use_single_map: use single map
+- single_map_width: single map width
+- single_map_height: single map height
+- show_map_on_top: show single map on top
+- show_all_markers: show all markers
+- use_marker_clusterer: use MarkerClusterer
+- cluster_max_zoom: MarkerClusterer max zoom
+- cluster_grid_size: MarkerClusterer grid size
+- cluster_styles: MarkerClusterer styles: Default(-1), People(0), Conversation(1), Heart(2), Pin(3)
+- *_field: the corresponding field holding the parameter value above
+
+Notes:
+1. Google Maps cannot be exported.
+2. Google Maps is not part of PHPMaker. Please read "Third-Party Tools" in the help file.
+]]>
+</description>
+<file>googlemaps.zip</file>
+<Project>
+    <Attribute name="apikey" />
+    <Attribute name="width" type="Integer" />
+    <Attribute name="width_field" type="Field" />
+    <Attribute name="height" type="Integer" />
+    <Attribute name="height_field" type="Field" />
+    <Attribute name="latitude" type="Double" />
+    <Attribute name="latitude_field" type="Field" />
+    <Attribute name="longitude" type="Double" />
+    <Attribute name="longitude_field" type="Field" />
+    <Attribute name="address" />
+    <Attribute name="address_field" type="Field" />
+    <Attribute name="type" option="ROADMAP,SATELLITE,HYBRID,TERRAIN" default="ROADMAP" />
+    <Attribute name="type_field" type="Field" />
+    <Attribute name="zoom" type="Integer" default="8" min="1" max="20" />
+    <Attribute name="zoom_field" type="Field" />
+    <Attribute name="title" />
+    <Attribute name="title_field" type="Field" />
+    <Attribute name="icon" />
+    <Attribute name="icon_field" type="Field" />
+    <Attribute name="description" />
+    <Attribute name="description_field" type="Field" />
+    <Attribute name="use_single_map" type="Boolean" default="0" />
+    <Attribute name="single_map_width" type="Integer" />
+    <Attribute name="single_map_height" type="Integer" />
+    <Attribute name="show_map_on_top" type="Boolean" default="1" />
+    <Attribute name="show_all_markers" type="Boolean" default="1" />
+    <Attribute name="geocoding_delay" type="Integer" default="250" />
+    <Attribute name="use_marker_clusterer" type="Boolean" default="1" />
+    <Attribute name="cluster_max_zoom" type="Integer" option="-1,7,8,9,10,11,12,13,14" default="-1" />
+    <Attribute name="cluster_grid_size" type="Integer" option="-1,40,50,70,80" default="-1" />
+    <Attribute name="cluster_styles" type="Integer" option="-1,0,1,2,3" default="-1" />
+</Project>
+<!-- ewgooglemaps.js -->
+<control id="ewgooglemapsjs" type="copy" action="add" ofolderid="_js" ofile="ewgooglemaps" oext="js" ifiles="ewgooglemaps.js" />
+<!-- MarkerClusterer -->
+<control id="markerclustererjs" type="copy" action="add" ofolderid="_js" ofile="markerclusterer" oext="js" ifiles="markerclusterer.js" />
+<!-- images for MarkerClusterer -->
+<control id="mcimages" type="copy" action="add" ofolderid="_images" ifolder="mcimages" remark="Copy images for MarkerClusterer" />
+</ew-extension>

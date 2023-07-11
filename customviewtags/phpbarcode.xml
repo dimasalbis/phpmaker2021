@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-extension id="PHPBarcode" name="Barcode" version="17.0.0" type="Custom View Tag" author="e.World">
+<description>
+<![CDATA[PHP Barcode
+Developer Websites:
+1. https://github.com/picqer/php-barcode-generator
+2. https://github.com/tecnickcom/TCPDF
+Both are distributed under GNU Lesser General Public License.
+
+Parameter description:
+- height: height of the barcode image (e.g. 60)
+- barcode: barcode value (depends on encode type, e.g. "4006381333931" for encode type "EAN-13")
+- encode: encode type (refer to web site above for supported encode type)
+- *_field: the field holding the parameter value above
+
+Note: BARCODE class is not part of PHPMaker. Please read "Third-Party Tools" in the help file.
+]]>
+</description>
+<file>phpbarcode.zip</file>
+<Project>
+    <Attribute name="height" type="Integer" default="60" />
+    <Attribute name="height_field" type="Field" />
+    <Attribute name="barcode" />
+    <Attribute name="barcode_field" type="Field" />
+    <Attribute name="encode" option="EAN-2,EAN-5,EAN-8,EAN-13,UPC-A,UPC-E,ISBN,S25,S25+,I25,I25+,CODABAR,CODE11,CODE128,C128A,C128B,C128C,CODE39,C39+,C39E,C39E+,CODE93,MSI,MSI+,POSTNET,PLANET,RMS4CC,KIX,IMB,PHARMA,PHARMA2T,DATAMATRIX,QRCODE" default="EAN-13" />
+    <Attribute name="encode_field" type="Field" />
+</Project>
+<!-- barcode (model) -->
+<control id="barcode" type="simple" action="add" ofolderid="_models" tagext="class" ifiles="barcode.php" />
+<!-- barcode class -->
+<control id="phpbarcode.php" type="simple" action="add" ifiles="PhpBarcode.php" ofolderid="_src" />
+</ew-extension>

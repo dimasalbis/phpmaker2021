@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-code name="Get a record as associative array" version="17.0.0" type="Query Database" for="server" author="e.World">
+<description>
+<![CDATA[
+Get a record as associative array
+]]>
+</description>
+<code>
+<![CDATA[
+// Get a record as associative array
+// NOTE: Modify your SQL here, replace the table name, field name and the condition
+$myRow = ExecuteRow("SELECT * FROM MyTable WHERE XXX");
+]]>
+</code>
+</ew-code>

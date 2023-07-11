@@ -1,0 +1,2425 @@
+PHPMaker History
+
+2021/05/31 v2021.0.14
+- Fixed: Lookup fields (RADIO/CHECKBOX) without dropdown
+- Fixed: Lookup fields in reports
+- Fixed: Problem with lookup value = 0
+- Fixed: fileDownload() for sweetalert2
+- Fixed: Warnings for thumbnail default width/height
+- Fixed: Client side SSN validation
+- Fixed: RowType property after calling renderViewRow()
+- Fixed: Encoding for loadHTML() when exporting reports
+- Fixed: loadUserID() method of AdvancedSecurity class
+- Fixed: Preview with security disabled
+- Updated: sweetalert2 v10.16.9
+- Updated: sweetalert2-themes (Bootstrap 4) v4.0.5
+- Other minor improvements
+
+2021/04/26 v2021.0.13
+- Improved: Sync field max. length if field size changed (UI)
+- Improved: Avoid false positive by Windows Defender (UI)
+- Improved: Show progress when downloading template or new version (UI)
+- Improved: Replace CR+LF by <br> for memo fields
+- Improved: ScriptName(), SendEmail() and Email class
+- Improved: Use user ID for Audit Trail in Login/Logout pages
+- Fixed: Navbar bottom border
+- Fixed: Sidebar for all Navbar menu items
+- Fixed: Option Template for Select2
+- Fixed: Dynamic Selection List for 2nd search field in summary/crosstab reports
+- Fixed: 'BETWEEN' operator for report dropdown filter
+- Updated: TCPDF 6.4.1
+- Other minor improvements
+
+2021/04/06 v2021.0.12
+- Improved: Set language phrase for client side
+- Improved: Add Options property for DbField class
+- Improved: Trigger "change" event for input element (Date/Time Picker extension)
+- Fixed: Export in iframe
+- Fixed: Generate Custom Template for selected fields
+- Fixed: Format short time in Edit page
+- Fixed: Form action
+- Fixed: Permission for Preview page
+- Fixed: Readonly file input
+- Fixed: Preview PDF file for BLOB field
+- Fixed: Set up current table if security disabled
+- Fixed: Modal dialog submitted twice
+- Fixed: BLOB field in Master page (PostgreSQL)
+- Updated: AdminLTE 3.1.0 (including Select2 4.0.13 and sweetalert2 v10.15.6)
+- Other minor improvements
+
+2021/03/15 v2021.0.11
+- Add package.json for node modules
+- Improved: Use try/catch for insert/update()
+- Improved: CurrentPageUrl() for routes with arguments
+- Improved: Width of search field without second field input
+- Improved: PHPWord and PhpSpreadsheet extensions (for registered users)
+- Improved: Error handling in FixedHeaderTable extension (for registered users)
+- Fixed: Time picker
+- Fixed: Export to PDF
+- Fixed: "Requires search" for SELECT tag in Extended Search
+- Fixed: Escaping random key
+- Updated: jQuery 3.6.0
+- Other minor improvements
+
+2021/02/22 v2021.0.10
+- New advanced setting: "Check new version on start"
+- Improved: Check new version, download and install (UI)
+- Improved: Skip compiling .scss if error occurred (UI)
+- Improved: Check if PHP 7.3 for compatible Composer packages
+- Improved: Error handling for compressing .js file
+- Improved: Error handling of missing User ID field
+- Improved: Do not use @import in .scss for datetime picker
+- Improved: SQL expression for concatenating fields (MSSQL)
+- Improved: Check HTTPS if advanced setting "Cookie Secure" enabled
+- Improved: Show error message on backup failure
+- Fixed: Disable submit button during form submission
+- Fixed: Crosstab report with drilldown
+- Fixed: SELECT Edit Tag with parent field and "requires search" enabled
+- Fixed: PHP warnings when using Dynamic User Level Security
+- Fixed: Breadcrumb for Delete page of detail table
+- Fixed: Can not clear an advanced setting (UI)
+- Fixed: Check User ID field for user table (UI)
+- Fixed: Search multiple value for numeric fields in reports
+- Fixed: Page size selector for reports
+- Fixed: Multi-language field custom message
+- Fixed: Lookup field with parent table in non-Master/Detail pages
+- Updated: Time picker, JsRender, and PDFObject
+- Other minor improvements
+
+2021/01/25 v2021.0.9
+- Improved: Check PHP 8
+- Improved: Default page for anonymous user
+- Improved: Show stack trace in Error page
+- Improved: Error handling for no permissions after login
+- Improved: Error handling when loading chart parameters
+- Improved: Use @set_time_limit()
+- Improved: Add Config("SAVE_FILE_OPTIONS") for saving file by file_put_contents()
+- Improved: Handle non-Latin alphabets (e.g. Greek) in table/field names
+- Improved: Highlight menu item with custom URL and base path
+- Fixed: GetConnectionId()
+- Fixed: IsSysAdmin() for API
+- Fixed: Printer friendly version
+- Fixed: Custom action by postback
+- Fixed: Master record checking in Add page
+- Fixed: minimumResultsForSearch for Select2
+- Fixed: File API action with User Level Security disabled
+- Fixed: Export to CSV/Excel/Word without extension
+- Fixed: href for "Delete" button (Preview extension)
+- Fixed: Error with IsAdmin() (FileManager extension)
+- Fixed: Repeat code for all fields in Custom Template editor (UI)
+- Updated: Bootstrap 4.6.0, JsRender 1.0.10, and dompdf 1.0.2
+- Other minor improvements
+
+2021/01/05 v2021.0.8
+- Use Node.js 14
+- Improved: Support HTTPS for URL connection
+- Improved: Server events for Custom Files
+- Improved: Route parameters [/{params:.*}] for Custom Files
+- Improved: Throw error if Custom File content is empty
+- Improved: Go to first page with permission after login
+- Improved: Allow $info["driver"] in Database_Connecting server event
+- Improved: Skip set_time_limit() if EXPORT_ALL_TIME_LIMIT < 0
+- Improved: Sorting in Preview page
+- Improved: Check table name better to avoid conflicts in class names
+- Improved: Make sure menu template ready before rendering
+- Improved: Use __DIR__ in config.php to avoid some path issues
+- Improved: Log email error in SendEmail()
+- Improved: Add client side "beforesubmit" event for forms
+- Fixed: Logging in Lookup class
+- Fixed: CSS for exporting report to PDF
+- Fixed: Order By reset when getting record count
+- Fixed: Server side custom validation using addErrorMessage()
+- Fixed: Wrong syntax for accessing some field objects
+- Fixed: Client side field properties for modal dialog
+- Updated: Overlay Scrollbars
+- Other minor improvements
+
+2020/12/14 v2021.0.7
+- Improved: Support function name as Start Page
+- Improved: Support returning JSON response in server events
+- Improved: Check empty foreign key value by '===' operator
+- Improved: Add Swagger path for login by URL
+- Improved: Security for upload and permissions actions (API)
+- Improved: Avoid loading Login or List page in modal dialog
+- Improved: Always backup/restore search filters in user profile
+- Fixed: QueryBuilder()
+- Fixed: Route(0) returns wrong value
+- Fixed: Swagger for sites without base path
+- Fixed: "Required" validation for invisible fields
+- Fixed: Empty row checking in Grid-Add
+- Fixed: Get/Set session variable value by Session() in Global Code
+- Fixed: Anonymous user set as logged in
+- Updated: JsRender v1.0.9
+- Other minor improvements
+
+2020/12/01 v2021.0.6
+- Session helper
+- New advanced setting "Session-less API actions"
+- Improved: Skip updating detail key field in Master/Detail-Edit
+- Improved: Format as text and skip lookup cache for self-lookup fields
+- Improved: API uses same compiled container and log file as application
+- Improved: Detect JsRender tags in selected HTML attributes (Custom Template)
+- Improved: Support PHP short echo tag in Custom Template editor (UI)
+- Improved: Alternate row color in Field Setup page (UI)
+- Fixed: Color syntax in Code editor (UI)
+- Fixed: Crosstab report setup form (UI)
+- Fixed: Edit page conflict reload
+- Fixed: Lookup field SQL with filter
+- Fixed: Toast container z-index
+- Other minor improvements
+
+2020/11/16 v2021.0.5
+- New advanced setting "Treat PHP warnings and notices as errors" for debugging
+- Improved: Sanitize URL in JavaScript
+- Improved: HTML-encode href attributes
+- Improved: Exception in class LdapConn
+- Improved: Check parent table of lookup fields
+- Improved: Create object with Container() by class name
+- Improved: Use table default sorting fields in preview page
+- Improved: Output Custom Template data for visible fields only
+- Improved: Not use global upload path for API CompiledContainer.php
+- Improved: Allow calling terminate() method of page object in Views
+- Fixed: AutoFill JavaScript error
+- Fixed: Log error with Debug enabled
+- Fixed: Lookup without security enabled
+- Fixed: PHP notices in Dashboard reports
+- Fixed: Lookup table with User ID Security
+- Fixed: Error message of invalid master key
+- Fixed: fetchAll() error in Multi-Update page
+- Fixed: Custom Template for master record page
+- Fixed: Detail key field as parent lookup field in Master/Detail-Edit
+- Fixed: Wrongly define class names for Custom File without "Include common files"
+- Fixed: JsRender source map
+- Other minor improvements
+
+2020/11/02 v2021.0.4
+- Improved: Detect image format
+- Improved: Sanitize search filter name
+- Improved: Check lookup permission in API permission middleware
+- Improved: Make sure allowed file types specified in lowercase
+- Fixed: Checkbox id
+- Fixed: "datetime" validator
+- Fixed: Export Master/Detail data
+- Fixed: DbChart constructor
+- Fixed: FileViewer with encrypted file path enabled
+- Fixed: Polyfill for Array.from (for IE only)
+- Fixed: Custom File (for .php without "Include common files")
+- Updated: JsRender v1.0.8
+- Updated: Composer-Setup.exe
+- Other minor improvements
+
+2020/10/19 v2021.0.3
+- Swagger UI for REST API at '/swagger/'
+- New advanced setting "Use Swagger UI"
+- GetUploadedFileNames() for accessing uploaded files by token returned by API
+- Improved: JSON response for JWT error (API)
+- Improved: Remove project ID in update permission action response (API)
+- Improved: Support encrypted file path in file action (API)
+- Fixed: Missing ew.vars.tables.<table> for some pages in Modals
+- Fixed: Return page for List page
+- Fixed: Page class lettercase for table pages and Register page (API)
+- Fixed: Multiple delete response (API)
+- Fixed: Hard-coded paths in autoload_static.php generated by composer (for UNC path)
+- Updated: Bootstrap 4.5.3
+- Updated: Chart.js 2.9.4
+- Other minor improvements
+
+2020/10/05 v2021.0.2- Improved: Use password mask for password field
+- Improved: Skip lookup for hidden fields on Add/Edit
+- Improved: Session timeout message supports minutes (%m)
+- Improved: Log insert/update/delete statements
+- Improved: Detect .jpg file signature better
+- Improved: Use ew*.min.js
+- Improved: Check table names with control ID conflicts
+- Improved: Disable save button on cancel
+- Improved: Skip searching virtual field if not visible
+- Improved: Add Config("DEBUG_MESSAGE_TEMPLATE")
+- Improved: Trigger change by fields().value() (for Select2)
+- Fixed: Failed to compile date time picker .scss
+- Fixed: Validators
+- Fixed: personaldata.php
+- Fixed: ew.ajax()
+- Fixed: Field upload path for API upload
+- Fixed: Master/Detail with no detail records
+- Fixed: Support for IE 11 (Custom Template not supported)
+- Fixed: Generation error with views if URL connection (UI)
+- Other minor improvements
+
+2020/09/21 v2021.0.1
+- Improved: DomainUrl() for HTTPS without port number in server variables
+- Improved: Show page number as disabled in pager for modal page (Preview)
+- Improved: Add "RewriteBase directive" advanced setting for .htaccess
+- Improved: Handle UNC path as project folder when compiling .scss
+- Improved: Check upload path for compiling container definitions
+- Improved: Throw error if PhpEncrypt() failed
+- Improved: Handle numbers in lookup field display value
+- Improved: Return unauthorized for invalid token for API
+- Fixed: Concatenate string in SQL according to database type
+- Fixed: Tables with name starting with digit
+- Fixed: "updatedone" event
+- Fixed: Update encrypted password
+- Fixed: BasePath() for sites without base path
+- Fixed: Save current filter
+- Fixed: "for" attribute for checkbox
+- Fixed: Duplicate namespace for Custom File
+- Fixed: Write audit trail to database
+- Fixed: Default sort order
+- Fixed: Encrypt user name and password
+- Fixed: Routes with "Lowercase output file name" disabled
+- Fixed: Execute scripts in templates (in code repo) for Custom Template
+- Fixed: Custom Template for Multi-Page
+- Fixed: Render upload files if insert/update cancelled
+- Fixed: Output languages to JSON
+- Many other minor improvements
+
+2020/09/07 v2021.0.0
+- Require PHP >= 7.2
+- Replace ADOdb by DBAL and PDO (Remove support for MS Access)
+- Slim Framework (Routing, middleware and dependency container, etc.)
+- Logger for logging SQL and errors
+- Error handler and error page
+- PSR-12 coding standard
+- Load classes by PSR-4
+- Enhanced Validation
+- Field Input Help Text (Custom Message)
+- Enhanced Charts (Trend lines, annotation, data labels)
+- Encrypted Connection with MySQL/PostgreSQL
+- Sharing Project with Other Users (via GitHub)
+- Commit changes with message
+- Improved Custom Template
+- Code Repository supports scripting for fast and complex Custom Template generation
+- Improved Select Tag (Select2)
+- Improved Dropdown for Radio/Checkbox Tag
+- Improved Toasts (AdminLTE Toasts Plugin)
+- Improved Alerts (SweetAlert2)
+- Development/Production environment (for database connection info, SMTP and JWT settings)
+- Option to compile container for production
+- Connection info of production server (JSON)
+- Optional MySQL driver (mysqli/pdo_mysql)
+- Optional Microsoft SQL Server driver (sqlsrv/pdo_sqlsrv)
+- Sort option (Toggle/Tristate)
+- Optional Invalid username/password characters
+- Option to use Bootstrap switch for boolean fields
+- Option to add API custom headers (for Apache/IIS)
+- New Server Events (Route_Action, Api_Action, and Container_Build)
+- User Level Security supports multiple user levels for each user
+- Save locale settings in project
+- New URL connection script to simulate direct connection
+- Handle SQLite INTEGER field with CHECKBOX Edit Tag as boolean field
+- Fixed header table extension supports user permission setup page
+- CAPTCHA extensions supports two CAPTCHAs (one in page, the other in modal dialog)
+- Allow user defined string functions for selecting in View Tag
+- Support accept and capture attributes for file upload fields
+- Clear sorting in List pages by Shift-Clicking table column header
+- Save state of AdminLTE Sidebar
+- Show version in project history
+- Searchbox for table (Database pane)
+- Searchbox for output files (Generate form)
+- Allow unloading loaded table (for "Load tables dynamically")
+- JavaScript compressor with ES6+ support
+- Moment, jQuery File Upload, TimePicker, dompdf, CKEditor and tinyMCE updated
+- Many other minor improvements
+
+2020/06/01 v2020.0.16
+- Improved: Handle zero values for master keys
+- Improved: Add Lookup permission for "Allow View All" (User ID Security)
+- Improved: Handle autoincrement user level ID field
+- Improved: Secruity for "permission" action (REST API)
+- Improved: Handle invalid JWT token (REST API)
+- Fixed: Registration if user already exists (REST API)
+- Fixed: Security for Anonymous Access (REST API)
+- Fixed: Default extensions not enabled for new project
+- Fixed: Captcha in change password page
+- Updated: jQuery v3.5.1
+- Updated: Bootstrap v4.5.0
+- Updated: AdminLTE v3.0.5
+- Many other minor improvements
+
+2020/05/11 v2020.0.15
+- Add "permission" and "register" actions (REST API)
+- Return "401 Unauthorized" if no permission (REST API)
+- Support FormData with both normal fields and file upload fields (REST API)
+- Support "Max Length (List page)" for memo fields (REST API)
+- Support citext data type as text data type (PostgreSQL)
+- Improved: Return Href Fields also in List page (REST API)
+- Improved: Add custom headers in web.config (REST API)
+- Improved: Security (REST API)
+- Improved: Add nav-child-indent class to menu
+- Improved: File type checking with ContentType()
+- Improved: Checking PostgreSQL sequence
+- Fixed: Custom file with relative path
+- Fixed: Multi-language lookup request
+- Fixed: YouTube Videos (Custom View Tag)
+- Fixed: Validation of DateTime without seconds
+- Fixed: Validation of User Level ID field when adding user level
+- Fixed: IMPORT_CSV_DELIMITER with escape character
+- Many other minor improvements
+
+2020/04/06 v2020.0.14
+- Support connection to Azure Database for MySQL
+- ScrollbarMode advanced setting (UI)
+- Advanced settings for cookie
+- Improved: Set up lookup setting for Date Interval
+- Improved: Skip updating selection lists in Confirm page
+- Improved: HTML-encode foreign key hidden values
+- Improved: Consent page cookie expiry time
+- Fixed: Save current filters for report (Server side)
+- Fixed: Date/Time picker
+- Fixed: REST API with security disabled
+- Fixed: REST API file access without User Level security
+- Fixed: Custom field setting on copying field settings
+- Fixed: YouTubeVideos Custom View Tag
+- Fixed: Siderbar for top navigation
+- Updated: ADOdb v5.20.17
+- Updated: AdminLTE v3.0.4
+- Updated: OverlayScrollars 1.12.0
+- Many other minor improvements
+
+2020/03/24 v2020.0.13
+- Improved: Add DOWNLOAD_PDF_FILE configuration setting
+- Improved: UnFormatDateTime() supports format in "hh:mm AM/PM"
+- Improved: Import records to table without primary key
+- Improved: Add Option dialog with textarea
+- Improved: Set textarea (with HTML editor) value by .value() of .fields() jQuery plugin
+- Improved: Hide tooltip when datetime/time picker shows
+- Improved: REST API login action returns more info
+- Improved: REST API edit action for editing primary key
+- Fixed: ADOdb MSSQL driver
+- Fixed: View file if security not enabled
+- Fixed: Checkbox id for boolean fields in Modal dialog
+- Fixed: Error on copying file during generation
+- Fixed: Check duplicate (for Oracle)
+- Fixed: Color palette setup form for charts (UI)
+- Many other minor improvements
+
+2020/03/03 v2020.0.12
+- Improved: Allow manual input of database name and schema for PostgreSQL (UI)
+- Improved: Page number selector width
+- Improved: Error handling of invalid Custom Field expression
+- Improved: Handle incorrect upload settings
+- Improved: Handle empty field format type for highlighting search result
+- Improved: insertSql() method
+- Improved: JSON encode for data in Custom Template
+- Fixed: Missing header in export to CSV (View page)
+- Fixed: Export numeric lookup field (PhpSpreadsheet)
+- Fixed: API user level security
+- Updated: UploadHandler.php
+- Updated: OverlayScrollars 1.11.0
+- Updated: JsRender 1.0.6
+- Many other minor improvements
+
+2020/02/05 v2020.0.11
+- Improved: Skip lookup for readonly fields
+- Fixed: API for multiple file upload
+- Fixed: Connection with PostgreSQL 12 (UI)
+- Fixed: Google maps for report with groups
+- Fixed: Inline-Add lookup for multi column List page
+- Fixed: Row_Import server event
+- Fixed: Export aggregate (PhpSpreadsheet extension)
+- Updated: OverlayScrollars 1.10.3
+- Many other minor improvements
+
+2020/01/21 v2020.0.10
+- Improved: Skip render own lookup
+- Improved: Check "pageno" before "start" for pager
+- Fixed: Lookup display fields in same table
+- Fixed: API with Windows Authentication
+- Fixed: Master/Detail key with Auto-Update Value
+- Fixed: Custom full URL protocols
+- Fixed: Google maps for reports
+- Fixed: Boolean lookup for reports
+- Fixed: Cannot delete report (UI)
+- Fixed: Font error in Firefox
+- Updated: AdminLTE 3.0.2
+- Many other minor improvements
+
+2020/01/07 v2020.0.9
+- Improved: Use encryption key as random key if set
+- Improved: Use TransactionIsolation = SQLSRV_TXN_READ_UNCOMMITTED (MSSQL)
+- Improved: Encrypt session ID in encrypted file path
+- Improved: Handle Custom Field that is a SELECT statement
+- Fixed: Cell_Rendered server event for reports
+- Fixed: function submitAction()
+- Fixed: Export to PDF with Barcode
+- Fixed: Date/Time picker and lookup field text input width (for Bootstrap 4.4)
+- Fixed: Search panel toggle button (for Bootstrap 4.4)
+- Fixed: Reports not shown for Static User Level Security
+- Updated: OverlayScrollars 1.10.2
+- Many other minor improvements
+
+2019/12/10 v2020.0.8
+- Improved: User interface
+- Improved: Handle empty display value in lookup (Use original value)
+- Improved: submitAction() allows $.ajax() settings
+- Improved: Center reCAPTCHA in mobile mode (reCAPTCHA extension)
+- Fixed: Autologin after registration/activation
+- Fixed: Navbar CSS class names
+- Fixed: Table grid panel colors in List page
+- Fixed: Virtual lookup field unchecked in List page
+- Fixed: Input group width in Login and Change Password pages
+- Fixed: Load events on changing reports (UI)
+- Updated: Bootstrap 4.4.1
+- Many other minor improvements
+
+2019/11/25 v2020.0.7
+- More AdminLTE 3 sidbar and navbar CSS classes
+- Allow file upload in Add Option page
+- Allow encrypting email field if not used as username field (Field encrpytion extension)
+- Improved: Connecting with PostgreSQL 12
+- Improved: Handle typing date in datetimepicker
+- Improved: "Plain" theme with fixed header table
+- Improved: Keep uploaded files when insert/update is cancelled
+- Fixed: Auto hide page size selector
+- Fixed: Drilldown for dropdown filter
+- Fixed: dompdf extension font for CPDF
+- Fixed: FormData for IE
+- Fixed: jQuery file download for Android browser
+- Fixed: Update primary key with confirm page
+- Fixed: Modal registration confirm page
+- Fixed: Reports with Linked Table as source
+- Fixed: Report as detail table
+- Fixed: Menu with all items as Navbar items
+- Updated: AdminLTE 3.0.1 (include fixed margin left on sidebar collapse without sidebar-mini) and Chart.js
+- Many other minor improvements
+
+2019/11/04 v2020.0.6
+- Add advanced setting "List page minimum table height (px)"
+- Add FormData polyfill (for IE)
+- Improved: Show Extended Filter for charts if not showing report
+- Improved: CSS styles for User Level Permissions page
+- Improved: Skip "No record found" message for Grid page
+- Fixed: Lazy loading images for modal View page
+- Fixed: Use input with type="text" for TEXTAREA in Confirm page
+- Fixed: Error with Detail grid
+- Fixed: Personal Data page
+- Fixed: Master/Detail-Add/Edit with Confirm page
+- Fixed: "dropdown-toggle" class for delete filter button
+- Fixed: Span tag ID for search value 2
+- Fixed: Default value for date filter
+- Fixed: Column field of date type (Crosstab report)
+- Fixed: Import/Lookup permissions
+- Fixed: File upload with special characters in file name
+- Fixed: Lookup ORDER BY for grouping field
+- Fixed: Brand image CSS style
+- Fixed: Error when changing some settings in "Tables" grid (UI)
+- Updated: AdminLTE 3.0.0 and Chart.js
+- Many other minor improvements
+
+2019/10/16 v2020.0.5
+- Improved: Treat MySQL TinyInt field as boolean only if set as checkbox
+- Fixed: Select options across pages in Modal Lookup
+- Fixed: Selected value in AutoSuggest removed on blur
+- Fixed: Collapsible Cards in Dashboard report
+- Fixed: Crosstab report column field ORDER BY (MSSQL)
+- Fixed: AutoFill with updating Dynamic Selection Lists
+- Fixed: OverlayScrollars option of FixedHeaderTable extension
+- Fixed: Duplicate group values in summary only reports with compact summary footer
+- Fixed: Export with Extended Search in report
+- Fixed: Startup Script for grid page
+- Fixed: Crosstab report year selection
+- Fixed: Report grouping field CSS class
+- Fixed: NOT LIKE operator with collation
+- Updated: AdminLTE 3.0.0-rc.4
+- Many other minor improvements
+
+2019/10/02 v2020.0.4
+- Improved: Handle page size = 0
+- Improved: Allow HTML in Toast message
+- Fixed: Lookup cache for Link Table
+- Fixed: Lookup filter for dropdown
+- Fixed: Detail report in View page
+- Fixed: NumericPager not used if Preview extension enabled
+- Fixed: Inline update failure not handled correctly
+- Fixed: Searching multiple selected values (databases other than MySQL)
+- Fixed: Lookup with ORDER BY clause (PostgreSQL)
+- Fixed: Default search value for reports
+- Fixed: Chart in Dashboard report
+- Fixed: SELECT tag id in grid
+- Fixed: Duplicate primary key error not handled properly
+- Fixed: Extra double quote in menu template
+- Fixed: userpriv.php shows all table
+- Fixed: Lookup permission when adding new user level
+- Fixed: Detail table permission checking
+- Fixed: $body undefined when using modal dialog (ew.js)
+- Fixed: ew.showMessage() function
+- Fixed: Error after removing User ID field for table (UI)
+- Updated: mobile-detect.js and JsRender/JsViews
+- Many other minor improvements
+
+2019/09/16 v2020.0.3
+- Add server events to index page
+- Allow no grouping fields for summary report
+- Fixed: Include shared file in extension
+- Fixed: Sort direction icon in userpriv.php
+- Fixed: Preview extension with Firefox
+- Fixed: Warnings for cancelAnimationFrame and requestAnimationFrame in Chrome
+- Fixed: Table name field size in user level permission table
+- Fixed: DateTime picker for date formats without seconds
+- Fixed: File upload handler not returning MIME type for PDF files
+- Updated: AdminLTE 3.0.0-rc.1
+- Updated: DateTime picker (Tempus Dominus v5.1.2)
+- Many other minor improvements
+
+2019/09/02 v2020.0.2
+- Change cookie consent to Toast
+- Right click and repeat selected code for all fields in Custom Template Editor
+- Add GetLinkHtml() method to class ListOption
+- Fixed: Lookup fields in registration page
+- Fixed: Upload icon for file upload input group
+- Fixed: Default language cannot be set
+- Fixed: Replace CR+LF by <BR>
+- Fixed: Master record page hyperlinks
+- Fixed: Default decimal precision for lookup fields
+- Fixed: Confirm password Custom Template in registration page
+- Fixed: Lookup field with Advanced Search enabled but Extended Search disabled
+- Fixed: SendEmail() for plain text email
+- Fixed: Set field properties for multiple fields (UI)
+- Fixed: Upload and barcode with s3
+- Fixed: Support for IE 11
+- Updated: CurrentUserIP()
+- Updated: Use fa-ellipsis-v for list action button
+- Updated: Sample code for Custom Template in code repository
+- Many other minor improvements
+
+2019/08/19 v2020.0.1
+- Allow update template in trial version
+- Move forgot password and register links in login page
+- Improved: Detect Azure SQL Server for optimizing SELECT statement
+- Improved: Add error handling for CurrentPageID()
+- Fixed: Class names for Font Awesome Free
+- Fixed: Upload field input group icon
+- Fixed: Some code of extensions not generated
+- Fixed: Alignment for crosstab summary field
+- Fixed: Hidden primary key fields (if not selected for the page)
+- Fixed: Maximum call stack size exceeded error during generation
+- Fixed: Security for Custom File with Static User Levels
+- Fixed: Custom File content with special characters
+- Fixed: Search operator LIKE, NOT LIKE, STARTS WITH and ENDS WITH
+- Fixed: Multi-Select Lookup field SQL for LIKE and other operators
+- Fixed: AutoSuggest not closed after blur
+- Fixed: Custom Template not rendered properly
+- Fixed: OtherOptions in List page not rendered properly
+- Fixed: Class ExportEmail for View page
+- Fixed: Lookup field with lookup table filter
+- Fixed: Lookup_Selecting server event
+- Fixed: Hyperlink prefix/suffix
+- Fixed: Function HtmlToText()
+- Fixed: et.json
+- Replace ScrollingTable extension by FixedHeaderTable extension (for registered users)
+- Many other minor improvements
+
+2019/08/06 v2020.0.0
+- Requires PHP >= 5.6
+- Detail and summary report
+- Compact summary report
+- Crosstab report
+- JavaScript charts by Chart.js
+- Drill down reports and charts
+- Dashboard Report
+- Grouping Intervals for Reports
+- Datetime Field Filters for Reports
+- Bootstrap Toast
+- Load JavaScript asynchronously and Bootstrap Spinner
+- IMAGE View Tag supports viewing PDF document
+- Show/Hide password
+- Input group for file upload
+- Modal Login, Registration, Change Password, Password Recovery Dialog
+- Composer Package Manager
+- New Server Events for Report or Chart
+- Import reports from PHP Report Maker project to PHPMaker project
+- Bootstrap 4 and AdminLTE 3 updated (with Font Awesome v5 Free)
+- Overlay Scrollbars extension (for adding scrollbars to pages with content wider than screen)
+- "Lookup" permission for lookup tables
+- Allow editing non-autoincrement primary keys
+- Always reset password on password recovery for better security
+- Encrypt SMTP server username and password
+- Skip encrypted password field on removing XSS (allow characters like "&")
+- Allow disabling Remove XSS for some fields by server event
+- Sanitize internal redirect URL (e.g. changing language ID)
+- Allow overriding Custom Template by overriding helper function getTemplate()
+- Simplified template and extensions
+- Global Config() function to get/set configuration easily
+- Support MySQL and PostgreSQL BIT data type (requires PHP >= 7.1.11)
+- Support MySQL and PostgreSQL JSON data type as string type
+- Generate .htaccess and web.config for URL Rewrite (REST API)
+- Allow editing/copying default permissions of User Levels (PHPMaker UI)
+- Use global 64-bit Node.js automatically if available (PHPMaker UI)
+- Improved Scrolling Table Extension (for registered users)
+- FileManager extension updated (using Rich Filemanager, for registered user only)
+- JsRender, Moment, jQuery File Upload, TimePicker, dompdf, CKEditor and tinyMCE updated
+- Many other minor improvements
+
+2019/05/06 v2019.0.10
+- Requires .NET Framework 4.5
+- Improved: Use CustomMsg in Add Option page
+- Improved: reCAPTCHA extension
+- Fixed: Read-only TEXTAREA fields
+- Fixed: Master/Detail with the same table
+- Fixed: CAPTCHA in Forgot Password page
+- Fixed: Detecting MySQL ENUM/SET values with spaces (URL connection)
+- Updated: composer.json and Composer-Setup.exe
+- Updated: JsRender, jQuery and jQuery Migrate
+- Other minor bug fixes and improvements
+
+2019/04/08 v2019.0.9
+- Improved: Disable lookup cache for child fields
+- Improved: Handle HTML entities for modal lookup
+- Improved: Allow lookup fields in registration page (with User Level Security)
+- Improved: Cleaning temp images
+- Improved: Saving events for tables
+- Improved: Compressing .css file with css-flip enabled
+- Fixed: Row_Import server event not fired correctly
+- Fixed: File upload field as lookup display field
+- Fixed: Modal Lookup with Option Template
+- Fixed: Composer error about "PHPMaker" package name
+- Fixed: Error when updating old data in User Level Permissions table
+- Fixed: z-index of popover and tooltip
+- Fixed: Creating folder in remote upload folder (S3)
+- Fixed: Error during Master/Detail-Add
+- Other minor bug fixes and improvements
+
+2019/03/06 v2019.0.8
+- Improved: Set cursor of target element to "wait" during Ajax lookup
+- Fixed: Load page into existing modal dialog
+- Fixed: Initiate report filter panel as collapsed (Compatibility project)
+- Fixed: CancelUrl for Inline-Add
+- Fixed: Upload files in Add Option dialog
+- Fixed: z-index for AutoSuggests in Grid-Add/Edit
+- Fixed: Error message for import not shown
+- Fixed: Modal Lookup with multiple selection
+- Updated: JsRender
+- Other minor bug fixes and improvements
+
+2019/02/12 v2019.0.7
+- Improved: Clear old error message when opening import dialog
+- Improved: Change Lookup::LookupFilter to public
+- Improved: Set RowType as ROWTYPE_AGGREGATE for aggregate rows in Preview page
+- Improved: Set custom-select width as "auto" in detail grid
+- Improved: Allow setting empty value by .fields() plugin's .value() method
+- Improved: Update Master/Detail sequences before generation
+- Improved: Input group for Auto-Suggest with Add Option
+- Improved: HTML-decode field value in Edit page if Remove XSS enabled
+- Improved: Allow output in Row_CustomAction
+- Fixed: Custom Template with page 0
+- Fixed: Dynamic Selection List with Auto-Fill
+- Fixed: Sort-up icon in Preview page
+- Fixed: Scrolling Table extension for Multiple Master/Detail
+- Fixed: PHPWord/PhpSpreadsheet extensions for field values in HTML
+- Fixed: DOMPDF extension using TCPDF fonts
+- Fixed: Send email on Add
+- Fixed: Custom Grid-Add/Edit return page
+- Fixed: Lookup to own table with different Link Field
+- Fixed: Breadcrumb for detail table Add page
+- Fixed: CSS styles for for Delete Filter button
+- Fixed: Menu item for Custom File with output folder
+- Fixed: Checking default values of fields for MySQL 8
+- Updated: JsRender
+- Other minor bug fixes and improvements
+
+2019/01/02 v2019.0.6
+- Improved: Support "$this" for Lookup Filter
+- Improved: Support unicode for extension settings
+- Improved: Reset slimScroll height
+- Improved: Reset layout height with HTML editor
+- Improved: Highlight active menu items
+- Improved: Add getExportTag() method for use with ExportOptions
+- Improved: Allow URL parameters for return pages
+- Improved: Create Language object in API
+- Fixed: Linked MSSQL database with schema
+- Fixed: Highlight search in List page only
+- Fixed: Autoloader not before Global Code
+- Fixed: Menu URL with hash
+- Fixed: Selected options from Modal Lookup across pages
+- Fixed: Save file upload related fields
+- Updated: Time picker, JsRender, pGenerator and pStrength
+- Other minor bug fixes and improvements
+
+2018/12/10 v2019.0.5
+- Compatibility with PHP Report Maker 12
+- Improved: Api class (REST API)
+- Improved: PhpBarcode class (Custom View Tag)
+- Improved: Add advanced setting "Multi-column List page grid CSS class"
+- Improved: Preview overlay (Preview extension for registered users)
+- Fixed: Anonymous access for lookup
+- Fixed: Global variable "Conn"
+- Fixed: CSS for single column checkbox/radio list
+- Fixed: CSS for icon in input group
+- Fixed: CSS for password strength bar
+- Fixed: CSS for dropdown list clear button
+- Fixed: Unnecessarily check field variable name against table variable name
+- Fixed: Add Option with Auto-Update value
+- Fixed: Lookup_Selecting for detail grid and Add Option
+- Fixed: Dropdown list not showing selected options properly
+- Fixed: Not checking MSSQL schema for linked databases
+- Fixed: Multiple upload fields with non image file and colorbox
+- Fixed: Show messages by JavaScript
+- Fixed: Scrolling Table for Master/Detail View (Scrolling Table extension for registered users)
+- Other minor bug fixes and improvements
+
+2018/11/13 v2019.0.4
+- Improved: Upload and import multiple files
+- Improved: Detect Word/Excel content type for BLOB fields without file name/type fields
+- Improved: HTML markup for input groups and preview row
+- Improved: Handle accented characters in field names and prevent duplicate field vars
+- Improved: Scrolling Table extension
+- Improved: Reset layout height better
+- Fixed: API using some session variables
+- Fixed: Incorrect lookup field display value if display field is also lookup field
+- Fixed: AutoSuggest in modal dialog
+- Fixed: Wrongly use search values during Add/Edit mode
+- Fixed: Dynamic Selection List in Grid-Add/Edit mode
+- Fixed: Filter for Dynamic Selection List with filter fields
+- Fixed: CONCAT operator for SQLite
+- Fixed: FileViewer for User ID/Level security and anonymous access
+- Fixed: Download non image files with jQuery File Upload
+- Fixed: User profile data with special characters not HTML-decoded after retrieving from database
+- Fixed: Modal Lookup problem with parent field value containing spaces
+- Fixed: Modal Lookup not setting AutoSuggest field correctly
+- Fixed: Output file name of ewbarcode.php
+- Fixed: Captcha in modal dialog for pages with Multi-Page enabled
+- Fixed: Add Option dialog for child field not filling the parent field if already selected
+- Fixed: Multiple master table to same detail table
+- Fixed: Active menu item not collapsible
+- Updated: mobile-detect.js
+- Other minor bug fixes and improvements
+
+2018/10/03 v2019.0.3
+- Improved: HTML markup for input groups with buttons
+- Improved: Security for uploading import file
+- Improved: Use lookup cache for List pages only
+- Improved: Load locale file with different lettercase from language ID
+- Improved: Width of .ew-login-box, .ew-forgot-pwd-box, and .ew-change-pwd-box
+- Improved: Handle decimal point of font size for non-English systems
+- Fixed: VARCHAR(MAX)/NVARCHAR(MAX) data types not detected correctly (MSSQL)
+- Fixed: Composer update working directory option
+- Fixed: Linked table class not generated properly
+- Fixed: function submitAction() not sending action name properly
+- Fixed: Constant DELETE_UPLOADED_FILES not generated properly
+- Fixed: AutoSuggest/AutoFill fields
+- Fixed: "glyphicon-warning-sign" not replaced with Font Awesome icon
+- Fixed: Default value of advanced setting "API access time after login"
+- Fixed: Lookup fields with multiple selection
+- Fixed: API custom actions
+- Fixed: Modal lookup field display value not displayed properly
+- Fixed: Email field encrypted by "FieldEncryption" extension
+- Fixed: Synchronization with linked tables from the same table
+- Fixed: Missing CSS class "dropdown-item" for List Options items
+- Fixed: Some server events not generated for some pages
+- Fixed: API response for Add Option
+- Fixed: Modal lookup fields (separator and paging)
+- Fixed: "in-valid" CSS class not removed for fields with Date/Time picker
+- Fixed: Output ew-js-templates for pages without header/footer
+- Fixed: Generate class for non-PHP custom files
+- Updated: PhpSpreadsheet version
+- Other minor bug fixes and improvements
+
+2018/09/03 v2019.0.2
+- Improved: Handle Custom File with output folder name not ending with "/"
+- Improved: Allow adding Composer packages by User Code as JSON object (previously as JSON string only)
+- Improved: Scrolling Table resizes on side menu show/collapse
+- Improved: File upload with API
+- Improved: Set options with Lookup object
+- Fixed: "BETWEEN" operator for searching
+- Fixed: Lookup table with "Distinct" enabled
+- Fixed: Use thumbnail sizes when resize is disabled
+- Fixed: Layout of permission checkboxes in Add page of User Level table
+- Fixed: Date time without seconds
+- Fixed: No header/footer
+- Fixed: AutoFill
+- Fixed: Some UI controls has smaller text size when system text size > 100%
+- Fixed: "Required" property of field objects
+- Fixed: Diabling form in modal dialog on submission
+- Fixed: Save profile data to database (MSSQL)
+- Fixed: Connection to database with non-default port number (MSSQL)
+- Other minor bug fixes and improvements
+
+2018/08/13 v2019.0.1
+- Improved: Avoid class file name conflicts for table names with suffix same as page ID
+- Improved: Use composer -d for network path destination folder
+- Fixed: Dynamic Selection List in Master/Detail-Add/Edit
+- Fixed: Execute() for unspecified database connection
+- Fixed: Namespace of exception
+- Fixed: "No header/footer" pages
+- Fixed: Handling JavaScript in Custom Template
+- Fixed: Time picker extension (for registered users)
+- Fixed: ReferenceError: i is not defined
+- Fixed: JavaScript error for range validation
+- Fixed: Page_Importing event not generated properly
+- Fixed: Some required pages for unselected table not generated properly
+- Fixed: Some code not supported by PHP 5.5
+- Fixed: Copy table settings to linked table
+- Updated: Bootstrap 4.1.3, mobile-detect.js
+- Other minor bug fixes and improvements
+
+2018/07/25 v2019.0.0
+- Brand-new layout with Bootstrap 4 and AdminLTE 3
+- Font Awesome (replaces Bootstrap 3 Glyphicons)
+- PHP namespace
+- Improve naming conventions
+- Use Composer to manage packages
+- REST API
+- Support SQLite database
+- Import from Excel/CSV
+- Cookie Consent and Privacy Page for General Data Protection Regulation (GDPR)
+- Download and delete personal data (GDPR)
+- Encrypt field data by php-encryption (GDPR) (registered users only)
+- Lookup cache to improve lookup field performance
+- Option to encrypt administrator and database user name and password by php-encryption
+- Manage user level permissions (partially) by non-admin users (Dynamic User Levels)
+- Improve XSS handling by HTML Purifier
+- Paging for Grid-Edit
+- Return page option for Grid-Add/Edit
+- Server Events for Add Option page and Grid page
+- Optimize synchronizing linked tables with URL connection
+- Show aggregate and detail record count in Master/Detail-View page
+- Check table and field variable names in UI
+- Support modal links for Preview extension (registered users only)
+- Date/Time format without seconds
+- Short time format (AM/PM) for TimePicker extension (registered users only)
+- Option to set the mailer property of PHPMailer
+- Option to set database time zone
+- Support email address with name like "John Smith<johnsmith@company.com>" (for Email_Sending server event)
+- PHPMailer 6
+- JsRender, Moment, jQuery File Upload, Timepicker, CKEditor and tinyMCE updated
+- mobile_detect.php and mobile-detect.js updated
+- PHPSpreadsheet (replaces PHPExcel) and PHPWord updated (registered users only)
+- Always use Microsoft PHP Driver for SQL Server (COM driver no longer supported)
+- Always use mysqli (old mysql extension no longer supported)
+- Many other minor improvements
+
+2018/04/09 v2018.0.8
+- Improved: Prevent repeated submission of Modal dialogs
+- Fixed: Lookup field as hyperlink field
+- Fixed: Saving server side filters without checking Profile field
+- Fixed: Upload filename included in Grid-Add/Edit template row
+- Fixed: Colors for Export to PDF (plain theme)
+- Fixed: Export to HTML for reports
+- Fixed: MySQL CONCAT with null field values
+- Fixed: Class GD for PHP 7.2
+- Fixed: DateTime picker returning localized value
+- Fixed: No header/footer
+- Fixed: Synchronizing deleted linked tables
+- Fixed: Captcha extension
+- Fixed: Debugoutput for PHPMailer
+- Updated: PHPMailer 6.0.5
+- Other minor bug fixes and improvements
+
+2018/02/07 v2018.0.7
+- Always use placeholder for login/changepwd/forgotpwd pages
+- Change EW_EMAIL_TEMPLATE_PATH from constant to variable
+- Remove obsolete login options
+- Fixed: SELECT DISTINCT for Lookup, Modal Lookup or Auto-Suggest fields (MSSQL)
+- Fixed: Data truncated when concatenating lookup display fields (MSSQL)
+- Fixed: Custom Template with list options in List Page
+- Fixed: MSSQL native driver flaw for retrieving the last insert ID
+- Fixed: Switching to Add/Edit page from View page in Modal dialog
+- Fixed: Database_Connected server events in db helper
+- Fixed: Validation with Auto-Suggest
+- Fixed: Sorting pages in Multi-page
+- Fixed: Image loading in Preview page
+- Updated: PHPMailer 6.0.3, PHPWord, Mobile_Detect and Moment
+- System requirements updated to PHP >= 5.5 (required by PHPMailer 6 and reCaptcha)
+- Other minor bug fixes and improvements
+
+2017/12/21 v2018.0.6
+- Support Database_Connecting/Connected server events in db helper
+- Add "orientation" setting for PHPWord extension
+- Allow crosstab query in MS Access databases
+- Improved: Initialization of Modal Lookup fields
+- Fixed: Selected value not showing properly in Modal Lookup
+- Fixed: Error on double clicking Modal Lookup button
+- Fixed: Error with AutoFill in detail table
+- Fixed: Error with table without primary key
+- Fixed: Scrollable Table with Inline-Add/Edit
+- Fixed: Field Visibility extension on Add/Edit (List page)
+- Fixed: Unicode characters in display values for searchable lookup fields (List page)
+- Fixed: Encrypted file path
+- Fixed: PHPExcel table level settings for reports
+- Updated: JSRender 0.9.90, dompdf 0.8.2, PHPMailer 5.2.26
+- Other minor bug fixes and improvements
+
+2017/11/20 v2018.0.5
+- Add Auto-Login failure message (requires updating language file)
+- Unify save button caption (requires updating language file)
+- Fixed: Add button in Master/Detail View
+- Fixed: Auto-Suggest with Option Template
+- Fixed: Float field as unique index not checked properly
+- Fixed: Record count for Custom View
+- Fixed: DateTime picker with short year format
+- Fixed: DateTime picker year selection white-space style in Extended Search
+- Fixed: Modal Lookup page size
+- Fixed: Duplicate display values of Modal Lookup field under some cases
+- Fixed: CSS classes for detail pages as accordion
+- Fixed: "relatedid" attribute not generated correctly in project .xml config file for compatibility
+- Allow Link Tables in MS Access databases
+- Other minor bug fixes and improvements
+
+2017/10/23 v2018.0.4
+- Improved: IsExport() function
+- Improved: Increase maximum length of extension settings
+- Improved: Remove user ID and password in debug message for native MSSQL driver
+- Fixed: Extended search on virtual lookup field
+- Fixed: Record count not shown in list page if number of records < records per page
+- Fixed: AutoSuggest with Custom Template
+- Fixed: FileManager extension with output filename prefix/suffix
+- Updated: AdminLTE 2.4.2
+- Other minor bug fixes and improvements
+
+2017/09/27 v2018.0.3
+- Improved: Avoid deleting newly saved upload file
+- Improved: Allow uploading mp4/mp3 files and support preview with HTML 5 video/audio tags
+- Fixed: Error with ORDER BY clause when getting record count (MSSQL)
+- Fixed: Error with script tag in Custom Template
+- Fixed: HTML markup of Search/Register page for "Use tabular form for desktop"
+- Fixed: Modal lookup with page size smaller than number of selected values
+- Fixed: Sorting order icon after searching in userpriv.php
+- Fixed: System administrator not checked correctly in cUserProfile class
+- Fixed: Extra CSS class name for "Form left column CSS class"
+- Fixed: Not highlighting search results for some fields
+- Fixed: Modal dialog not closed
+- Fixed: Label of menu item not shown for menu headers
+- Updated: JsRender 0.9.88
+- Updated: AdminLTE 2.4.0
+- Other minor bug fixes and improvements
+
+2017/08/21 v2018.0.2
+- Improved: Scrolling Table extension supports Grid-Add/Edit
+- Improved: Setting field object ReadOnly property with Row_Selected() server event
+- Improved: Allow setting connectionInfo with Database_Connecting event for mssqlnative driver
+- Improved: Profile(), LoginStatus() and CurrentUserInfo() functions
+- Improved: Backward compatibility for ResizeAndSaveToFile()
+- Improved: Modal dialog won't return to parent page or List page
+- Improved: Allow empty string (not NULL) as part of composite key
+- Fixed: Menu text for non-utf8 project
+- Fixed: DateTime picker text color in selected row
+- Fixed: Modal lookup with multiple selection
+- Fixed: DOMPDF extension TCPDF adapter page sizes
+- Fixed: Undefined EW_DATA_STRING_MAX_LENGTH
+- Fixed: Extra path delimiter in paths
+- Other minor bug fixes and improvements
+
+2017/08/07 v2018.0.1
+- Allow echo in Menu_Rendering/Rendered events
+- Allow text for Site Logo and check image file name better
+- Add ListOptions_Rendering server event
+- Add properties/methods to cField class for cell class
+- Add "Reset layout height" advanced setting
+- Add "Title" (Site Title) option for advanced setting "Page title style"
+- Allow hyperlink for parent menu items
+- Lazy loading of images
+- Improved: ew_ExecuteJson() function
+- Improved: Scrolling Table extension allows width/height in %
+- Improved: Row_Selected() server event
+- Improved: DateTimePicker extension allows debug mode
+- Fixed: ew_SendEmail() function
+- Fixed: Upload path for S3
+- Fixed: Preview extension
+- Fixed: Mouseover dropdown menu for Horizontal Menu extension
+- Fixed: *.js/*.css file name letter case
+- Fixed: Modal lookup with multiple selection
+- Fixed: Menu with absolute URL
+- Fixed: Highlighting search keywords in List page
+- Fixed: Edit page shows pager in debug mode
+- Fixed: Some issues with mssqlnative driver
+- Other minor bug fixes and improvements
+
+2017/7/25 v2018.0.0
+- Brand-New Layout with AdminLTE
+- Google Sign-In and Facebook Login
+- Search and Sort in User Level Permission Setup Page
+- Custom Edit Tags
+- Google Maps - MarkerClusterer
+- AutoSuggest with "More"
+- New DateTime Picker (replaces JsCalendar)
+- Project Versioning
+- Auto-Render Template
+- Icon for Menu Items
+- Form left column CSS class
+- New server events: Page_Foot, Ldap_Validated and Menu_Rendered
+- Export-to-JSON for use with Ajax
+- Upload by PUT
+- Upload folder supports Amazon S3 buckets
+- Generate Password / Password Strength for non user tables
+- F9 and Ctrl+F9 shortcuts for generation
+- Search box for advanced settings
+- More field properties for Multiple Field Update
+- PHP built-in web server as testing server
+- New "dbvalue" tag for Custom Template
+- Option to minify all uncompressed .js in the project
+- Option to use PHP password hashing functions
+- Advanced settings for Node.js
+- Advanced settings for file upload path
+- dompdf 0.8.0
+- PHPMailer 5.2.23
+- jQuery 3.2.1 and jQuery Migrate
+- jQuery file download
+- Font Awesome
+- JsRender, Moment, Colorbox, jQuery File Upload, Timepicker, CKEditor and tinyMCE updated
+- mobile_detect.php and mobile-detect.js updated
+- Preview extension supports paging and sorting (registered users only)
+- PHPExcel and PHPWord updated (registered users only)
+- Use Microsoft PHP Driver for SQL Server (EXPERIMENTAL only)
+- Many other minor improvements
+
+2017/03/02 v2017.0.7
+- Add advanced settings for auto-hiding page size selector
+- Increase number of recent project files to 10
+- Improved: Hide grid upper/lower panel if empty
+- Improved: Load tables dynamically
+- Improved: Call User_Validated even if user not found
+- Improved: Load default settings for TIME fields
+- Improved: Check HTTP_X_FORWARDED_PROTO/PORT for HTTPS
+- Fixed: Prefix/infix/suffix generated for Custom View Tag files
+- Fixed: Email address not URL-encoded in PrepareRegisterEmail()
+- Fixed: Dynamic Selection Lists in Master-Add/Edit page if master field not selected in List page
+- Fixed: Modal Lookup with parent field in master table
+- Fixed: Generation error if generating List/View page only
+- Fixed: Page labels with HTML tags
+- Fixed: Popup error does not show while in modal dialog
+- Fixed: AddBlankRow when Grid-Edit with no records
+- Fixed: Not always include ewpdf.css when exporting to PDF
+- Fixed: AutoSuggest fields not checked for "Required"
+- Fixed: Audit Trail for Cascade Delete
+- Updated: ar.json
+- Other minor bug fixes and improvements
+
+2017/01/09 v2017.0.6
+- Compatible with PHP Report Maker 10
+- Get correct record count for modal lookup
+- Update DBHost after synchronization with MSSQL
+- Support callback function for successful row custom action
+- Remove white spaces after Custom Template
+- Support MSSQL bit field as boolean field
+- Updated: PHPMailer 5.2.21
+- Other minor changes and bug fixes
+
+2016/12/14 v2017.0.5
+- Fixed: Disabled "save filter" button still clickable
+- Fixed: Empty DBHost value for Microsoft SQL Server
+- Fixed: Action not reset for Edit page on failure (CAPTCHA extension)
+- Fixed: Incorrect tab style for multiple detail tables
+- Fixed: Incorrect language file generated for non-English locale
+- Fixed: TblLoaded property not set properly
+- Fixed: dbid not set correctly for modal lookup
+- Improved: Synchronization speed
+- Trigger click event on clearing dropdown list
+- Other minor changes and bug fixes
+
+2016/11/14 v2017.0.4
+- Fixed: Not updating integer values with thousand separator correctly
+- Fixed: ReCaptcha enabled incorrectly
+- Fixed: Cannot create/migrate tables for Dynamic User Levels (MSSQL with schema <> "dbo")
+- Fixed: Cannot delete the first new row in Grid-Add/Edit
+- Improved: Validate $_GET/$_POST values for numeric fields
+- Improved: Support dbid (string) for ew_Execute*()
+- Improved: Add language files for tinyMCE extension
+- Updated: Mobile Detect, JsRender, Moment
+- Add/Delete server side search filters by Ajax
+- Other minor changes and bug fixes
+
+2016/10/5 v2017.0.3
+- Fixed: Modal dialog with client events
+- Fixed: Error CSS class not always reset for dropdown radio buttons or checkbox list
+- Fixed: AutoSuggest not showing all options in some cases
+- Fixed: Save Current Filter with IS/IS NOT NULL
+- Fixed: Multiple Master/Detail with same field names in detail tables
+- Updated: Bootstrap 3.3.7
+- Support AutoSuggest with Modal Lookup
+- Support AutoSuggest for User ID fields
+- ADOdb updated to 5.20.6 with PostgreSQL BLOB fields fixed
+- Other minor changes and bug fixes
+
+2016/9/15 v2017.0.2
+- Fixed: Password generator and strength not working in modal dialog
+- Fixed: Pager not showing in modal dialog for lookup with ORDER BY clause (SQL Server)
+- Fixed: CSS cannot be compiled with non-English font name
+- Fixed: Custom display value separators ignored by RADIO and CHECKBOX Edit Tags
+- Fixed: New extension advanced settings not saved
+- Fixed: Multi-Language User Values not loaded properly in Multi-Language Property Editor
+- Fixed: FieldVisibility extension with array setting for PHP 5.3
+- Improved: Reset "Multiple" property for non-string type field
+- Show progress at taskbar button
+- Other minor changes and bug fixes
+
+2016/8/23 v2017.0.1
+- Improved: Show error message if uploaded file cannot be saved
+- Improved: Consider date/time separators in Quick Search with date/time fields
+- Improved: Allow to open project with invalid connection info
+- Improved: Update report source if source table is renamed during synchronization
+- Improved: Fire User_Validated server event for custom user validation
+- Fixed: Modal Lookup with "Text input for search" enabled
+- Fixed: Wrong lookup display fields in Multi-Language project
+- Fixed: Field order not saved properly
+- Fixed: Master/Detail order not saved properly
+- Fixed: Not allowing empty site logo setting
+- Fixed: "No header/footer" option ignored
+- Fixed: Menu items not properly saved
+- Fixed: Not returning all fields from MSSQL in some cases
+- Fixed: Error on drag-and-drop in Field Setup page
+- Fixed: Incorrect fields shown aftering adding new table and synchronization
+- Fixed: Errors with function ew_FormatDateTime()
+- Fixed: JavaScript error with scrollable table
+- Fixed: Field Visibility extension with PHP 5.3 or with "complex" condition
+- Fixed: Dynamic Selection Lists wtih parent field in master table
+- Fixed: Locale file for language "ar"
+- Fixed: Schema ignored for PostgreSQL
+- Use test keys for reCAPTCHA
+- Remove dependency on Visual C++ Redistributable
+- Other minor changes and bug fixes
+
+2016/7/25 v2017.0.0
+- Modal View/Edit/Update/Add/Copy in List page
+- Modal dialog to search and select from lookup table
+- Locale files for 70 languages
+- Locale settings with date/time separators and date format by language
+- Faster loading/unloading of large projects
+- Faster script generation
+- Node.js as script engine (remove dependency on Windows Script and Visual Basic)
+- Field Visibility extension (registered users only)
+- Auto Update to latest template (registered users only)
+- View/Edit/Add/Copy/Delete links in detail table of Master/Detail View
+- Support Add page for tables without primary key
+- Option to enable/disable fields for sorting
+- Option to save search filter in database
+- Option to hide pager if single page only
+- Option to show/hide breadcrumbs or show as page title
+- Handle client side events in Add Blank Row
+- Simple Windows/LDAP Authentication
+- New User Code with events for system functions
+- Preserve spacing for Custom Files
+- Handle Session Keep Alive and Session Timeout when security disabled
+- Disable "Password Strength" and "Generate Password" options in Search page
+- dompdf 0.7.0
+- ADOdb 5.20.4
+- PHPMailer 5.2.16
+- jQuery, JsRender, Moment, Colorbox, typeahead.js, jQuery File Upload, Timepicker updated
+- CKEditor and TinyMCE updated
+- PHPExcel and PHPWord updated (registered users only)
+- mobile_detect.php and mobile-detect.js updated
+- Supports SASS (replaces LESS)
+- Many other minor improvements
+
+2016/3/21 v12.0.7
+- Fixed: Anonymous access with User Level Security disabled
+- Fixed: Add Blank Row with DHTML editor
+- Fixed: Proper handling if Row_Deleting server event returns false
+- Fixed: No color in file upload progress bar
+- Fixed: Oracle CLOB/BLOB fields with related file fields
+- Fixed: Avoid infinit loop if Start Page = List page with querystring parameters
+- Fixed: CKEditor create/save event name not consistent with TinyMCE
+- Fixed: Text field with IMAGE View Tag and [Encrypt File Path] option enabled
+- Improved: Detect Oracle instant client better
+- Improved: Set BODY tag dir attribute based on language ID (for Multi-Language project)
+- Improved: Upload file name extension checking
+- Other minor changes and bug fixes
+
+2016/1/19 v12.0.6
+- Fixed: Copy table settings for Linked Tables
+- Fixed: Lookup tables of different database type in Linked Tables
+- Fixed: Not hiding List Actions in Grid Add
+- Fixed: Dropdown buttons disabled after exporting selected records
+- Improved: Add file name in header when "Encrypt file path" enabled
+- Improved: Check Anonymous user level once only
+- Improved: Add table border by inline styles for Gmail when Export-to-Email
+- Improved: Allow longer domain name when checking email address
+- Improved: Support more MIME types
+- Improved: Show URL in "No Permission" message
+- Updated: jQuery, JsRender, Mobile Detect
+- Other minor changes and bug fixes
+
+2015/12/09 v12.0.5
+- Compatibility with PHP Report Maker 9
+- Fixed: Creating Custom Files without the "Include Common Files" option
+- Fixed: Auto-fill not working with SELECT Edit Tag and Use DropDown
+- Fixed: SelectLimt for MSSQL
+- Fixed: Tooltip for image field
+- Fixed: User ID field not selected in Add/Edit pages
+- Fixed: Master/Detail-Add URL set up incorrectly
+- Fixed: Grid Insert/Update for master table with multiple detail tables
+- Fixed: Password strength checking in Grid/Inline-Add/Edit pages
+- Fixed: PHPExel, Barcode and ReCaptcha for PHP 7
+- Updated: PHPMailer
+- Updated: Bootstrap 3.3.6
+- Other minor changes and bug fixes
+
+2015/11/09 v12.0.4
+- Supports PHP 7
+- Fixed: Dynamic Selection Lists in Master/Detail-Edit
+- Fixed: SELECT statement generated incorrectly if Custom Fields not selected
+- Fixed: Crashes when altering views in some cases
+- Fixed: Table schema not considered in Add Linked Table form
+- Fixed: PostgreSQL boolean field as Activated Field
+- Fixed: Non-admin user not properly checked when adding user record
+- Fixed: Microsoft Access database path not built correctly if the path contains parent path
+- Fixed: Required field not validated correctly if "Use Dropdown" enabled
+- Fixed: ADOdb error message not displayed correctly (MSSQL)
+- Improved: Prevents output in server events breaks JSON output of ewlookup.php
+- Improved: Better performance in cleaning up upload temp folders
+- Improved: Check if PHP COM extension installed (MSSQL and MS Access)
+- Improved: Reload user level permission on change (Dynamic User Level Security)
+- Other minor changes and bug fixes
+
+2015/09/22 v12.0.3
+- Fixed: Auto-Fill not working in multiple master/detail
+- Fixed: Incorrect fields for registration email
+- Fixed: Incorrect Add link for preview
+- Fixed: Multi-Language Property Editor not showing Linked Tables
+- Fixed: JavaScript error in View page printer friendly version
+- Fixed: Dropdown selection list (RADIO/CHECKBOX) not showing in browsers for iOS
+- Fixed: Multiple selection (SELECT MULTIPLE and CHECKBOX) not loaded properly
+- Fixed: JavaScript error in Multi-Page pager
+- Fixed: "$" not escsped in connection info
+- Fixed: Add Option for AutoSuggest field with Option Template
+- Fixed: Wrong file name of dompdf_config.inc.php if output file name prefix/suffix enabled (PDF extension)
+- Improved: Handle hidden file upload fields
+- Improved: Handle hidden fields in Custom Template
+- Improved: Show read-only file upload fields with colorbox
+- Improved: Session does not timeout if auto-login
+- Improved: Allow synchronous Ajax requests for lookup fields
+- Updated: JsRender, moment.js and Colorbox
+- Other minor changes and bug fixes
+
+2015/08/24 v12.0.2
+- Fixed: Incorrect User Values for User Level field
+- Fixed: Incorrect letter case of User Level table/field names after creating tables (PostgreSQL only)
+- Fixed: Incorrect redirection if user has no permission to access the Start Page
+- Fixed: JavaScript error of Multi-page in Advanced Search modal dialog (Chrome only)
+- Fixed: Local Storage Filters not working if only Advanced Search enabled
+- Fixed: Incorrect image preview path in file manager (FCKEditorFileManager extension)
+- Fixed: JsCalendar "calendar" event handler cannot be attached by Client Script
+- Improved: Support "Allow Add" in detail table (Master/Detail-Add/Edit)
+- Improved: Allow users of Administrator User Level to use the new actions for user profile
+- Improved: Advanced setting to allow searching keywords in all selected fields (Quick Search)
+- Improved: Prevent saving detail records for master record not belonged to user
+- Updated: JsRender
+- Other minor changes and bug fixes
+
+2015/08/04 v12.0.1
+- Fixed: Generation error for ewp12.js on some machines
+- Fixed: Forgot password with MD5 password
+- Fixed: AutoSuggest error in Grid-Add/Edit on form submission
+- Fixed: Dynamic Selection Lists in Grid/Inline/Master-Add/Edit
+- Fixed: New option not properly selected after adding a new option to lookup field
+- Fixed: Upload file path error if application root <> destination folder
+- Fixed: Security for hard-coded admin only
+- Fixed: Show Audit Trail table properly in UI after creating Audit Trail table
+- Fixed: Audit Trail not working if *info.php of Audit Trail table not selected to generate
+- Fixed: Incorrect ewscrolltable.min.js (Scrolling Table extension)
+- Fixed: Automatic language code for reCAPTCHA (Captcha extension)
+- Fixed: Oracle BLOB fields cleared when updating other fields
+- Other minor changes and bug fixes
+
+2015/07/20 v12.0.0
+- Linked Tables from Multiple Databases
+- Custom Fields
+- Optional Tabular Form for Desktop Mode
+- Dropdown Selection Lists
+- Option Template for Dropdown Selection Lists
+- Improved AutoSuggest with Option Template, min-width and max-height settings.
+- Session Keep Alive and Session Timeout
+- Anonymous User Level
+- New Actions to Manage User Profile (for Administrators)
+- Password Generator and Password Strength Meter
+- Improved Multi-Page
+- Simplified Client Side Events and "fields" jQuery Plugin
+- Multi-Update of Field Settings
+- Import/Export of Theme Settings
+- Import/Export Feature of Multi-Language Property Editor
+- Dynamic Selection Lists in Master/Detail-Add/Edit
+- Cancel button with confirm dialog
+- Local Storage of Search Criteria
+- Cancel Button for Add/Edit/Delete/Update Pages
+- New Language Selection Buttons as button group with tooltip.
+- Language_Load and AuditTrail_Inserting server event
+- Option to encrypt file path
+- Option to add plain text version in HTML email
+- Use mysqli extension by default
+- Image Resize functionality (does not require Image Resize extension anymore)
+- Multi-Language support for email template
+- Lookup always by ajax ("Use Ajax" setting removed)
+- Improved Custom Actions
+- DetailPages property for showing and hiding detail table tabs by server event
+- Password change by user (for md5 password) as password recovery
+- Custom Attributes as PHP array
+- SelectLimit() for MSSQL >= 2005
+- Global array for passing server side values to client side
+- "addoption" and "newoption" client side event for lookup fields (supports both lookup fields with lookup table or user values)
+- JavaScript alerts replaced by Modal dialog
+- jQuery, JsRender, jQuery File Upload updated
+- TinyMCE and CKEditor extensions (for registered users only) updated with latest versions
+- Multi-Language support for reCAPTCHA, JsCalendar, TinyMCE and CKEditor
+- QRCode/BarCode Custom View Tags combined (Flash Files Custom View Tag removed)
+- A new built-in "plain" theme
+- PHPMailer updated
+- Setting PHPMailer properties in Email_Sending server event
+- mobile_detect.php updated and mobile-detect.js adopted
+- Bootstrap 3.3.5
+- UTF-8 output files if project charset is utf-8
+- Option to add indentation to XML nodes in the project file
+- Many other minor improvements
+
+2015/03/30 v11.0.6
+- Fixed: Export to email failure for View page with no paging section
+- Fixed: Incorrect tooltip for master table in detail table's List page
+- Fixed: Generation error when generating master View page only
+- Fixed: Disallow all file types if no file type is entered for upload field
+- Fixed: Incorrect image src if application root not same as destination folder
+- Improved: Allow using the client side "create" event to change the configurations (CKEditor/TinyMCE extensions)
+- Improved: New row type (EW_ROWTYPE_HEADER) for List page header (for use with ListOptions_Rendered server event)
+- Improved: Speed of synchronization
+- Updated: Bootstrap 3.3.4
+- Updated: jQuery 1.11.2
+- Updated: JsRender
+- Event editor auto-completion disabled (unless pressing Ctrl+Space)
+- Other minor changes and bug fixes
+
+2015/01/07 v11.0.5
+- Fixed: Scrollbar for main table appeared with button dropdown due to Bootstrap 3.3.1
+- Fixed: Hang during generation if Access database file not found and Dynamic User Level security enabled
+- Fixed: Required field validation for DHTML editor
+- Fixed: Checking for maximum number of upload files
+- Fixed: Incorrect position for Export Options for Master/Detail page
+- Fixed: Detail report column hidden if Preview extension enabled
+- Fixed: Export selected records to email for Custom Template
+- Improved: File upload thumbnail width/height as advanced settings
+- Improved: Colorbox for file upload thumbnails
+- Improved: Hide hyperlink if TooltipValue is empty
+- Improved: Completion list (Ctrl+Space) for Custom Template
+- Improved: Export-to-Email supports QRCode/Barcode Custom View Tags
+- Other minor changes and bug fixes
+
+2014/12/02 v11.0.4
+- Fixed: Cascade Update with more than one foreign key fields
+- Fixed: Display images for SQL Server binary fields
+- Fixed: Custom Files at application root (output folder is empty) when application root not same as destination folder
+- Fixed: Error in spell check (CKEditor extension)
+- Fixed: TCPDF export problem (DOMPDF extension)
+- Fixed: Preview overlay not displayed next to the detail button group in multi-column List page (Preview extension)
+- Fixed: Button height not some as input in IE (JSCalendar/TimePicker extensions)
+- Fixed: Duplicate dropdown menu items in View page
+- Improved: Add settings for paper size and orientation (PHPExcel extension)
+- Improved: Support Page_Loading/Page_Rendering/Page_Unloaded server events in Custom Files
+- Improved: Handle Heredoc and Nowdoc in server events
+- Improved: Remove icon base for google map so user icons can be specifed
+- Improved: Handle bitmap images (*.bmp) during export
+- Improved: Support validation for password fields
+- Improved: Add DATAMATRIX support for PHP Barcode (Custom View Tag)
+- Updated: Bootstrap 3.3.1
+- Updated: Colorbox 1.5.14
+- Updated: mobile_detect.php and ew_UserAgent()
+- Other minor changes and bug fixes
+
+2014/10/03 v11.0.3
+- Support exporting QRCode/BarCode as images (PHPExcel/PHPWord/PDF/Email only)
+- Add Advanced Setting "Check token for form post"
+- Add getter/setter for SqlXXX() in table class
+- Improved: Oracle client detection
+- Improved: Support SELECT LIMIT for Oracle
+- Improved: Adjust page footer properly for desktop
+- Improved: Add "for" attribute to label
+- Improved: Check Advanced Security in FCKEditorFileManager extension
+- Improved: Support submitting the modal Add Option dialog and Advanced Search dialog by pressing Enter
+- Improved: Add timer to avoid single google maps OVER_QUERY_LIMIT error
+- Fixed: Incorrect records loaded during Grid-Edit if default search values specified
+- Fixed: AutoFill not working in Master/Detail-Edit
+- Fixed: Custom File with output folder specified
+- Fixed: Mobile menu not hidden on print
+- Fixed: Textarea content not HTML-encoded
+- Fixed: Old upload file deleted if both CreateUploadFileOnCopy and DeleteUploadedFile options enabled
+- Fixed: Charset not properly set up in database helper for Oracle
+- Fixed: Detail columns not hidden properly for PreviewRow (Preview extension)
+- Fixed: AutoSuggest blur event clearing the new value added by Add Option
+- Fixed: Incorrect user table name for MSSQL when saving user profile to database
+- Updated: JsRender, typeahead.js, and mobile_detect.php
+- Other minor changes and bug fixes
+
+2014/08/11 v11.0.2
+- Improved: Add Visible property to cBreadcrumb class
+- Improved: Allow custom connection info for database helper
+- Improved: Align foreign key fields in Add/Edit page
+- Improved: Set up default theme/css settings for new project
+- Improved: Detect compound trigger in Oracle for autoincrement field
+- Fixed: Hide Search options during Inline-Add/Edit
+- Fixed: Preview extension - "Add" link for detail table with no record
+- Fixed: Missing alternating row color for PDF export
+- Fixed: Incorrect text for Export to Word link
+- Fixed: Missing placeholder for password fields
+- Fixed: Not showing new fields in database pane after synchronizing table/view
+- Fixed: Hidden fields not auto-filled
+- Fixed: Incorrect URL for Custom File in index page
+- Updated: JsRender and Colorbox
+- Other minor changes and bug fixes
+
+2014/07/23 v11.0.1
+- Add right click menu in code editor
+- Improved: Support no header/footer in Custom Files
+- Improved: Show required indicators for field captions in Custom Template
+- Improved: Use colorbox.min.js instead of colorbox.js
+- Fixed: Missing brand in Horizontal Menu
+- Fixed: Unable to click Home/User icon in Chrome
+- Fixed: Auto fill with two or more than parent fields
+- Fixed: Export wrong records if search with default values
+- Fixed: Advanced search for auto suggest fields
+- Fixed: Show All button not showing if only Advanced Search enabled
+- Fixed: Preview with date key fields
+- Fixed: Multi-Page Custom Template displayed incorrectly
+- Fixed: Missing viewport meta tag if project styles disabled
+- Fixed: Hard code admin only project settings reset
+- Updated: JsRender
+- Other minor changes and bug fixes
+
+2014/07/09 v11.0.0
+- Responsive Layout with Bootstrap 3
+- Optional Advanced Search form by Modal dialog
+- AutoSuggest by typeahead.js
+- Responsive table for main table in List page
+- Horizontal Form in Add/Edit/Update/Search/Register/Login page
+- Layout by grid system
+- Toolbar with breadcrumbs, export options, search options and language selection list (if multi-language) in one row
+- Vector icons with Tooltip
+- Enhanced Bootstrap Dropdown as vertical menu with submenu on mouseover
+- Enhanced Bootstrap Navbar as horizontal menu with submenu on mouseover (for registered users only)
+- Enhanced Quick Search supporting "OR" operator and double quoted phrase for "Exact Match". Dropdown search options.
+- Improved Detail Preview Extension with Add/Copy/Edit/Delete/View links for detail records in the preview page (for registered users only)
+- Colorbox supporting displaying images for the multiple upload fields as groups
+- Timepicker Extension (for registered users only) for Time fields
+- PHPWord Extension (for registered users only) for exporting data in native Word 2007 (.docx) format
+- Export to Excel/Word/PDF/Email by Custom Template
+- Improved Google Maps (Custom View Tags) supporting showing multiple markers (from records in the page) in one single map
+- Custom Files
+- More Server Events (Grid_Inserting/Inserted, Grid_Updating/Updated, Page_Exporting/Exported, and Row_Export)
+- Database helper for including in current or other project for simple access to the database and retrieving data
+- Oracle charset/sort settings for setting Oracle's NLS_COMP/NLS_SORT parameter
+- Auto-fill original value setting Auto-Fill by original (database) value instead of looked up value
+- Option to use button dropdown instead of button group to save more spaces for data in mobile mode
+- jQuery updated (jQuery Mobile removed)
+- jQuery File Upload updated
+- JsRender updated
+- TinyMCE and CKEditor extensions (for registered users only) updated with latest versions (FCKEditor extension not provided any more)
+- DOMPDF extension updated
+- mobile_detect.php updated
+- PHPExcel extension (for registered users only) updated
+- Scrollable Table (for registered users only) uses 100% width in mobile mode
+- Add Option form and Email form as Modal dialog
+- Multi-Column page by grid system
+- Allows more than one sessions for Disallow Concurrent Login
+- Supports using $Security->CanXXX() for projects without User Level Security enabled
+- Supports global and field specific client/server side validation of file extension, file size, and max. number of files (if multiple upload)
+- Synchronizer token for forms with method="post"
+- Support user password in phpass format (encrypted by third-party systems)
+- Improved code editor
+- UI supports >100% Windows system text size
+- Many other minor improvements
+
+2014/03/17 v10.0.5
+- Improved: Do not show IMG tag for non-image files
+- Improved: Skip update if the input is not changed for auto-suggest
+- Improved: Use <h4> font for site title
+- Improved: Skip require validation for upload file field if not changed
+- Improved: Skip loading upload file content if not changed
+- Improved: Error handling for delete temp image folders
+- Improved: Get record count for tables with schema
+- Fixed: Handle Master/Detail relationship key changes properly
+- Fixed: Breadcrumb in List/View page with export
+- Fixed: Breadcrumb for Master/Detail displayed incorrectly after Add Option
+- Fixed: Display page zero form elements correctly for Multi-Page with Custom Template
+- Fixed: Do not skip empty selection list for Ajax
+- Updated: jQuery and JsRender
+- Other minor changes and bug fixes
+
+2014/01/23 v10.0.4
+- Support new Email SendAttachment method
+- Updated: JsRender
+- Improved: DO NOT use the phrase stored by Multi-Language Editor if multi-Language is not enabled
+- Improved: DO NOT reset field default after syncrhonization if field data type is changed to a compatible type (i.e. Int to BigInt)
+- Improved: Hide delete button for upload field in add/edit confirm page
+- Improved: Improve detection of Jpeg image in ew_ContentType
+- Improved: Use css for aggregate caption
+- Improved: html encode login page user name and placeholder
+- Improved: Save google map object for later retrieval
+- Improved: Better handling of invalid file name (PHPExcel extension)
+- Improved: Improve performance for auto-suggest
+- Fixed: Set up AppCompatVersion correctly for compatibility project
+- Fixed: Handle preview row correctly if UseButtonDropDown is enabled (Preview extension)
+- Fixed: Handle inline add/edit correctly for float/single/double/currency fields with non-english locale setting
+- Fixed: Display multi-language lookup data correctly during export
+- Fixed: Clear search form for auto-suggest field
+- Fixed: Avoid IE browser cache during file upload
+- Fixed: Handle file upload field with file path
+- Fixed: Do not display "Add Blank Row" during grid add/edit if Add is disabled for table
+- Fixed: Handle dynamic selection in search page without parent field properly
+- Fixed: Handle popup calendar time field without seconds (JSCalendar extension)
+- Fixed: Multi page custom template with page zero fields
+- Fixed: Converting MSSQL project schema
+- Other minor changes and bug fixes
+
+2013/12/02 v10.0.3
+- Support database schema for PostgreSQL and MSSQL
+- Support Oracle client (without Oracle OLEDB provider) and Oracle Timestamp field
+- Fixed: Old files not deleted after deleting a record (Multiple File Upload only)
+- Fixed: PHPBarCode extension not showing the text under barcode
+- Fixed: Search panel not auto-expand when "IS (NOT )NULL" is selected
+- Fixed: File upload fields in detail table not displayed properly in Master/Detail-View
+- Fixed: Field in detail table properly if the detail table is user table
+- Fixed: AutoSuggest not working properly if triggered by onblur
+- Fixed: User Values saved wrongly to the other table
+- Fixed: "File system encoding" setting not used
+- Fixed: Preview overlay not shown if button dropdown is used
+- Updated: JsRender and Mobile Detect
+- QuickUploadPath and QuickUploadAbsolutePath in FileManager extension now points to subfolders in "UserFilesPath"
+- Add "UseCaptchaInLoginPage" option for Captcha extension (use project without Advanced Security)
+- Use style instead of width/height attribute to specify image sizes
+- x-ua-compatible meta tag added for IE
+- Compatible with PHP Report Maker 7
+- Many other minor bug fixes and improvements
+
+2013/10/15 v10.0.2
+- Improved: Encrypt user table password field during Audit Trail
+- Improved: Advanced Setting to log User ID or User Name during Audit Trail
+- Improved: Not show connection string (MSAccess/MSSQL) on connection error
+- Improved: Handle MSSQL numeric/decimal field values by converting to float
+- Improved: Hide file upload field buttons if set as ReadOnly/Disabled by server event
+- Improved: Recognize custom menu items with URL for the same page but different query string
+- Improved: Override Bootstrap responsive images
+- Fixed: Wrong content type for .docx/.xlsx/.pptx files
+- Fixed: Check Duplicate in Multi-Update page
+- Fixed: Wrong detection of empty row during Grid-Add
+- Fixed: Auto-Suggest field (with "Allow Sort/Search" enabled) cannot be searched
+- Fixed: "Allow Sort/Search" for Oracle
+- Fixed: Auto-Fill not filling fields with DHTML Editor
+- Fixed: Client side arguments for custom validation functions
+- Fixed: Table caption in Breadcrumb not changed after switching language (Multi-Language)
+- Fixed: Custom Template with field names containing spaces
+- Fixed: Compatible project's
+<ProjectID>
+.xml file not properly loaded
+- Fixed: Mobile menu item without URL not working properly in Opera/IE
+- Fixed: Checkbox column not displayed if Multi-Update only with Security disabled
+- Fixed: Checkbox column not displayed for Custom Action without Multiple-Delete/Update
+- Fixed: Delete button shown in Grid-Edit even with no Delete permission
+- Fixed: Dynamic Selection List with multiple children fields not all updated on change
+- Fixed: Ordering of Master/Detail relationships not saved after change
+- Fixed: Cannot copy field settings for fields with different names
+- Updated: JsRender, PHPMailer and Mobile Detect
+- Many other minor bug fixes and improvements
+
+2013/08/06 v10.0.1
+- Smaller buttons for NextPrev pager
+- Hide export options during Inline-Add/Edit
+- Meta tag for mobile viewport
+- CSS styles (ew.less) fine-tuned
+- Improved: Referential Integrity (with Cascade Delete disabled)
+- Improved: CAPTCHA image alignment
+- Improved: Preview Extension (Link to List page of detail table added)
+- Improved: Menu Group Title and dividers
+- Improved: Reflow HTML elements in Search/Update/Register page
+- Fixed: Multiple File Upload issues
+- Fixed: Export to Email does not export images
+- Fixed: Multiple Master/Detail not handling errors properly
+- Fixed: Setting CSS class by server event or Custom Attributes does not work
+- Fixed: Checkbox column not showing if security not enabled
+- Fixed: GD font path does not work on some servers where putenv() not allowed
+- Fixed: Button group or button dropdown not displaying properly under some cases
+- Fixed: Setting search value by default value or server event not filtering records
+- Fixed: TEXTAREA Edit Tag not filled with field value in Edit page
+- Fixed: Non-Ajax Dynamic Selection Lists not initiated properly on page load
+- Fixed: *.css cannot be compiled on some machines
+- Fixed: Sequence number always starts with 1
+- Fixed: Tooltip field not showing ViewValue
+- Fixed: Missing code repository files
+- Updated: jQuery, jQuery Mobile, and JsRender
+- Updated: TinyMCE and CKEditor
+- Updated: mobile_detect.php
+- Many other minor bug fixes and improvements
+
+2013/07/03 v10.0.0
+- Brand-new generated website UI with Bootstrap
+- Vertical Menu and Horizontal Menu with Bootstrap
+- Enhanced Theme with Bootstrap Variables
+- Breadcrumb
+- Master/Detail View/Edit/Copy with Multiple Detail Tables
+- Referential Integrity, Cascade Delete and Cascade Update
+- Different Styles of Links in List Options, Export Options and Paging Section
+- Enhanced Detail Preview Extension (for registered users only)
+- Multiple File Upload to Folder
+- Custom View Tags (Flash Files, Google Maps, Barcode, QR code and YouTube videos)
+- LESS - The Dynamic Stylesheet Language
+- More Server Events (Lookup_Selecting, Page_Rendering/Render, Row_CustomAction)
+- Compress project .css and .js
+- User defined default locale settings
+- Option to include datenumber.js
+- Option to use View Tag number of decimal digits for edit
+- Option to replace textarea by text input for search
+- Reflow HTML elements for mobile
+- Place holder for text box
+- YUI replaced by jQuery and Bootstrap components
+- Styling by CSS
+- Id and CSS classes added to many HTML elements for easier styling by CSS or jQuery
+- Paging section in Edit page
+- jQuery and jQuery Mobile updated
+- JsRender updated
+- New stylesheet for JsCalendar to match Bootstrap style
+- Sequence number option for List page
+- TinyMCE and CKEditor extensions (for registered users only) updated with latest versions (FCKEditor extension not provided any more)
+- FileManager for CKEditor extension (for registered users only)
+- PHPExcel extension (for registered users only) updated
+- Mobile_Detect.php updated
+- "Ends With" search operator
+- One more font for Captcha extension
+- 100% site height
+- Password Recovery security improved
+- System requirement updated to PHP >= 5.2
+- Many other minor improvements
+
+2013/02/04 v9.2.0
+- Better detection of mobile devices
+- Advanced setting "Use mobile menu" for disabling mobile menu
+- Remove unused .js and .css files in yui290 folder
+- Disable "Add Blank Row" for Multi-Column List page
+- Export all records if "Records per page" = 0
+- Link to full size image for image resized fields
+- Fixed: Incorrect link for Read Only file upload field in Edit page
+- Fixed: Cannot export images when exporting "Selected Records"
+- Fixed: "Allow Add" for Anonymous User
+- Fixed: Audit trail to table with schema
+- Fixed: Cannot clear default search value in Search page
+- Fixed: "BETWEEN" search operator not hiding "and/or" radio buttons
+- Fixed: Security class AddUserPermission/DeleteUserPermission methods
+- Fixed: Image Resize extension not setting uploaded file format
+- Fixed: Record not scrolls into view during Inline Edit
+- JsRender and jQuery updated
+- Other minor improvements and fixes
+
+2012/11/20 v9.1.0
+- Menu for mobile devices
+- DOMPDF extension updated
+- PHPExcel extension (for registered users) updated and support exporting report by PHPExcel
+- jQuery always included
+- Automatic expand/collapse search panel when "Initiate search panel as collapsed" enabled
+- Allow entering display value separator during AutoSuggest
+- CSS classes added to hyperlinks for easier selection by CSS selector
+- Allow parent field without lookup table (Dynamic Selection List)
+- Not show tooltip if the field value or the tooltip value is empty
+- Export to email (send as "HTML") with embedded images (requires Image Resize extension)
+- Allow time input without seconds (client/server side validation)
+- Add DisplayValueSeparator and Exportable property for field object (for use with server event)
+- Allow using CurrentUserInfo() without User ID Security enabled (for use with server event)
+- Add AddUserLevelID() and DeleteUserLevelID() for Security object (for use with server event)
+- Fixed: AutoUpdate fields visible in Grid-Add/Edit
+- Fixed: setPhrase() method of Language object when "Use DOM XML for Language object" enabled
+- Fixed: Binary data trimmed
+- Fixed: Master record not cleared when using "showmaster=" URL parameter
+- Fixed: Non utf-8 characters not recognized by Excel after export
+- Fixed: AutoSuggest not work properly in Add Option dialog
+- Fixed: AutoSuggest not align properly in search panel (Google Chrome only)
+- Fixed: "Required" validator not work with checkbox(es) and select-multiple
+- Compatibility with PHP Report Maker 6
+- Other minor improvements and fixes
+
+2012/08/28 v9.0.4
+- Insert/Update/Delete methods added to table class
+- Support Image fields in reports (primary key must be set up)
+- Validate AutoFill settings before generation
+- Trigger target element's onchange/click event after AutoFill
+- Check $_GET["export"] and auto-login in blank page
+- Allow empty Ajax lookup result from server
+- Allow no HREF field for file upload fields
+- JsRender (and jQuery) and Sizzle updated
+- Handled: "$" exists in table/field names
+- Fixed: IsAdmin() does not return true for "Administrator" User Level
+- Fixed: Auto-Update fields not shown in View page
+- Fixed: Missing $Pager property in List/View page
+- Fixed: Client side validation not fired in Change Password page
+- Fixed: Multi-Page not displayed in View page properly
+- Fixed: Default search values not shown in search form
+- Fixed: Decimal numbers corrupted in Confirm page
+- Fixed: Error after creating new view/report if "Show Loaded Tables Only" enabled
+- Other minor improvements and fixes
+
+2012/07/17 v9.0.3
+- JsRender, Sizzle, PHPMailer and PHP Thumb updated
+- Provide more info on failure in loading project file
+- Support email sender in "Sender Name
+<Email Address>
+" format
+- Set up page object's Export property in blank page for custom use
+- Rename Multi-Language settings if table renamed
+- User ID field displays data if "Allow View All" enabled
+- Fixed: Empty selection list for User ID field in search form if login as non-administrator
+- Fixed: Calendar not working in detail table Grid-Add/Edit
+- Fixed: Error initializing search panel that does not exist
+- Fixed: Error detecting empty row in detail table grid in some cases
+- Fixed: Multi-Page View page not works in IE9
+- Fixed: Preview page ignoring User ID field
+- Fixed: Error after editing Multi-Page labels
+- Other minor improvements and fixes
+
+2012/05/29 v9.0.2
+- JsRender and jQuery updated
+- IS NULL and IS NOT NULL search operator added
+- CSS styles for site title, page title and export options added
+- UserID_Filtering server event added
+- Some common file types detected for BLOB field without File Type field
+- Inserting non-autoinc pri key and skipping pri key validation allowed in Row_Inserting
+- Field object Visible property supported in Search page
+- AttachmentFileName and AttachmentContent properties added to Email object
+- External stylesheet placed in project stylesheet subfolder
+- Handled: PostgreSQL bytea_output(9.x) and serial field (as composite key)
+- Handled: MySQL TIME data type with field value >= 24:00:00
+- Fixed: Quick Search type default
+- Fixed: Cannot add User Level permissions to table when adding new User Level
+- Fixed: Undefined property $DbMasterFilter
+- Fixed: Call to undefined method SetupKeyValues()
+- Fixed: "Initiate search panel as collapsed" for pages with Quick Search only
+- Fixed: Function for formatting number
+- Fixed: Align setting ignored in report
+- Fixed: User ID field causes error in Custom Template
+- Fixed: Empty string as thousand separator
+- Fixed: Truncated decimal number in confirm page
+- Fixed: User ID Security in Multi-Update page
+- Fixed: Problems with Display Field #4 and Filter Field #4
+- Fixed: Dynamic Selection lists with more than one children lists
+- Fixed: Auto-select for selection list
+- Fixed: JavaScript function for clearing form
+- Other minor improvements and fixes
+
+2012/04/26 v9.0.1
+- JsRender updated
+- Dynamic Selection Lists do not allow empty parents
+- Handled: Warning: DOMDocument::load() [domdocument.load]: Empty string supplied as input
+- Fixed: Foreign key field not setup properly in detail table Add page
+- Fixed: Align setting (in View Tag panel) not working
+- Fixed: Incorrect upload path in List/View page
+- Fixed: Cannot export "ALL" records for "Export Current Page"
+- Fixed: Allow Add links not displayed for non-Administrators
+- Fixed: Empty row with default values not detected properly in Grid-Add
+- Fixed: Incorrect detail table link in YUI Container extension
+- Fixed: ScrollTable extension not work with both top/bottom paging sections
+- Fixed: Undefined variables/properties not handled properly
+- Fixed: Error: Call to a member function SqlDetailFilter_
+<DetailTable>
+() on a non-object
+- Fixed: Fields for Allow Add in old projects converted wrongly
+- Fixed: Not loading User Level permissions properly
+- Fixed: Not using database view's SQL
+- Fixed: Type Mismatch on non English OS
+- Other minor fixes
+
+2012/04/17 v9.0.0
+- Improved Dynamic Selection Lists. Supports up to 4 pairs of parent field and filter field.
+- Improved Add Option Form. Supports JavaScript features such as DHTML editor, JSCalendar, etc.
+- Improved Auto-Fill
+- Improved Preview Row. Shows detail tables in TabView. (Extension for registered users only)
+- Custom View Tag for overriding View Tag setting and display field value with custom code
+- Custom Template. Allows showing fields with your own template.
+- Default search values
+- Options to generate scripts without header and footer
+- "Allow View All" option for User ID Security, allow users to view other users' records
+- Separate permissions for List/View/Search in both Static and Dynamic User Level Security
+- Allows selecting tables to show in User Level Permission Setup page
+- Option for Auto-Suggest to search Display Field #2 to #4 also
+- Option to allow login by URL
+- Time limit for exporting all records
+- New Table Setup page next to Field Setup page for quick access to current table settings
+- IIS Express as testing web server
+- Faster script generation (by JScript engine)
+- Multi-language lookup table display fields
+- Export to native Excel5/2007 (PHPExcel extension for registered users only)
+- Different locale settings and time zone for Multi-Language
+- Supports SMTP servers using TLS/SSL
+- Supports formatted decimal values in Add/Edit page
+- JavaScript message and icons for messages
+- Option to hide unused menu items in menu editor
+- Option to open project file without AutoSync
+- More helper functions for server events and client Scripts
+- Allow specifying start page for project
+- Simplified User Code by JavaScript
+- Detects project changes when closing project
+- Many other minor improvements
+
+2011/08/25 v8.0.3
+- Show tooltip field for image fields also
+- Allow-Add puts newly added item in AutoSuggest textbox
+- Add maxlength attribute for AutoSuggest textbox
+- Skip checking for duplicate key if composite key contains autoincrement field
+- Show field caption in duplicate index message
+- Add global function CurrentMasterTable()
+- Email validation allows underscore in domain name
+- Add error_reporting(-1) in debug mode
+- Use Server Events/Client Scripts for List page in Grid page
+- Fixed: jscalendar not working in Update page
+- Fixed: export not detected correctly when outputting HTTP header
+- Fixed: Master/Detail-Add/Edit with file upload fields and/or confirm page
+- Fixed: Autoincrement field not detected correctly for SQL Server 2008
+- Other minor fixes and improvements
+
+2011/07/06 v8.0.2
+- ReadOnly property added to field object for use with server event (for TEXT/PASSWORD/TEXTAREA Edit Tag only)
+- Fixed: Field object Visible property not working in register page
+- Fixed: Row_Selected server event not allowing change of field values
+- Fixed: Master/Detail-Add/Edit with file upload fields in detail table
+- Fixed: Unable to restore form values if Master/Detail-Add failed
+- Fixed: Cannot alter view or load newly created view when using URL connection method
+- Fixed: Quick Search not work for fields with lookup table and "Allow sort/search" enabled
+- Fixed: Commas in User Values not parsed correctly
+- Fixed: New custom menu item not displayed in Menu Editor properly
+- Fixed: Advanced Setting "Remove XSS" ignored
+- Fixed: Missing TablePermission_Loaded server event
+- Fixed: AutoFill not filling fields with HIDDEN/CHECKBOX/RADIO Edit Tag
+- Fixed: Password field not updated if not using MD5 password
+- Fixed: Email_Sending event argument corrected as "rsnew" (not "rs") during SendEmailOnAdd and Grid-Add
+- Fixed: DHTML Editor not working properly in Multi-Update and Add-Blank-Row (during Grid-Add/Edit)
+- Fixed: Render aggregate values correctly for export
+- Improved: Remove thousand separator and convert decimal point to "." before insert/update
+- Improved: SELECT TOP or LIMIT clause and always use LIKE operator for AutoSuggest
+- Improved: Detect identity field better (MS SQL Server)
+- Improved: Detect enum fields (as boolean fields) better (MySQL)
+- Improved: Send utf-8 email correctly with PHP mail() function
+- Improved: Better keeping of the theme CSS styles during export
+- Updated: YUI 2.90 and jQuery 1.6.2
+- Other minor fixes and improvements
+
+2011/03/15 v8.0.1
+- DOMPDF updated to 0.6.0 beta 2
+- Meta tag added when export to Word/Excel
+- AllowAddDeleteRow property added (for use with server event)
+- Fixed: Missing WriteAuditTrailOn*() methods in detail grid class
+- Fixed: Wrong file size saved if more than one file upload elements
+- Fixed: Infinite loop when validating dates
+- Fixed: Unused checkbox column in List page
+- Fixed: Master table not reset properly
+- Fixed: Show Loaded Tables Only (List index out of bounds)
+- Fixed: Add Blank Row (Not disabled in confirm page and JavaScript issues)
+- Fixed: Aggregate values in preview page
+- Fixed: Radio buttons and checkbox labels missing
+- Fixed: Hyperlink target attribute ignored
+- Fixed: Copy icon in detail table List page always displayed
+- Fixed: Wrong master table caption in Master/Detail List page
+- Fixed: function ew_FormatDateTime() (Undefined variable: DefDateFormat)
+- Fixed: Cannot add custom error when validating search form by server event
+- Fixed: Other table classes not included in detail grid page
+- Fixed: jsCalendar (Stack Overflow error) in Master/Detail-Add/Edit
+- Fixed: Error during generation (Object required: 'MASTERFIELD')
+- Fixed: Wrong field size detected for non utf-8 tables
+- Fixed: Menu Editor (buttons disabled, cannot add new custom menu item)
+- Fixed: Menu with consecutive menu groups not displayed properly
+- Fixed: Default Date Format setting not properly shown in UI
+- Fixed: Return Page setting not saved
+- Fixed: Multi-Update settings lost after converting old project
+- Fixed: Cannot edit Custom View
+- Other minor fixes and improvements
+
+2011/02/10 v8.0.0
+- PHP 5 (PHP 4 is no longer supported)
+- Oracle Support
+- Improved Grid-Add and Grid-Edit
+- Master/Detail-Add and Master/Detail-Edit
+- Export to PDF (Note: This extension is experimental only.)
+- Create, Alter and Drop Views
+- Menu with Grouping (Graphical Extension)
+- Field Hint as Tooltip
+- More Server Events (Page_Head, User_CustomValidate, Menu_Rendering, Page_DataRendering and Page_DataRendered)
+- More than one field per row in the Extended Quick Search panel
+- More display fields (up to 4) for selection lists
+- Copy file upload fields also on copying a record
+- Table synchronization (instead of synchronizing the whole database)
+- Option to show loaded tables only (for use with "Load tables dynamically" option)
+- Improved sortable and searchable lookup fields
+- Hyperlinks for export as cListOptions object. Allows manipulating export links like list options.
+- Improved user interface with Unicode support. Resizes better in 64bit Windows.
+- Multi-Language support for user values in Edit Tag panel
+- Advanced setting for maximum number of suggested options in AutoSuggest
+- Selectable font for CAPTCHA extension
+- Updated extensions (CKEditor, TinyMCE)
+- jQuery extensions (includes jquery.js for user's own use only. PHPMaker does NOT use jQuery.)
+- Detect password in simple '
+<hashedstring>:<salt>
+' format (PHPMaker does NOT create salted password.)
+- Convert ASPMaker or ASP.NET Maker project file to PHPMaker project
+- Other minor improvements
+
+2010/06/29 v7.1.0
+- User_PasswordExpired event fixed
+- $_FILES['userfile']['error'] checked
+- Image Resize extension - AlwaysKeepAspectRatio option added
+- Improved Unicode Property Editor
+- Copy Table Settings
+- Allow converting Custom View to database view
+- setPhrase/setProjectPhrase/setMenuPhrase/setTablePhrase/setFieldPhrase methods added for language class
+- Blank phrases in language file removed
+- Import menu items for charts from PHP Report Maker
+- Compatible with PHP Report Maker 4
+- Other minor improvements and bug fixes
+
+2010/03/02 v7.0.1
+- utf-8 field names allowed
+- Table filter considered in non List page
+- "AllowNoPager" advanced settings added
+- Custom validation for username and password field allowed in Registration page
+- md5 password change detected
+- Export- to- email in View page without pager fixed
+- "Back to Master List" ignoring paging after search fixed
+- ListOptions properly rendered for PHP 4
+- Aggregate values properly formatted
+- Upload path (relative to application root) properly converted for viewing file
+- Image Resize extension - not keeping aspect ratio allowed
+- Details Preview extensions - tooltip value and multi-language field caption fixed
+- Other minor improvements and bug fixes
+
+2010/01/11 v7.0.0
+- PostgreSQL, Microsoft Access and SQL Server support
+- Multi-language web site
+- Unicode property editor for multi-language text properties (e.g. Table/Field/Menu captions)
+- Track failed login attempts. Password expiry. Disallow concurrent login.
+- Sort/Search lookup field
+- Option for concurrent update checking
+- Options to export all, current page or selected records
+- Email records (Export to Email)
+- Option to show detail record count
+- Tooltip field
+- Audit trail to database
+- CAPTCHA for edit page
+- Support site icon (favicon)
+- Allow show/hide list page option columns by server event
+- Advanced settings for options in template
+- Tools to delete template cache, copy field settings and sort tables
+- Find and Replace dialog in Server Event and Client Script editor
+- Highlight implemented Server Events / Client Scripts
+- More server events
+- Project synchronization log
+- More control in file generation
+- Custom menu items with option to allow Anonymous User or not
+- Show list page as scrollable table with fixed header (extension for registered users)
+- Show detail records within main table (extension for registered users)
+- Graphical extension with icons and horizontal/vertical menu (extension for registered users)
+- Many other minor enhancements
+
+2009/04/22 v6.1.0
+- Compatibility with PHP Report Maker 3
+- Importing menu items into Menu Editor from PHP Report Maker project
+- Table caption used in User Level permission setup page (userpriv.php)
+- Table filter allowed for Custom View
+- MySQL NEWDECIMAL field (246) supported in Custom View setup form
+- Ajax Selection List degraded to non Ajax version automatically in Add Option page
+- No wrap and no lookup values for the summary row
+- Security for sub menu items (non-custom menu items only) considered
+- Keywords in keyword.xml handled as case-insensitive
+- Fixed: Specified default page name not used
+- Fixed: Second search value not displayed properly when first search operator is "USER SELECT" with "BETWEEN" selected
+- Fixed: Dynamic Selection List problem with value containing spaces
+- Fixed: Changing 1st selection not resetting 3rd level selection list (and on) in Ajax Dynamic Selection List
+- Fixed: "Required" validation for CHECKBOX/RADIO in Ajax Dynamic Selection List
+- Fixed: Textbox showing link field value on mouse cursor over list item in AutoSuggest
+- Fixed: Table filter not used in Preview page
+- Fixed: Missing field width/wrap in List page
+- Fixed: AutoFill for fields with RADIO Edit Tag
+- Fixed: Add Option Page user level permission problem
+- Other minor improvements and bug fixes
+
+2009/02/16 v6.0.1
+- Modifying SearchValue and SearchValue2 in events allowed
+- Fixed: Search form containing fields with "USER SELECT" search operators
+- Fixed: Field value with white spaces only has no table cell border in List page
+- Fixed: Not including *info.php for master tables of master table
+- Fixed: Synchronization error with tables/fields of same name but different cases
+- Fixed: Audit trail error with Grid-Add
+- Fixed: Ajax Dynamic Selection List with different data types of filter field and link field
+- Fixed: Ajax Dynamic Selection Lists with more than 2 levels not loading properly in Edit page
+- Fixed: User ID security filtering records for Administrator in some cases
+- Fixed: Multi-Delete page not retrieving just selected records if the List page has search criteria
+- Fixed: Add new option dialog box or popup calendar displayed behind Auto-Suggest fields
+- Fixed: Selected option value not displayed properly in Auto-Suggest if the Link field <> Display field
+- Fixed: Decimal/Float field inserted/updated as 0 if no value is inputted
+- Fixed: Upload field not restored in Edit page if update failed
+- Fixed: CSS stylesheet file name not matching that in generated scripts
+- Fixed: Quick Search not working properly for fields with alias
+- Fixed: Error during generation if no tables are selected
+- Fixed: Row_Deleted/Deleting events wrongly displayed as Recordset_Deleted/Deleting event
+- Fixed: Export problems when only Printer-friendly is selected or Export-to-XML is not selected
+- Fixed: Server side validation for file upload field setup as "Required"
+- Fixed: Lookup table with User ID field
+- Fixed: Foreign key field values not loaded in Grid-Add for detail table
+- Fixed: Alternating row color not loaded properly
+- Fixed: Error with GetUserInfo/CurrentUserInfo function
+- Fixed: Sub-menu not displayed properly in graphical extension
+- Fixed: Menu not compatible with PHP Report Maker
+- Fixed: Email notification error in Multi-Update page
+- Other minor improvements and bug fixes
+
+2008/12/01 v6.0.0
+- Themes
+- Menu Editor
+- Grid-Add
+- Enhanced Auto-Suggest
+- Enhanced Auto-Fill
+- Enhanced Dynamic Selection List
+- Enhanced Multi-Page as Tabs
+- Enhanced Form Validation (server-side validation)
+- Enhanced Advanced Security (hierarchical Parent User ID security and server events)
+- More Server Events and Client Scripts (for Advanced Security, Form Validation, Email Sending, Searching and Menu)
+- Enhanced Export
+- Return page
+- MD5 and case-sensitive password
+- Searching multiple selection values (stored as comma separated values) using partial match
+- Collapsible Quick/Extended Search panel by default
+- Advanced extension settings - allow table/field level settings for extensions
+- Improved query builder
+- Many other minor enhancements
+
+2008/02/02 v5.0.2
+- String field size for Custom View corrected based on database collation
+- Form element values properly HTML-encoded
+- Numeric values trimmed for proper data update
+- User specified upload temp folder (EW_UPLOAD_TMP_PATH) added in config file for PHP safe_mode or open_basedir restriction
+- Blank entry for User combobox in Search page added for Parent User (User ID Security)
+- File specified for the image resize script properly checked
+- Fixed: Total record count not updated if Recordset_Selecting event changes the number of records
+- Fixed: "Unauthorized" error for User ID field in Add page
+- Fixed: User ID field not auto-filled in Add page
+- Fixed: Date field with Long Date format not searchable
+- Fixed: Default User Level (User Level = 0) not recognized
+- Fixed: Custom Attribute for RADIO Edit Tag not generated properly
+- Fixed: Missing AutoUpdate fields in Advanced/Extended Search
+- Fixed: Row_Deleting event not fired for each row
+- Fixed: Missing table header checkbox for Multiple Delete
+- Fixed: Dynamic Selection List not working properly for multiple selection
+- Fixed: Extra quote character of Ajax Dynamic Selection List with string type filter field
+- Fixed: Report grouping level "Show summary" setting ignored
+- Other minor improvements and bug fixes
+
+2007/11/01 v5.0.1
+- Hiding autoincrement primary key in Edit page allowed
+- Added a blank option for User ID combobox in Search page for parent users
+- Proper handling of user values with non alphanumerical characters (e.g. comma, double quotes)
+- Advanced Search "Starts With" bug fixed
+- Session cookie deleted properly in logout page
+- Proper auto redirection to view page after login
+- Slow IsValidUserID checking problem fixed
+- Image header for BLOB field View page added for Firefox
+- Read-only parent field in Dynamic Selection List handled
+- Href values for read-only fields setup in Edit page properly
+- XMLHttpRequest onreadystatechange event of newer version of Firefox properly handled
+- Access violation during setup of lookup tables fixed
+- File upload with file in uppercase extension handled
+- "Allow Add" bug fixed
+- Updating Custom View for single table allowed
+- TEXT fields unsearchable bug fixed
+- Division by zero error during searching handled
+- List/View Page Options (Global) properly loaded into UI
+- chmod uploaded file properly
+- Extended Search with 2nd Search operator and Ajax Selection List bug fixed
+- "dd-mm-yyyy" or "mm-dd-yyyy" ("-" as date separator only) as date format bug fixed
+- Wrong filter if multiple master table bug fixed
+- User ID field not auto-filled bug fixed
+- Other minor improvements and bug fixes
+
+2007/09/03 v5.0.0
+- Grid-Edit, Inline-Add and Inline-Copy
+- Search Result Highlight
+- Multi-Update
+- View Page Pager and Export
+- Data Confirmation (Add/Edit/Registration Page)
+- CAPTCHA (template extension)
+- Multiple Master/Detail
+- Detail Records Preview (template extension)
+- Dynamic Selection List with Multiple Selection Support
+- Auto-Fill Textbox
+- Add Extra Option to Dynamic Selection List
+- Anonymous User
+- Auto-Redirect
+- Registration Confirmation Email to New User and Activation Option
+- Server Events and Client Scripts
+- Auto-Update Fields
+- Login/Logout audit trail
+- More HTML settings for modifying the general look and feel
+- Duplicate value checking in Edit page also
+- Date/Time formats with time part
+- Custom validation functions allowed
+- Option to display no records in List page before searching
+- Paging section at top and/or bottom
+- Collapsible Quick/Extended Search panel (template extension)
+- Project auto-backup
+- Object Oriented Programming (OOP)
+- Many other minor enhancements
+
+2006/12/19 v4.3.0
+- Copying global settings to table-specific settings allowed
+- Upload field as hyperlink field allowed
+- Special case of numeric paging handled (Deleting last record which is first record of the last page)
+- Ajax Dynamic Selection List bug fixed (Child comboboxes not updated properly if more than 2 levels)
+- Report bug with lookup field as summary field fixed (Field value not displayed properly)
+- Parent User ID bug in Add page fixed (Could not insert User ID of child users)
+- Report bug fixed (Report as detail table with both User ID security and Parent User ID enabled)
+- Advanced Security setup form bug fixed (Incorrect data type not matching prompt for string type User ID fields)
+- Output file name bug fixed (default page not generated correctly if default page is not named as "index.*")
+- Query builder improved
+- Other minor improvements and bug fixes
+
+2006/10/21 4.2.0
+- Using old settings for new/renamed tables/fields allowed during synchronization
+- Field caption escaped for use in validation JavaScript
+- Validation JavaScript for upload file type added
+- Validation JavaScript for required upload field in Edit page fixed
+- Multi-Page bug fixed (not worked with checkbox/radiobutton groups)
+- Dynamic Selection List bug fixed (JavaScript generated for fields not selected for the page)
+- Add page problem for Custom View fixed (INSERT statement using Custom View name but not the source table name)
+- Encrypt/Decrypt function updated to handle the script timeout problem with some PHP versions on Linux
+- URL connection method improved to work with database user of no SHOW DATABASE privilege
+- Other minor improvements and bug fixes
+
+2006/09/20 4.1.0
+- Multi-Page Update feature improved
+- Infix for output file name supported (for table-specific scripts only)
+- Code to prevent caching added in phpmaker.php
+- Wrong field name in BLOB field retrieval script (*_bv.php) fixed (if table is a detail table)
+- Database Sync problems with ENUM/SET fields in Custom View fixed
+- Code to insert/update/delete properly placed after inserting/updating/deleting functions (events)
+- Ajax child combobox updated properly in Edit page
+- Custom View/Report with error skipped during generation
+- User ID Security bug fixed (when User ID field name different from that in user table and Parent User ID is used)
+- Other minor improvements and bug fixes
+
+2006/07/31 4.0.2
+- Audit Trail bug fixed (Delete not logged)
+- Email notification bug fixed (emails for Add/Edit not sent if Audit Trail not enabled)
+- ENUM(Y/N) field bug fixed (Checkbox not checked in Edit page; Detected as altered in Custom View during synchronization)
+- userpriv.php bug fixed (field names was hard-coded)
+- Field validation error message bug fixed
+- Registration error message not displayed problem fixed
+- Table sequence display problem after sync fixed
+- Anonymous User Level bug fixed (did not work together with User ID Security)
+- "php" set in fckconfig.js for FCKEditor
+- Source table filter support added back for report
+- chmod() added for uploaded files
+- Relative root path used prior to PHP document root variable as application root for file upload to folder
+- Query builder improved
+- Other minor improvements and bug fixes
+
+2006/06/15 v4.0.1
+- Master/Detail bug fixed (not worked properly with User ID Security or with more than one linked fields)
+- Missing single quotes for ENUM/SET fields bug fixed
+- Login page bug fixed (User ID not set for built-in Administrator User Level)
+- "Undefined index [script_name]" error handled
+- "Cannot set time limit in safe mode" error handled
+- "Undefined variable: sExport" fixed
+- Missing "/" before index page for Browser After Generation fixed
+- Search operators (LIKE, NOT LIKE, STARTS WITH) not translated problem fixed
+- Synchronization problem fixed (Manually set primary key for views or Custom Views may be lost after sync)
+- Other minor improvements and bug fixes
+
+2006/06/06 v4.0.0
+- Auto-suggest textbox (by Ajax)
+- Allows adding extra option to lookup table (by Ajax)
+- Enhanced Dynamic Selection List (by Ajax)
+- Dynamic User Levels
+- Parent User ID
+- Auto-Login
+- Extended Quick Search
+- Multi-Page Update
+- Enhanced file upload to folder (Unique name, delete uploaded files, file type checking, separate upload path)
+- Extensions (new DHTML editors and popup calendars)
+- Paths relative to application root folder
+- PHPMailer with SMTP Server authentication support
+- "BETWEEN" search operator
+- "AND/OR" condition between the 2 search operators for each field
+- Duplicate value checking for non uniquely indexed fields
+- Repeat column option for checkbox or radiobutton list (CHECKBOX/RADIO Edit Tag)
+- CSS stylesheet now used for all projects, user interface HTML settings (General/Body/Table) applied to stylesheet
+- Enhanced user interface - Windows XP style, fixed table/field names, checkbox in database pane
+- Other minor improvements and bug fixes
+
+2006/02/11 v3.2.1
+- PHP with short_open_tag off handled
+- PHP5 with register_long_arrays off handled
+- Create/Delete folder buttons in Select Destination Folder dialog
+- Detail table list page bug (when using with User ID security and user owns no records in master table) fixed
+- Output file name suffix bug (Generated links not matching the file names of *_bv.php files) fixed
+- Other minor improvements and bug fixes
+
+2005/10/12 v3.2.0
+- Inline delete (delete without confirmation page) added
+- Highlighted and selected row color added
+- Improved query builder
+- JSCalendar
+- Other minor improvements and bug fixes
+
+2005/07/07 v3.1.0
+- Composite key supported (Primary key become uneditable in edit page)
+- Change in zipped templates detected by file date and size
+- Master/Detail tables with User ID Security strictened (detail table protected without User ID field)
+- File upload and popup calendar supported in Register page
+- "Cancel" button for aborting script generation
+- Max. length setting added for memo fields in List page
+- Wrong field size for char/varchar fields with multi-byte collation problem fixed
+- JDBC connection removed
+- Other minor improvements and bug fixes
+
+2005/06/14 v3.0.3.0
+- Header font color with CSS style sheet bug fixed
+- Popup calendar problem (Pops up on pressing Enter key) fixed
+- Custom View not supporting function in WHERE clause problem fixed
+- 31 chars limit for field names in Custom View removed
+- phpmaker.php bugs (with Custom Views) fixed
+- db.php bug fixed (Missing MySQL port number)
+- Better handling for loading email templates on some Linux servers
+- HIDDEN Edit Tag now also applied to Add pages
+- RADIO Edit Tag bug (syntax error in list/view page if with lookup table and filter) fixed
+- User Code bug fixed (Some system functions cannot be overridden)
+- Other minor improvements and bug fixes
+
+2005/03/22 v3.0.2.0
+- Changes in control.xml in the unzipped template detected
+- Extension of include files now changed with specified default output file extension
+- URL for *_bv.php (for retrieving file in BLOB field) now generated properly when "lowercase" file name selected
+- "N" as field value instead of NULL for ENUM(Y/N) fields (boolean fields) when checkbox is unchecked
+- Single quotes in field values handled properly during lookup
+- Table filter of base table considered in Report
+- Default values and Edit Tag setting of fields applied in register page
+- Upload path delimiter bug (for Unix-based server) fixed
+- View page bug (Missing detail table links if different master/detail field name) bug fixed
+- SQL bug in list page when using Custom View with Master/Detail fixed (No fields in SELECT statement)
+- Custom View bug (Cannot setup from SQL with aggregate function) fixed
+- Read-only datetime field bug (field value lost after editing) fixed
+- Query builder improved
+- Other minor improvements and bug fixes
+
+2005/01/10 v3.0.1.0
+- ob_clean and ob_flush replaced by ob_end_clean
+- Empty output file extension setting in previous version project file handled during conversion
+- Error handling of query added
+- Improved error handling during Custom View setup
+- User ID Security bug fixed (some Advanced Security codes was generated even when security is disabled)
+- Date formatting bug fixed
+- List Page Options (Global) bug fixed (settings were not saved)
+- Dynamic Table Loading option added in the Database tab
+- Other minor improvements and bug fixes
+
+2005/01/03 v3.0.0.0
+- Advanced Security with built-in Administrator and Anonymous user level
+- User Registration System with option to send confirmation email
+- Custom View with query builder
+- Report
+- ASP.NET style Inline Editing
+- Export to HTML/Word/Excel/CSV/XML
+- Multi-column Sorting
+- User Selectable Page Size
+- Table-specific List Page Options
+- Dynamic Table Loading
+- Unzipped and Cached Template
+- Improved Template Format
+- Option to use "-" or "." as date separator
+- Selectable fields and allowing numeric fields for Quick Search
+- Checkbox to select/unselect all records for Multi-Delete
+- Edit/Copy/Delete/Details links in view page
+- Custom value with HIDDEN Edit Tag
+- View Tag formatting applied to lookup values
+- Improved dynamic selection list
+- Enhanced user interface - Office 2003 style, dockable database panel
+- New DHTML editor and popup calendar
+- Many other minor enhancements
+
+2004/11/15 v2.1.0.2
+- MySQL 4.1.1 or later password supported
+- Add/Edit pages bug fixed (codes generated for fields not selected)
+
+2004/10/02 v2.1.0.1
+- Allow entering database name if mysql_list_dbs() not allowed in phpmaker.php
+- Duplicate key checking in edit page removed
+- Alternate row color bug in delete page fixed
+- Read-only field bug (when the field linked to an lookup table) in add/edit pages fixed
+- Other minor improvements and bug fixes
+
+2004/07/13 v2.1.0.0
+- Three connection methods: DIRECT, JDBC or URL
+- CSS stylesheet support
+- Field Wrap and Field Width for list page (non-multi column)
+- Field Aggregation
+- Footer Color
+- Different selections of fields for add page and edit page allowed
+- Allow Edit/View settings added in Table Setup Page
+- Autoincrement field become hidden in add pages
+- Second combobox filtered in edit page
+- View tag format settings also applied to fields with RADIO/CHECKBOX/SELECT Edit Tag
+- Duplicated values checking for primary key and unique indexes in add/edit pages
+- Enhanced User Interface
+- Other minor improvements and bug fixes
+
+2004/0/31 v2.0.0.7
+- Undefined variable/constant bug fixed (when only User ID security is enabled)
+- Filename bug fixed for BLOB view scripts (when "Lowercase" output filename is selected)
+- JavaScript validation supported for multiple selection ("CHECKBOX"/"SELECT" Edit Tags)
+- JavaScript bug fixed in edit pages with fields using "FILE" Edit tag and "Required" validation
+
+2004/2/10 v2.0.0.6
+- Multi-select with magic_quotes_gpc on bug fixed
+- Double quote as SQL identifier quote character bug fixed
+
+2004/01/30 v2.0.0.5
+- Support using local file as URL (file://) for remote connection
+- Better handling of ENUM/SET values and default values
+- Not generating shell call in index.php/logout.php bug fixed
+- Other minor fixes and improvements
+
+2004/01/15 v2.0.0.4
+- Default value cleared after synchronization bug fixed
+- Date Format reset to default on program restart bug fixed
+- Updating fields not selected for editing bug fixed
+
+2004/01/13 v2.0.0.3
+- Upload to folder problem fixed (Environment variable changed to server variable)
+- Max. file upload size bug fixed
+- File name/type field bug fixed (were not selected in the file-retrieving script)
+
+2004/01/08 v2.0.0.2
+- Advanced Security session variable name bug fixed
+- Multi-Select (CHECKBOX/SELECT) bug fixed
+- ActiveX error problem during script generation resolved (Windows Script Control not installed)
+
+2004/01/05 v2.0.0.1
+- Synchronization bug fixed
+
+2004/01/02 v2.0.0.0
+- Allow restricting users to access their own data
+- Allow assigning user level to users
+- BLOB, ENUM and SET fields supported
+- File/image uploading to folder/database and displaying from database supported
+- Master/Detail tables
+- Multiple columns
+- Multiple delete
+- Copy record (add record quickly by copying from an existing record)
+- Up/down arrows in the table header to show the current sorting field and order
+- Optional position of paging section and add/copy/edit/delete/detail links
+- Optional paging section style
+- Quick Search supports searching using "All words", "Any words" and "Exact phrase"
+- Advanced Search supports searching ranges
+- 'File' tag for BLOB fields
+- 'Select' tag as listbox and multiple selection supported
+- Second comboxbox for 'Select' to dynamically change options in an other selection list
+- 'Checkbox' improved, multiple checkboxes for multiple selection supported (default for SET fields)
+- Support using 'Checkbox' with "boolean" fields (ENUM('N','Y') or ENUM('Y','N'))
+- 'Checkbox' and 'Radio' support using static values or linking to an existing table
+- Allow displaying field as "Read Only" using the View Tag in edit page
+- Allow specifying a filter (WHERE clause) for the linked table
+- Using DHTML editor for 'TextArea' supported
+- Allow displaying field as hyperlinks using another field or itself as URL
+- String functions (e.g. strtoupper, htmlentities, or custom functions) supported
+- Selective Script Generation
+- Separate Language File
+- Customizable Code Generation
+- Connection over HTTP to remote MySQL using a PHP script on server
+- Filter (WHERE clause) for tables
+- Option to show/hide table links in menu
+- Improved user interface for setting up "Edit Tag" and "View Tag"
+- Support using MySQL default values and ENUM/SET fields values
+- Allow running without administrator rights (Note: Still need necessary rights to install, create IIS virtual directory, create files in destination folder, etc.)
+- .NET style look and feel
+
+2002/11/07 v1.0.0.3
+- Remove a required dll to avoid the "Library not registered" problem when clicking the database combobox button
+
+2002/11/06 v1.0.0.2
+- Fixed a bug that prevents connecting to MySQL which database names are case-sensitive
+- Minor bug fixes
+
+2002/10/31 v1.0.0.0
+- version 1.0 released

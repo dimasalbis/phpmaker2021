@@ -1,0 +1,342 @@
+//
+// Core: Variables
+//
+
+// COLORS
+// --------------------------------------------------------
+$blue: {ThemeBlue} !default;
+$lightblue: {ThemeLightblue} !default;
+$navy: {ThemeNavy} !default;
+$teal: {ThemeTeal} !default;
+$olive: {ThemeOlive} !default;
+$lime: {ThemeLime} !default;
+$orange: {ThemeOrange} !default;
+$fuchsia: {ThemeFuchsia} !default;
+$purple: {ThemePurple} !default;
+$maroon: {ThemeMaroon} !default;
+$black: {ThemeBlack} !default;
+$gray-x-light: {ThemeGrayXLight} !default;
+
+$colors: map-merge(
+  (
+    "lightblue": $lightblue,
+    "navy": $navy,
+    "olive": $olive,
+    "lime": $lime,
+    "fuchsia": $fuchsia,
+    "maroon": $maroon,
+  ),
+  $colors
+);
+
+// LAYOUT
+// --------------------------------------------------------
+
+$font-size-root: {ThemeFontSizeRoot} !default;
+
+// Sidebar
+$sidebar-width: {ThemeSidebarWidth} !default;
+$sidebar-padding-x: {ThemeSidebarPaddingX} !default;
+$sidebar-padding-y: {ThemeSidebarPaddingY} !default;
+$sidebar-custom-height: {ThemeSidebarCustomHeight} !default;
+$sidebar-custom-height-lg: {ThemeSidebarCustomHeightLg} !default;
+$sidebar-custom-height-xl: {ThemeSidebarCustomHeightXl} !default;
+$sidebar-custom-padding-x: {ThemeSidebarCustomPaddingX} !default;
+$sidebar-custom-padding-y: {ThemeSidebarCustomPaddingY} !default;
+
+// Boxed layout maximum width
+$boxed-layout-max-width: {ThemeBoxedLayoutMaxWidth} !default;
+
+// Body background (Affects main content background only)
+$main-bg: {ThemeMainBg} !default;
+
+$dark-main-bg: lighten($dark, 7.5%) !important;
+
+// Content padding
+$content-padding-y: {ThemeContentPaddingY} !default;
+$content-padding-x: {ThemeContentPaddingX} !default;
+
+// IMAGE SIZES
+// --------------------------------------------------------
+$img-size-sm: {ThemeImgSizeSm} !default;
+$img-size-md: {ThemeImgSizeMd} !default;
+$img-size-lg: {ThemeImgSizeLg} !default;
+$img-size-push: {ThemeImgSizePush} !default;
+
+// MAIN HEADER
+// --------------------------------------------------------
+$main-header-bottom-border-width: {ThemeMainHeaderBottomBorderWidth} !default;
+$main-header-bottom-border-color: {ThemeMainHeaderBottomBorderColor} !default;
+$main-header-bottom-border: {ThemeMainHeaderBottomBorder} !default;
+$main-header-link-padding-y: {ThemeMainHeaderLinkPaddingY} !default;
+$main-header-height-inner: {ThemeMainHeaderHeightInner} !default;
+$main-header-height: {ThemeMainHeaderHeight} !default;
+$nav-link-sm-padding-y: {ThemeNavLinkSmPaddingY} !default;
+$nav-link-sm-height: {ThemeNavLinkSmHeight} !default;
+$main-header-height-sm-inner: {ThemeMainHeaderHeightSmInner} !default;
+$main-header-height-sm: {ThemeMainHeaderHeightSm} !default;
+
+
+// Main header skins
+$main-header-dark-form-control-bg: {ThemeMainHeaderDarkFormControlBg} !default;
+$main-header-dark-form-control-focused-bg: {ThemeMainHeaderDarkFormControlFocusedBg} !default;
+$main-header-dark-form-control-focused-color: {ThemeMainHeaderDarkFormControlFocusedColor} !default;
+$main-header-dark-form-control-border-color: {ThemeMainHeaderDarkFormControlBorderColor} !default;
+$main-header-dark-form-control-focused-border-color: {ThemeMainHeaderDarkFormControlFocusedBorderColor} !default;
+$main-header-dark-placeholder-color: {ThemeMainHeaderDarkPlaceholderColor} !default;
+
+$main-header-light-form-control-bg: {ThemeMainHeaderLightFormControlBg} !default;
+$main-header-light-form-control-focused-bg: {ThemeMainHeaderLightFormControlFocusedBg} !default;
+$main-header-light-form-control-focused-color: {ThemeMainHeaderLightFormControlFocusedColor} !default;
+$main-header-light-form-control-border-color: {ThemeMainHeaderLightFormControlBorderColor} !default;
+$main-header-light-form-control-focused-border-color: {ThemeMainHeaderLightFormControlFocusedBorderColor} !default;
+$main-header-light-placeholder-color: {ThemeMainHeaderLightPlaceholderColor} !default;
+
+// MAIN FOOTER
+// --------------------------------------------------------
+$main-footer-padding: {ThemeMainFooterPadding} !default;
+$main-footer-padding-sm: {ThemeMainFooterPaddingSm} !default;
+$main-footer-border-top-width: {ThemeMainFooterBorderTopWidth} !default;
+$main-footer-border-top-color: {ThemeMainFooterBorderTopColor} !default;
+$main-footer-border-top: {ThemeMainFooterBorderTop} !default;
+$main-footer-height-inner: {ThemeMainFooterHeightInner} !default;
+$main-footer-height: {ThemeMainFooterHeight} !default;
+$main-footer-height-sm-inner: {ThemeMainFooterHeightSmInner} !default;
+$main-footer-height-sm: {ThemeMainFooterHeightSm} !default;
+$main-footer-bg: {ThemeMainFooterBg} !default;
+
+// SIDEBAR SKINS
+// --------------------------------------------------------
+
+// Dark sidebar
+$sidebar-dark-bg: {ThemeSidebarDarkBg} !default;
+$sidebar-dark-hover-bg: {ThemeSidebarDarkHoverBg} !default;
+$sidebar-dark-color: {ThemeSidebarDarkColor} !default;
+$sidebar-dark-hover-color: {ThemeSidebarDarkHoverColor} !default;
+$sidebar-dark-active-color: {ThemeSidebarDarkActiveColor} !default;
+$sidebar-dark-submenu-bg: {ThemeSidebarDarkSubmenuBg} !default;
+$sidebar-dark-submenu-color: {ThemeSidebarDarkSubmenuColor} !default;
+$sidebar-dark-submenu-hover-color: {ThemeSidebarDarkSubmenuHoverColor} !default;
+$sidebar-dark-submenu-hover-bg: {ThemeSidebarDarkSubmenuHoverBg} !default;
+$sidebar-dark-submenu-active-color: {ThemeSidebarDarkSubmenuActiveColor} !default;
+$sidebar-dark-submenu-active-bg: {ThemeSidebarDarkSubmenuActiveBg} !default;
+
+// Light sidebar
+$sidebar-light-bg: {ThemeSidebarLightBg} !default;
+$sidebar-light-hover-bg: {ThemeSidebarLightHoverBg} !default;
+$sidebar-light-color: {ThemeSidebarLightColor} !default;
+$sidebar-light-hover-color: {ThemeSidebarLightHoverColor} !default;
+$sidebar-light-active-color: {ThemeSidebarLightActiveColor} !default;
+$sidebar-light-submenu-bg: {ThemeSidebarLightSubmenuBg} !default;
+$sidebar-light-submenu-color: {ThemeSidebarLightSubmenuColor} !default;
+$sidebar-light-submenu-hover-color: {ThemeSidebarLightSubmenuHoverColor} !default;
+$sidebar-light-submenu-hover-bg: {ThemeSidebarLightSubmenuHoverBg} !default;
+$sidebar-light-submenu-active-color: {ThemeSidebarLightSubmenuActiveColor} !default;
+$sidebar-light-submenu-active-bg: {ThemeSidebarLightSubmenuActiveBg} !default;
+
+// SIDEBAR MINI
+// --------------------------------------------------------
+$sidebar-mini-width: {ThemeSidebarMiniWidth} !default;
+$sidebar-nav-icon-width: {ThemeSidebarNavIconWidth} !default;
+$sidebar-user-image-width: {ThemeSidebarUserImageWidth} !default;
+
+// CONTROL SIDEBAR
+// --------------------------------------------------------
+$control-sidebar-width: {ThemeControlSidebarWidth} !default;
+
+// Cards
+// --------------------------------------------------------
+$card-border-color: {ThemeCardBorderColor} !default;
+$card-dark-border-color: {ThemeCardDarkBorderColor} !default;
+$card-shadow: {ThemeCardShadow} !default;
+$card-title-font-size: {ThemeCardTitleFontSize} !default;
+$card-title-font-size-sm: {ThemeCardTitleFontSizeSm} !default;
+$card-title-font-weight: {ThemeCardTitleFontWeight} !default;
+$card-nav-link-padding-sm-y: {ThemeCardNavLinkPaddingSmY} !default;
+$card-nav-link-padding-sm-x: {ThemeCardNavLinkPaddingSmX} !default;
+$card-img-size: {ThemeCardImgSize} !default;
+
+// PROGRESS BARS
+// --------------------------------------------------------
+$progress-bar-border-radius: {ThemeProgressBarBorderRadius} !default;
+
+// DIRECT CHAT
+// --------------------------------------------------------
+$direct-chat-default-msg-bg: {ThemeDirectChatDefaultMsgBg} !default;
+$direct-chat-default-font-color: {ThemeDirectChatDefaultFontColor} !default;
+$direct-chat-default-msg-border-color: {ThemeDirectChatDefaultMsgBorderColor} !default;
+
+// Z-INDEX
+// --------------------------------------------------------
+$zindex-main-header: {ThemeZindexMainHeader} !default;
+$zindex-main-sidebar: {ThemeZindexMainSidebar} !default;
+$zindex-main-footer: {ThemeZindexMainFooter} !default;
+$zindex-control-sidebar: {ThemeZindexControlSidebar} !default;
+$zindex-toasts: {ThemeZindexToasts} !default;
+$zindex-preloader: {ThemeZindexPreloader} !default;
+
+// TRANSITIONS SETTINGS
+// --------------------------------------------------------
+
+// Transition global options
+$transition-speed: {ThemeTransitionSpeed} !default;
+$transition-fn: {ThemeTransitionFn} !default;
+
+// TEXT
+// --------------------------------------------------------
+$font-size-xs: {ThemeFontSizeXs} !default;
+$font-size-xl: {ThemeFontSizeXl} !default;
+
+
+// BUTTON
+// --------------------------------------------------------
+$button-default-background-color: {ThemeButtonDefaultBackgroundColor} !default;
+$button-default-color: {ThemeButtonDefaultColor} !default;
+$button-default-border-color: {ThemeButtonDefaultBorderColor} !default;
+
+$button-padding-y-xs: {ThemeButtonPaddingYXs} !default;
+$button-padding-x-xs: {ThemeButtonPaddingXXs} !default;
+$button-line-height-xs: {ThemeButtonLineHeightXs} !default;
+$button-font-size-xs: {ThemeButtonFontSizeXs} !default;
+$button-border-radius-xs: {ThemeButtonBorderRadiusXs} !default;
+
+
+// ELEVATION
+// --------------------------------------------------------
+$elevations: ();
+$elevations: map-merge(
+  (
+    1: unquote("0 1px 3px " + rgba($black, .12) + ", 0 1px 2px " + rgba($black, .24)),
+    2: unquote("0 3px 6px " + rgba($black, .16) + ", 0 3px 6px " + rgba($black, .23)),
+    3: unquote("0 10px 20px " + rgba($black, .19) + ", 0 6px 6px " + rgba($black, .23)),
+    4: unquote("0 14px 28px " + rgba($black, .25) + ", 0 10px 10px " + rgba($black, .22)),
+    5: unquote("0 19px 38px " + rgba($black, .3) + ", 0 15px 12px " + rgba($black, .22)),
+  ),
+  $elevations
+);
+
+// RIBBON
+// --------------------------------------------------------
+$ribbon-border-size: {ThemeRibbonBorderSize} !default;
+$ribbon-line-height: {ThemeRibbonLineHeight} !default;
+$ribbon-padding: {ThemeRibbonPadding} !default;
+$ribbon-font-size: {ThemeRibbonFontSize} !default;
+$ribbon-width: {ThemeRibbonWidth} !default;
+$ribbon-wrapper-size: {ThemeRibbonWrapperSize} !default;
+$ribbon-top: {ThemeRibbonTop} !default;
+$ribbon-right: {ThemeRibbonRight} !default;
+$ribbon-lg-wrapper-size: {ThemeRibbonLgWrapperSize} !default;
+$ribbon-lg-width: {ThemeRibbonLgWidth} !default;
+$ribbon-lg-top: {ThemeRibbonLgTop} !default;
+$ribbon-lg-right: {ThemeRibbonLgRight} !default;
+$ribbon-xl-wrapper-size: {ThemeRibbonXlWrapperSize} !default;
+$ribbon-xl-width: {ThemeRibbonXlWidth} !default;
+$ribbon-xl-top: {ThemeRibbonXlTop} !default;
+$ribbon-xl-right: {ThemeRibbonXlRight} !default;
+//
+// Core: Variables for Dark Mode
+//
+
+// COLORS
+// --------------------------------------------------------
+
+// stylelint-disable
+// Gray color will be default in dark mode
+$white-alt:    {ThemeWhiteAlt} !default;
+$gray-100-alt: {ThemeGray100Alt} !default;
+$gray-200-alt: {ThemeGray200Alt} !default;
+$gray-300-alt: {ThemeGray300Alt} !default;
+$gray-400-alt: {ThemeGray400Alt} !default;
+$gray-500-alt: {ThemeGray500Alt} !default;
+$gray-600-alt: {ThemeGray600Alt} !default;
+$gray-700-alt: {ThemeGray700Alt} !default;
+$gray-800-alt: {ThemeGray800Alt} !default;
+$gray-900-alt: {ThemeGray900Alt} !default;
+$black-alt:    {ThemeBlackAlt} !default;
+
+$grays-alt: () !default;
+$grays-alt: map-merge((
+  "100": $gray-100-alt,
+  "200": $gray-200-alt,
+  "300": $gray-300-alt,
+  "400": $gray-400-alt,
+  "500": $gray-500-alt,
+  "600": $gray-600-alt,
+  "700": $gray-700-alt,
+  "800": $gray-800-alt,
+  "900": $gray-900-alt
+), $grays-alt);
+
+// Below colors from bootwatch darkly
+$blue-alt:    {ThemeBlueAlt} !default;
+$indigo-alt:  {ThemeIndigoAlt} !default;
+$purple-alt:  {ThemePurpleAlt} !default;
+$pink-alt:    {ThemePinkAlt} !default;
+$red-alt:     {ThemeRedAlt} !default;
+$orange-alt:  {ThemeOrangeAlt} !default;
+$yellow-alt:  {ThemeYellowAlt} !default;
+$green-alt:   {ThemeGreenAlt} !default;
+$teal-alt:    {ThemeTealAlt} !default;
+$cyan-alt:    {ThemeCyanAlt} !default;
+
+// by darken function
+$lightblue-alt: {ThemeLightblueAlt} !default;
+$navy-alt: {ThemeNavyAlt} !default;
+$olive-alt: {ThemeOliveAlt} !default;
+$lime-alt: {ThemeLimeAlt} !default;
+$fuchsia-alt: {ThemeFuchsiaAlt} !default;
+$maroon-alt: {ThemeMaroonAlt} !default;
+$gray-x-light-alt: {ThemeGrayXLightAlt} !default;
+
+$colors-alt: () !default;
+$colors-alt: map-merge((
+  "blue":       $blue-alt,
+  "indigo":     $indigo-alt,
+  "purple":     $purple-alt,
+  "pink":       $pink-alt,
+  "red":        $red-alt,
+  "orange":     $orange-alt,
+  "yellow":     $yellow-alt,
+  "green":      $green-alt,
+  "teal":       $teal-alt,
+  "cyan":       $cyan-alt,
+  "white":      $white-alt,
+  "gray":       $gray-600-alt,
+  "gray-dark":  $gray-800-alt
+), $colors-alt);
+
+$primary-alt:       {ThemePrimaryAlt} !default;
+$secondary-alt:     {ThemeSecondaryAlt} !default;
+$success-alt:       {ThemeSuccessAlt} !default;
+$info-alt:          {ThemeInfoAlt} !default;
+$warning-alt:       {ThemeWarningAlt} !default;
+$danger-alt:        {ThemeDangerAlt} !default;
+$light-alt:         {ThemeLightAlt} !default;
+$dark-alt:          {ThemeDarkAlt} !default;
+
+$theme-colors-alt: () !default;
+$theme-colors-alt: map-merge((
+  "primary":    $primary-alt,
+  "secondary":  $secondary-alt,
+  "success":    $success-alt,
+  "info":       $info-alt,
+  "warning":    $warning-alt,
+  "danger":     $danger-alt,
+  "light":      $light-alt,
+  "dark":       $dark-alt
+), $theme-colors-alt);
+
+$colors-alt: map-merge(
+  (
+    "lightblue": $lightblue-alt,
+    "navy": $navy-alt,
+    "olive": $olive-alt,
+    "lime": $lime-alt,
+    "fuchsia": $fuchsia-alt,
+    "maroon": $maroon-alt,
+  ),
+  $colors-alt
+);
+// stylelint-enable
+
+//

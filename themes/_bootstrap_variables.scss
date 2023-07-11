@@ -1,0 +1,1127 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+
+$white:    {ThemeWhite} !default;
+$gray-100: {ThemeGray100} !default;
+$gray-200: {ThemeGray200} !default;
+$gray-300: {ThemeGray300} !default;
+$gray-400: {ThemeGray400} !default;
+$gray-500: {ThemeGray500} !default;
+$gray-600: {ThemeGray600} !default;
+$gray-700: {ThemeGray700} !default;
+$gray-800: {ThemeGray800} !default;
+$gray-900: {ThemeGray900} !default;
+$black:    {ThemeBlack} !default;
+
+$grays: () !default;
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+$blue:    {ThemeBlue} !default;
+$indigo:  {ThemeIndigo} !default;
+$purple:  {ThemePurple} !default;
+$pink:    {ThemePink} !default;
+$red:     {ThemeRed} !default;
+$orange:  {ThemeOrange} !default;
+$yellow:  {ThemeYellow} !default;
+$green:   {ThemeGreen} !default;
+$teal:    {ThemeTeal} !default;
+$cyan:    {ThemeCyan} !default;
+
+$colors: () !default;
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+$primary:       {ThemePrimary} !default;
+$secondary:     {ThemeSecondary} !default;
+$success:       {ThemeSuccess} !default;
+$info:          {ThemeInfo} !default;
+$warning:       {ThemeWarning} !default;
+$danger:        {ThemeDanger} !default;
+$light:         {ThemeLight} !default;
+$dark:          {ThemeDark} !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+// Set a specific jump point for requesting color jumps
+$theme-color-interval:      {ThemeThemeColorInterval} !default;
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold:  {ThemeYiqContrastedThreshold} !default;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark:             {ThemeYiqTextDark} !default;
+$yiq-text-light:            {ThemeYiqTextLight} !default;
+
+// Characters which are escaped by the escape-svg function
+$escaped-characters: {ThemeEscapedCharacters} !default;
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret:                                {ThemeEnableCaret} == 1 !default;
+$enable-rounded:                              {ThemeEnableRounded} == 1 !default;
+$enable-shadows:                              {ThemeEnableShadows} == 1 !default;
+$enable-gradients:                            {ThemeEnableGradients} == 1 !default;
+$enable-transitions:                          {ThemeEnableTransitions} == 1 !default;
+$enable-prefers-reduced-motion-media-query:   {ThemeEnablePrefersReducedMotionMediaQuery} == 1 !default;
+$enable-hover-media-query:                    {ThemeEnableHoverMediaQuery} == 1 !default; // Deprecated, no longer affects any compiled CSS
+$enable-grid-classes:                         {ThemeEnableGridClasses} == 1 !default;
+$enable-pointer-cursor-for-buttons:           {ThemeEnablePointerCursorForButtons} == 1 !default;
+$enable-print-styles:                         {ThemeEnablePrintStyles} == 1 !default;
+$enable-responsive-font-sizes:                {ThemeEnableResponsiveFontSizes} == 1 !default;
+$enable-validation-icons:                     {ThemeEnableValidationIcons} == 1 !default;
+$enable-deprecation-messages:                 {ThemeEnableDeprecationMessages} == 1 !default;
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: {ThemeSpacer} !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3)
+  ),
+  $spacers
+);
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+  ),
+  $sizes
+);
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                   {ThemeBodyBg} !default;
+$body-color:                {ThemeBodyColor} !default;
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                              {ThemeLinkColor} !default;
+$link-decoration:                         {ThemeLinkDecoration} !default;
+$link-hover-color:                        {ThemeLinkHoverColor} !default;
+$link-hover-decoration:                   {ThemeLinkHoverDecoration} !default;
+// Darken percentage for links with `.text-*` class (e.g. `.text-success`)
+$emphasized-link-hover-darken-percentage: {ThemeEmphasizedLinkHoverDarkenPercentage} !default;
+
+// Paragraphs
+//
+// Style p element.
+
+$paragraph-margin-bottom:   {ThemeParagraphMarginBottom} !default;
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: {ThemeGridBreakpoints} !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: {ThemeContainerMaxWidths} !default;
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                {ThemeGridColumns} !default;
+$grid-gutter-width:           {ThemeGridGutterWidth} !default;
+$grid-row-columns:            {ThemeGridRowColumns} !default;
+
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$line-height-lg:              {ThemeLineHeightLg} !default;
+$line-height-sm:              {ThemeLineHeightSm} !default;
+
+$border-width:                {ThemeBorderWidth} !default;
+$border-color:                {ThemeBorderColor} !default;
+
+$border-radius:               {ThemeBorderRadius} !default;
+$border-radius-lg:            {ThemeBorderRadiusLg} !default;
+$border-radius-sm:            {ThemeBorderRadiusSm} !default;
+
+$rounded-pill:                {ThemeRoundedPill} !default;
+
+$box-shadow-sm:               {ThemeBoxShadowSm} !default;
+$box-shadow:                  {ThemeBoxShadow} !default;
+$box-shadow-lg:               {ThemeBoxShadowLg} !default;
+
+$component-active-color:      {ThemeComponentActiveColor} !default;
+$component-active-bg:         {ThemeComponentActiveBg} !default;
+
+$caret-width:                 {ThemeCaretWidth} !default;
+$caret-vertical-align:        {ThemeCaretVerticalAlign} !default;
+$caret-spacing:               {ThemeCaretSpacing} !default;
+
+$transition-base:             {ThemeTransitionBase} !default;
+$transition-fade:             {ThemeTransitionFade} !default;
+$transition-collapse:         {ThemeTransitionCollapse} !default;
+
+$embed-responsive-aspect-ratios: () !default;
+$embed-responsive-aspect-ratios: join(
+  (
+    (21 9),
+    (16 9),
+    (4 3),
+    (1 1),
+  ),
+  $embed-responsive-aspect-ratios
+);
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      {ThemeFontFamilySansSerif} !default;
+$font-family-monospace:       {ThemeFontFamilyMonospace} !default;
+$font-family-base:            {ThemeFontFamilyBase} !default;
+// stylelint-enable value-keyword-case
+
+$font-size-base:              {ThemeFontSizeBase} !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                {ThemeFontSizeLg} !default;
+$font-size-sm:                {ThemeFontSizeSm} !default;
+
+$font-weight-lighter:         {ThemeFontWeightLighter} !default;
+$font-weight-light:           {ThemeFontWeightLight} !default;
+$font-weight-normal:          {ThemeFontWeightNormal} !default;
+$font-weight-bold:            {ThemeFontWeightBold} !default;
+$font-weight-bolder:          {ThemeFontWeightBolder} !default;
+
+$font-weight-base:            {ThemeFontWeightBase} !default;
+$line-height-base:            {ThemeLineHeightBase} !default;
+
+$h1-font-size:                {ThemeH1FontSize} !default;
+$h2-font-size:                {ThemeH2FontSize} !default;
+$h3-font-size:                {ThemeH3FontSize} !default;
+$h4-font-size:                {ThemeH4FontSize} !default;
+$h5-font-size:                {ThemeH5FontSize} !default;
+$h6-font-size:                {ThemeH6FontSize} !default;
+
+$headings-margin-bottom:      {ThemeHeadingsMarginBottom} !default;
+$headings-font-family:        {ThemeHeadingsFontFamily} !default;
+$headings-font-weight:        {ThemeHeadingsFontWeight} !default;
+$headings-line-height:        {ThemeHeadingsLineHeight} !default;
+$headings-color:              {ThemeHeadingsColor} !default;
+
+$display1-size:               {ThemeDisplay1Size} !default;
+$display2-size:               {ThemeDisplay2Size} !default;
+$display3-size:               {ThemeDisplay3Size} !default;
+$display4-size:               {ThemeDisplay4Size} !default;
+
+$display1-weight:             {ThemeDisplay1Weight} !default;
+$display2-weight:             {ThemeDisplay2Weight} !default;
+$display3-weight:             {ThemeDisplay3Weight} !default;
+$display4-weight:             {ThemeDisplay4Weight} !default;
+$display-line-height:         {ThemeDisplayLineHeight} !default;
+
+$lead-font-size:              {ThemeLeadFontSize} !default;
+$lead-font-weight:            {ThemeLeadFontWeight} !default;
+
+$small-font-size:             {ThemeSmallFontSize} !default;
+
+$text-muted:                  {ThemeTextMuted} !default;
+
+$blockquote-small-color:      {ThemeBlockquoteSmallColor} !default;
+$blockquote-small-font-size:  {ThemeBlockquoteSmallFontSize} !default;
+$blockquote-font-size:        {ThemeBlockquoteFontSize} !default;
+
+$hr-border-color:             {ThemeHrBorderColor} !default;
+$hr-border-width:             {ThemeHrBorderWidth} !default;
+
+$mark-padding:                {ThemeMarkPadding} !default;
+
+$dt-font-weight:              {ThemeDtFontWeight} !default;
+
+$kbd-box-shadow:              {ThemeKbdBoxShadow} !default;
+$nested-kbd-font-weight:      {ThemeNestedKbdFontWeight} !default;
+
+$list-inline-padding:         {ThemeListInlinePadding} !default;
+
+$mark-bg:                     {ThemeMarkBg} !default;
+
+$hr-margin-y:                 {ThemeHrMarginY} !default;
+
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-cell-padding:          {ThemeTableCellPadding} !default;
+$table-cell-padding-sm:       {ThemeTableCellPaddingSm} !default;
+
+$table-color:                 {ThemeTableColor} !default;
+$table-bg:                    {ThemeTableBg} !default;
+$table-accent-bg:             {ThemeTableAccentBg} !default;
+$table-hover-color:           {ThemeTableHoverColor} !default;
+$table-hover-bg:              {ThemeTableHoverBg} !default;
+$table-active-bg:             {ThemeTableActiveBg} !default;
+
+$table-border-width:          {ThemeTableBorderWidth} !default;
+$table-border-color:          {ThemeTableBorderColor} !default;
+
+$table-head-bg:               {ThemeTableHeadBg} !default;
+$table-head-color:            {ThemeTableHeadColor} !default;
+$table-th-font-weight:        {ThemeTableThFontWeight} !default;
+
+$table-dark-color:            {ThemeTableDarkColor} !default;
+$table-dark-bg:               {ThemeTableDarkBg} !default;
+$table-dark-accent-bg:        {ThemeTableDarkAccentBg} !default;
+$table-dark-hover-color:      {ThemeTableDarkHoverColor} !default;
+$table-dark-hover-bg:         {ThemeTableDarkHoverBg} !default;
+$table-dark-border-color:     {ThemeTableDarkBorderColor} !default;
+
+$table-striped-order:         {ThemeTableStripedOrder} !default;
+
+$table-caption-color:         {ThemeTableCaptionColor} !default;
+
+$table-bg-level:              {ThemeTableBgLevel} !default;
+$table-border-level:          {ThemeTableBorderLevel} !default;
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y:         {ThemeInputBtnPaddingY} !default;
+$input-btn-padding-x:         {ThemeInputBtnPaddingX} !default;
+$input-btn-font-family:       {ThemeInputBtnFontFamily} !default;
+$input-btn-font-size:         {ThemeInputBtnFontSize} !default;
+$input-btn-line-height:       {ThemeInputBtnLineHeight} !default;
+
+$input-btn-focus-width:       {ThemeInputBtnFocusWidth} !default;
+$input-btn-focus-color:       {ThemeInputBtnFocusColor} !default;
+$input-btn-focus-box-shadow:  {ThemeInputBtnFocusBoxShadow} !default;
+
+$input-btn-padding-y-sm:      {ThemeInputBtnPaddingYSm} !default;
+$input-btn-padding-x-sm:      {ThemeInputBtnPaddingXSm} !default;
+$input-btn-font-size-sm:      {ThemeInputBtnFontSizeSm} !default;
+$input-btn-line-height-sm:    {ThemeInputBtnLineHeightSm} !default;
+
+$input-btn-padding-y-lg:      {ThemeInputBtnPaddingYLg} !default;
+$input-btn-padding-x-lg:      {ThemeInputBtnPaddingXLg} !default;
+$input-btn-font-size-lg:      {ThemeInputBtnFontSizeLg} !default;
+$input-btn-line-height-lg:    {ThemeInputBtnLineHeightLg} !default;
+
+$input-btn-border-width:      {ThemeInputBtnBorderWidth} !default;
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-padding-y:               {ThemeBtnPaddingY} !default;
+$btn-padding-x:               {ThemeBtnPaddingX} !default;
+$btn-font-family:             {ThemeBtnFontFamily} !default;
+$btn-font-size:               {ThemeBtnFontSize} !default;
+$btn-line-height:             {ThemeBtnLineHeight} !default;
+$btn-white-space:             {ThemeBtnWhiteSpace} !default; // Set to `nowrap` to prevent text wrapping
+
+$btn-padding-y-sm:            {ThemeBtnPaddingYSm} !default;
+$btn-padding-x-sm:            {ThemeBtnPaddingXSm} !default;
+$btn-font-size-sm:            {ThemeBtnFontSizeSm} !default;
+$btn-line-height-sm:          {ThemeBtnLineHeightSm} !default;
+
+$btn-padding-y-lg:            {ThemeBtnPaddingYLg} !default;
+$btn-padding-x-lg:            {ThemeBtnPaddingXLg} !default;
+$btn-font-size-lg:            {ThemeBtnFontSizeLg} !default;
+$btn-line-height-lg:          {ThemeBtnLineHeightLg} !default;
+
+$btn-border-width:            {ThemeBtnBorderWidth} !default;
+
+$btn-font-weight:             {ThemeBtnFontWeight} !default;
+$btn-box-shadow:              {ThemeBtnBoxShadow} !default;
+$btn-focus-width:             {ThemeBtnFocusWidth} !default;
+$btn-focus-box-shadow:        {ThemeBtnFocusBoxShadow} !default;
+$btn-disabled-opacity:        {ThemeBtnDisabledOpacity} !default;
+$btn-active-box-shadow:       {ThemeBtnActiveBoxShadow} !default;
+
+$btn-link-disabled-color:     {ThemeBtnLinkDisabledColor} !default;
+
+$btn-block-spacing-y:         {ThemeBtnBlockSpacingY} !default;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:           {ThemeBtnBorderRadius} !default;
+$btn-border-radius-lg:        {ThemeBtnBorderRadiusLg} !default;
+$btn-border-radius-sm:        {ThemeBtnBorderRadiusSm} !default;
+
+$btn-transition:              {ThemeBtnTransition} !default;
+
+
+// Forms
+
+$label-margin-bottom:                   {ThemeLabelMarginBottom} !default;
+
+$input-padding-y:                       {ThemeInputPaddingY} !default;
+$input-padding-x:                       {ThemeInputPaddingX} !default;
+$input-font-family:                     {ThemeInputFontFamily} !default;
+$input-font-size:                       {ThemeInputFontSize} !default;
+$input-font-weight:                     {ThemeInputFontWeight} !default;
+$input-line-height:                     {ThemeInputLineHeight} !default;
+
+$input-padding-y-sm:                    {ThemeInputPaddingYSm} !default;
+$input-padding-x-sm:                    {ThemeInputPaddingXSm} !default;
+$input-font-size-sm:                    {ThemeInputFontSizeSm} !default;
+$input-line-height-sm:                  {ThemeInputLineHeightSm} !default;
+
+$input-padding-y-lg:                    {ThemeInputPaddingYLg} !default;
+$input-padding-x-lg:                    {ThemeInputPaddingXLg} !default;
+$input-font-size-lg:                    {ThemeInputFontSizeLg} !default;
+$input-line-height-lg:                  {ThemeInputLineHeightLg} !default;
+
+$input-bg:                              {ThemeInputBg} !default;
+$input-disabled-bg:                     {ThemeInputDisabledBg} !default;
+
+$input-color:                           {ThemeInputColor} !default;
+$input-border-color:                    {ThemeInputBorderColor} !default;
+$input-border-width:                    {ThemeInputBorderWidth} !default;
+$input-box-shadow:                      {ThemeInputBoxShadow} !default;
+
+$input-border-radius:                   {ThemeInputBorderRadius} !default;
+$input-border-radius-lg:                {ThemeInputBorderRadiusLg} !default;
+$input-border-radius-sm:                {ThemeInputBorderRadiusSm} !default;
+
+$input-focus-bg:                        {ThemeInputFocusBg} !default;
+$input-focus-border-color:              {ThemeInputFocusBorderColor} !default;
+$input-focus-color:                     {ThemeInputFocusColor} !default;
+$input-focus-width:                     {ThemeInputFocusWidth} !default;
+$input-focus-box-shadow:                {ThemeInputFocusBoxShadow} !default;
+
+$input-placeholder-color:               {ThemeInputPlaceholderColor} !default;
+$input-plaintext-color:                 {ThemeInputPlaintextColor} !default;
+
+$input-height-border:                   {ThemeInputHeightBorder} !default;
+
+$input-height-inner:                    {ThemeInputHeightInner} !default;
+$input-height-inner-half:               {ThemeInputHeightInnerHalf} !default;
+$input-height-inner-quarter:            {ThemeInputHeightInnerQuarter} !default;
+
+$input-height:                          {ThemeInputHeight} !default;
+$input-height-sm:                       {ThemeInputHeightSm} !default;
+$input-height-lg:                       {ThemeInputHeightLg} !default;
+
+$input-transition:                      {ThemeInputTransition} !default;
+
+$form-text-margin-top:                  {ThemeFormTextMarginTop} !default;
+
+$form-check-input-gutter:               {ThemeFormCheckInputGutter} !default;
+$form-check-input-margin-y:             {ThemeFormCheckInputMarginY} !default;
+$form-check-input-margin-x:             {ThemeFormCheckInputMarginX} !default;
+
+$form-check-inline-margin-x:            {ThemeFormCheckInlineMarginX} !default;
+$form-check-inline-input-margin-x:      {ThemeFormCheckInlineInputMarginX} !default;
+
+$form-grid-gutter-width:                {ThemeFormGridGutterWidth} !default;
+$form-group-margin-bottom:              {ThemeFormGroupMarginBottom} !default;
+
+$input-group-addon-color:               {ThemeInputGroupAddonColor} !default;
+$input-group-addon-bg:                  {ThemeInputGroupAddonBg} !default;
+$input-group-addon-border-color:        {ThemeInputGroupAddonBorderColor} !default;
+
+$custom-forms-transition:               {ThemeCustomFormsTransition} !default;
+
+$custom-control-gutter:                 {ThemeCustomControlGutter} !default;
+$custom-control-spacer-x:               {ThemeCustomControlSpacerX} !default;
+$custom-control-cursor:                 {ThemeCustomControlCursor} !default;
+
+$custom-control-indicator-size:         {ThemeCustomControlIndicatorSize} !default;
+$custom-control-indicator-bg:           {ThemeCustomControlIndicatorBg} !default;
+
+$custom-control-indicator-bg-size:      {ThemeCustomControlIndicatorBgSize} !default;
+$custom-control-indicator-box-shadow:   {ThemeCustomControlIndicatorBoxShadow} !default;
+$custom-control-indicator-border-color: {ThemeCustomControlIndicatorBorderColor} !default;
+$custom-control-indicator-border-width: {ThemeCustomControlIndicatorBorderWidth} !default;
+
+$custom-control-label-color:            {ThemeCustomControlLabelColor} !default;
+
+$custom-control-indicator-disabled-bg:          {ThemeCustomControlIndicatorDisabledBg} !default;
+$custom-control-label-disabled-color:           {ThemeCustomControlLabelDisabledColor} !default;
+
+$custom-control-indicator-checked-color:        {ThemeCustomControlIndicatorCheckedColor} !default;
+$custom-control-indicator-checked-bg:           {ThemeCustomControlIndicatorCheckedBg} !default;
+$custom-control-indicator-checked-disabled-bg:  {ThemeCustomControlIndicatorCheckedDisabledBg} !default;
+$custom-control-indicator-checked-box-shadow:   {ThemeCustomControlIndicatorCheckedBoxShadow} !default;
+$custom-control-indicator-checked-border-color: {ThemeCustomControlIndicatorCheckedBorderColor} !default;
+
+$custom-control-indicator-focus-box-shadow:     {ThemeCustomControlIndicatorFocusBoxShadow} !default;
+$custom-control-indicator-focus-border-color:   {ThemeCustomControlIndicatorFocusBorderColor} !default;
+
+$custom-control-indicator-active-color:         {ThemeCustomControlIndicatorActiveColor} !default;
+$custom-control-indicator-active-bg:            {ThemeCustomControlIndicatorActiveBg} !default;
+$custom-control-indicator-active-box-shadow:    {ThemeCustomControlIndicatorActiveBoxShadow} !default;
+$custom-control-indicator-active-border-color:  {ThemeCustomControlIndicatorActiveBorderColor} !default;
+
+$custom-checkbox-indicator-border-radius:       {ThemeCustomCheckboxIndicatorBorderRadius} !default;
+$custom-checkbox-indicator-icon-checked:        {ThemeCustomCheckboxIndicatorIconChecked} !default;
+
+$custom-checkbox-indicator-indeterminate-bg:           {ThemeCustomCheckboxIndicatorIndeterminateBg} !default;
+$custom-checkbox-indicator-indeterminate-color:        {ThemeCustomCheckboxIndicatorIndeterminateColor} !default;
+$custom-checkbox-indicator-icon-indeterminate:         {ThemeCustomCheckboxIndicatorIconIndeterminate} !default;
+$custom-checkbox-indicator-indeterminate-box-shadow:   {ThemeCustomCheckboxIndicatorIndeterminateBoxShadow} !default;
+$custom-checkbox-indicator-indeterminate-border-color: {ThemeCustomCheckboxIndicatorIndeterminateBorderColor} !default;
+
+$custom-radio-indicator-border-radius:          {ThemeCustomRadioIndicatorBorderRadius} !default;
+$custom-radio-indicator-icon-checked:           {ThemeCustomRadioIndicatorIconChecked} !default;
+
+$custom-switch-width:                           {ThemeCustomSwitchWidth} !default;
+$custom-switch-indicator-border-radius:         {ThemeCustomSwitchIndicatorBorderRadius} !default;
+$custom-switch-indicator-size:                  {ThemeCustomSwitchIndicatorSize} !default;
+
+$custom-select-padding-y:           {ThemeCustomSelectPaddingY} !default;
+$custom-select-padding-x:           {ThemeCustomSelectPaddingX} !default;
+$custom-select-font-family:         {ThemeCustomSelectFontFamily} !default;
+$custom-select-font-size:           {ThemeCustomSelectFontSize} !default;
+$custom-select-height:              {ThemeCustomSelectHeight} !default;
+$custom-select-indicator-padding:   {ThemeCustomSelectIndicatorPadding} !default; // Extra padding to account for the presence of the background-image based indicator
+$custom-select-font-weight:         {ThemeCustomSelectFontWeight} !default;
+$custom-select-line-height:         {ThemeCustomSelectLineHeight} !default;
+$custom-select-color:               {ThemeCustomSelectColor} !default;
+$custom-select-disabled-color:      {ThemeCustomSelectDisabledColor} !default;
+$custom-select-bg:                  {ThemeCustomSelectBg} !default;
+$custom-select-disabled-bg:         {ThemeCustomSelectDisabledBg} !default;
+$custom-select-bg-size:             {ThemeCustomSelectBgSize} !default; // In pixels because image dimensions
+$custom-select-indicator-color:     {ThemeCustomSelectIndicatorColor} !default;
+$custom-select-indicator:           {ThemeCustomSelectIndicator} !default;
+$custom-select-background:          {ThemeCustomSelectBackground} !default; // Used so we can have multiple background elements (e.g., arrow and feedback icon)
+
+$custom-select-feedback-icon-padding-right: {ThemeCustomSelectFeedbackIconPaddingRight} !default;
+$custom-select-feedback-icon-position:      {ThemeCustomSelectFeedbackIconPosition} !default;
+$custom-select-feedback-icon-size:          {ThemeCustomSelectFeedbackIconSize} !default;
+
+$custom-select-border-width:        {ThemeCustomSelectBorderWidth} !default;
+$custom-select-border-color:        {ThemeCustomSelectBorderColor} !default;
+$custom-select-border-radius:       {ThemeCustomSelectBorderRadius} !default;
+$custom-select-box-shadow:          {ThemeCustomSelectBoxShadow} !default;
+
+$custom-select-focus-border-color:  {ThemeCustomSelectFocusBorderColor} !default;
+$custom-select-focus-width:         {ThemeCustomSelectFocusWidth} !default;
+$custom-select-focus-box-shadow:    {ThemeCustomSelectFocusBoxShadow} !default;
+
+$custom-select-padding-y-sm:        {ThemeCustomSelectPaddingYSm} !default;
+$custom-select-padding-x-sm:        {ThemeCustomSelectPaddingXSm} !default;
+$custom-select-font-size-sm:        {ThemeCustomSelectFontSizeSm} !default;
+$custom-select-height-sm:           {ThemeCustomSelectHeightSm} !default;
+
+$custom-select-padding-y-lg:        {ThemeCustomSelectPaddingYLg} !default;
+$custom-select-padding-x-lg:        {ThemeCustomSelectPaddingXLg} !default;
+$custom-select-font-size-lg:        {ThemeCustomSelectFontSizeLg} !default;
+$custom-select-height-lg:           {ThemeCustomSelectHeightLg} !default;
+
+$custom-range-track-width:          {ThemeCustomRangeTrackWidth} !default;
+$custom-range-track-height:         {ThemeCustomRangeTrackHeight} !default;
+$custom-range-track-cursor:         {ThemeCustomRangeTrackCursor} !default;
+$custom-range-track-bg:             {ThemeCustomRangeTrackBg} !default;
+$custom-range-track-border-radius:  {ThemeCustomRangeTrackBorderRadius} !default;
+$custom-range-track-box-shadow:     {ThemeCustomRangeTrackBoxShadow} !default;
+
+$custom-range-thumb-width:                   {ThemeCustomRangeThumbWidth} !default;
+$custom-range-thumb-height:                  {ThemeCustomRangeThumbHeight} !default;
+$custom-range-thumb-bg:                      {ThemeCustomRangeThumbBg} !default;
+$custom-range-thumb-border:                  {ThemeCustomRangeThumbBorder} !default;
+$custom-range-thumb-border-radius:           {ThemeCustomRangeThumbBorderRadius} !default;
+$custom-range-thumb-box-shadow:              {ThemeCustomRangeThumbBoxShadow} !default;
+$custom-range-thumb-focus-box-shadow:        {ThemeCustomRangeThumbFocusBoxShadow} !default;
+$custom-range-thumb-focus-box-shadow-width:  {ThemeCustomRangeThumbFocusBoxShadowWidth} !default; // For focus box shadow issue in IE/Edge
+$custom-range-thumb-active-bg:               {ThemeCustomRangeThumbActiveBg} !default;
+$custom-range-thumb-disabled-bg:             {ThemeCustomRangeThumbDisabledBg} !default;
+
+$custom-file-height:                {ThemeCustomFileHeight} !default;
+$custom-file-height-inner:          {ThemeCustomFileHeightInner} !default;
+$custom-file-focus-border-color:    {ThemeCustomFileFocusBorderColor} !default;
+$custom-file-focus-box-shadow:      {ThemeCustomFileFocusBoxShadow} !default;
+$custom-file-disabled-bg:           {ThemeCustomFileDisabledBg} !default;
+
+$custom-file-padding-y:             {ThemeCustomFilePaddingY} !default;
+$custom-file-padding-x:             {ThemeCustomFilePaddingX} !default;
+$custom-file-line-height:           {ThemeCustomFileLineHeight} !default;
+$custom-file-font-family:           {ThemeCustomFileFontFamily} !default;
+$custom-file-font-weight:           {ThemeCustomFileFontWeight} !default;
+$custom-file-color:                 {ThemeCustomFileColor} !default;
+$custom-file-bg:                    {ThemeCustomFileBg} !default;
+$custom-file-border-width:          {ThemeCustomFileBorderWidth} !default;
+$custom-file-border-color:          {ThemeCustomFileBorderColor} !default;
+$custom-file-border-radius:         {ThemeCustomFileBorderRadius} !default;
+$custom-file-box-shadow:            {ThemeCustomFileBoxShadow} !default;
+$custom-file-button-color:          {ThemeCustomFileButtonColor} !default;
+$custom-file-button-bg:             {ThemeCustomFileButtonBg} !default;
+$custom-file-text: {ThemeCustomFileText} !default;
+
+
+// Form validation
+
+$form-feedback-margin-top:          {ThemeFormFeedbackMarginTop} !default;
+$form-feedback-font-size:           {ThemeFormFeedbackFontSize} !default;
+$form-feedback-valid-color:         {ThemeFormFeedbackValidColor} !default;
+$form-feedback-invalid-color:       {ThemeFormFeedbackInvalidColor} !default;
+
+$form-feedback-icon-valid-color:    {ThemeFormFeedbackIconValidColor} !default;
+$form-feedback-icon-valid:          {ThemeFormFeedbackIconValid} !default;
+$form-feedback-icon-invalid-color:  {ThemeFormFeedbackIconInvalidColor} !default;
+$form-feedback-icon-invalid:        {ThemeFormFeedbackIconInvalid} !default;
+
+$form-validation-states: () !default;
+$form-validation-states: map-merge(
+  (
+    "valid": (
+      "color": $form-feedback-valid-color,
+      "icon": $form-feedback-icon-valid
+    ),
+    "invalid": (
+      "color": $form-feedback-invalid-color,
+      "icon": $form-feedback-icon-invalid
+    ),
+  ),
+  $form-validation-states
+);
+
+// Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+
+$zindex-dropdown:                   {ThemeZindexDropdown} !default;
+$zindex-sticky:                     {ThemeZindexSticky} !default;
+$zindex-fixed:                      {ThemeZindexFixed} !default;
+$zindex-modal-backdrop:             {ThemeZindexModalBackdrop} !default;
+$zindex-modal:                      {ThemeZindexModal} !default;
+$zindex-popover:                    {ThemeZindexPopover} !default;
+$zindex-tooltip:                    {ThemeZindexTooltip} !default;
+
+
+// Navs
+
+$nav-link-padding-y:                {ThemeNavLinkPaddingY} !default;
+$nav-link-padding-x:                {ThemeNavLinkPaddingX} !default;
+$nav-link-disabled-color:           {ThemeNavLinkDisabledColor} !default;
+
+$nav-tabs-border-color:             {ThemeNavTabsBorderColor} !default;
+$nav-tabs-border-width:             {ThemeNavTabsBorderWidth} !default;
+$nav-tabs-border-radius:            {ThemeNavTabsBorderRadius} !default;
+$nav-tabs-link-hover-border-color:  {ThemeNavTabsLinkHoverBorderColor} !default;
+$nav-tabs-link-active-color:        {ThemeNavTabsLinkActiveColor} !default;
+$nav-tabs-link-active-bg:           {ThemeNavTabsLinkActiveBg} !default;
+$nav-tabs-link-active-border-color: {ThemeNavTabsLinkActiveBorderColor} !default;
+
+$nav-pills-border-radius:           {ThemeNavPillsBorderRadius} !default;
+$nav-pills-link-active-color:       {ThemeNavPillsLinkActiveColor} !default;
+$nav-pills-link-active-bg:          {ThemeNavPillsLinkActiveBg} !default;
+
+$nav-divider-color:                 {ThemeNavDividerColor} !default;
+$nav-divider-margin-y:              {ThemeNavDividerMarginY} !default;
+
+
+// Navbar
+
+$navbar-padding-y:                  {ThemeNavbarPaddingY} !default;
+$navbar-padding-x:                  {ThemeNavbarPaddingX} !default;
+
+$navbar-nav-link-padding-x:         {ThemeNavbarNavLinkPaddingX} !default;
+
+$navbar-brand-font-size:            {ThemeNavbarBrandFontSize} !default;
+// Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
+$nav-link-height:                   {ThemeNavLinkHeight} !default;
+$navbar-brand-height:               {ThemeNavbarBrandHeight} !default;
+$navbar-brand-padding-y:            {ThemeNavbarBrandPaddingY} !default;
+
+$navbar-toggler-padding-y:          {ThemeNavbarTogglerPaddingY} !default;
+$navbar-toggler-padding-x:          {ThemeNavbarTogglerPaddingX} !default;
+$navbar-toggler-font-size:          {ThemeNavbarTogglerFontSize} !default;
+$navbar-toggler-border-radius:      {ThemeNavbarTogglerBorderRadius} !default;
+
+$navbar-nav-scroll-max-height:      {ThemeNavbarNavScrollMaxHeight} !default;
+
+$navbar-dark-color:                 {ThemeNavbarDarkColor} !default;
+$navbar-dark-hover-color:           {ThemeNavbarDarkHoverColor} !default;
+$navbar-dark-active-color:          {ThemeNavbarDarkActiveColor} !default;
+$navbar-dark-disabled-color:        {ThemeNavbarDarkDisabledColor} !default;
+$navbar-dark-toggler-icon-bg:       {ThemeNavbarDarkTogglerIconBg} !default;
+$navbar-dark-toggler-border-color:  {ThemeNavbarDarkTogglerBorderColor} !default;
+
+$navbar-light-color:                {ThemeNavbarLightColor} !default;
+$navbar-light-hover-color:          {ThemeNavbarLightHoverColor} !default;
+$navbar-light-active-color:         {ThemeNavbarLightActiveColor} !default;
+$navbar-light-disabled-color:       {ThemeNavbarLightDisabledColor} !default;
+$navbar-light-toggler-icon-bg:      {ThemeNavbarLightTogglerIconBg} !default;
+$navbar-light-toggler-border-color: {ThemeNavbarLightTogglerBorderColor} !default;
+
+$navbar-light-brand-color:                {ThemeNavbarLightBrandColor} !default;
+$navbar-light-brand-hover-color:          {ThemeNavbarLightBrandHoverColor} !default;
+$navbar-dark-brand-color:                 {ThemeNavbarDarkBrandColor} !default;
+$navbar-dark-brand-hover-color:           {ThemeNavbarDarkBrandHoverColor} !default;
+
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-min-width:                {ThemeDropdownMinWidth} !default;
+$dropdown-padding-x:                {ThemeDropdownPaddingX} !default;
+$dropdown-padding-y:                {ThemeDropdownPaddingY} !default;
+$dropdown-spacer:                   {ThemeDropdownSpacer} !default;
+$dropdown-font-size:                {ThemeDropdownFontSize} !default;
+$dropdown-color:                    {ThemeDropdownColor} !default;
+$dropdown-bg:                       {ThemeDropdownBg} !default;
+$dropdown-border-color:             {ThemeDropdownBorderColor} !default;
+$dropdown-border-radius:            {ThemeDropdownBorderRadius} !default;
+$dropdown-border-width:             {ThemeDropdownBorderWidth} !default;
+$dropdown-inner-border-radius:      {ThemeDropdownInnerBorderRadius} !default;
+$dropdown-divider-bg:               {ThemeDropdownDividerBg} !default;
+$dropdown-divider-margin-y:         {ThemeDropdownDividerMarginY} !default;
+$dropdown-box-shadow:               {ThemeDropdownBoxShadow} !default;
+
+$dropdown-link-color:               {ThemeDropdownLinkColor} !default;
+$dropdown-link-hover-color:         {ThemeDropdownLinkHoverColor} !default;
+$dropdown-link-hover-bg:            {ThemeDropdownLinkHoverBg} !default;
+
+$dropdown-link-active-color:        {ThemeDropdownLinkActiveColor} !default;
+$dropdown-link-active-bg:           {ThemeDropdownLinkActiveBg} !default;
+
+$dropdown-link-disabled-color:      {ThemeDropdownLinkDisabledColor} !default;
+
+$dropdown-item-padding-y:           {ThemeDropdownItemPaddingY} !default;
+$dropdown-item-padding-x:           {ThemeDropdownItemPaddingX} !default;
+
+$dropdown-header-color:             {ThemeDropdownHeaderColor} !default;
+$dropdown-header-padding:           {ThemeDropdownHeaderPadding} !default;
+
+
+// Pagination
+
+$pagination-padding-y:              {ThemePaginationPaddingY} !default;
+$pagination-padding-x:              {ThemePaginationPaddingX} !default;
+$pagination-padding-y-sm:           {ThemePaginationPaddingYSm} !default;
+$pagination-padding-x-sm:           {ThemePaginationPaddingXSm} !default;
+$pagination-padding-y-lg:           {ThemePaginationPaddingYLg} !default;
+$pagination-padding-x-lg:           {ThemePaginationPaddingXLg} !default;
+$pagination-line-height:            {ThemePaginationLineHeight} !default;
+
+$pagination-color:                  {ThemePaginationColor} !default;
+$pagination-bg:                     {ThemePaginationBg} !default;
+$pagination-border-width:           {ThemePaginationBorderWidth} !default;
+$pagination-border-color:           {ThemePaginationBorderColor} !default;
+
+$pagination-focus-box-shadow:       {ThemePaginationFocusBoxShadow} !default;
+$pagination-focus-outline:          {ThemePaginationFocusOutline} !default;
+
+$pagination-hover-color:            {ThemePaginationHoverColor} !default;
+$pagination-hover-bg:               {ThemePaginationHoverBg} !default;
+$pagination-hover-border-color:     {ThemePaginationHoverBorderColor} !default;
+
+$pagination-active-color:           {ThemePaginationActiveColor} !default;
+$pagination-active-bg:              {ThemePaginationActiveBg} !default;
+$pagination-active-border-color:    {ThemePaginationActiveBorderColor} !default;
+
+$pagination-disabled-color:         {ThemePaginationDisabledColor} !default;
+$pagination-disabled-bg:            {ThemePaginationDisabledBg} !default;
+$pagination-disabled-border-color:  {ThemePaginationDisabledBorderColor} !default;
+
+$pagination-border-radius-sm:       {ThemePaginationBorderRadiusSm} !default;
+$pagination-border-radius-lg:       {ThemePaginationBorderRadiusLg} !default;
+
+// Jumbotron
+
+$jumbotron-padding:                 {ThemeJumbotronPadding} !default;
+$jumbotron-color:                   {ThemeJumbotronColor} !default;
+$jumbotron-bg:                      {ThemeJumbotronBg} !default;
+
+
+// Cards
+
+$card-spacer-y:                     {ThemeCardSpacerY} !default;
+$card-spacer-x:                     {ThemeCardSpacerX} !default;
+$card-border-width:                 {ThemeCardBorderWidth} !default;
+$card-border-radius:                {ThemeCardBorderRadius} !default;
+$card-border-color:                 {ThemeCardBorderColor} !default;
+$card-inner-border-radius:          {ThemeCardInnerBorderRadius} !default;
+$card-cap-bg:                       {ThemeCardCapBg} !default;
+$card-cap-color:                    {ThemeCardCapColor} !default;
+$card-height:                       {ThemeCardHeight} !default;
+$card-color:                        {ThemeCardColor} !default;
+$card-bg:                           {ThemeCardBg} !default;
+
+$card-img-overlay-padding:          {ThemeCardImgOverlayPadding} !default;
+
+$card-group-margin:                 {ThemeCardGroupMargin} !default;
+$card-deck-margin:                  {ThemeCardDeckMargin} !default;
+
+$card-columns-count:                {ThemeCardColumnsCount} !default;
+$card-columns-gap:                  {ThemeCardColumnsGap} !default;
+$card-columns-margin:               {ThemeCardColumnsMargin} !default;
+
+
+// Tooltips
+
+$tooltip-font-size:                 {ThemeTooltipFontSize} !default;
+$tooltip-max-width:                 {ThemeTooltipMaxWidth} !default;
+$tooltip-color:                     {ThemeTooltipColor} !default;
+$tooltip-bg:                        {ThemeTooltipBg} !default;
+$tooltip-border-radius:             {ThemeTooltipBorderRadius} !default;
+$tooltip-opacity:                   {ThemeTooltipOpacity} !default;
+$tooltip-padding-y:                 {ThemeTooltipPaddingY} !default;
+$tooltip-padding-x:                 {ThemeTooltipPaddingX} !default;
+$tooltip-margin:                    {ThemeTooltipMargin} !default;
+
+$tooltip-arrow-width:               {ThemeTooltipArrowWidth} !default;
+$tooltip-arrow-height:              {ThemeTooltipArrowHeight} !default;
+$tooltip-arrow-color:               {ThemeTooltipArrowColor} !default;
+
+// Form tooltips must come after regular tooltips
+$form-feedback-tooltip-padding-y:     {ThemeFormFeedbackTooltipPaddingY} !default;
+$form-feedback-tooltip-padding-x:     {ThemeFormFeedbackTooltipPaddingX} !default;
+$form-feedback-tooltip-font-size:     {ThemeFormFeedbackTooltipFontSize} !default;
+$form-feedback-tooltip-line-height:   {ThemeFormFeedbackTooltipLineHeight} !default;
+$form-feedback-tooltip-opacity:       {ThemeFormFeedbackTooltipOpacity} !default;
+$form-feedback-tooltip-border-radius: {ThemeFormFeedbackTooltipBorderRadius} !default;
+
+
+// Popovers
+
+$popover-font-size:                 {ThemePopoverFontSize} !default;
+$popover-bg:                        {ThemePopoverBg} !default;
+$popover-max-width:                 {ThemePopoverMaxWidth} !default;
+$popover-border-width:              {ThemePopoverBorderWidth} !default;
+$popover-border-color:              {ThemePopoverBorderColor} !default;
+$popover-border-radius:             {ThemePopoverBorderRadius} !default;
+$popover-inner-border-radius:       {ThemePopoverInnerBorderRadius} !default;
+$popover-box-shadow:                {ThemePopoverBoxShadow} !default;
+
+$popover-header-bg:                 {ThemePopoverHeaderBg} !default;
+$popover-header-color:              {ThemePopoverHeaderColor} !default;
+$popover-header-padding-y:          {ThemePopoverHeaderPaddingY} !default;
+$popover-header-padding-x:          {ThemePopoverHeaderPaddingX} !default;
+
+$popover-body-color:                {ThemePopoverBodyColor} !default;
+$popover-body-padding-y:            {ThemePopoverBodyPaddingY} !default;
+$popover-body-padding-x:            {ThemePopoverBodyPaddingX} !default;
+
+$popover-arrow-width:               {ThemePopoverArrowWidth} !default;
+$popover-arrow-height:              {ThemePopoverArrowHeight} !default;
+$popover-arrow-color:               {ThemePopoverArrowColor} !default;
+
+$popover-arrow-outer-color:         {ThemePopoverArrowOuterColor} !default;
+
+
+// Toasts
+
+$toast-max-width:                   {ThemeToastMaxWidth} !default;
+$toast-padding-x:                   {ThemeToastPaddingX} !default;
+$toast-padding-y:                   {ThemeToastPaddingY} !default;
+$toast-font-size:                   {ThemeToastFontSize} !default;
+$toast-color:                       {ThemeToastColor} !default;
+$toast-background-color:            {ThemeToastBackgroundColor} !default;
+$toast-border-width:                {ThemeToastBorderWidth} !default;
+$toast-border-color:                {ThemeToastBorderColor} !default;
+$toast-border-radius:               {ThemeToastBorderRadius} !default;
+$toast-box-shadow:                  {ThemeToastBoxShadow} !default;
+
+$toast-header-color:                {ThemeToastHeaderColor} !default;
+$toast-header-background-color:     {ThemeToastHeaderBackgroundColor} !default;
+$toast-header-border-color:         {ThemeToastHeaderBorderColor} !default;
+
+
+// Badges
+
+$badge-font-size:                   {ThemeBadgeFontSize} !default;
+$badge-font-weight:                 {ThemeBadgeFontWeight} !default;
+$badge-padding-y:                   {ThemeBadgePaddingY} !default;
+$badge-padding-x:                   {ThemeBadgePaddingX} !default;
+$badge-border-radius:               {ThemeBadgeBorderRadius} !default;
+
+$badge-transition:                  {ThemeBadgeTransition} !default;
+$badge-focus-width:                 {ThemeBadgeFocusWidth} !default;
+
+$badge-pill-padding-x:              {ThemeBadgePillPaddingX} !default;
+// Use a higher than normal value to ensure completely rounded edges when
+// customizing padding or font-size on labels.
+$badge-pill-border-radius:          {ThemeBadgePillBorderRadius} !default;
+
+
+// Modals
+
+// Padding applied to the modal body
+$modal-inner-padding:               {ThemeModalInnerPadding} !default;
+
+// Margin between elements in footer, must be lower than or equal to 2 * $modal-inner-padding
+$modal-footer-margin-between:       {ThemeModalFooterMarginBetween} !default;
+
+$modal-dialog-margin:               {ThemeModalDialogMargin} !default;
+$modal-dialog-margin-y-sm-up:       {ThemeModalDialogMarginYSmUp} !default;
+
+$modal-title-line-height:           {ThemeModalTitleLineHeight} !default;
+
+$modal-content-color:               {ThemeModalContentColor} !default;
+$modal-content-bg:                  {ThemeModalContentBg} !default;
+$modal-content-border-color:        {ThemeModalContentBorderColor} !default;
+$modal-content-border-width:        {ThemeModalContentBorderWidth} !default;
+$modal-content-border-radius:       {ThemeModalContentBorderRadius} !default;
+$modal-content-inner-border-radius: {ThemeModalContentInnerBorderRadius} !default;
+$modal-content-box-shadow-xs:       {ThemeModalContentBoxShadowXs} !default;
+$modal-content-box-shadow-sm-up:    {ThemeModalContentBoxShadowSmUp} !default;
+
+$modal-backdrop-bg:                 {ThemeModalBackdropBg} !default;
+$modal-backdrop-opacity:            {ThemeModalBackdropOpacity} !default;
+$modal-header-border-color:         {ThemeModalHeaderBorderColor} !default;
+$modal-footer-border-color:         {ThemeModalFooterBorderColor} !default;
+$modal-header-border-width:         {ThemeModalHeaderBorderWidth} !default;
+$modal-footer-border-width:         {ThemeModalFooterBorderWidth} !default;
+$modal-header-padding-y:            {ThemeModalHeaderPaddingY} !default;
+$modal-header-padding-x:            {ThemeModalHeaderPaddingX} !default;
+$modal-header-padding:              {ThemeModalHeaderPadding} !default; // Keep this for backwards compatibility
+
+$modal-xl:                          {ThemeModalXl} !default;
+$modal-lg:                          {ThemeModalLg} !default;
+$modal-md:                          {ThemeModalMd} !default;
+$modal-sm:                          {ThemeModalSm} !default;
+
+$modal-fade-transform:              {ThemeModalFadeTransform} !default;
+$modal-show-transform:              {ThemeModalShowTransform} !default;
+$modal-transition:                  {ThemeModalTransition} !default;
+$modal-scale-transform:             {ThemeModalScaleTransform} !default;
+
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+$alert-padding-y:                   {ThemeAlertPaddingY} !default;
+$alert-padding-x:                   {ThemeAlertPaddingX} !default;
+$alert-margin-bottom:               {ThemeAlertMarginBottom} !default;
+$alert-border-radius:               {ThemeAlertBorderRadius} !default;
+$alert-link-font-weight:            {ThemeAlertLinkFontWeight} !default;
+$alert-border-width:                {ThemeAlertBorderWidth} !default;
+
+$alert-bg-level:                    {ThemeAlertBgLevel} !default;
+$alert-border-level:                {ThemeAlertBorderLevel} !default;
+$alert-color-level:                 {ThemeAlertColorLevel} !default;
+
+
+// Progress bars
+
+$progress-height:                   {ThemeProgressHeight} !default;
+$progress-font-size:                {ThemeProgressFontSize} !default;
+$progress-bg:                       {ThemeProgressBg} !default;
+$progress-border-radius:            {ThemeProgressBorderRadius} !default;
+$progress-box-shadow:               {ThemeProgressBoxShadow} !default;
+$progress-bar-color:                {ThemeProgressBarColor} !default;
+$progress-bar-bg:                   {ThemeProgressBarBg} !default;
+$progress-bar-animation-timing:     {ThemeProgressBarAnimationTiming} !default;
+$progress-bar-transition:           {ThemeProgressBarTransition} !default;
+
+
+// List group
+
+$list-group-color:                  {ThemeListGroupColor} !default;
+$list-group-bg:                     {ThemeListGroupBg} !default;
+$list-group-border-color:           {ThemeListGroupBorderColor} !default;
+$list-group-border-width:           {ThemeListGroupBorderWidth} !default;
+$list-group-border-radius:          {ThemeListGroupBorderRadius} !default;
+
+$list-group-item-padding-y:         {ThemeListGroupItemPaddingY} !default;
+$list-group-item-padding-x:         {ThemeListGroupItemPaddingX} !default;
+
+$list-group-hover-bg:               {ThemeListGroupHoverBg} !default;
+$list-group-active-color:           {ThemeListGroupActiveColor} !default;
+$list-group-active-bg:              {ThemeListGroupActiveBg} !default;
+$list-group-active-border-color:    {ThemeListGroupActiveBorderColor} !default;
+
+$list-group-disabled-color:         {ThemeListGroupDisabledColor} !default;
+$list-group-disabled-bg:            {ThemeListGroupDisabledBg} !default;
+
+$list-group-action-color:           {ThemeListGroupActionColor} !default;
+$list-group-action-hover-color:     {ThemeListGroupActionHoverColor} !default;
+
+$list-group-action-active-color:    {ThemeListGroupActionActiveColor} !default;
+$list-group-action-active-bg:       {ThemeListGroupActionActiveBg} !default;
+
+
+// Image thumbnails
+
+$thumbnail-padding:                 {ThemeThumbnailPadding} !default;
+$thumbnail-bg:                      {ThemeThumbnailBg} !default;
+$thumbnail-border-width:            {ThemeThumbnailBorderWidth} !default;
+$thumbnail-border-color:            {ThemeThumbnailBorderColor} !default;
+$thumbnail-border-radius:           {ThemeThumbnailBorderRadius} !default;
+$thumbnail-box-shadow:              {ThemeThumbnailBoxShadow} !default;
+
+
+// Figures
+
+$figure-caption-font-size:          {ThemeFigureCaptionFontSize} !default;
+$figure-caption-color:              {ThemeFigureCaptionColor} !default;
+
+
+// Breadcrumbs
+
+$breadcrumb-font-size:              {ThemeBreadcrumbFontSize} !default;
+
+$breadcrumb-padding-y:              {ThemeBreadcrumbPaddingY} !default;
+$breadcrumb-padding-x:              {ThemeBreadcrumbPaddingX} !default;
+$breadcrumb-item-padding:           {ThemeBreadcrumbItemPadding} !default;
+
+$breadcrumb-margin-bottom:          {ThemeBreadcrumbMarginBottom} !default;
+
+$breadcrumb-bg:                     {ThemeBreadcrumbBg} !default;
+$breadcrumb-divider-color:          {ThemeBreadcrumbDividerColor} !default;
+$breadcrumb-active-color:           {ThemeBreadcrumbActiveColor} !default;
+$breadcrumb-divider:                {ThemeBreadcrumbDivider} !default;
+
+$breadcrumb-border-radius:          {ThemeBreadcrumbBorderRadius} !default;
+
+
+// Carousel
+
+$carousel-control-color:             {ThemeCarouselControlColor} !default;
+$carousel-control-width:             {ThemeCarouselControlWidth} !default;
+$carousel-control-opacity:           {ThemeCarouselControlOpacity} !default;
+$carousel-control-hover-opacity:     {ThemeCarouselControlHoverOpacity} !default;
+$carousel-control-transition:        {ThemeCarouselControlTransition} !default;
+
+$carousel-indicator-width:           {ThemeCarouselIndicatorWidth} !default;
+$carousel-indicator-height:          {ThemeCarouselIndicatorHeight} !default;
+$carousel-indicator-hit-area-height: {ThemeCarouselIndicatorHitAreaHeight} !default;
+$carousel-indicator-spacer:          {ThemeCarouselIndicatorSpacer} !default;
+$carousel-indicator-active-bg:       {ThemeCarouselIndicatorActiveBg} !default;
+$carousel-indicator-transition:      {ThemeCarouselIndicatorTransition} !default;
+
+$carousel-caption-width:             {ThemeCarouselCaptionWidth} !default;
+$carousel-caption-color:             {ThemeCarouselCaptionColor} !default;
+
+$carousel-control-icon-width:        {ThemeCarouselControlIconWidth} !default;
+
+$carousel-control-prev-icon-bg:      {ThemeCarouselControlPrevIconBg} !default;
+$carousel-control-next-icon-bg:      {ThemeCarouselControlNextIconBg} !default;
+
+$carousel-transition-duration:       {ThemeCarouselTransitionDuration} !default;
+$carousel-transition:                {ThemeCarouselTransition} !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+
+
+// Spinners
+
+$spinner-width:         {ThemeSpinnerWidth} !default;
+$spinner-height:        {ThemeSpinnerHeight} !default;
+$spinner-border-width:  {ThemeSpinnerBorderWidth} !default;
+
+$spinner-width-sm:        {ThemeSpinnerWidthSm} !default;
+$spinner-height-sm:       {ThemeSpinnerHeightSm} !default;
+$spinner-border-width-sm: {ThemeSpinnerBorderWidthSm} !default;
+
+
+// Close
+
+$close-font-size:                   {ThemeCloseFontSize} !default;
+$close-font-weight:                 {ThemeCloseFontWeight} !default;
+$close-color:                       {ThemeCloseColor} !default;
+$close-text-shadow:                 {ThemeCloseTextShadow} !default;
+
+
+// Code
+
+$code-font-size:                    {ThemeCodeFontSize} !default;
+$code-color:                        {ThemeCodeColor} !default;
+
+$kbd-padding-y:                     {ThemeKbdPaddingY} !default;
+$kbd-padding-x:                     {ThemeKbdPaddingX} !default;
+$kbd-font-size:                     {ThemeKbdFontSize} !default;
+$kbd-color:                         {ThemeKbdColor} !default;
+$kbd-bg:                            {ThemeKbdBg} !default;
+
+$pre-color:                         {ThemePreColor} !default;
+$pre-scrollable-max-height:         {ThemePreScrollableMaxHeight} !default;
+
+
+// Utilities
+
+$displays: {ThemeDisplays} !default;
+$overflows: {ThemeOverflows} !default;
+$positions: {ThemePositions} !default;
+$user-selects: {ThemeUserSelects} !default;
+
+
+// Printing
+
+$print-page-size:                   {ThemePrintPageSize} !default;
+$print-body-min-width:              {ThemePrintBodyMinWidth} !default;

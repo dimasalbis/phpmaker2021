@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-code name="Redirect" version="17.0.0" type="Response" for="server" author="e.World">
+<description>
+<![CDATA[
+Redirect to other page
+]]>
+</description>
+<code>
+<![CDATA[
+ob_end_clean();
+// NOTE: Modify the target page
+Redirect("/mypage");
+exit();
+]]>
+</code>
+</ew-code>

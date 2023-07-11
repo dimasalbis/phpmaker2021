@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-code name="Get a field value" version="17.0.0" type="Query Database" for="server" author="e.World">
+<description>
+<![CDATA[
+Get a field value
+]]>
+</description>
+<code>
+<![CDATA[
+// Get a field value
+// NOTE: Modify your SQL here, replace the table name, field name and the condition
+$myField = ExecuteScalar("SELECT MyField FROM MyTable WHERE XXX");
+]]>
+</code>
+</ew-code>

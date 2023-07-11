@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-code name="Basic View page" version="17.0.0" type="Custom Template" for="template" author="e.World">
+<description>
+<![CDATA[
+Basic View page Custom Template
+]]>
+</description>
+<script>
+<![CDATA[
+<#
+    let TABLE = DB.Tables.find(tbl => tbl.TblName == "{TblName}"),
+        currentFields = TABLE.Fields.filter(f => f.FldGenerate && f.FldView);
+#>
+]]>
+</script>
+<code>
+<![CDATA[
+<table class="table table-striped table-sm ew-view-table">
+    <# for (let f of currentFields) { #>
+    <tr id="r_<#= f.FldParm #>">
+        <td class="w-col-2">{{{caption <#= f.FldParm #>}}}</td>
+        <td>{{{value <#= f.FldParm #>}}}</td>
+    </tr>
+    <# } #>
+</table>
+]]>
+</code>
+</ew-code>

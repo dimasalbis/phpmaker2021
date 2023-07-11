@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-code name="Update records" version="17.0.0" type="Data Modification" for="server" author="e.World">
+<description>
+<![CDATA[
+Update a record in a table
+]]>
+</description>
+<code>
+<![CDATA[
+// Update record
+// NOTE: Modify your SQL here, replace the table name, field name and field values
+$myResult = ExecuteUpdate("UPDATE MyTable SET Field1=Value1, Field2=Value2, Field3=Value3 WHERE MyField=XXX");
+]]>
+</code>
+</ew-code>

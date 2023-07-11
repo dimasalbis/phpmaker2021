@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-code name="Count records in a table" version="17.0.0" type="Query Database" for="server" author="e.World">
+<description>
+<![CDATA[
+Count records in a table
+]]>
+</description>
+<code>
+<![CDATA[
+// Count records in a table
+// NOTE: Modify your SQL here, replace the table name, field name and the condition
+$myCount = ExecuteScalar("SELECT COUNT(*) FROM MyTable WHERE XXX");
+]]>
+</code>
+</ew-code>

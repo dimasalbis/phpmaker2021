@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-extension name="Chartjs" version="17.0.0" type="Charts" author="e.World">
+<description>
+<![CDATA[Chart.js
+Developer website: https://www.chartjs.org/
+Chart.js is open source and available under the MIT license.
+
+Documentation
+https://www.chartjs.org/docs/latest/
+
+Note: This extension is NOT part of PHPMaker, NO technical support will be provided.
+]]>
+</description>
+<Project>
+<Database>
+<Table>
+<Chart>
+
+    <!--
+        Default Options
+    -->
+
+    <!-- Animation (https://www.chartjs.org/docs/latest/configuration/animations.html) -->
+    <Attribute category="Animation" name="options.animation.duration" type="Integer"/>
+    <Attribute category="Animation" name="options.animation.easing" type="String" option="linear,easeInQuad,easeOutQuad,easeInOutQuad,easeInCubic,easeOutCubic,easeInOutCubic,easeInQuart,easeOutQuart,easeInOutQuart,easeInQuint,easeOutQuint,easeInOutQuint,easeInSine,easeOutSine,easeInOutSine,easeInExpo,easeOutExpo,easeInOutExpo,easeInCirc,easeOutCirc,easeInOutCirc,easeInElastic,easeOutElastic,easeInOutElastic,easeInBack,easeOutBack,easeInOutBack,easeInBounce,easeOutBounce,easeInOutBounce"/>
+
+    <!-- Layout (https://www.chartjs.org/docs/latest/configuration/layout.html) -->
+    <Attribute category="Layout" name="options.layout.padding" type="Integer"/>
+
+    <!-- Legend (https://www.chartjs.org/docs/latest/configuration/legend.html) -->
+    <Attribute category="Legend" name="options.legend.display" type="Boolean"/>
+    <Attribute category="Legend" name="options.legend.position" type="String" option="top,left,bottom,right"/>
+    <Attribute category="Legend" name="options.legend.fullWidth" type="Boolean"/>
+    <Attribute category="Legend" name="options.legend.reverse" type="Boolean"/>
+    <Attribute category="Legend" name="options.legend.labels.boxWidth" type="Integer"/>
+    <Attribute category="Legend" name="options.legend.labels.fontSize" type="Integer"/>
+    <Attribute category="Legend" name="options.legend.labels.fontStyle" type="String"/>
+    <Attribute category="Legend" name="options.legend.labels.fontColor" type="Color"/>
+    <Attribute category="Legend" name="options.legend.labels.fontFamily" type="String"/>
+    <Attribute category="Legend" name="options.legend.labels.padding" type="Integer"/>
+    <Attribute category="Legend" name="options.legend.labels.usePointStyle" type="Boolean"/>
+
+    <!-- Title (https://www.chartjs.org/docs/latest/configuration/title.html) -->
+    <Attribute category="Title" name="options.title.display" type="Boolean"/>
+    <Attribute category="Title" name="options.title.position" type="String" option="top,left,bottom,right"/>
+    <Attribute category="Title" name="options.title.fontSize" type="Integer"/>
+    <Attribute category="Title" name="options.title.fontFamily" type="String"/>
+    <Attribute category="Title" name="options.title.fontColor" type="Color"/>
+    <Attribute category="Title" name="options.title.fontStyle" type="String"/>
+    <Attribute category="Title" name="options.title.padding" type="Integer"/>
+    <Attribute category="Title" name="options.title.lineHeight" type="Double"/>
+    <Attribute category="Title" name="options.title.text" type="String"/>
+
+    <!-- Tooltip (https://www.chartjs.org/docs/latest/configuration/tooltip.html) -->
+    <Attribute category="Tooltips" name="options.tooltips.enabled" type="Boolean"/>
+    <Attribute category="Tooltips" name="options.tooltips.mode" type="String" option="point,nearest,index,dataset,x,y"/>
+    <Attribute category="Tooltips" name="options.tooltips.intersect" type="Boolean"/>
+    <Attribute category="Tooltips" name="options.tooltips.position" type="String" option="average,nearest"/>
+    <Attribute category="Tooltips" name="options.tooltips.backgroundColor" type="Color"/>
+    <Attribute category="Tooltips" name="options.tooltips.titleFontFamily" type="String"/>
+    <Attribute category="Tooltips" name="options.tooltips.titleFontSize" type="Integer"/>
+    <Attribute category="Tooltips" name="options.tooltips.titleFontStyle" type="String"/>
+    <Attribute category="Tooltips" name="options.tooltips.titleFontColor" type="Color"/>
+    <Attribute category="Tooltips" name="options.tooltips.titleSpacing" type="Integer"/>
+    <Attribute category="Tooltips" name="options.tooltips.titleMarginBottom" type="Integer"/>
+    <Attribute category="Tooltips" name="options.tooltips.bodyFontFamily" type="String"/>
+    <Attribute category="Tooltips" name="options.tooltips.bodyFontSize" type="Integer"/>
+    <Attribute category="Tooltips" name="options.tooltips.bodyFontStyle" type="String"/>
+    <Attribute category="Tooltips" name="options.tooltips.bodyFontColor" type="Color"/>
+    <Attribute category="Tooltips" name="options.tooltips.bodySpacing" type="Integer"/>
+    <Attribute category="Tooltips" name="options.tooltips.footerFontFamily" type="String"/>
+    <Attribute category="Tooltips" name="options.tooltips.footerFontSize" type="Integer"/>
+    <Attribute category="Tooltips" name="options.tooltips.footerFontStyle" type="String"/>
+    <Attribute category="Tooltips" name="options.tooltips.footerFontColor" type="Color"/>
+    <Attribute category="Tooltips" name="options.tooltips.footerSpacing" type="Integer"/>
+    <Attribute category="Tooltips" name="options.tooltips.footerMarginTop" type="Integer"/>
+    <Attribute category="Tooltips" name="options.tooltips.xPadding" type="Integer"/>
+    <Attribute category="Tooltips" name="options.tooltips.yPadding" type="Integer"/>
+    <Attribute category="Tooltips" name="options.tooltips.caretPadding" type="Integer"/>
+    <Attribute category="Tooltips" name="options.tooltips.caretSize" type="Integer"/>
+    <Attribute category="Tooltips" name="options.tooltips.cornerRadius" type="Integer"/>
+    <Attribute category="Tooltips" name="options.tooltips.multiKeyBackground" type="Color"/>
+    <Attribute category="Tooltips" name="options.tooltips.displayColors" type="Boolean"/>
+    <Attribute category="Tooltips" name="options.tooltips.borderColor" type="Color"/>
+    <Attribute category="Tooltips" name="options.tooltips.borderWidth" type="Integer"/>
+
+    <!-- Area (https://www.chartjs.org/docs/latest/charts/area.html) -->
+    <Attribute category="Area" name="options.plugins.filler.propagate" type="Boolean"/>
+
+    <!-- Pie/Doughnut (https://www.chartjs.org/docs/latest/charts/doughnut.html) -->
+    <Attribute category="Pie/Doughnut" name="options.cutoutPercentage" type="Integer"/>
+    <Attribute category="Pie/Doughnut" name="options.rotation" type="Integer"/>
+    <Attribute category="Pie/Doughnut" name="options.circumference" type="Integer"/>
+    <Attribute category="Pie/Doughnut" name="options.animation.animateRotate" type="Boolean"/>
+    <Attribute category="Pie/Doughnut" name="options.animation.animateScale" type="Boolean"/>
+
+    <!--
+        Dataset:
+            Line: https://www.chartjs.org/docs/latest/charts/line.html
+            Bar: https://www.chartjs.org/docs/latest/charts/bar.html
+            Pie: https://www.chartjs.org/docs/latest/charts/doughnut.html
+    -->
+
+    <!-- Dataset -->
+    <Attribute category="Dataset" name="dataset.backgroundColor" type="Color"/>
+    <Attribute category="Dataset" name="dataset.borderColor" type="Color"/>
+    <Attribute category="Dataset" name="dataset.borderWidth" type="Integer"/>
+
+    <!-- Dataset (Line) -->
+    <Attribute category="Dataset (Line)" name="dataset.borderCapStyle" type="String"/>
+    <Attribute category="Dataset (Line)" name="dataset.borderDash" type="Array"/><!-- NOTE: Array of number, see https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/setLineDash -->
+    <Attribute category="Dataset (Line)" name="dataset.borderDashOffset" type="Double"/>
+    <Attribute category="Dataset (Line)" name="dataset.borderJoinStyle" type="String"/>
+    <Attribute category="Dataset (Line)" name="dataset.cubicInterpolationMode" type="String"/>
+    <!-- <Attribute category="Dataset (Line)" name="dataset.fill" type="Boolean"/> used for Area chart, auto setup -->
+    <!-- <Attribute category="Dataset (Line)" name="dataset.label" type="String"/> used for Multi-series chart, auto setup -->
+    <Attribute category="Dataset (Line)" name="dataset.lineTension" type="Double"/>
+    <Attribute category="Dataset (Line)" name="dataset.pointBackgroundColor" type="Color"/>
+    <Attribute category="Dataset (Line)" name="dataset.pointBorderColor" type="Color"/>
+    <Attribute category="Dataset (Line)" name="dataset.pointBorderWidth" type="Integer"/>
+    <Attribute category="Dataset (Line)" name="dataset.pointHitRadius" type="Integer"/>
+    <Attribute category="Dataset (Line)" name="dataset.pointHoverBackgroundColor" type="Color"/>
+    <Attribute category="Dataset (Line)" name="dataset.pointHoverBorderColor" type="Color"/>
+    <Attribute category="Dataset (Line)" name="dataset.pointHoverBorderWidth" type="Integer"/>
+    <Attribute category="Dataset (Line)" name="dataset.pointHoverRadius" type="Integer"/>
+    <Attribute category="Dataset (Line)" name="dataset.pointRadius" type="Integer"/>
+    <Attribute category="Dataset (Line)" name="dataset.pointRotation" type="Integer"/>
+    <Attribute category="Dataset (Line)" name="dataset.pointStyle" type="String"/>
+    <Attribute category="Dataset (Line)" name="dataset.showLine" type="Boolean"/>
+    <Attribute category="Dataset (Line)" name="dataset.spanGaps" type="Boolean"/>
+    <Attribute category="Dataset (Line)" name="dataset.steppedLine" type="Boolean"/>
+    <!-- <Attribute category="Dataset (Line)" name="dataset.xAxisID" type="String"/> not used -->
+    <!-- <Attribute category="Dataset (Line)" name="dataset.yAxisID" type="String"/> used for Dual Y Axis chart, auto setup -->
+
+    <!-- Dataset (Bar) -->
+    <Attribute category="Dataset (Bar)" name="dataset.borderSkipped" type="String" option=",bottom,left,top,right"/>
+
+    <!-- Dataset (Pie/Doughnut) -->
+    <Attribute category="Dataset (Pie/Doughnut)" name="dataset.borderAlign" type="String" option="center,inner"/>
+    <Attribute category="Dataset (Pie/Doughnut)" name="dataset.weight" type="Integer"/>
+
+    <!-- Dataset (Bar/Pie/Doughnut) -->
+    <Attribute category="Dataset (Bar/Pie/Doughnut)" name="dataset.hoverBackgroundColor" type="Color"/>
+    <Attribute category="Dataset (Bar/Pie/Doughnut)" name="dataset.hoverBorderColor" type="Color"/>
+    <Attribute category="Dataset (Bar/Pie/Doughnut)" name="dataset.hoverBorderWidth" type="Integer"/>
+
+    <!-- Scale (Bar) (https://www.chartjs.org/docs/latest/charts/bar.html) -->
+    <Attribute category="Scale (Bar)" name="scale.barPercentage" type="Integer"/>
+    <Attribute category="Scale (Bar)" name="scale.categoryPercentage" type="Double"/>
+    <Attribute category="Scale (Bar)" name="scale.barThickness" type="String"/>
+    <Attribute category="Scale (Bar)" name="scale.maxBarThickness" type="Integer"/>
+    <Attribute category="Scale (Bar)" name="scale.minBarLength" type="Integer"/>
+    <Attribute category="Scale (Bar)" name="scale.gridLines.offsetGridLines" type="Boolean"/>
+
+    <!-- Line Annotations (https://github.com/chartjs/chartjs-plugin-annotation#line-annotations) -->
+    <!-- Line Annotation #1 -->
+    <Attribute category="Line Annotation 1" name="annotation1.show" type="Boolean"/>
+    <Attribute category="Line Annotation 1" name="annotation1.startValue" type="Double"/>
+    <Attribute category="Line Annotation 1" name="annotation1.endValue" type="Double"/>
+    <Attribute category="Line Annotation 1" name="annotation1.color" type="Color"/>
+    <Attribute category="Line Annotation 1" name="annotation1.displayValue" type="String"/>
+    <Attribute category="Line Annotation 1" name="annotation1.borderWidth" type="Integer"/>
+    <Attribute category="Line Annotation 1" name="annotation1.alpha" type="Integer"/>
+    <Attribute category="Line Annotation 1" name="annotation1.secondaryYAxis" type="Boolean"/>
+    <!-- Line Annotation #2 -->
+    <Attribute category="Line Annotation 2" name="annotation2.show" type="Boolean"/>
+    <Attribute category="Line Annotation 2" name="annotation2.startValue" type="Double"/>
+    <Attribute category="Line Annotation 2" name="annotation2.endValue" type="Double"/>
+    <Attribute category="Line Annotation 2" name="annotation2.color" type="Color"/>
+    <Attribute category="Line Annotation 2" name="annotation2.displayValue" type="String"/>
+    <Attribute category="Line Annotation 2" name="annotation2.borderWidth" type="Integer"/>
+    <Attribute category="Line Annotation 2" name="annotation2.alpha" type="Integer"/>
+    <Attribute category="Line Annotation 2" name="annotation2.secondaryYAxis" type="Boolean"/>
+    <!-- Line Annotation #3 -->
+    <Attribute category="Line Annotation 3" name="annotation3.show" type="Boolean"/>
+    <Attribute category="Line Annotation 3" name="annotation3.startValue" type="Double"/>
+    <Attribute category="Line Annotation 3" name="annotation3.endValue" type="Double"/>
+    <Attribute category="Line Annotation 3" name="annotation3.color" type="Color"/>
+    <Attribute category="Line Annotation 3" name="annotation3.displayValue" type="String"/>
+    <Attribute category="Line Annotation 3" name="annotation3.borderWidth" type="Integer"/>
+    <Attribute category="Line Annotation 3" name="annotation3.alpha" type="Integer"/>
+    <Attribute category="Line Annotation 3" name="annotation3.secondaryYAxis" type="Boolean"/>
+    <!-- Line Annotation #4 -->
+    <Attribute category="Line Annotation 4" name="annotation4.show" type="Boolean"/>
+    <Attribute category="Line Annotation 4" name="annotation4.startValue" type="Double"/>
+    <Attribute category="Line Annotation 4" name="annotation4.endValue" type="Double"/>
+    <Attribute category="Line Annotation 4" name="annotation4.color" type="Color"/>
+    <Attribute category="Line Annotation 4" name="annotation4.displayValue" type="String"/>
+    <Attribute category="Line Annotation 4" name="annotation4.borderWidth" type="Integer"/>
+    <Attribute category="Line Annotation 4" name="annotation4.alpha" type="Integer"/>
+    <Attribute category="Line Annotation 4" name="annotation4.secondaryYAxis" type="Boolean"/>
+
+</Chart>
+</Table>
+</Database>
+</Project>
+</ew-extension>

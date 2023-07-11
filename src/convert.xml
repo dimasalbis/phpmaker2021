@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ew-setting name="Convert" version="17.0.0" author="e.World">
+    <!--
+        Notes:
+        1. id name must be unique,
+        2. Supported types: Integer, Boolean, and String(default)
+        3. If Integer, supports min/max attributes,
+        4. If combobox, supports options attribute with comma separated option values.
+    -->
+    <section name="Convert">
+        <setting name="Import reports from PHP Report Maker project" id="ImportReportProject" type="Boolean" value="1" hidden="1" />
+        <setting name="Remove unsupported Gantt charts" id="RemoveGanttCharts" type="Boolean" value="1" />
+        <setting name="Convert unsupported 3D charts to 2D charts" id="Convert3dCharts" type="Boolean" value="1" />
+        <setting name="Remove reports with unsupported charts" id="RemoveUnsupportedReports" type="Boolean" value="1" />
+        <setting name="Update PHP Report Maker project for compatibility" id="UpdateReportProject" type="Boolean" value="1" />
+        <setting name="PHP Report Maker project folder" id="ReportProjectFolder" value="reports/" />
+    </section>
+</ew-setting>

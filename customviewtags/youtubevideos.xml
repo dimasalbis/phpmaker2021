@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-extension id="YouTubeVideos" name="YouTube Videos" version="17.0.0" type="Custom View Tag" author="e.World">
+<description>
+<![CDATA[YouTube Videos
+Developer Website: https://developers.google.com/youtube/
+Please refer to YouTube web site for the licensing terms:
+http://www.youtube.com/static?template=terms
+
+Parameter description:
+- width: width of the video (px) (e.g. 426) default is 426
+- height: height of the video (px) (e.g. 240) default is 240
+- videoid: YouTube video id (e.g. "JW5meKfy3fY")
+- autoplay: autoplay video or not (boolean, true/false)
+- *_field: the field holding the parameter value above
+
+Note: YouTube is not part of PHPMaker. Please read "Third-Party Tools" in the help file.
+]]>
+</description>
+<file>youtubevideos.zip</file>
+<Project>
+    <Attribute name="width" type="Integer" />
+    <Attribute name="width_field" type="Field" />
+    <Attribute name="height" type="Integer" />
+    <Attribute name="height_field" type="Field" />
+    <Attribute name="videoid" />
+    <Attribute name="videoid_field" type="Field" />
+    <Attribute name="autoplay" type="Boolean" />
+    <Attribute name="autoplay_field" type="Field" />
+</Project>
+<!-- ewyoutubevideos.js -->
+<control id="ewyoutubevideos.js" type="copy" action="add" ofolderid="_js" ofile="ewyoutubevideos" oext="js" ifiles="ewyoutubevideos.js" />
+</ew-extension>

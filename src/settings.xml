@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ew-setting name="Advanced Settings" version="17.0.9" author="e.World">
+    <!--
+        Notes:
+        1. id name must be unique,
+        2. Supported types: Integer, Boolean, and String(default)
+        3. If Integer, supports min/max attributes,
+        4. If combobox, supports options attribute with comma separated option values.
+    -->
+    <section name="General">
+        <setting name="Auto-Update values" id="AutoUpdateValues" />
+        <setting name="Custom validation functions" id="CustomValidationFunctions" />
+        <setting name="Check new version on start" id="CheckNewVersionOnStart" type="Boolean" value="1" /><!-- v2021 -->
+        <setting name="Update template on start" id="UpdateTemplateOnStart" type="Boolean" value="1" /><!-- v2017 -->
+        <setting name="Use project versioning" id="UseProjectVersioning" type="Boolean" value="1" /><!-- v2018 -->
+        <setting name="UI grid scrollbar mode" id="ScrollbarMode" options="Default,Classic" value="Default" /><!-- v2020 -->
+    </section>
+    <section name="Project">
+        <setting name="Project Name" id="ProjName" />
+        <setting name="Project ID" id="ProjID" />
+        <setting name="Generate all files" id="GenAll" type="Boolean" value="0" hidden="1" /><!-- v2018 -->
+        <setting name="Node.js path" id="NodePath" /><!-- v2018 -->
+        <setting name="Node.js max. old space size" id="NodeMaxOldSpaceSize" type="Integer" value="0" /><!-- v2018 -->
+        <setting name="Node.js write file synchronously" id="NodeWriteFileSync" type="Boolean" value="0" /><!-- v2018 -->
+        <setting name="Node.js garbage collection" id="NodeGarbageCollection" type="Boolean" value="0" /><!-- v2018 -->
+        <setting name="Debug" id="Debug" type="Boolean" value="0" />
+        <setting name="Treat PHP warnings and notices as errors" id="ReportAllErrors" type="Boolean" value="0" /><!-- v2021 -->
+        <setting name="Log SQL to file" id="LogSqlToFile" type="Boolean" value="0" /><!-- v2021 -->
+        <setting name="Log error to file" id="LogErrorToFile" type="Boolean" value="0" /><!-- v2021 -->
+        <setting name="Environment" id="Environment" options="development,production" value="development" /><!-- v2021 -->
+        <setting name="Generate production config file" id="GenerateProduction" type="Boolean" value="1" /><!-- v2021 -->
+        <setting name="Compile container for production" id="CompileContainer" type="Boolean" value="0" /><!-- v2021 -->
+        <setting name="Compress project .css" id="CompressCss" type="Boolean" value="1" />
+        <setting name="Compress project .js" id="CompressJs" type="Boolean" value="1" />
+        <setting name="Disable project CSS styles" id="DisableProjectStyles" type="Boolean" value="0" />
+        <setting name="Character encoding (for Ajax/iconv)" id="Encoding" value="" />
+        <setting name="File system encoding" id="FileSystemEncoding" value="" /><!-- for PHPMaker only -->
+        <setting name="Validate NOT NULL fields" id="ValidateNotNull" type="Boolean" value="1" />
+        <setting name="Add novalidate attribute to form" id="AddNoValidateToForm" type="Boolean" value="0" /><!-- v2021 -->
+        <setting name="Allow login by URL" id="AllowLoginByUrl" type="Boolean" value="0" />
+        <setting name="Allow login by session variables" id="AllowLoginBySession" type="Boolean" value="0" /><!-- v12 -->
+        <setting name="Remove XSS" id="RemoveXSS" type="Boolean" value="1" />
+        <setting name="Check token for form post" id="CheckPostToken" type="Boolean" value="1" /><!-- v11 -->
+        <setting name="Session timeout period (minutes)" id="SessTimeOut" type="Integer" value="0" /><!-- v12 -->
+        <setting name="Session keep alive interval (seconds)" id="SessionKeepAliveInterval" type="Integer" value="0" /><!-- v12 -->
+        <setting name="Session time out countdown period (seconds)" id="SessionTimeoutCountdown" type="Integer" value="60" /><!-- v12 -->
+        <setting name="Composite key separator" id="CompositeKeySeparator" value="," />
+        <setting name="Export all time limit" id="ExportAllTimeLimit" type="Integer" value="120" />
+        <setting name="Export field caption" id="ExportFieldCaption" type="Boolean" value="0" />
+        <setting name="Export field images" id="ExportFieldImage" type="Boolean" value="1" /><!-- v2019 -->
+        <setting name="Export original values" id="ExportOriginalValues" type="Boolean" value="0" />
+        <setting name="Export CSS styles" id="ExportCssStyles" type="Boolean" value="1" />
+        <setting name="Export master record" id="ExportMasterRecord" type="Boolean" value="1" />
+        <setting name="Export master record for CSV" id="ExportMasterRecordForCsv" type="Boolean" value="0" />
+        <setting name="Export detail records in Master/Detail-View" id="ExportDetailRecords" type="Boolean" value="1" /><!-- v11 -->
+        <setting name="Export detail records for CSV in Master/Detail-View" id="ExportDetailRecordsForCsv" type="Boolean" value="0" /><!-- v11 -->
+        <setting name="Show vertical master record in List page" id="ShowVerticalMasterRecord" type="Boolean" value="1" />
+        <setting name="Language files" id="LanguageFiles" value="english.xml" />
+        <setting name="Allow no paging section" id="AllowNoPager" type="Boolean" value="0" />
+        <setting name="Auto hide paging section if single page" id="AutoHidePager" type="Boolean" value="1" /><!-- v2017 -->
+        <setting name="Auto hide page size selector if single page" id="AutoHidePageSizeSelector" type="Boolean" value="0" /><!-- v2017 -->
+        <setting name="Initiate search panel as collapsed" id="SearchPanelCollapsed" type="Boolean" value="0" />
+        <setting name="Blob field byte count for hash value calculation" id="BlobFieldByteCount" type="Integer" value="200" />
+        <setting name="Auto-Suggest maximum display entries" id="AutoSuggestMaxEntries" type="Integer" value="10" />
+        <setting name="Auto-Suggest for all display fields" id="AutoSuggestAllDisplayFields" type="Boolean" value="0" />
+        <setting name="Auto-fill original value" id="AutoFillOriginalValue" type="Boolean" value="0" /><!-- v11 -->
+        <setting name="Grid-Add row count" id="GridAddRowCount" type="Integer" value="5" />
+        <setting name="Use View Tag number of decimal digits for edit" id="UseViewTagNumDigits" type="Boolean" value="0" />
+        <setting name="Use Date/Time without seconds" id="UseDateTimeWithoutSeconds" type="Boolean" value="0" /><!-- v2019 -->
+        <!-- Databases -->
+        <setting name="Connection info of production server (JSON)" id="ConnInfo" /><!-- v2021 -->
+        <setting name="Database time zone (for SET TIME ZONE)" id="DbTimeZone" value="" /><!-- v2019 -->
+        <!-- MySQL -->
+        <setting name="MySQL charset (for SET NAMES)" id="MySQLCharset" value="" />
+        <setting name="Collation for LIKE operator (MySQL)" id="MySqlLikeCollation" value="" />
+        <setting name="MySQL driver" id="MySqlDriver" options="mysqli,pdo_mysql" value="pdo_mysql" /><!-- v2021 -->
+        <!-- PostgreSQL -->
+        <setting name="Use ILIKE operator (PostgreSQL)" id="PostgreSqlUseIlike" type="Boolean" value="1" />
+        <!-- SQL Server -->
+        <setting name="Collation for LIKE operator (Microsoft SQL Server)" id="MsSqlLikeCollation" value="" />
+        <setting name="Microsoft SQL Server driver" id="MsSqlDriver" options="sqlsrv,pdo_sqlsrv" value="sqlsrv" hidden="1" /><!-- v2021 -->
+        <!-- Oracle -->
+        <setting name="Oracle charset" id="OracleCharset" value="" />
+        <setting name="Oracle compare" id="OracleCompare" options="BINARY,LINGUISTIC,ANSI" /><!-- v11 -->
+        <setting name="Oracle sort" id="OracleSort" /><!-- v11 -->
+        <!-- Lookup -->
+        <setting name="Multiple option separator" id="MultipleOptionSeparator" value="," /><!-- v2017 -->
+        <setting name="Use lookup cache" id="UseLookupCache" type="Boolean" value="1" /><!-- v2019 -->
+        <setting name="Lookup cache count" id="LookupCacheCount" type="Integer" value="100" /><!-- v2019 -->
+        <!-- Import -->
+        <setting name="Import maximum execution time (seconds)" id="ImportMaxExecuteTime" type="Integer" value="300" /><!-- v2019 -->
+        <setting name="Import records by insert only" id="ImportInsertOnly" type="Boolean" value="1" /><!-- v2019 -->
+        <setting name="Import records by transaction" id="ImportUseTransaction" type="Boolean" value="0" /><!-- v2019 -->
+        <setting name="Import supported file extensions" id="ImportFileExtensions" value="csv,xls,xlsx" /><!-- v2019 -->
+        <setting name="Import from CSV delimiter" id="ImportCsvDelimiter" value="," /><!-- v2019 -->
+        <setting name="Import from CSV quote character" id="ImportCsvQuoteCharacter" value="&quot;" /><!-- v2019 -->
+        <!-- File upload -->
+        <setting name="Web root relative path" id="RootRelativePath" value="." /><!-- v2020 -->
+        <setting name="Create upload file on copy" id="CreateUploadFileOnCopy" type="Boolean" value="0" />
+        <setting name="Multiple file upload separator" id="UploadMultipleSeparator" value="," /><!-- v11 -->
+        <setting name="Upload preview thumbnail width (px)" id="UploadThumbnailWidth" type="Integer" value="200" /><!-- v11 -->
+        <setting name="Upload preview thumbnail height (px)" id="UploadThumbnailHeight" type="Integer" value="0" /><!-- v11 -->
+        <setting name="Encrypt file path" id="EncryptFilePath" type="Boolean" value="1" /><!-- v12 -->
+        <setting name="File upload URL path" id="FileUploadHrefPath" /><!-- v2018 -->
+        <setting name="File upload path (absolute) for temporary files" id="FileUploadTempPath" /><!-- v2018 -->
+        <setting name="File upload URL path (absolute) for temporary files" id="FileUploadTempHrefPath" /><!-- v2018 -->
+        <!-- Image Resize -->
+        <setting name="Thumbnail default width (px)" id="ThumbnailDefaultWidth" type="Integer" value="0" />
+        <setting name="Thumbnail default height (px)" id="ThumbnailDefaultHeight" type="Integer" value="0" />
+        <setting name="Use Colorbox for images" id="UseColorbox" type="Boolean" value="1" /><!-- v11 -->
+        <setting name="Reduce image size only (image resize)" id="ReduceImageOnly" type="Boolean" value="1" /><!-- v12 -->
+        <setting name="Always keep aspect ratio (image resize)" id="AlwaysKeepAspectRatio" type="Boolean" value="0" /><!-- v12 -->
+        <!-- Embed PDF documents -->
+        <setting name="Embed PDF documents" id="EmbedPdfDocuments" type="Boolean" value="1" /><!-- v2020 -->
+        <!-- File extensions -->
+        <setting name="Allowed image file extensions" id="AllowedImageFileExt" value="gif,jpe,jpeg,jpg,png,bmp" /><!-- v2018 -->
+        <setting name="Allowed non-image file extensions" id="AllowedNonImageFileExt" value="csv,pdf,xls,doc,xlsx,docx" /><!-- v2019 -->
+        <setting name="Search keywords in any selected fields (Quick search)" id="BasicSearchAnyFields" type="Boolean" value="0" /><!-- v12 -->
+        <!-- Search multi value option -->
+        <setting name="Search multiple value option" id="SearchMultiValueOption" options="1,2,3" type="Integer" value="3" />
+        <!-- Search filter option -->
+        <setting name="Search filter save option" id="SearchFilterOption" options="Server,Client,None" value="Client" /><!-- v2017 -->
+        <!-- Sort options -->
+        <setting name="Sort option" id="SortOption" options="Toggle,Tristate" value="Tristate" /><!-- v2021 -->
+        <!-- Replace textarea by text input for search -->
+        <setting name="Replace textarea by text input for search" id="ReplaceTextAreaByText" type="Boolean" value="1" />
+        <!-- Password options -->
+        <setting name="Minimum password strength" id="MinPasswordStrength" type="Integer" value="60" min="0" max="100" /><!-- v12 -->
+        <setting name="Password length" id="GenPasswordLength" type="Integer" value="16" /><!-- v12 -->
+        <setting name="Use password hash" id="UsePasswordHash" type="Boolean" value="0" /><!-- v2018 -->
+        <!-- Encrypt username/password -->
+        <setting name="Encrypt user names and passwords" id="EncryptUsernamePassword" type="Boolean" value="0" /><!-- v2020 -->
+        <setting name="Invalid user name characters" id="InvalidUsernameCharacters" value="&lt;&gt;&quot;'&amp;" /><!-- v2021 -->
+        <setting name="Invalid password characters" id="InvalidPasswordCharacters" value="&lt;&gt;&quot;'&amp;" /><!-- v2021 -->
+        <!-- Encryption key for data protection -->
+        <setting name="Encryption key for data protection" id="EncryptionKey" value="" /><!-- v2019 -->
+         <!-- Add plain text version in HTML email -->
+        <setting name="Add plain text version in HTML email" id="AddPlainTextEmail" type="Boolean" value="0" /><!-- v12 -->
+        <!-- PHPMailer mailer -->
+        <setting name="PHPMailer mailer" id="PHPMailerMailer" options="smtp,mail,sendmail" value="smtp" /><!-- for PHPMaker only --><!-- v2019 -->
+        <!-- Email export -->
+        <setting name="Max email recipient" id="MaxEmailRecipient" type="Integer" value="3" />
+        <setting name="Max email sent count per session" id="MaxEmailSentCount" type="Integer" value="3" />
+        <!-- Audit Trail -->
+        <setting name="Use User ID for audit trail" id="UseUserIDForAuditTrail" type="Boolean" value="1" />
+        <!-- Bootstrap -->
+        <setting name="Use Bootstrap Toast message" id="UseJavaScriptMessage" type="Boolean" value="1" /><!-- v2020 -->
+        <setting name="Use Bootstrap switch for boolean fields" id="UseBootstrapSwitch" type="Boolean" value="0" /><!-- v2021 -->
+        <setting name="Use Bootstrap responsive tables" id="UseResponsiveTable" type="Boolean" value="1" /><!-- v2020 -->
+        <setting name="Responsive table class" id="ResponsiveTableClass" options="table-responsive,table-responsive-sm,table-responsive-md,table-responsive-lg,table-responsive-xl" value="table-responsive" /><!-- v2020 -->
+        <setting name="Use OverlayScrollbars" id="UseOverlayScrollbars" type="Boolean" default="1"/><!-- v2021 -->
+        <setting name="List page minimum table height (px)" id="MinimumTableHeight" type="Integer" value="0" /><!-- v2020 -->
+        <setting name="Form left column CSS class" id="FormLeftColumnClass" options="col-sm-2,col-sm-3,col-sm-4" value="col-sm-2" /><!-- v2017 -->
+        <setting name="Multi-column List page grid CSS class" id="MultiColumnGridClass" options="col-sm,col-md,col-lg" value="col-sm" /><!-- v2019 -->
+        <setting name="Use tabular form for desktop" id="UseTabularFormForDesktop" type="Boolean" value="0" /><!-- v12 -->
+        <setting name="Use dropdown for button group in mobile" id="UseDropdownForMobile" type="Boolean" value="1" /><!-- v11 -->
+        <setting name="Use place holder for text box" id="UsePlaceHolder" options="None,Caption,Title" value="Caption" />
+        <!-- AdminLTE -->
+        <setting name="AdminLTE layout class" id="LayoutClass" options="layout-fixed,layout-top-nav,layout-boxed,layout-navbar-fixed,layout-footer-fixed,sidebar-collapse" value="layout-fixed" /><!-- v2020 -->
+        <!-- Page Title -->
+        <setting name="Page title style" id="PageTitleStyle" options="None,Caption,Breadcrumbs,Title" value="Breadcrumbs" /><!-- v2017 -->
+        <!-- css-flip -->
+        <setting name="Use css-flip" id="UseCssFlip" type="Boolean" value="0" /><!-- v11 -->
+        <!-- authentication -->
+        <setting name="Authentication mode" id="AuthenticateMode" options=",Windows,LDAP" value="" /><!-- v2017 -->
+        <setting name="LDAP host name" id="LDAPHostName" /><!-- v2017 -->
+        <setting name="LDAP port number" id="LDAPPortNumber" type="Integer" value="389" /><!-- v2017 -->
+        <setting name="LDAP distinguished name" id="LDAPDN" /><!-- e.g. uid={username},dc=example,dc=com // v2017 -->
+        <setting name="LDAP options" id="LDAPOptions" /><!-- v2018 -->
+        <!-- Google Sign-In settings -->
+        <setting name="Google client ID" id="GoogleClientId" value="" /><!-- v2018 -->
+        <setting name="Google client secret" id="GoogleClientSecret" value="" /><!-- v2018 -->
+        <!-- Facebook Login settings -->
+        <setting name="Facebook app ID" id="FacebookAppId" value="" /><!-- v2018 -->
+        <setting name="Facebook app secret" id="FacebookAppSecret" value="" /><!-- v2018 -->
+        <!-- Use cookie policy -->
+        <setting name="Use cookie policy" id="UseCookiePolicy" type="Boolean" value="0" /><!-- v2019 -->
+        <!-- Use personal data page -->
+        <setting name="Use Personal Data Page" id="UsePersonalData" type="Boolean" value="1" /><!-- v2019 -->
+        <!-- Cookie -->
+        <setting name="Cookie Expires (days)" id="CookieExpires" type="Integer" value="365" /><!-- v2020 -->
+        <setting name="Cookie HttpOnly" id="CookieHttpOnly" type="Boolean" value="1" /><!-- v2020 -->
+        <setting name="Cookie Secure" id="CookieSecure" type="Boolean" value="0" /><!-- v2020 -->
+        <setting name="Cookie SameSite" id="CookieSamesite" options="None,Lax,Strict" value="Lax" /><!-- v2020 -->
+        <!-- Apache -->
+        <setting name="RewriteBase directive" id="RewriteBase" value="" /><!-- v2021 -->
+        <!-- API -->
+        <setting name="API JWT signing secret key" id="ApiJwtSecretKey" value="" /><!-- v2019 -->
+        <setting name="API JWT signing algorithm" id="ApiJwtAlgorithm" value="HS512" /><!-- v2019 -->
+        <setting name="API JWT authorization header" id="ApiJwtAuthHeader" value="X-Authorization" /><!-- v2019 -->
+        <setting name="API access time after login (seconds)" id="ApiAccessTimeAfterLogin" type="Integer" value="0" /><!-- v2019 -->
+        <setting name="API expire time after login (seconds)" id="ApiExpireTimeAfterLogin" type="Integer" value="600" /><!-- v2019 -->
+        <setting name="API custom headers" id="ApiCustomHeaders" type="Boolean" value="0" /><!-- v2021 -->
+        <setting name="API Access-Control-Allow-Origin" id="AccessControlAllowOrigin" value="*" /><!-- v2021 -->
+        <setting name="API Access-Control-Allow-Headers" id="AccessControlAllowHeaders" value="*" /><!-- v2021 -->
+        <setting name="Use Swagger UI for API" id="UseSwaggerUI" type="Boolean" value="1" /><!-- v2021 -->
+        <setting name="Session-less API actions" id="SessionlessApiActions" value="file" /><!-- v2021 -->
+        <!-- Report --><!-- v2020 -->
+        <setting name="Show current filters" id="ShowCurrentFilter" type="Boolean" value="0" />
+        <setting name="Show blank series for chart" id="ShowBlankSeriesForChart" type="Boolean" value="0" />
+        <setting name="Show zero values in stacked chart" id="ShowZeroInStackChart" type="Boolean" value="0" />
+        <setting name="Use popup panel for drill down" id="UseDrillDownPanel" type="Boolean" value="1" />
+        <setting name="Show drill down filters" id="ShowDrillDownFilter" type="Boolean" value="1" />
+        <setting name="Chart column CSS class (left or right)" id="ChartLeftOrRightColumnClass" options="col-sm-3,col-sm-4,col-sm-6" value="col-sm-6" />
+        <setting name="Chart column CSS class (left and right)" id="ChartLeftAndRightColumnClass" options="col-sm-3,col-sm-4" value="col-sm-4" />
+        <setting name="Chart color palette" id="ChartColorPalette" value="#5899DA,#E8743B,#19A979,#ED4A7B,#945ECF,#13A4B4,#525DF4,#BF399E,#6C8893,#EE6868,#2F6497" />
+        <setting name="Chart scale begin with zero" id="ChartScaleBeginWithZero" type="Boolean" value="0" /><!-- v2021 -->
+        <setting name="Chart scale minimum value" id="ChartScaleMinValue" type="Integer" value="0" /><!-- v2021 -->
+        <setting name="Chart scale maximum value" id="ChartScaleMaxValue" type="Integer" value="0" /><!-- v2021 -->
+        <!-- Git --><!-- v2021 -->
+        <setting name="Git repo URL" id="GitRemoteUrl" />
+        <setting name="Git user name" id="GitUserName" />
+        <setting name="Git password" id="GitPassword" />
+        <setting name="Git auto fetch" id="GitAutoFetch" type="Boolean" value="1" />
+        <setting name="Git auto fetch period (seconds)" id="GitAutoFetchPeriod" type="Integer" value="180" />
+        <setting name="Prompt for Git commit message" id="GitCommitMessage" type="Boolean" value="0" />
+    </section>
+</ew-setting>

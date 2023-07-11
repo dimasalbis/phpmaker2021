@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-code name="Delete records" version="17.0.0" type="Data Modification" for="server" author="e.World">
+<description>
+<![CDATA[
+Delete record(s) from a table
+]]>
+</description>
+<code>
+<![CDATA[
+// Delete record
+// NOTE: Modify your SQL here, replace the table name and condition
+$myResult = ExecuteUpdate("DELETE FROM MyTable WHERE MyField=XXX");
+]]>
+</code>
+</ew-code>

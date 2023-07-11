@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-extension name="CAPTCHA" version="17.0.0" type="CAPTCHA" author="e.World">
+<description>
+<![CDATA[CAPTCHA
+
+Requires PHP GD2 library, update your PHP version to the latest version and enable the GD2 library.
+
+Note: This extension is not part of PHPMaker, no technical support will be provided.
+]]>
+</description>
+<file>captcha.zip</file>
+<Project>
+    <Attribute name="Font" option="aftershock,monofont,DejaVuSans" default="aftershock" />
+    <Attribute name="UseCaptchaInLoginPage" type="Boolean" default="0"/>
+</Project>
+<!-- CAPTCHA (model) -->
+<control id="captcha" type="simple" action="add" ofolderid="_models" ofile="Captcha" oext="php" tagext="class" ifiles="captcha.php" />
+<!-- CAPTCHA class -->
+<control id="phpcaptcha.php" type="simple" action="add" ifiles="PhpCaptcha.php" ofolderid="_src" />
+<!-- Fonts -->
+<control id="dejavusans.ttf" type="copy" action="add" ifiles="DejaVuSans.ttf" ofolderid="_font" />
+<control id="monofont.ttf" type="copy" action="add" ifiles="monofont.ttf" ofolderid="_font" />
+<control id="aftershock.ttf" type="copy" action="add" ifiles="aftershock.ttf" ofolderid="_font" />
+</ew-extension>

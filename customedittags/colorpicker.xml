@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-extension id="colorpicker" name="Colorpicker" version="17.0.0" type="Custom Edit Tag" author="e.World">
+<description>
+<![CDATA[*NOTE: THIS IS AN EXAMPLE ONLY.*
+
+Bootstrap Colorpicker 2
+Developer Website: https://github.com/itsjavi/bootstrap-colorpicker/
+Licensed under the Apache License, Version 2.0.
+
+Notes:
+1. This Custom Edit Tag serves as an example on how to create your own Custom Edit Tag only, it is NOT supported by developer of PHPMaker.
+2. Bootstrap Colorpicker 2 is not part of PHPMaker.
+]]>
+</description>
+<file>colorpicker.zip</file>
+<script>plugins/colorpicker/bootstrap-colorpicker.min.js</script>
+<stylesheet>plugins/colorpicker/bootstrap-colorpicker.min.css</stylesheet>
+<Code><![CDATA[
+{{{old_tag}}}
+<script>
+loadjs.ready("head", function() {
+    jQuery("[id='{{{id}}}']:not([id*='$rowindex$'])").colorpicker({ format: "hex" });
+});
+</script>
+]]></Code>
+<!-- copy plugin -->
+<control id="colorpicker" type="copy" action="add" ofolder="plugins" ifolder="plugins" remark="Copy Colorpicker plugin" />
+</ew-extension>

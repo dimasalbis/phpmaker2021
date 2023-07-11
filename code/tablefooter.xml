@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-code name="Basic table footer (List page)" version="17.0.0" type="Custom Template" for="template" author="e.World">
+<description>
+<![CDATA[
+Basic table footer for List page Custom Template
+]]>
+</description>
+<script>
+<![CDATA[
+<#
+    let TABLE = DB.Tables.find(tbl => tbl.TblName == "{TblName}"),
+        linkOnLeft = TABLE.TblUseGlobal && PROJ.LinkOnLeft || !TABLE.TblUseGlobal && TABLE.TblLinkOnLeft,
+        currentFields = TABLE.Fields.filter(f => f.FldGenerate && f.FldList);
+#>
+]]>
+</script>
+<code>
+<![CDATA[
+    </tbody>
+    <!-- <tfoot>
+        <tr class="ew-table-footer">
+            <# if (linkOnLeft) { #>
+            {{{list_options}}}
+            <# } #>
+            <# for (let f of currentFields) { #>
+            <td>{{{<#= f.FldParm #>}}}</td>
+            <# } #>
+            <# if (!linkOnLeft) { #>
+            {{{list_options}}}
+            <# } #>
+        </tr>
+    </tfoot> -->
+</table>
+]]>
+</code>
+</ew-code>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<ew-sql date="2020/09/07" version="17.0.0" desc="SQL" author="e.World Technology Ltd.">
+<datatypes>
+    <datatype id="_AutoIncType" access="AUTOINCREMENT" mssql="INT IDENTITY(1,1)" mysql="INT AUTO_INCREMENT" oracle="INTEGER" postgresql="SERIAL" sqlite="INTEGER" /><!-- Note: If Oracle, sequence and trigger must be created by user. -->
+    <datatype id="_IntType" access="INT" mssql="INT" mysql="INT" oracle="INTEGER" postgresql="INTEGER" sqlite="INTEGER" />
+    <datatype id="_VarCharType" access="TEXT(255)" mssql="NVARCHAR(255)" mysql="VARCHAR(80)" oracle="VARCHAR2(255)" postgresql="VARCHAR(255)" sqlite="VARCHAR2(255)" />
+    <datatype id="_DateTimeType" access="DATE" mssql="DATETIME" mysql="DATETIME" oracle="DATE" postgresql="TIMESTAMP" sqlite="DATE" />
+    <datatype id="_TextType" access="MEMO" mssql="NVARCHAR(MAX)" mysql="LONGTEXT" oracle="NCLOB" postgresql="TEXT" sqlite="TEXT" />
+</datatypes>
+<statements>
+    <statement id="UserLevels">
+        <sql>CREATE TABLE :UserLevels (:UserLevelID :_IntType NOT NULL, :UserLevelName :_VarCharType NOT NULL, CONSTRAINT PKUserLevels PRIMARY KEY (:UserLevelID))</sql>
+        <table id="UserLevels" name="UserLevels" desc="User Levels Table" />
+        <field id="UserLevelID" name="UserLevelID" desc="User Level ID" />
+        <field id="UserLevelName" name="UserLevelName" desc="User Level Name" />
+    </statement>
+    <statement id="UserLevelPermissions">
+        <sql>CREATE TABLE :UserLevelPermissions (:UserLevelID :_IntType NOT NULL, :TableName :_VarCharType NOT NULL, :Permission :_IntType NOT NULL, CONSTRAINT PKUserLevelPermissions PRIMARY KEY (:UserLevelID, :TableName))</sql>
+        <table id="UserLevelPermissions" name="UserLevelPermissions" desc="User Level Permissions Table" />
+        <field id="UserLevelID" name="UserLevelID" desc="User Level ID" />
+        <field id="TableName" name="TableName" desc="Table Name" />
+        <field id="Permission" name="Permission" desc="Permission" />
+    </statement>
+    <statement id="AuditTrail">
+        <sql>CREATE TABLE :AuditTrailTable (:AuditTrailFieldId :_AutoIncType, :AuditTrailFieldDateTime :_DateTimeType NOT NULL, :AuditTrailFieldScript :_VarCharType, :AuditTrailFieldUser :_VarCharType, :AuditTrailFieldAction :_VarCharType, :AuditTrailFieldTable :_VarCharType, :AuditTrailFieldField :_VarCharType, :AuditTrailFieldKeyValue :_TextType, :AuditTrailFieldOldValue :_TextType, :AuditTrailFieldNewValue :_TextType, CONSTRAINT PKAuditTrail PRIMARY KEY (:AuditTrailFieldId))</sql>
+        <table id="AuditTrailTable" name="AuditTrail" desc="Audit Trail Table" />
+        <field id="AuditTrailFieldDateTime" name="DateTime" desc="DateTime" />
+        <field id="AuditTrailFieldId" name="Id" desc="ID" />
+        <field id="AuditTrailFieldScript" name="Script" desc="Script" />
+        <field id="AuditTrailFieldUser" name="User" desc="User" />
+        <field id="AuditTrailFieldAction" name="Action" desc="Action" />
+        <field id="AuditTrailFieldTable" name="Table" desc="Table" />
+        <field id="AuditTrailFieldField" name="Field" desc="Field" />
+        <field id="AuditTrailFieldKeyValue" name="KeyValue" desc="Key Value" />
+        <field id="AuditTrailFieldOldValue" name="OldValue" desc="Old Value" />
+        <field id="AuditTrailFieldNewValue" name="NewValue" desc="New Value" />
+    </statement>
+</statements>
+</ew-sql>

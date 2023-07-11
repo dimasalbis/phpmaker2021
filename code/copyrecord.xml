@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-code name="Copy records" version="17.0.0" type="Data Modification" for="server" author="e.World">
+<description>
+<![CDATA[
+Copy records from other table
+]]>
+</description>
+<code>
+<![CDATA[
+// Copy record
+// NOTE: Modify your SQL here, replace the table name, field name and the condition
+$myResult = ExecuteUpdate("INSERT INTO MyTable1 (Field1, Field2, Field3) SELECT Field4, Field5, Field6 FROM MyTable2 WHERE MyField=XXX");
+]]>
+</code>
+</ew-code>

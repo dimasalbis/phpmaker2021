@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-extension name="DateTimePicker" version="17.0.10" type="Date/Time Picker" author="e.World">
+<description>
+<![CDATA[Bootstrap Date/Time Picker
+Developer Website: https://tempusdominus.github.io/bootstrap-4/
+Bootstrap Date/Time Picker is available under MIT License.
+
+Notes:
+1. Bootstrap Date/Time Picker uses Moment: http://momentjs.com
+2. Format syntax: http://momentjs.com/docs/#/displaying
+3. Locale files: https://github.com/moment/moment/tree/develop/locale
+4. Language ID of language file must match the locale file name without extension. If Moment does not have locale file for the language, you need to create it yourself.
+5. Options should be in JSON syntax: https://tempusdominus.github.io/bootstrap-4/Options/
+
+Options:
+- Options (Global, applies to all fields)
+- InputGroup (Show the input as Bootstrap input group)
+- Options (Field-specific)
+
+
+Note: The Bootstrap Date/Time Picker is not part of PHPMaker. Please read "Third-Party Tools" in the help file.
+]]>
+</description>
+<file>datetimepicker.zip</file>
+<Project>
+    <Attribute name="InputGroup" type="Boolean" default="1" />
+    <Attribute name="Options" />
+<Database>
+<Table>
+<Field>
+    <Attribute name="Options" />
+</Field>
+</Table>
+</Database>
+</Project>
+<!-- tempusdominus-bootstrap-4.min.js -->
+<control id="datetimepickerjs" type="copy" action="add" ofolderid="_js" ifiles="tempusdominus-bootstrap-4.js"/>
+<!-- ewdatetimepicker.js -->
+<control id="ewdatetimepickerjs" type="copy" action="add" ofolderid="_js" ifiles="ewdatetimepicker.js"/>
+<!-- tempusdominus-bootstrap-4-build.scss -->
+<control id="datetimepickerscss" type="copy" action="add" ofolderid="_css" ofile="tempusdominus-bootstrap-4" oext="scss" ifiles="tempusdominus-bootstrap-4-build.scss"/>
+</ew-extension>

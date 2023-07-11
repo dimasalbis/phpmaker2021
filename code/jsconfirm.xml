@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<ew-code name="Confirm dialog" version="17.0.0" type="JavaScript" for="client" author="e.World">
+<description>
+<![CDATA[
+Open confirm dialog with callback function
+]]>
+</description>
+<code>
+<![CDATA[
+ew.prompt("Your question", function(result) {
+    if (result) {
+        // Do things if OK
+    } else {
+        // Do things if cancelled
+    }
+});
+]]>
+</code>
+</ew-code>
